@@ -24,10 +24,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Apply dashboard table layout patch
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const css = '.panel:has(> #cityTable){overflow-x:auto!important;overflow-y:hidden!important;padding-bottom:22px!important}#cityTable{min-width:1680px!important;table-layout:fixed!important}#cityTable th,#cityTable td{line-height:1.55!important;overflow-wrap:anywhere!important}#cityTable th:nth-child(1),#cityTable td:nth-child(1){width:210px!important}#cityTable th:nth-child(2),#cityTable td:nth-child(2){width:170px!important}#cityTable th:nth-child(3),#cityTable td:nth-child(3){width:90px!important}#cityTable th:nth-child(4),#cityTable td:nth-child(4){width:92px!important}#cityTable th:nth-child(5),#cityTable td:nth-child(5),#cityTable th:nth-child(6),#cityTable td:nth-child(6),#cityTable th:nth-child(7),#cityTable td:nth-child(7),#cityTable th:nth-child(8),#cityTable td:nth-child(8){width:116px!important;white-space:nowrap!important}#cityTable th:nth-child(9),#cityTable td:nth-child(9){width:190px!important}#cityTable th:nth-child(10),#cityTable td:nth-child(10){width:310px!important}#cityTable td:nth-child(n+5):nth-child(-n+8) .bar{display:inline-block!important;width:58px!important;height:9px!important;vertical-align:middle!important;margin:0 7px 3px 0!important}#cityTable td:nth-child(n+5):nth-child(-n+8) .chip{min-width:48px!important;justify-content:center!important;padding:3px 7px!important}';
+          let html = fs.readFileSync('index.html', 'utf8');
+          if (!html.includes('dashboard table layout patch')) {
+            html = html.replace('document.write(html);', 'document.write(html.replace("</style>", "/* dashboard table layout patch */' + css.replace(/\\/g, '\\\\').replace(/"/g, '\\"') + '</style>"));');
+          }
+          fs.writeFileSync('index.html', html);
+          NODE
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
