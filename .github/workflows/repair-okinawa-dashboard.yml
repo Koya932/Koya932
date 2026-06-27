@@ -1,0 +1,53 @@
+name: Repair Okinawa dashboard data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repair-okinawa-dashboard.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair-dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Repair municipality region labels
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('index.html')
+          text = path.read_text(encoding='utf-8')
+          replacements = {
+              "['中部','恩納村'": "['北部','恩納村'",
+              "['中部','金武町'": "['北部','金武町'",
+              "['中部','宜野座村'": "['北部','宜野座村'",
+              '"region":"中部","name":"恩納村"': '"region":"北部","name":"恩納村"',
+              '"region":"中部","name":"金武町"': '"region":"北部","name":"金武町"',
+              '"region":"中部","name":"宜野座村"': '"region":"北部","name":"宜野座村"',
+          }
+          original = text
+          for old, new in replacements.items():
+              text = text.replace(old, new)
+          if text != original:
+              path.write_text(text, encoding='utf-8')
+              print('index.html repaired')
+          else:
+              print('index.html already consistent')
+          PY
+      - name: Commit repair
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "No dashboard repair needed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Repair Okinawa dashboard region labels"
+          git push
