@@ -17,10 +17,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Repair municipality region labels
+      - name: Repair municipality region labels and current MKT scores
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
           path = Path('index.html')
           text = path.read_text(encoding='utf-8')
           replacements = {
@@ -31,14 +32,69 @@ jobs:
               '"region":"中部","name":"金武町"': '"region":"北部","name":"金武町"',
               '"region":"中部","name":"宜野座村"': '"region":"北部","name":"宜野座村"',
           }
-          original = text
           for old, new in replacements.items():
               text = text.replace(old, new)
-          if text != original:
-              path.write_text(text, encoding='utf-8')
-              print('index.html repaired')
+
+          marker_start = '/* MKT_MAP_EXPORT_OVERRIDES_20260629_START */'
+          marker_end = '/* MKT_MAP_EXPORT_OVERRIDES_20260629_END */'
+          override = r'''
+/* MKT_MAP_EXPORT_OVERRIDES_20260629_START */
+const MKT_OVERRIDES_20260629={
+"那覇市":{store:86.8,newBiz:92.3,yuimaru:35,pressure:8.4,communityConvert:61.8,paradox:21.7,newcomerRisk:0,referral:21.7,largeSc:82.1,localAdvRaw:15.1,segment:"新規親和・高回転",feature:"県庁所在地・経済中心・那覇空港直結・観光核"},
+"浦添市":{store:82.4,newBiz:77.6,yuimaru:35.6,pressure:13.9,communityConvert:43.4,paradox:24.8,newcomerRisk:0,referral:24.8,largeSc:76.6,localAdvRaw:18.3,segment:"新規親和・高回転",feature:"国道58号高交通量・イオンモール浦添・GDP県2位"},
+"沖縄市":{store:72.7,newBiz:73.6,yuimaru:36.3,pressure:25.6,communityConvert:57.7,paradox:31,newcomerRisk:0,referral:31,largeSc:55.6,localAdvRaw:25,segment:"地域密着検証",feature:"米軍嘉手納基地隣接・コザ商業軸・GDP中部第2位"},
+"うるま市":{store:66.1,newBiz:75.5,yuimaru:36.9,pressure:25.2,communityConvert:50.5,paradox:31.1,newcomerRisk:0,referral:31.1,largeSc:64.8,localAdvRaw:24.9,segment:"新規親和・高回転",feature:"中部製造業集積・与那城海中道路観光・住宅団地拡大"},
+"宜野湾市":{store:78.6,newBiz:82.7,yuimaru:37.5,pressure:12.9,communityConvert:60.6,paradox:25.2,newcomerRisk:0,referral:25.2,largeSc:73.5,localAdvRaw:18.3,segment:"新規親和・高回転",feature:"国道58号最高交通量区間・沖縄最大級ショッピング集積"},
+"名護市":{store:69,newBiz:69.1,yuimaru:38.1,pressure:28,communityConvert:49.4,paradox:33.1,newcomerRisk:3.8,referral:33.1,largeSc:53,localAdvRaw:26.8,segment:"地域密着検証",feature:"辺野古新基地工事需要・ジャングリア開業予定・北部観光拠点"},
+"宮古島市":{store:55.7,newBiz:64.9,yuimaru:60.8,pressure:51.6,communityConvert:58.6,paradox:56.2,newcomerRisk:28.9,referral:56.2,largeSc:45.8,localAdvRaw:46.6,segment:"地域密着検証",feature:"離島観光急成長・ホテル開発ラッシュ・伊良部大橋効果"},
+"石垣市":{store:54.5,newBiz:65.5,yuimaru:61.4,pressure:51.7,communityConvert:59,newcomerRisk:28.8,paradox:56.6,referral:56.6,largeSc:49.2,localAdvRaw:46.9,segment:"地域密着検証",feature:"離島・八重山観光拠点・空港拡張効果"},
+"豊見城市":{store:59.4,newBiz:64.7,yuimaru:40,pressure:30.4,communityConvert:49.2,paradox:35.2,newcomerRisk:7.8,referral:35.2,largeSc:54.2,localAdvRaw:28.7,segment:"地域密着検証",feature:"豊崎新開発・那覇空港隣接・アウトレット・免税店"},
+"糸満市":{store:55,newBiz:63.1,yuimaru:40.6,pressure:31.2,communityConvert:49,paradox:35.9,newcomerRisk:9.1,referral:35.9,largeSc:54.9,localAdvRaw:29.3,segment:"地域密着検証",feature:"製造業集積(第2次産業14.7%)・南部観光・糸満漁港"},
+"西原町":{store:72.2,newBiz:71.1,yuimaru:49.3,pressure:32.3,communityConvert:63,paradox:40.8,newcomerRisk:7.4,referral:40.8,largeSc:62.5,localAdvRaw:40.6,segment:"地域密着検証",feature:"琉球大学・医療機関集積・高速IC近接・製造業集積"},
+"南風原町":{store:59.1,newBiz:60.8,yuimaru:49.9,pressure:36.2,communityConvert:37.7,paradox:43.1,newcomerRisk:14.9,referral:43.1,largeSc:45.8,localAdvRaw:42.9,segment:"地域密着検証",feature:"那覇のベッドタウン・IC2か所の利便性"},
+"南城市":{store:53,newBiz:65.3,yuimaru:64.5,pressure:41.2,communityConvert:60.4,paradox:52.9,newcomerRisk:18.3,referral:52.9,largeSc:64.9,localAdvRaw:42,segment:"地域密着検証",feature:"第2次産業比率高(建設24.7%)・南部観光遺跡"},
+"北谷町":{store:81.1,newBiz:79,yuimaru:51.1,pressure:20.3,communityConvert:65.7,paradox:35.7,newcomerRisk:0,referral:35.7,largeSc:77.7,localAdvRaw:34.5,segment:"新規親和・高回転",feature:"国道58号最高交通量(6.4万台)・アメリカンビレッジ観光・米軍住宅高密集"},
+"読谷村":{store:63.2,newBiz:62.6,yuimaru:51.8,pressure:36.4,communityConvert:54,paradox:44.1,newcomerRisk:14.5,referral:44.1,largeSc:56.5,localAdvRaw:43.6,segment:"地域密着検証",feature:"読谷は地価低め・郊外型商業・不動産比率25%高"},
+"八重瀬町":{store:52.2,newBiz:50.4,yuimaru:74.4,pressure:62.8,communityConvert:46.1,paradox:68.6,newcomerRisk:45.2,referral:80.6,largeSc:26.7,localAdvRaw:64.9,segment:"ユイマール資産活用",feature:"南部住宅開発拡大・不動産15%・農業3.8%"},
+"恩納村":{store:68.6,newBiz:61.5,yuimaru:53,pressure:37.3,communityConvert:54.2,paradox:45.2,newcomerRisk:15.8,referral:45.2,largeSc:29,localAdvRaw:44.4,segment:"地域密着検証",feature:"リゾートホテル集積・GDP成長率1位(+20.4%)"},
+"北中城村":{store:73.1,newBiz:64.5,yuimaru:53.6,pressure:36.5,communityConvert:63.2,paradox:45.1,newcomerRisk:13.9,referral:45.1,largeSc:58.8,localAdvRaw:44.2,segment:"地域密着検証",feature:"不動産17.4%・保健衛生30%・医療福祉集積・IC近接"},
+"中城村":{store:51.7,newBiz:53.5,yuimaru:54.3,pressure:40.7,communityConvert:52.8,paradox:47.5,newcomerRisk:22,referral:59.5,largeSc:50.6,localAdvRaw:46.7,segment:"地域密着検証",feature:"GDP大幅減(-29.0%)・製造業18.5%・港川エリア"},
+"本部町":{store:51,newBiz:52,yuimaru:76.9,pressure:63.4,communityConvert:62.6,paradox:70.2,newcomerRisk:45.2,referral:82.2,largeSc:41.4,localAdvRaw:65.9,segment:"ユイマール資産活用",feature:"沖縄美ら海水族館・観光来訪者集中・GDP北部第2位"},
+"嘉手納町":{store:64.8,newBiz:58.6,yuimaru:55.5,pressure:39.5,communityConvert:54.6,paradox:47.5,newcomerRisk:19,referral:47.5,largeSc:56.3,localAdvRaw:46.4,segment:"地域密着検証",feature:"1人当たり所得328万(県2位)・財産所得38%・米軍基地(嘉手納基地)経済"},
+"与那原町":{store:50.4,newBiz:43.2,yuimaru:56.1,pressure:45.1,communityConvert:36,paradox:50.6,newcomerRisk:30,referral:62.6,largeSc:30,localAdvRaw:49.6,segment:"地域密着検証",feature:"3次産業91.7%(県最高水準)-純粋サービス業町"},
+"金武町":{store:59.8,newBiz:43,yuimaru:56.8,pressure:45.5,communityConvert:36.3,paradox:51.2,newcomerRisk:30.5,referral:63.2,largeSc:25.5,localAdvRaw:50.1,segment:"地域密着検証",feature:"GDP激減(-43.3%)・米軍キャンプコートニー隣接"},
+"久米島町":{store:47.4,newBiz:44.9,yuimaru:79.4,pressure:67,communityConvert:62,paradox:73.2,newcomerRisk:51.3,referral:85.2,largeSc:35.1,localAdvRaw:68.7,segment:"ユイマール資産活用",feature:"海洋深層水・久米仙泡盛工場・観光"},
+"今帰仁村":{store:45.1,newBiz:43.3,yuimaru:80,pressure:67.8,communityConvert:61.8,paradox:73.9,newcomerRisk:52.6,referral:85.9,largeSc:34.7,localAdvRaw:69.3,segment:"ユイマール資産活用",feature:"今帰仁城跡観光・農業地域"},
+"宜野座村":{store:52.8,newBiz:35.9,yuimaru:58.6,pressure:48.8,communityConvert:35.3,paradox:53.7,newcomerRisk:36.2,referral:65.7,largeSc:19.8,localAdvRaw:52.4,segment:"地域密着検証",feature:"1人当たり所得高(266万円)・東海岸工業用地"},
+"竹富町":{store:46.7,newBiz:40.9,yuimaru:81.3,pressure:69.3,communityConvert:61.8,paradox:75.3,newcomerRisk:55,referral:87.3,largeSc:31.8,localAdvRaw:70.5,segment:"ユイマール資産活用",feature:"八重山観光核・世界的自然遺産・宿泊飲食17.7%"},
+"国頭村":{store:49,newBiz:41.8,yuimaru:81.9,pressure:57.2,communityConvert:62.3,paradox:69.6,newcomerRisk:42.6,referral:81.6,largeSc:41.7,localAdvRaw:64,segment:"ユイマール資産活用",feature:"世界自然遺産隣接・最北端・林業13.4%・超低交通量"},
+"伊江村":{store:45.5,newBiz:26.8,yuimaru:82.5,pressure:74.7,communityConvert:43.8,paradox:78.6,newcomerRisk:65.3,referral:90.6,largeSc:2,localAdvRaw:73.8,segment:"共同体強・紹介必須",feature:"農業島・フェリー1日数便・米軍訓練場"},
+"与那国町":{store:52.1,newBiz:40.1,yuimaru:83.1,pressure:58.4,communityConvert:62.4,paradox:70.8,newcomerRisk:44.4,referral:82.8,largeSc:39.5,localAdvRaw:65.1,segment:"ユイマール資産活用",feature:"日本最西端・自衛隊駐屯・税免除措置"},
+"大宜味村":{store:43.9,newBiz:26.4,yuimaru:83.8,pressure:75.5,communityConvert:44.3,paradox:79.7,newcomerRisk:66.3,referral:91.7,largeSc:5.1,localAdvRaw:74.7,segment:"共同体強・紹介必須",feature:"第1次産業最高比率17.5%・シークワーサー産地"},
+"南大東村":{store:44.7,newBiz:35.8,yuimaru:84.4,pressure:60.5,communityConvert:61.9,paradox:72.5,newcomerRisk:48,referral:84.5,largeSc:38,localAdvRaw:66.6,segment:"ユイマール資産活用",feature:"第2次産業45.8%(製造業28%)・サトウキビ糖業拠点"},
+"東村":{store:46.6,newBiz:23.8,yuimaru:85,pressure:64.9,communityConvert:44.2,paradox:75,newcomerRisk:56.6,referral:87,largeSc:9.2,localAdvRaw:69.2,segment:"ユイマール資産活用",feature:"世界自然遺産内・ダム水源・辺野古工事関連需要"},
+"伊平屋村":{store:42.7,newBiz:21.3,yuimaru:85.6,pressure:78.1,communityConvert:43.8,paradox:81.9,newcomerRisk:70.6,referral:93.9,largeSc:-0.1,localAdvRaw:76.6,segment:"共同体強・紹介必須",feature:"建設業35.8%・農業島"},
+"座間味村":{store:44.7,newBiz:21.2,yuimaru:86.3,pressure:78.4,communityConvert:44.1,paradox:82.4,newcomerRisk:71,referral:94.4,largeSc:-0.1,localAdvRaw:77,segment:"共同体強・紹介必須",feature:"慶良間諸島国立公園・世界屈指のダイビング拠点"},
+"多良間村":{store:44.3,newBiz:32.1,yuimaru:86.9,pressure:74.9,communityConvert:62.1,paradox:80.9,newcomerRisk:63.7,referral:92.9,largeSc:28.5,localAdvRaw:75.3,segment:"共同体強・紹介必須",feature:"多良間島・製造業21.8%(多良間製糖)・農業"},
+"伊是名村":{store:42.7,newBiz:18.7,yuimaru:87.5,pressure:79.8,communityConvert:44.1,paradox:83.7,newcomerRisk:73.3,referral:95.7,largeSc:-1,localAdvRaw:78.1,segment:"共同体強・紹介必須",feature:"尚円王生誕地・農業・GDP大幅減(-33.1%)"},
+"渡嘉敷村":{store:41.9,newBiz:29.6,yuimaru:88.1,pressure:76.3,communityConvert:62,paradox:82.2,newcomerRisk:65.9,referral:94.2,largeSc:27.9,localAdvRaw:76.4,segment:"共同体強・紹介必須",feature:"ダイビングリゾート・少数精鋭観光島"},
+"北大東村":{store:42.1,newBiz:16.7,yuimaru:66.8,pressure:59.2,communityConvert:34.2,paradox:63,newcomerRisk:53.4,referral:75,largeSc:6.3,localAdvRaw:60.6,segment:"地域密着検証",feature:"1人当たり所得423万(県1位)・サトウキビ・製造業39.8%"},
+"粟国村":{store:40.2,newBiz:15.1,yuimaru:89.4,pressure:81.9,communityConvert:44,paradox:85.7,newcomerRisk:76.6,referral:97.7,largeSc:-2.4,localAdvRaw:79.9,segment:"共同体強・紹介必須",feature:"塩の島・人口減少著しい"},
+"渡名喜村":{store:39,newBiz:13.8,yuimaru:90,pressure:82.7,communityConvert:44,paradox:86.4,newcomerRisk:77.9,referral:98.4,largeSc:-2.9,localAdvRaw:80.5,segment:"共同体強・紹介必須",feature:"県最小人口・伝統的集落景観保存村"}
+};
+CITIES.forEach(c=>{const o=MKT_OVERRIDES_20260629[c.name];if(o){Object.assign(c,o);c.localAdv=Math.max(0,Number(o.localAdvRaw??c.localAdvRaw??0));c.evidence='observed_partial+traffic_R3_2021+estimated_culture_model';}});
+/* MKT_MAP_EXPORT_OVERRIDES_20260629_END */
+'''
+          block = override.strip() + '\n'
+          if marker_start in text and marker_end in text:
+              text = re.sub(re.escape(marker_start) + r'.*?' + re.escape(marker_end) + r'\n?', block, text, flags=re.S)
+          elif 'const DISTRICTS=' in text:
+              text = text.replace('const DISTRICTS=', block + 'const DISTRICTS=', 1)
           else:
-              print('index.html already consistent')
+              raise SystemExit('Could not find insertion point for MKT overrides')
+
+          path.write_text(text, encoding='utf-8')
+          print('index.html MKT override repair prepared')
           PY
       - name: Commit repair
         run: |
@@ -49,7 +105,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html
-          git commit -m "Repair Okinawa dashboard region labels"
+          git commit -m "Repair Okinawa dashboard MKT score snapshot"
           git push
 
-# trigger: 2026-06-27T00:00:00+09:00
+# trigger: 2026-06-29T20:20:00+09:00
