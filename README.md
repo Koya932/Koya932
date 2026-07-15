@@ -4,3 +4,11 @@
 
 公開予定URL:
 https://koya932.github.io/Koya932/
+
+## 沖縄起点・世界戦略経済モニター
+
+スタッフがスマートフォンから確認するための日本語ダッシュボードです。
+
+公開URL:
+https://koya932.github.io/Koya932/oki-world-monitor/?view=okinawa
+
