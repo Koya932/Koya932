@@ -2,6 +2,11 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      if (new URLSearchParams(location.search).get("view") === "world-os") {
+        location.replace("./world-os.html");
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#050a11" />
     <meta name="description" content="沖縄から世界経済・ドル・米軍家族市場を読む、koya戦略モニター" />
@@ -13,4 +18,3 @@
     <div id="root"></div>
   </body>
 </html>
-
