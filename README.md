@@ -9,6 +9,8 @@ https://koya932.github.io/Koya932/
 
 スタッフがスマートフォンから確認するための日本語ダッシュボードです。
 
-公開URL:
-https://koya932.github.io/Koya932/oki-world-monitor/?view=okinawa
+世界データ正本・統合監視:
+https://koya932.github.io/Koya932/oki-world-monitor/?view=world-os
 
+沖縄地図:
+https://koya932.github.io/Koya932/oki-world-monitor/?view=okinawa
