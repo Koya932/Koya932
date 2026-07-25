@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050b12">
+  <meta name="description" content="沖縄からドル・米国経済・米国債・世界経済・国際政治を一画面で監視するkoyaダッシュボード">
+  <title>koya 世界・ドル統合監視</title>
+  <style>
+    :root{--bg:#050b12;--panel:#091722;--panel2:#0d1e2b;--line:#203746;--text:#edf5f6;--muted:#91a8b5;--cyan:#42d6c9;--green:#28a77c;--yellow:#d6a62e;--red:#dc5b67;--gray:#304655}
+    *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);font-family:"Yu Gothic UI","Hiragino Sans",system-ui,sans-serif;background:radial-gradient(circle at 55% 0,#10283a 0,var(--bg) 38%)}button,a{font:inherit}.wrap{width:min(1380px,calc(100% - 36px));margin:auto}
+    header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:#050b12e8;backdrop-filter:blur(14px)}.top{height:72px;display:flex;align-items:center;gap:16px}.logo{width:86px;height:38px;object-fit:contain;object-position:left center}.product{border-left:1px solid var(--line);padding-left:16px}.product b{display:block;font-size:13px}.product small{color:var(--muted)}.actions{margin-left:auto;display:flex;gap:8px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 14px;border:1px solid var(--line);border-radius:6px;color:var(--text);text-decoration:none;background:#0a151f;font-weight:800;font-size:12px}.btn.primary{border-color:#268a81;background:#0d3937;color:#dffefa}
+    main{padding:28px 0 52px}.audit{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;border:1px solid #795f2c;background:linear-gradient(90deg,#2b2415,#131b20);padding:16px 18px;border-radius:8px}.audit strong{display:block;color:#ffd787;font-size:14px}.audit p{margin:5px 0 0;color:#c9b787;font-size:12px;line-height:1.65}.audit time{font:800 12px/1.6 ui-monospace,monospace;color:#e7c879;text-align:right}
+    .hero{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;margin:28px 0 16px}.eyebrow{color:var(--cyan);font:900 11px/1.3 ui-monospace,monospace;letter-spacing:.16em}.hero h1{font-size:clamp(30px,4.6vw,62px);letter-spacing:-.045em;line-height:1.06;margin:9px 0}.hero p{margin:0;color:var(--muted);line-height:1.7;font-size:13px}.status{display:flex;align-items:center;gap:9px;border:1px solid #205b55;color:#a9eee8;background:#0c2928;padding:10px 13px;border-radius:99px;font-size:11px;font-weight:900;white-space:nowrap}.pulse{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px #42d6c91c}
+    .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.kpi,.panel{border:1px solid var(--line);background:linear-gradient(145deg,var(--panel2),#07121b);border-radius:8px}.kpi{padding:15px}.kpi small{display:block;color:var(--muted);font-size:10px;min-height:28px}.kpi b{display:block;font-size:clamp(19px,2vw,28px);margin:5px 0}.kpi em{font-style:normal;color:#9eb6c3;font-size:10px}.kpi .stale{color:#ffd47b}.kpi .observed{color:#8de8d5}
+    .layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:12px;margin-top:12px}.panel{overflow:hidden}.panel-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--line)}.panel-head small{color:var(--cyan);font-size:10px;font-weight:900}.panel-head h2{margin:4px 0 0;font-size:18px}.modes{display:flex;gap:5px}.modes button{cursor:pointer;border:1px solid var(--line);border-radius:5px;background:#08141e;color:var(--muted);padding:8px 10px;font-weight:800;font-size:11px}.modes button.active{border-color:#24887e;background:#103f3b;color:#d9fffa}.map-wrap{position:relative;min-height:510px;background:radial-gradient(circle at 50% 45%,#10283a,#06101a 70%)}#map{display:block;width:100%;height:510px}.country{stroke:#7790a0;stroke-width:.42;vector-effect:non-scaling-stroke;cursor:pointer;transition:filter .12s,opacity .12s}.country:hover{filter:brightness(1.35);stroke:#fff;stroke-width:1}.country.selected{stroke:#fff;stroke-width:1.7;filter:brightness(1.2)}.map-message{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:12px}.legend{position:absolute;left:14px;bottom:12px;display:flex;gap:12px;flex-wrap:wrap;padding:9px 11px;border:1px solid var(--line);background:#06101de6;border-radius:5px;font-size:10px}.legend span{display:flex;align-items:center;gap:5px}.legend i{width:9px;height:9px;border-radius:2px}.country-card{padding:18px}.country-card>small{color:var(--cyan);font:800 10px ui-monospace,monospace}.country-card h3{font-size:27px;margin:7px 0}.verdict{display:inline-flex;border:1px solid;border-radius:99px;padding:6px 10px;font-size:11px;font-weight:900}.verdict.green{color:#8aebc9;border-color:#247d63;background:#0f352c}.verdict.yellow{color:#ffda7a;border-color:#856a25;background:#332912}.verdict.red{color:#ff9ca5;border-color:#8e3943;background:#34161c}.verdict.unknown{color:#b0c2cc;border-color:#445b69;background:#172630}.facts{margin:18px 0 0}.facts div{padding:13px 0;border-top:1px solid var(--line)}.facts dt{color:var(--muted);font-size:10px}.facts dd{margin:5px 0 0;font-size:20px;font-weight:900}.facts dd small{display:block;color:var(--muted);font-size:10px;font-weight:500;margin-top:3px}.counts{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:15px}.count{padding:10px 5px;text-align:center;border:1px solid var(--line);border-radius:5px}.count b{display:block;font-size:17px}.count small{color:var(--muted);font-size:9px}.method{margin:14px 0 0;color:var(--muted);font-size:10px;line-height:1.6}
+    .lower{display:grid;grid-template-columns:1.1fr .9fr;gap:12px;margin-top:12px}.source-grid{display:grid;grid-template-columns:repeat(2,1fr)}.source{padding:15px 18px;border-bottom:1px solid var(--line)}.source:nth-child(odd){border-right:1px solid var(--line)}.source span{font-size:10px;color:var(--muted)}.source b{display:block;margin:5px 0;font-size:13px}.source a{color:var(--cyan);font-size:10px;text-decoration:none}.curve{padding:20px}.bars{height:180px;display:flex;align-items:end;justify-content:space-around;gap:20px;border-bottom:1px solid var(--line);padding:0 15px}.bar{flex:1;max-width:90px;display:flex;flex-direction:column;align-items:center;gap:6px}.bar b{font-size:14px}.bar i{display:block;width:100%;background:linear-gradient(#43d6ca,#1d716f);border-radius:4px 4px 0 0}.bar span{color:var(--muted);font-size:11px}.curve-note{margin:14px 0 0;color:var(--muted);font-size:11px;line-height:1.7}
+    .ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.idea{padding:17px}.idea small{color:var(--cyan);font:900 10px ui-monospace,monospace}.idea h3{font-size:14px;margin:8px 0}.idea p{margin:0;color:var(--muted);font-size:11px;line-height:1.7}.foot{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:10px;line-height:1.7}.error{color:#ff9da6}
+    @media(max-width:1050px){.kpis{grid-template-columns:repeat(3,1fr)}.layout{grid-template-columns:1fr}.country-card{display:grid;grid-template-columns:1fr 1.7fr;gap:10px}.facts{margin:0}.counts,.method{grid-column:1/-1}.lower{grid-template-columns:1fr}}
+    @media(max-width:680px){.wrap{width:min(100% - 20px,1380px)}.top{height:62px}.logo{width:68px;height:30px}.product small,.actions .btn:first-child{display:none}.product{padding-left:10px}.btn{padding:0 10px}.audit{grid-template-columns:1fr}.audit time{text-align:left}.hero{grid-template-columns:1fr}.status{width:max-content}.kpis{grid-template-columns:repeat(2,1fr)}.panel-head{display:block}.modes{margin-top:12px}.modes button{flex:1}.map-wrap,#map{min-height:390px;height:390px}.legend{right:10px;gap:7px}.country-card{grid-template-columns:1fr}.facts{margin-top:6px}.source-grid,.ideas{grid-template-columns:1fr}.source:nth-child(odd){border-right:0}.hero h1{font-size:36px}.lower{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header><div class="wrap top"><img class="logo" src="./assets/koya-logo-DTvliNba.png" alt="koya"><div class="product"><b>世界・ドル統合監視</b><small>沖縄から世界を読む</small></div><nav class="actions"><a class="btn" href="./world-os.html">分析思想</a><a class="btn primary" href="https://docs.google.com/spreadsheets/d/197bo-Kw09GJtn0ClzJgd4BL0g5Q6JojpCiHftZS1GiY/edit">データ正本</a></nav></div></header>
+<main class="wrap">
+  <section class="audit"><div><strong>ドル円はリアルタイムではありません</strong><p>現在値はFRB/FREDの公式日次参照値です。市場の瞬時値ではないため、観測日とデータ状態を必ず併記します。リアルタイム接続までは「速報値」と表示しません。</p></div><time id="audit-time">データ読込中</time></section>
+  <section class="hero"><div><div class="eyebrow">KOYA GLOBAL STRATEGIC ECONOMY MONITOR</div><h1>ドルの動きから、<br>世界の広がりと縮小を見る。</h1><p>米国経済・金融政策・国債・信用ストレスと、216か国・地域の経済成長・政治安定性を一画面に統合。</p></div><div class="status"><i class="pulse"></i>公式データ監視スナップショット</div></section>
+  <section class="kpis" id="kpis"></section>
+
+  <section class="layout">
+    <article class="panel">
+      <div class="panel-head"><div><small>216か国・地域 / 3色判定</small><h2>世界経済・国際政治マップ</h2></div><div class="modes"><button data-mode="combined" class="active">統合判定</button><button data-mode="economy">経済成長</button><button data-mode="politics">国際政治</button></div></div>
+      <div class="map-wrap"><svg id="map" aria-label="世界経済と国際政治の三色地図"></svg><div class="map-message">世界地図を読込中…</div><div class="legend"><span><i style="background:var(--green)"></i>緑：安定・拡大</span><span><i style="background:var(--yellow)"></i>黄：注意</span><span><i style="background:var(--red)"></i>赤：高リスク・縮小</span><span><i style="background:var(--gray)"></i>灰：未取得</span></div></div>
+    </article>
+    <aside class="panel country-card"><div><small id="country-code">JPN / 東アジア</small><h3 id="country-name">日本</h3><span id="country-verdict" class="verdict yellow">注意・低成長</span></div><dl class="facts"><div><dt>実質GDP成長率</dt><dd id="growth">—</dd></div><div><dt>政治安定性</dt><dd id="politics">—</dd></div></dl><div class="counts" id="counts"></div><p class="method" id="method"></p></aside>
+  </section>
+
+  <section class="lower">
+    <article class="panel"><div class="panel-head"><div><small>一次情報と証拠状態</small><h2>監視ソース台帳</h2></div></div><div class="source-grid" id="sources"></div></article>
+    <article class="panel"><div class="panel-head"><div><small>米国債市場</small><h2>利回り曲線</h2></div></div><div class="curve"><div class="bars" id="curve"></div><p class="curve-note">長期金利上昇はドル・世界の資金調達・不動産・信用へ波及します。単独の数値では断定せず、政策金利と信用スプレッドを同時に確認します。</p></div></article>
+  </section>
+
+  <section class="ideas">
+    <article class="panel idea"><small>IDEA 01 / 為替</small><h3>ドル円の二重レーン化</h3><p>公式日次参照と認証済み市場速報を並べ、差分と最終更新秒を表示。接続前はリアルタイムと呼ばない。</p></article>
+    <article class="panel idea"><small>IDEA 02 / 沖縄</small><h3>沖縄波及スコア</h3><p>ドル、原油、米国債、基地購買力を、観光・物流・FamilyTreeOki需要への波及確率へ変換。</p></article>
+    <article class="panel idea"><small>IDEA 03 / 反証</small><h3>シナリオ反証アラート</h3><p>予測を当てるより、前提が崩れた瞬間を通知。緑・黄・赤の変更理由を時系列で保存。</p></article>
+  </section>
+  <p class="foot">判定方法：経済はGDP成長率、政治は世界銀行WGI「政治的安定と暴力・テロ不在」のパーセンタイル順位を使用。統合は「どちらか赤なら赤、赤なしでどちらか黄なら黄、両方緑なら緑」。ミアシャイマー理論は構造仮説の一つとして用い、唯一の答えとは扱いません。未取得値は推測で補完しません。</p>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script>
+const C={green:"#28a77c",yellow:"#d6a62e",red:"#dc5b67",unknown:"#304655"};
+const L={green:"安定・拡大",yellow:"注意・低成長",red:"高リスク・縮小",unknown:"未取得"};
+let data, mode="combined", selected="JPN", nameByNumeric=new Map(), countryMeta=new Map();
+const el=id=>document.getElementById(id);
+const fmt=(v,d=2)=>v==null?"不明":Number(v).toLocaleString("ja-JP",{minimumFractionDigits:d,maximumFractionDigits:d});
+function signal(row){return row?row[mode+"State"]||row.combinedState:"unknown"}
+function metric(label,item,value,unit){return `<article class="kpi"><small>${label}</small><b>${value}</b><em class="${item.dataState==="stale_observed"?"stale":"observed"}">${unit}｜${item.observationDate}<br>${item.dataState}</em></article>`}
+function renderHeader(){
+ const i=data.usMacro.indicators,d=data.usMacro.treasuryDebt;
+ el("audit-time").innerHTML=`観測日 ${i.usdjpy.observationDate}<br>取得 ${new Date(i.usdjpy.fetchedAt).toLocaleString("ja-JP")}`;
+ el("kpis").innerHTML=[
+  metric("ドル円・公式日次",i.usdjpy,fmt(i.usdjpy.value,2),"円/ドル"),
+  metric("実効FF金利",i.fedFunds,fmt(i.fedFunds.value,2),"%"),
+  metric("米国債10年",i.treasury10y,fmt(i.treasury10y.value,2),"%"),
+  metric("広義ドル指数",i.dollarBroad,fmt(i.dollarBroad.value,2),"指数"),
+  metric("信用スプレッド",i.highYieldSpread,fmt(i.highYieldSpread.value,2),"%"),
+  metric("米連邦債務",d,fmt(d.value/1e12,2),"兆ドル")
+ ].join("");
+ const sources=[
+  ["ドル円・FF金利・米国債","FRED / FRB",i.usdjpy.sourceUrl,i.usdjpy.dataState],
+  ["米国連邦債務","U.S. Treasury",d.sourceUrl,d.dataState],
+  ["各国GDP成長率","World Bank Indicators",data.worldMap.growthSourceUrl,data.worldMap.dataState],
+  ["政治安定性","World Bank WGI",data.worldMap.politicsSourceUrl,data.worldMap.dataState]
+ ];
+ el("sources").innerHTML=sources.map(x=>`<div class="source"><span>${x[3]}</span><b>${x[0]}</b><span>${x[1]}</span><br><a href="${x[2]}">一次情報を開く →</a></div>`).join("");
+ const max=Math.max(...data.usMacro.yieldCurve.map(x=>x.value));
+ el("curve").innerHTML=data.usMacro.yieldCurve.map(x=>`<div class="bar"><b>${fmt(x.value,2)}%</b><i style="height:${Math.max(30,x.value/max*130)}px"></i><span>${x.tenor}</span></div>`).join("");
+}
+function renderCountry(){
+ const row=data.worldMap.countries.find(x=>x.iso3===selected),meta=countryMeta.get(selected),s=signal(row);
+ el("country-code").textContent=`${selected}${meta?.region?" / "+meta.region:""}`;
+ el("country-name").textContent=meta?.ja||meta?.name||selected;
+ el("country-verdict").className=`verdict ${s}`;el("country-verdict").textContent=L[s];
+ el("growth").innerHTML=row?.growth==null?"不明":`${fmt(row.growth,1)}%<small>${row.growthYear}年</small>`;
+ el("politics").innerHTML=row?.politicalStability==null?"不明":`${fmt(row.politicalStability,1)} / 100<small>${row.politicalYear}年</small>`;
+ const n=data.worldMap.counts;el("counts").innerHTML=[["green","緑"],["yellow","黄"],["red","赤"],["unknown","不明"]].map(x=>`<div class="count"><b style="color:${C[x[0]]}">${n[x[0]]||0}</b><small>${x[1]}</small></div>`).join("");
+ el("method").textContent=data.worldMap.methodology[mode==="combined"?"combined":mode];
+ document.querySelectorAll(".country").forEach(p=>p.classList.toggle("selected",p.dataset.iso===selected));
+}
+async function renderMap(){
+ const [topo,countries]=await Promise.all([
+  fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json").then(r=>r.json()),
+  fetch("https://cdn.jsdelivr.net/npm/world-countries@5.1.0/countries.json").then(r=>r.json())
+ ]);
+ countries.forEach(c=>{if(c.ccn3){nameByNumeric.set(c.ccn3,c.cca3);countryMeta.set(c.cca3,{name:c.name.common,ja:c.translations?.jpn?.common,region:c.region})}});
+ const features=topojson.feature(topo,topo.objects.countries).features;
+ const svg=d3.select("#map"),node=svg.node(),w=node.clientWidth||900,h=node.clientHeight||510;
+ svg.attr("viewBox",`0 0 ${w} ${h}`);const projection=d3.geoNaturalEarth1().fitExtent([[10,12],[w-10,h-10]],{type:"FeatureCollection",features});const path=d3.geoPath(projection);
+ svg.selectAll("path").data(features).join("path").attr("class","country").attr("d",path).attr("data-iso",f=>nameByNumeric.get(String(f.id).padStart(3,"0"))||"").attr("fill",f=>{const iso=nameByNumeric.get(String(f.id).padStart(3,"0"));return C[signal(data.worldMap.countries.find(x=>x.iso3===iso))]}).on("click",(e,f)=>{const iso=nameByNumeric.get(String(f.id).padStart(3,"0"));if(iso){selected=iso;renderCountry()}});
+ document.querySelector(".map-message").style.display="none";renderCountry();
+}
+function recolor(){d3.selectAll(".country").attr("fill",function(){const row=data.worldMap.countries.find(x=>x.iso3===this.dataset.iso);return C[signal(row)]});renderCountry()}
+document.querySelectorAll(".modes button").forEach(b=>b.addEventListener("click",()=>{mode=b.dataset.mode;document.querySelectorAll(".modes button").forEach(x=>x.classList.toggle("active",x===b));recolor()}));
+fetch("./data/global-monitor.json").then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(async d=>{data=d;renderHeader();await renderMap()}).catch(e=>{document.querySelector(".map-message").innerHTML=`<span class="error">データ読込に失敗しました：${e.message}</span>`});
+</script>
+</body>
+</html>
+
