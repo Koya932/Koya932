@@ -24,7 +24,7 @@
 <header><div class="wrap top"><div class="wordmark" aria-label="koya">koya<span>.</span></div><div class="product"><b>世界・ドル統合監視</b><small>沖縄から世界を読む</small></div><nav class="actions"><a class="btn" href="./world-os.html">分析思想</a><a class="btn primary" href="https://docs.google.com/spreadsheets/d/197bo-Kw09GJtn0ClzJgd4BL0g5Q6JojpCiHftZS1GiY/edit">データ正本</a></nav></div></header>
 <main class="wrap">
   <section class="audit"><div><strong>ドル円はリアルタイムではありません</strong><p>現在値はFRB/FREDの公式日次参照値です。市場の瞬時値ではないため、観測日とデータ状態を必ず併記します。リアルタイム接続までは「速報値」と表示しません。</p></div><time id="audit-time">データ読込中</time></section>
-  <section class="hero"><div><div class="eyebrow">KOYA GLOBAL STRATEGIC ECONOMY MONITOR</div><h1>ドルの動きから、<br>世界の広がりと縮小を見る。</h1><p>米国経済・金融政策・国債・信用ストレスと、216か国・地域の経済成長・政治安定性を一画面に統合。</p></div><div class="status"><i class="pulse"></i>公式データ監視スナップショット</div></section>
+  <section class="hero"><div><div class="eyebrow">koya 世界戦略経済モニター</div><h1>ドルの動きから、<br>世界の広がりと縮小を見る。</h1><p>米国経済・金融政策・国債・信用ストレスと、216か国・地域の経済成長・政治安定性を一画面に統合。</p></div><div class="status"><i class="pulse"></i>公式データ監視スナップショット</div></section>
   <section class="kpis" id="kpis"></section>
 
   <section class="layout">
@@ -41,9 +41,9 @@
   </section>
 
   <section class="ideas">
-    <article class="panel idea"><small>IDEA 01 / 為替</small><h3>ドル円の二重レーン化</h3><p>公式日次参照と認証済み市場速報を並べ、差分と最終更新秒を表示。接続前はリアルタイムと呼ばない。</p></article>
-    <article class="panel idea"><small>IDEA 02 / 沖縄</small><h3>沖縄波及スコア</h3><p>ドル、原油、米国債、基地購買力を、観光・物流・FamilyTreeOki需要への波及確率へ変換。</p></article>
-    <article class="panel idea"><small>IDEA 03 / 反証</small><h3>シナリオ反証アラート</h3><p>予測を当てるより、前提が崩れた瞬間を通知。緑・黄・赤の変更理由を時系列で保存。</p></article>
+    <article class="panel idea"><small>提案 01 / 為替</small><h3>ドル円の二重レーン化</h3><p>公式日次参照と認証済み市場速報を並べ、差分と最終更新秒を表示。接続前はリアルタイムと呼ばない。</p></article>
+    <article class="panel idea"><small>提案 02 / 沖縄</small><h3>沖縄波及スコア</h3><p>ドル、原油、米国債、基地購買力を、観光・物流・FamilyTreeOki需要への波及確率へ変換。</p></article>
+    <article class="panel idea"><small>提案 03 / 反証</small><h3>シナリオ反証アラート</h3><p>予測を当てるより、前提が崩れた瞬間を通知。緑・黄・赤の変更理由を時系列で保存。</p></article>
   </section>
   <p class="foot">判定方法：経済はGDP成長率、政治は世界銀行WGI「政治的安定と暴力・テロ不在」のパーセンタイル順位を使用。統合は「どちらか赤なら赤、赤なしでどちらか黄なら黄、両方緑なら緑」。ミアシャイマー理論は構造仮説の一つとして用い、唯一の答えとは扱いません。未取得値は推測で補完しません。</p>
 </main>
@@ -52,11 +52,13 @@
 <script>
 const C={green:"#28a77c",yellow:"#d6a62e",red:"#dc5b67",unknown:"#304655"};
 const L={green:"安定・拡大",yellow:"注意・低成長",red:"高リスク・縮小",unknown:"未取得"};
+const S={observed:"実測",observed_partial:"一部実測",stale_observed:"取得済み・更新遅延",estimated:"推定",mock:"仮データ",fallback:"代替値",unknown:"不明",blocked_or_failed:"取得失敗"};
+const R={Africa:"アフリカ",Americas:"南北アメリカ",Asia:"アジア",Europe:"ヨーロッパ",Oceania:"オセアニア",Antarctic:"南極"};
 let data, mode="combined", selected="JPN", nameByNumeric=new Map(), countryMeta=new Map();
 const el=id=>document.getElementById(id);
 const fmt=(v,d=2)=>v==null?"不明":Number(v).toLocaleString("ja-JP",{minimumFractionDigits:d,maximumFractionDigits:d});
 function signal(row){return row?row[mode+"State"]||row.combinedState:"unknown"}
-function metric(label,item,value,unit){return `<article class="kpi"><small>${label}</small><b>${value}</b><em class="${item.dataState==="stale_observed"?"stale":"observed"}">${unit}｜${item.observationDate}<br>${item.dataState}</em></article>`}
+function metric(label,item,value,unit){return `<article class="kpi"><small>${label}</small><b>${value}</b><em class="${item.dataState==="stale_observed"?"stale":"observed"}">${unit}｜${item.observationDate}<br>${S[item.dataState]||"状態不明"}</em></article>`}
 function renderHeader(){
  const i=data.usMacro.indicators,d=data.usMacro.treasuryDebt;
  el("audit-time").innerHTML=`観測日 ${i.usdjpy.observationDate}<br>取得 ${new Date(i.usdjpy.fetchedAt).toLocaleString("ja-JP")}`;
@@ -69,18 +71,18 @@ function renderHeader(){
   metric("米連邦債務",d,fmt(d.value/1e12,2),"兆ドル")
  ].join("");
  const sources=[
-  ["ドル円・FF金利・米国債","FRED / FRB",i.usdjpy.sourceUrl,i.usdjpy.dataState],
-  ["米国連邦債務","U.S. Treasury",d.sourceUrl,d.dataState],
-  ["各国GDP成長率","World Bank Indicators",data.worldMap.growthSourceUrl,data.worldMap.dataState],
-  ["政治安定性","World Bank WGI",data.worldMap.politicsSourceUrl,data.worldMap.dataState]
+  ["ドル円・FF金利・米国債","FRED・米国連邦準備制度",i.usdjpy.sourceUrl,i.usdjpy.dataState],
+  ["米国連邦債務","米国財務省",d.sourceUrl,d.dataState],
+  ["各国GDP成長率","世界銀行・国別指標",data.worldMap.growthSourceUrl,data.worldMap.dataState],
+  ["政治安定性","世界銀行・世界ガバナンス指標",data.worldMap.politicsSourceUrl,data.worldMap.dataState]
  ];
- el("sources").innerHTML=sources.map(x=>`<div class="source"><span>${x[3]}</span><b>${x[0]}</b><span>${x[1]}</span><br><a href="${x[2]}">一次情報を開く →</a></div>`).join("");
+ el("sources").innerHTML=sources.map(x=>`<div class="source"><span>${S[x[3]]||"状態不明"}</span><b>${x[0]}</b><span>${x[1]}</span><br><a href="${x[2]}">一次情報を開く →</a></div>`).join("");
  const max=Math.max(...data.usMacro.yieldCurve.map(x=>x.value));
  el("curve").innerHTML=data.usMacro.yieldCurve.map(x=>`<div class="bar"><b>${fmt(x.value,2)}%</b><i style="height:${Math.max(30,x.value/max*130)}px"></i><span>${x.tenor}</span></div>`).join("");
 }
 function renderCountry(){
  const row=data.worldMap.countries.find(x=>x.iso3===selected),meta=countryMeta.get(selected),s=signal(row);
- el("country-code").textContent=`${selected}${meta?.region?" / "+meta.region:""}`;
+ el("country-code").textContent=`${selected}${meta?.region?" / "+(R[meta.region]||meta.region):""}`;
  el("country-name").textContent=meta?.ja||meta?.name||selected;
  el("country-verdict").className=`verdict ${s}`;el("country-verdict").textContent=L[s];
  el("growth").innerHTML=row?.growth==null?"不明":`${fmt(row.growth,1)}%<small>${row.growthYear}年</small>`;
