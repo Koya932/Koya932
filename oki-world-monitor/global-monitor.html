@@ -135,7 +135,7 @@ function renderCapitalFlow(){
  el("cf-derived").innerHTML=derived.map(x=>`<article><small>${x[0]}</small><b>${x[1]==null?"不明":`${x[1]>0?"+":""}${fmt(x[1],2)}${x[2]}`}</b><span>実測系列から計算</span></article>`).join("");
  el("cf-lanes").innerHTML=p.lanes.map(x=>`<article class="cf-lane"><div><div><small>${x.direction}</small><h3>${x.label}</h3></div><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></div><div class="meter"><i style="width:${x.score||0}%;background:${C[x.state]}"></i></div><p>${x.read}</p></article>`).join("");
  const ids=["IMF_COFER_USD_SHARE_Q1_2026","UST_TIC_TOTAL_MAY_2026","UST_TIC_PRIVATE_MAY_2026","UST_TIC_OFFICIAL_MAY_2026","ICI_MMF_2026_07_22","MOF_JP_INWARD_TOTAL_2026_07_18"];
- el("cf-facts").innerHTML=ids.map(id=>p.facts.find(x=>x.id===id)).filter(Boolean).map(x=>`<a class="cf-fact" href="${x.sourceUrl}" target="_blank" rel="noreferrer"><small>${x.label}<br>${S[x.dataState]||x.dataState}</small><b>${fmt(x.value,2)}${x.unit}</b>${x.note?`<p>${x.note}</p>`:""}<span>${x.observationDate}｜${x.sourceId}</span></a>`).join("");
+ el("cf-facts").innerHTML=ids.map(id=>p.facts.find(x=>x.id===id)).filter(Boolean).map(x=>`<a class="cf-fact" href="${x.sourceUrl}" target="_blank" rel="noreferrer"><small>${x.label}<br>${S[x.dataState]||x.dataState}</small><b>${fmt(x.value,2)} ${x.unit}</b>${x.note?`<p>${x.note}</p>`:""}<span>${x.observationDate}｜${x.sourceId}</span></a>`).join("");
  el("cf-triggers").innerHTML=p.triggers.map(x=>`<article class="cf-trigger ${x.level==="赤"?"red":""}"><b>${x.level}</b><div><strong>${x.condition}</strong><span>${x.action}</span></div></article>`).join("");
 }
 function renderHeader(){
