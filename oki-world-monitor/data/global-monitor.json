@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 2,
-  "generatedAt": "2026-07-29T07:12:05.959Z",
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-29T08:10:11.328Z",
   "dashboardTimeZone": "Asia/Tokyo",
   "fxAudit": {
     "isRealtime": false,
@@ -19,7 +19,7 @@
       "dataState": "observed",
       "sourceId": "FRED_DEXJPUS",
       "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-      "fetchedAt": "2026-07-29T07:12:04.770Z"
+      "fetchedAt": "2026-07-29T08:10:10.133Z"
     },
     "realtimeProvider": {
       "state": "unknown",
@@ -45,7 +45,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DEXJPUS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-        "fetchedAt": "2026-07-29T07:12:04.770Z"
+        "fetchedAt": "2026-07-29T08:10:10.133Z"
       },
       "fedFunds": {
         "key": "fedFunds",
@@ -60,7 +60,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DFF",
         "sourceUrl": "https://fred.stlouisfed.org/series/DFF",
-        "fetchedAt": "2026-07-29T07:12:04.471Z"
+        "fetchedAt": "2026-07-29T08:10:09.904Z"
       },
       "treasury2y": {
         "key": "treasury2y",
@@ -75,7 +75,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DGS2",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS2",
-        "fetchedAt": "2026-07-29T07:12:04.493Z"
+        "fetchedAt": "2026-07-29T08:10:10.019Z"
       },
       "treasury10y": {
         "key": "treasury10y",
@@ -90,7 +90,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DGS10",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
-        "fetchedAt": "2026-07-29T07:12:04.733Z"
+        "fetchedAt": "2026-07-29T08:10:09.799Z"
       },
       "treasury30y": {
         "key": "treasury30y",
@@ -105,7 +105,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DGS30",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS30",
-        "fetchedAt": "2026-07-29T07:12:04.823Z"
+        "fetchedAt": "2026-07-29T08:10:09.927Z"
       },
       "dollarBroad": {
         "key": "dollarBroad",
@@ -120,7 +120,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-07-29T07:12:04.517Z"
+        "fetchedAt": "2026-07-29T08:10:10.111Z"
       },
       "unemployment": {
         "key": "unemployment",
@@ -135,7 +135,7 @@
         "dataState": "observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-07-29T07:12:04.472Z"
+        "fetchedAt": "2026-07-29T08:10:09.738Z"
       },
       "cpi": {
         "key": "cpi",
@@ -150,7 +150,7 @@
         "dataState": "observed",
         "sourceId": "FRED_CPIAUCSL",
         "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCSL",
-        "fetchedAt": "2026-07-29T07:12:04.676Z",
+        "fetchedAt": "2026-07-29T08:10:09.736Z",
         "yoy": 3.463530729385411
       },
       "realGdp": {
@@ -166,7 +166,7 @@
         "dataState": "observed",
         "sourceId": "FRED_GDPC1",
         "sourceUrl": "https://fred.stlouisfed.org/series/GDPC1",
-        "fetchedAt": "2026-07-29T07:12:04.476Z",
+        "fetchedAt": "2026-07-29T08:10:09.969Z",
         "qoqAnnualized": 2.0891889857350465
       },
       "highYieldSpread": {
@@ -182,7 +182,67 @@
         "dataState": "observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-07-29T07:12:04.769Z"
+        "fetchedAt": "2026-07-29T08:10:09.794Z"
+      },
+      "sofr": {
+        "key": "sofr",
+        "id": "SOFR",
+        "label": "担保付翌日物調達金利",
+        "unit": "%",
+        "cadence": "日次",
+        "value": 3.64,
+        "observationDate": "2026-07-27",
+        "previousValue": 3.64,
+        "change": 0,
+        "dataState": "observed",
+        "sourceId": "FRED_SOFR",
+        "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
+        "fetchedAt": "2026-07-29T08:10:10.152Z"
+      },
+      "ciTighteningLarge": {
+        "key": "ciTighteningLarge",
+        "id": "DRTSCILM",
+        "label": "米銀行・大中堅企業向け融資基準厳格化",
+        "unit": "%",
+        "cadence": "四半期",
+        "value": 8.1,
+        "observationDate": "2026-04-01",
+        "previousValue": 5.3,
+        "change": 2.8,
+        "dataState": "observed",
+        "sourceId": "FRED_DRTSCILM",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
+        "fetchedAt": "2026-07-29T08:10:09.738Z"
+      },
+      "ciTighteningSmall": {
+        "key": "ciTighteningSmall",
+        "id": "DRTSCIS",
+        "label": "米銀行・中小企業向け融資基準厳格化",
+        "unit": "%",
+        "cadence": "四半期",
+        "value": 6.6,
+        "observationDate": "2026-04-01",
+        "previousValue": 8.9,
+        "change": -2.3000000000000007,
+        "dataState": "observed",
+        "sourceId": "FRED_DRTSCIS",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
+        "fetchedAt": "2026-07-29T08:10:09.737Z"
+      },
+      "businessLoanDelinquency": {
+        "key": "businessLoanDelinquency",
+        "id": "DRBLACBS",
+        "label": "米銀行・事業融資延滞率",
+        "unit": "%",
+        "cadence": "四半期",
+        "value": 1.34,
+        "observationDate": "2026-01-01",
+        "previousValue": 1.34,
+        "change": 0,
+        "dataState": "observed",
+        "sourceId": "FRED_DRBLACBS",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
+        "fetchedAt": "2026-07-29T08:10:09.737Z"
       },
       "wti": {
         "key": "wti",
@@ -197,7 +257,7 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DCOILWTICO",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
-        "fetchedAt": "2026-07-29T07:12:04.762Z"
+        "fetchedAt": "2026-07-29T08:10:10.077Z"
       },
       "brent": {
         "key": "brent",
@@ -212,7 +272,7 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DCOILBRENTEU",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
-        "fetchedAt": "2026-07-29T07:12:04.760Z"
+        "fetchedAt": "2026-07-29T08:10:09.826Z"
       },
       "vix": {
         "key": "vix",
@@ -227,7 +287,7 @@
         "dataState": "observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-07-29T07:12:04.500Z"
+        "fetchedAt": "2026-07-29T08:10:10.132Z"
       }
     },
     "treasuryDebt": {
@@ -239,7 +299,7 @@
       "dataState": "observed",
       "sourceId": "UST_DEBT_TO_PENNY",
       "sourceUrl": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
-      "fetchedAt": "2026-07-29T07:12:05.959Z"
+      "fetchedAt": "2026-07-29T08:10:11.327Z"
     },
     "yieldCurve": [
       {
@@ -3990,7 +4050,7 @@
   },
   "geopoliticalEvents": {
     "dataState": "observed_partial",
-    "verifiedAt": "2026-07-29T07:12:05.959Z",
+    "verifiedAt": "2026-07-29T08:10:11.328Z",
     "automatedFeeds": {
       "reliefWeb": {
         "dataState": "blocked_or_failed",
@@ -4247,6 +4307,357 @@
           "US_MARAD_2026_006"
         ],
         "businessRead": "沖縄近接の軍事活動、紅海航路、世界の高強度紛争を分離して重み付け。ニュース件数だけで危機認定しない。"
+      }
+    ]
+  },
+  "privateCredit": {
+    "dataState": "estimated",
+    "score": 51.4,
+    "state": "yellow",
+    "label": "警戒",
+    "conclusion": "即時のシステム危機とは断定しない。一方、デフォルト率の上昇、半流動型ファンドの解約超過、銀行・保険との連結、非公開評価の遅れが同時に進む局面を警戒する。",
+    "formula": "借り手30% + 解約・流動性25% + 銀行連結20% + 公開市場代理15% + 不透明性10%。0–100の実験的監視指数で、損失確率ではない。",
+    "warning": "プライベートクレジットには統一定義と網羅的な公的統計がない。標本値・旧実測・推定を明示し、欠損を0にしない。",
+    "components": [
+      {
+        "key": "borrower",
+        "label": "借り手返済力",
+        "score": 37.1,
+        "state": "yellow",
+        "dataState": "estimated",
+        "sourceIds": [
+          "PROSKAUER_PC_DEFAULT_Q1_2026",
+          "FRED_SOFR",
+          "FRED_DRBLACBS"
+        ],
+        "read": "変動金利負担、デフォルト、銀行事業融資延滞を同時監視。"
+      },
+      {
+        "key": "liquidity",
+        "label": "解約・流動性",
+        "score": 75,
+        "state": "red",
+        "dataState": "estimated",
+        "sourceIds": [
+          "WITH_INTELLIGENCE_BDC_Q1_2026",
+          "FRB_FSR_2026_PC"
+        ],
+        "read": "解約請求と5%前後の上限、実行比率、半流動型商品の比率を監視。"
+      },
+      {
+        "key": "interconnection",
+        "label": "銀行・保険連結",
+        "score": 52.4,
+        "state": "yellow",
+        "dataState": "estimated",
+        "sourceIds": [
+          "FSB_PRIVATE_CREDIT_2026"
+        ],
+        "read": "ファンド融資、リボルバー、保険会社保有、SRTの重なりを監視。"
+      },
+      {
+        "key": "market",
+        "label": "公開市場代理",
+        "score": 23.5,
+        "state": "green",
+        "dataState": "estimated",
+        "sourceIds": [
+          "FRED_BAMLH0A0HYM2",
+          "FRED_VIXCLS",
+          "FRED_DRTSCIS"
+        ],
+        "read": "HYスプレッド、VIX、銀行融資基準は非公開ローンに先行・遅行する代理指標。"
+      },
+      {
+        "key": "opacity",
+        "label": "評価・情報不透明性",
+        "score": 75,
+        "state": "red",
+        "dataState": "strategic_interpretation",
+        "sourceIds": [
+          "FSB_PRIVATE_CREDIT_2026"
+        ],
+        "read": "評価頻度、PIK、非発生化、EBITDA調整、ファンド間重複の開示不足を固定監視。"
+      }
+    ],
+    "regionImpacts": [
+      {
+        "region": "米国経済",
+        "score": 65.7,
+        "state": "yellow",
+        "dataState": "estimated",
+        "channels": [
+          "中堅企業の借換え",
+          "雇用・設備投資",
+          "BDC解約",
+          "銀行信用枠"
+        ]
+      },
+      {
+        "region": "世界経済",
+        "score": 53.4,
+        "state": "yellow",
+        "dataState": "estimated",
+        "channels": [
+          "銀行・保険・年金",
+          "クロスボーダー資金",
+          "ドル建て借入",
+          "リスクオフ"
+        ]
+      },
+      {
+        "region": "日本経済",
+        "score": 43.1,
+        "state": "yellow",
+        "dataState": "estimated",
+        "channels": [
+          "邦銀海外与信",
+          "機関投資家",
+          "ドル調達",
+          "JGB流動性"
+        ]
+      },
+      {
+        "region": "沖縄・koya",
+        "score": 30.3,
+        "state": "green",
+        "dataState": "estimated",
+        "channels": [
+          "ドル円",
+          "米軍家族所得心理",
+          "輸入・資金調達費",
+          "予約・LTV"
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "id": "FSB_PC_GLOBAL_LOW",
+        "label": "世界プライベートクレジット残高・下限",
+        "value": 1.5,
+        "unit": "兆ドル",
+        "observationDate": "2024-12-31",
+        "dataState": "stale_observed",
+        "sourceId": "FSB_PRIVATE_CREDIT_2026",
+        "sourceUrl": "https://www.fsb.org/2026/05/report-on-vulnerabilities-in-private-credit/"
+      },
+      {
+        "id": "FSB_PC_GLOBAL_HIGH",
+        "label": "世界プライベートクレジット残高・上限",
+        "value": 2,
+        "unit": "兆ドル",
+        "observationDate": "2024-12-31",
+        "dataState": "stale_observed",
+        "sourceId": "FSB_PRIVATE_CREDIT_2026",
+        "sourceUrl": "https://www.fsb.org/2026/05/report-on-vulnerabilities-in-private-credit/"
+      },
+      {
+        "id": "FRB_PC_US_MARKET",
+        "label": "米国プライベートクレジット残高",
+        "value": 1.4,
+        "unit": "兆ドル",
+        "observationDate": "2025-09-30",
+        "dataState": "observed_partial",
+        "sourceId": "FRB_FSR_2026_PC",
+        "sourceUrl": "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-funding-risks.htm"
+      },
+      {
+        "id": "FRB_PC_US_CORP_SHARE",
+        "label": "米非金融法人債務に占める比率",
+        "value": 10,
+        "unit": "%",
+        "observationDate": "2025-09-30",
+        "dataState": "observed_partial",
+        "sourceId": "FRB_FSR_2026_PC",
+        "sourceUrl": "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-funding-risks.htm"
+      },
+      {
+        "id": "FRB_PC_US_SUBIG_SHARE",
+        "label": "投資適格未満債務に占める比率",
+        "value": 33.3,
+        "unit": "%",
+        "observationDate": "2025-09-30",
+        "dataState": "observed_partial",
+        "sourceId": "FRB_FSR_2026_PC",
+        "sourceUrl": "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-funding-risks.htm"
+      },
+      {
+        "id": "FRB_PC_SEMILIQUID_GROSS",
+        "label": "半流動型PCファンド総資産",
+        "value": 425,
+        "unit": "10億ドル",
+        "observationDate": "2026-03-31",
+        "dataState": "observed_partial",
+        "sourceId": "FRB_FSR_2026_PC",
+        "sourceUrl": "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-funding-risks.htm"
+      },
+      {
+        "id": "FRB_PC_SEMILIQUID_SHARE",
+        "label": "PC純資産に占める半流動型比率",
+        "value": 20,
+        "unit": "%",
+        "observationDate": "2026-03-31",
+        "dataState": "observed_partial",
+        "sourceId": "FRB_FSR_2026_PC",
+        "sourceUrl": "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-funding-risks.htm"
+      },
+      {
+        "id": "FSB_PC_BANK_LINES",
+        "label": "当局把握の銀行信用枠・引出済＋未使用",
+        "value": 220,
+        "unit": "10億ドル",
+        "observationDate": "2024-12-31",
+        "dataState": "stale_observed",
+        "sourceId": "FSB_PRIVATE_CREDIT_2026",
+        "sourceUrl": "https://www.fsb.org/uploads/P060526.pdf"
+      },
+      {
+        "id": "PROSKAUER_PC_DEFAULT",
+        "label": "米ダイレクトレンディング・デフォルト率",
+        "value": 2.73,
+        "unit": "%",
+        "observationDate": "2026-03-31",
+        "dataState": "observed_partial",
+        "sourceId": "PROSKAUER_PC_DEFAULT_Q1_2026",
+        "sourceUrl": "https://www.proskauer.com/report/proskauers-private-credit-default-index-reveals-rate-of-273-for-q1-2026",
+        "sample": "697件・元本1,892億ドル"
+      },
+      {
+        "id": "WI_PC_REDEMPTION",
+        "label": "非上場BDC解約請求・標本平均",
+        "value": 12.1,
+        "unit": "純資産比%",
+        "observationDate": "2026-03-31",
+        "dataState": "observed_partial",
+        "sourceId": "WITH_INTELLIGENCE_BDC_Q1_2026",
+        "sourceUrl": "https://www.withintelligence.com/insights/what-is-actually-going-on-in-bdc-portfolios/",
+        "sample": "大手12ファンド・非上場BDC資産の80%超"
+      },
+      {
+        "id": "WI_PC_REDEMPTION_FULFILLED",
+        "label": "解約請求に対する実行比率・標本",
+        "value": 53.4,
+        "unit": "%",
+        "observationDate": "2026-03-31",
+        "dataState": "observed_partial",
+        "sourceId": "WITH_INTELLIGENCE_BDC_Q1_2026",
+        "sourceUrl": "https://www.withintelligence.com/insights/what-is-actually-going-on-in-bdc-portfolios/",
+        "sample": "大手12ファンド"
+      },
+      {
+        "key": "sofr",
+        "id": "SOFR",
+        "label": "担保付翌日物調達金利",
+        "unit": "%",
+        "cadence": "日次",
+        "value": 3.64,
+        "observationDate": "2026-07-27",
+        "previousValue": 3.64,
+        "change": 0,
+        "dataState": "observed",
+        "sourceId": "FRED_SOFR",
+        "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
+        "fetchedAt": "2026-07-29T08:10:10.152Z"
+      },
+      {
+        "key": "ciTighteningLarge",
+        "id": "DRTSCILM",
+        "label": "米銀行・大中堅企業向け融資基準厳格化",
+        "unit": "%",
+        "cadence": "四半期",
+        "value": 8.1,
+        "observationDate": "2026-04-01",
+        "previousValue": 5.3,
+        "change": 2.8,
+        "dataState": "observed",
+        "sourceId": "FRED_DRTSCILM",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
+        "fetchedAt": "2026-07-29T08:10:09.738Z"
+      },
+      {
+        "key": "ciTighteningSmall",
+        "id": "DRTSCIS",
+        "label": "米銀行・中小企業向け融資基準厳格化",
+        "unit": "%",
+        "cadence": "四半期",
+        "value": 6.6,
+        "observationDate": "2026-04-01",
+        "previousValue": 8.9,
+        "change": -2.3000000000000007,
+        "dataState": "observed",
+        "sourceId": "FRED_DRTSCIS",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
+        "fetchedAt": "2026-07-29T08:10:09.737Z"
+      },
+      {
+        "key": "businessLoanDelinquency",
+        "id": "DRBLACBS",
+        "label": "米銀行・事業融資延滞率",
+        "unit": "%",
+        "cadence": "四半期",
+        "value": 1.34,
+        "observationDate": "2026-01-01",
+        "previousValue": 1.34,
+        "change": 0,
+        "dataState": "observed",
+        "sourceId": "FRED_DRBLACBS",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
+        "fetchedAt": "2026-07-29T08:10:09.737Z"
+      }
+    ],
+    "monitoring": [
+      {
+        "cadence": "日次",
+        "indicators": [
+          "SOFR",
+          "HY OAS",
+          "VIX",
+          "BDC株価/NAV代理"
+        ],
+        "sources": [
+          "FRED",
+          "公開市場"
+        ]
+      },
+      {
+        "cadence": "週次",
+        "indicators": [
+          "BDC解約・ゲート",
+          "8-K/臨時開示",
+          "大型デフォルト"
+        ],
+        "sources": [
+          "SEC EDGAR",
+          "運用会社開示"
+        ]
+      },
+      {
+        "cadence": "四半期",
+        "indicators": [
+          "デフォルト",
+          "PIK比率",
+          "非発生化",
+          "NAV",
+          "銀行信用枠"
+        ],
+        "sources": [
+          "10-Q/N-PORT",
+          "Proskauer",
+          "FRB"
+        ]
+      },
+      {
+        "cadence": "半期",
+        "indicators": [
+          "世界市場規模",
+          "銀行・保険連結",
+          "日本の海外ファンド与信"
+        ],
+        "sources": [
+          "FSB/IMF",
+          "日銀",
+          "金融庁"
+        ]
       }
     ]
   },
