@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-07-25T00:26:00.818Z",
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-29T07:12:05.959Z",
   "dashboardTimeZone": "Asia/Tokyo",
   "fxAudit": {
     "isRealtime": false,
@@ -12,14 +12,14 @@
       "label": "ドル円・米国連邦準備制度公表値",
       "unit": "円/ドル",
       "cadence": "日次",
-      "value": 162.43,
-      "observationDate": "2026-07-17",
-      "previousValue": 162.42,
-      "change": 0.010000000000019327,
-      "dataState": "stale_observed",
+      "value": 163.71,
+      "observationDate": "2026-07-24",
+      "previousValue": 163.8,
+      "change": -0.09000000000000341,
+      "dataState": "observed",
       "sourceId": "FRED_DEXJPUS",
       "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-      "fetchedAt": "2026-07-25T00:25:59.476Z"
+      "fetchedAt": "2026-07-29T07:12:04.770Z"
     },
     "realtimeProvider": {
       "state": "unknown",
@@ -38,14 +38,14 @@
         "label": "ドル円・米国連邦準備制度公表値",
         "unit": "円/ドル",
         "cadence": "日次",
-        "value": 162.43,
-        "observationDate": "2026-07-17",
-        "previousValue": 162.42,
-        "change": 0.010000000000019327,
-        "dataState": "stale_observed",
+        "value": 163.71,
+        "observationDate": "2026-07-24",
+        "previousValue": 163.8,
+        "change": -0.09000000000000341,
+        "dataState": "observed",
         "sourceId": "FRED_DEXJPUS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-        "fetchedAt": "2026-07-25T00:25:59.476Z"
+        "fetchedAt": "2026-07-29T07:12:04.770Z"
       },
       "fedFunds": {
         "key": "fedFunds",
@@ -54,13 +54,13 @@
         "unit": "%",
         "cadence": "日次",
         "value": 3.63,
-        "observationDate": "2026-07-23",
+        "observationDate": "2026-07-27",
         "previousValue": 3.63,
         "change": 0,
         "dataState": "observed",
         "sourceId": "FRED_DFF",
         "sourceUrl": "https://fred.stlouisfed.org/series/DFF",
-        "fetchedAt": "2026-07-25T00:25:59.457Z"
+        "fetchedAt": "2026-07-29T07:12:04.471Z"
       },
       "treasury2y": {
         "key": "treasury2y",
@@ -68,14 +68,14 @@
         "label": "米国債2年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 4.37,
-        "observationDate": "2026-07-23",
-        "previousValue": 4.31,
-        "change": 0.0600000000000005,
+        "value": 4.31,
+        "observationDate": "2026-07-27",
+        "previousValue": 4.33,
+        "change": -0.020000000000000462,
         "dataState": "observed",
         "sourceId": "FRED_DGS2",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS2",
-        "fetchedAt": "2026-07-25T00:25:59.457Z"
+        "fetchedAt": "2026-07-29T07:12:04.493Z"
       },
       "treasury10y": {
         "key": "treasury10y",
@@ -83,14 +83,14 @@
         "label": "米国債10年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 4.71,
-        "observationDate": "2026-07-23",
-        "previousValue": 4.67,
-        "change": 0.040000000000000036,
+        "value": 4.65,
+        "observationDate": "2026-07-27",
+        "previousValue": 4.69,
+        "change": -0.040000000000000036,
         "dataState": "observed",
         "sourceId": "FRED_DGS10",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
-        "fetchedAt": "2026-07-25T00:25:59.460Z"
+        "fetchedAt": "2026-07-29T07:12:04.733Z"
       },
       "treasury30y": {
         "key": "treasury30y",
@@ -98,14 +98,14 @@
         "label": "米国債30年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 5.17,
-        "observationDate": "2026-07-23",
-        "previousValue": 5.15,
-        "change": 0.019999999999999574,
+        "value": 5.12,
+        "observationDate": "2026-07-27",
+        "previousValue": 5.16,
+        "change": -0.040000000000000036,
         "dataState": "observed",
         "sourceId": "FRED_DGS30",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS30",
-        "fetchedAt": "2026-07-25T00:25:59.461Z"
+        "fetchedAt": "2026-07-29T07:12:04.823Z"
       },
       "dollarBroad": {
         "key": "dollarBroad",
@@ -113,14 +113,14 @@
         "label": "名目実効ドル指数・広義",
         "unit": "指数",
         "cadence": "日次",
-        "value": 120.5315,
-        "observationDate": "2026-07-17",
-        "previousValue": 120.331,
-        "change": 0.20049999999999102,
-        "dataState": "stale_observed",
+        "value": 120.7105,
+        "observationDate": "2026-07-24",
+        "previousValue": 120.9075,
+        "change": -0.19700000000000273,
+        "dataState": "observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-07-25T00:25:59.471Z"
+        "fetchedAt": "2026-07-29T07:12:04.517Z"
       },
       "unemployment": {
         "key": "unemployment",
@@ -135,7 +135,7 @@
         "dataState": "observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-07-25T00:25:59.462Z"
+        "fetchedAt": "2026-07-29T07:12:04.472Z"
       },
       "cpi": {
         "key": "cpi",
@@ -150,7 +150,7 @@
         "dataState": "observed",
         "sourceId": "FRED_CPIAUCSL",
         "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCSL",
-        "fetchedAt": "2026-07-25T00:25:59.455Z",
+        "fetchedAt": "2026-07-29T07:12:04.676Z",
         "yoy": 3.463530729385411
       },
       "realGdp": {
@@ -163,10 +163,10 @@
         "observationDate": "2026-01-01",
         "previousValue": 24055.749,
         "change": 124.67000000000189,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_GDPC1",
         "sourceUrl": "https://fred.stlouisfed.org/series/GDPC1",
-        "fetchedAt": "2026-07-25T00:25:59.482Z",
+        "fetchedAt": "2026-07-29T07:12:04.476Z",
         "qoqAnnualized": 2.0891889857350465
       },
       "highYieldSpread": {
@@ -175,42 +175,87 @@
         "label": "米国ハイイールド債スプレッド",
         "unit": "%",
         "cadence": "日次",
-        "value": 2.77,
-        "observationDate": "2026-07-23",
-        "previousValue": 2.68,
-        "change": 0.08999999999999986,
+        "value": 2.81,
+        "observationDate": "2026-07-27",
+        "previousValue": 2.79,
+        "change": 0.020000000000000018,
         "dataState": "observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-07-25T00:25:59.472Z"
+        "fetchedAt": "2026-07-29T07:12:04.769Z"
+      },
+      "wti": {
+        "key": "wti",
+        "id": "DCOILWTICO",
+        "label": "WTI原油スポット価格",
+        "unit": "ドル/バレル",
+        "cadence": "日次",
+        "value": 84.38,
+        "observationDate": "2026-07-20",
+        "previousValue": 83.43,
+        "change": 0.9499999999999886,
+        "dataState": "stale_observed",
+        "sourceId": "FRED_DCOILWTICO",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
+        "fetchedAt": "2026-07-29T07:12:04.762Z"
+      },
+      "brent": {
+        "key": "brent",
+        "id": "DCOILBRENTEU",
+        "label": "ブレント原油スポット価格",
+        "unit": "ドル/バレル",
+        "cadence": "日次",
+        "value": 86.99,
+        "observationDate": "2026-07-20",
+        "previousValue": 85.01,
+        "change": 1.9799999999999898,
+        "dataState": "stale_observed",
+        "sourceId": "FRED_DCOILBRENTEU",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
+        "fetchedAt": "2026-07-29T07:12:04.760Z"
+      },
+      "vix": {
+        "key": "vix",
+        "id": "VIXCLS",
+        "label": "VIX市場不安指数",
+        "unit": "指数",
+        "cadence": "日次",
+        "value": 18.67,
+        "observationDate": "2026-07-27",
+        "previousValue": 18.58,
+        "change": 0.09000000000000341,
+        "dataState": "observed",
+        "sourceId": "FRED_VIXCLS",
+        "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
+        "fetchedAt": "2026-07-29T07:12:04.500Z"
       }
     },
     "treasuryDebt": {
       "key": "federalDebt",
       "label": "米国連邦債務残高",
-      "value": 39676938407949.77,
+      "value": 39713964053447.11,
       "unit": "ドル",
-      "observationDate": "2026-07-23",
+      "observationDate": "2026-07-27",
       "dataState": "observed",
       "sourceId": "UST_DEBT_TO_PENNY",
       "sourceUrl": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
-      "fetchedAt": "2026-07-25T00:26:00.818Z"
+      "fetchedAt": "2026-07-29T07:12:05.959Z"
     },
     "yieldCurve": [
       {
         "tenor": "2年",
-        "value": 4.37,
-        "date": "2026-07-23"
+        "value": 4.31,
+        "date": "2026-07-27"
       },
       {
         "tenor": "10年",
-        "value": 4.71,
-        "date": "2026-07-23"
+        "value": 4.65,
+        "date": "2026-07-27"
       },
       {
         "tenor": "30年",
-        "value": 5.17,
-        "date": "2026-07-23"
+        "value": 5.12,
+        "date": "2026-07-27"
       }
     ]
   },
@@ -223,13 +268,19 @@
     "methodology": {
       "economy": "緑=実質GDP成長率2.5%以上、黄=0%以上2.5%未満、赤=0%未満",
       "politics": "緑=WGI政治安定性スコア60以上、黄=35以上60未満、赤=35未満",
-      "combined": "経済または政治が赤なら赤、赤がなく黄を含めば黄、双方緑なら緑"
+      "combined": "経済または政治が赤なら赤、赤がなく黄を含めば黄、双方緑なら緑",
+      "conflict": "推定圧力=WGI構造圧力と現在確認できた公的紛争・軍事シグナルの高い方。70以上=赤、35以上=黄、35未満=緑。緑は安全宣言ではなく、監視上の圧力が相対的に低い状態"
     },
     "counts": {
       "green": 73,
       "unknown": 15,
       "red": 27,
       "yellow": 101
+    },
+    "conflictCounts": {
+      "green": 186,
+      "yellow": 24,
+      "red": 6
     },
     "countries": [
       {
@@ -241,6 +292,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 6.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -252,6 +309,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 4.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -263,6 +326,12 @@
         "economyState": "yellow",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 39.5,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -274,6 +343,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 24.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -285,6 +360,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 5.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -296,6 +377,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 18.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -307,6 +394,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 12.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -318,6 +411,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 11.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -329,6 +428,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 20.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -340,6 +445,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 25.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -351,6 +462,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -362,6 +479,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 8.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -373,6 +496,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 11.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -384,6 +513,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 14.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -395,6 +530,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 20.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -406,6 +547,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 31.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -417,6 +564,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 17.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -428,6 +581,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 22.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -439,6 +598,12 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 36.7,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -450,6 +615,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 32.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -461,6 +632,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 18.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -472,6 +649,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 21.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -483,6 +666,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 8.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -494,6 +683,12 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 23.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -505,6 +700,12 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 22.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -516,6 +717,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 11.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -527,6 +734,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 9.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -538,6 +751,12 @@
         "economyState": "red",
         "politicsState": "yellow",
         "combinedState": "red",
+        "conflictPressure": 23.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -549,6 +768,12 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 23.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -560,6 +785,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 6.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -571,6 +802,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 7.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -582,6 +819,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -593,6 +836,12 @@
         "economyState": "red",
         "politicsState": "green",
         "combinedState": "red",
+        "conflictPressure": 9.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -604,6 +853,14 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 58,
+        "conflictState": "yellow",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-14",
+        "eventIds": [
+          "SUDAN_2026_07_14"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -615,6 +872,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 13.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -626,6 +889,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 9.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -637,6 +906,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 17.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -648,6 +923,14 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 52,
+        "conflictState": "yellow",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-21",
+        "eventIds": [
+          "INDO_PACIFIC_2026_07_21"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -659,6 +942,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 26.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -670,6 +959,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 33.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -681,6 +976,12 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 38.7,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -692,6 +993,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 21.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -703,6 +1010,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 7.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -714,6 +1027,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 27.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -725,6 +1044,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 20.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -736,6 +1061,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 11.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -747,6 +1078,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 7.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -758,6 +1095,12 @@
         "economyState": "red",
         "politicsState": "green",
         "combinedState": "red",
+        "conflictPressure": 15.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -769,6 +1112,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -780,6 +1129,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 15.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -791,6 +1146,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 9.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -802,6 +1163,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 17.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -813,6 +1180,14 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 48,
+        "conflictState": "yellow",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": null,
+        "eventIds": [
+          "RED_SEA_MARAD_2026_006"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -824,6 +1199,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 7.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -835,6 +1216,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 11.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -846,6 +1233,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 13.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -857,6 +1250,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 25.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -868,6 +1267,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 25.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -879,6 +1284,14 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 45,
+        "conflictState": "yellow",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": null,
+        "eventIds": [
+          "RED_SEA_MARAD_2026_006"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -890,6 +1303,14 @@
         "economyState": "unknown",
         "politicsState": "yellow",
         "combinedState": "unknown",
+        "conflictPressure": 48,
+        "conflictState": "yellow",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": null,
+        "eventIds": [
+          "RED_SEA_MARAD_2026_006"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -901,6 +1322,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 18.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -912,6 +1339,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 12.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -923,6 +1356,12 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 36.5,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -934,6 +1373,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 10.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -945,6 +1390,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 12.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -956,6 +1407,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 21,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -967,6 +1424,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 4.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -978,6 +1441,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 21.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -989,6 +1458,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 16.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1000,6 +1475,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 24.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1011,6 +1492,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 18.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1022,6 +1509,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 28.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1033,6 +1526,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 18.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1044,6 +1543,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 24.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1055,6 +1560,12 @@
         "economyState": "red",
         "politicsState": "green",
         "combinedState": "red",
+        "conflictPressure": 20.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1066,6 +1577,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 17.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1077,6 +1594,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 7.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1088,6 +1611,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 7.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1099,6 +1628,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 20.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1110,6 +1645,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 14.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1121,6 +1662,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 9.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1132,6 +1679,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 16.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1143,6 +1696,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 12.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1154,6 +1713,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 24.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1165,6 +1730,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 13.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1176,6 +1747,12 @@
         "economyState": "red",
         "politicsState": "yellow",
         "combinedState": "red",
+        "conflictPressure": 30,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1187,6 +1764,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 14.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1198,6 +1781,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 24.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1209,6 +1798,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 26.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1220,6 +1815,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 12.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1231,6 +1832,12 @@
         "economyState": "red",
         "politicsState": "yellow",
         "combinedState": "red",
+        "conflictPressure": 33.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1242,6 +1849,12 @@
         "economyState": "red",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 38.2,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1253,6 +1866,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 7.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1264,6 +1883,14 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 78,
+        "conflictState": "red",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-23",
+        "eventIds": [
+          "OPT_2026_07_23"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -1275,6 +1902,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 15.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1286,6 +1919,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 14.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1297,6 +1936,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 5.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1308,6 +1953,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 22,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1319,6 +1970,14 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 66,
+        "conflictState": "yellow",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-21",
+        "eventIds": [
+          "INDO_PACIFIC_2026_07_21"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -1330,6 +1989,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 21.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1341,6 +2006,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 31.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1352,6 +2023,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 23.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1363,6 +2040,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 17.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1374,6 +2057,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 7.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1385,6 +2074,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 10.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1396,6 +2091,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 12.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1407,6 +2108,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 16,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1418,6 +2125,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 13.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1429,6 +2142,12 @@
         "economyState": "red",
         "politicsState": "yellow",
         "combinedState": "red",
+        "conflictPressure": 31.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1440,6 +2159,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 20.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1451,6 +2176,12 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 36.6,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1462,6 +2193,12 @@
         "economyState": "red",
         "politicsState": "green",
         "combinedState": "red",
+        "conflictPressure": 9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1473,6 +2210,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 3.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1484,6 +2227,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 22,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1495,6 +2244,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 21.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1506,6 +2261,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 9.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1517,6 +2278,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 8.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1528,6 +2295,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 12.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1539,6 +2312,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 8.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1550,6 +2329,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 22.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1561,6 +2346,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 7.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1572,6 +2363,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 22,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1583,6 +2380,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 23.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1594,6 +2397,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 19.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1605,6 +2414,12 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 25.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1616,6 +2431,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 6.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1627,6 +2448,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 17.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1638,6 +2465,12 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 42.2,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1649,6 +2482,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 11.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1660,6 +2499,12 @@
         "economyState": "red",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 38.4,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1671,6 +2516,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 15.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1682,6 +2533,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 14.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1693,6 +2550,12 @@
         "economyState": "red",
         "politicsState": "yellow",
         "combinedState": "red",
+        "conflictPressure": 35.3,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1704,6 +2567,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 24,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1715,6 +2584,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 17.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1726,6 +2601,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 11.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1737,6 +2618,12 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 22.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1748,6 +2635,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 15.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1759,6 +2652,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 13.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1770,6 +2669,12 @@
         "economyState": "red",
         "politicsState": "green",
         "combinedState": "red",
+        "conflictPressure": 8.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1781,6 +2686,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 35.3,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1792,6 +2703,12 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 37.6,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1803,6 +2720,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 19.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1814,6 +2737,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 5.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1825,6 +2754,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 14.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1836,6 +2771,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 10.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1847,6 +2788,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 22.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1858,6 +2805,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 8.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1869,6 +2822,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 7.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1880,6 +2839,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 12.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1891,6 +2856,12 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 38.1,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1902,6 +2873,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 16.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1913,6 +2890,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 24.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1924,6 +2907,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 26,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1935,6 +2924,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 7.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1946,6 +2941,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 24.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1957,6 +2958,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 14.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1968,6 +2975,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 14.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1979,6 +2992,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 15.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -1990,6 +3009,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 13.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2001,6 +3026,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 19.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2012,6 +3043,14 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 95,
+        "conflictState": "red",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-23",
+        "eventIds": [
+          "OPT_2026_07_23"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -2023,6 +3062,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 9.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2034,6 +3079,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 9.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2045,6 +3096,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 18.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2056,6 +3113,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 17.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2067,6 +3130,15 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 78,
+        "conflictState": "red",
+        "conflictDataState": "observed_partial",
+        "eventCount": 2,
+        "latestEventDate": "2026-07-27",
+        "eventIds": [
+          "INDO_PACIFIC_2026_07_21",
+          "UKRAINE_2026_07_27"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -2078,6 +3150,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 19.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2089,6 +3167,14 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 45,
+        "conflictState": "yellow",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": null,
+        "eventIds": [
+          "RED_SEA_MARAD_2026_006"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -2100,6 +3186,14 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 90,
+        "conflictState": "red",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-14",
+        "eventIds": [
+          "SUDAN_2026_07_14"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -2111,6 +3205,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 20.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2122,6 +3222,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 7.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2133,6 +3239,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 11.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2144,6 +3256,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 23,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2155,6 +3273,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 18.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2166,6 +3290,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 5.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2177,6 +3307,12 @@
         "economyState": "green",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 40,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2188,6 +3324,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 20.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2199,6 +3341,14 @@
         "economyState": "unknown",
         "politicsState": "yellow",
         "combinedState": "unknown",
+        "conflictPressure": 82,
+        "conflictState": "red",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-10",
+        "eventIds": [
+          "SOUTH_SUDAN_2026_07_10"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -2210,6 +3360,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 14.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2221,6 +3377,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 14.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2232,6 +3394,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 12.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2243,6 +3411,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 12,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2254,6 +3428,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 13.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2265,6 +3445,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 25.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2276,6 +3462,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 10.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2287,6 +3479,12 @@
         "economyState": "red",
         "politicsState": "red",
         "combinedState": "red",
+        "conflictPressure": 41,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2298,6 +3496,14 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 55,
+        "conflictState": "yellow",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-14",
+        "eventIds": [
+          "SUDAN_2026_07_14"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -2309,6 +3515,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 26.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2320,6 +3532,12 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 25.2,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2331,6 +3549,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 21.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2342,6 +3566,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 16.5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2353,6 +3583,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 13.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2364,6 +3600,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2375,6 +3617,12 @@
         "economyState": "red",
         "politicsState": "green",
         "combinedState": "red",
+        "conflictPressure": 15.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2386,6 +3634,12 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 27.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2397,6 +3651,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 27.9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2408,6 +3668,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 5,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2419,6 +3685,12 @@
         "economyState": "unknown",
         "politicsState": "green",
         "combinedState": "unknown",
+        "conflictPressure": 10.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2430,6 +3702,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 22.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2441,6 +3719,12 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 28.4,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2452,6 +3736,14 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 92,
+        "conflictState": "red",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-27",
+        "eventIds": [
+          "UKRAINE_2026_07_27"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -2463,6 +3755,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 6.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2474,6 +3772,12 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
+        "conflictPressure": 19.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2485,6 +3789,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 19,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2496,6 +3806,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 9,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2507,6 +3823,12 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 35.1,
+        "conflictState": "yellow",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2518,6 +3840,12 @@
         "economyState": "red",
         "politicsState": "green",
         "combinedState": "red",
+        "conflictPressure": 9.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2529,6 +3857,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 18.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2540,6 +3874,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 9.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2551,6 +3891,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 7.1,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2562,6 +3908,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 21.8,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2573,6 +3925,14 @@
         "economyState": "unknown",
         "politicsState": "red",
         "combinedState": "unknown",
+        "conflictPressure": 68,
+        "conflictState": "yellow",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": null,
+        "eventIds": [
+          "RED_SEA_MARAD_2026_006"
+        ],
         "dataState": "observed_partial"
       },
       {
@@ -2584,6 +3944,12 @@
         "economyState": "yellow",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 24.6,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2595,6 +3961,12 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
+        "conflictPressure": 19.7,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
       },
       {
@@ -2606,13 +3978,281 @@
         "economyState": "green",
         "politicsState": "yellow",
         "combinedState": "yellow",
+        "conflictPressure": 28.3,
+        "conflictState": "green",
+        "conflictDataState": "estimated",
+        "eventCount": 0,
+        "latestEventDate": null,
+        "eventIds": [],
         "dataState": "observed_partial"
+      }
+    ]
+  },
+  "geopoliticalEvents": {
+    "dataState": "observed_partial",
+    "verifiedAt": "2026-07-29T07:12:05.959Z",
+    "automatedFeeds": {
+      "reliefWeb": {
+        "dataState": "blocked_or_failed",
+        "note": "ReliefWeb APIは2025年11月以降、事前承認済みappnameが必須。公開ページと国連一次情報で代替確認"
+      },
+      "gdelt": {
+        "dataState": "blocked_or_failed",
+        "note": "共有実行環境のレート制限により今回の自動取得は不成立。ニュース量だけの危機判定は行わない"
+      }
+    },
+    "events": [
+      {
+        "id": "INDO_PACIFIC_2026_07_21",
+        "title": "沖縄南方・日本周辺で中露海軍の共同航行と射撃訓練",
+        "region": "東アジア・西太平洋",
+        "observationDate": "2026-07-21",
+        "severity": 66,
+        "state": "yellow",
+        "dataState": "observed_partial",
+        "countries": [
+          {
+            "iso3": "JPN",
+            "severity": 66
+          },
+          {
+            "iso3": "CHN",
+            "severity": 52
+          },
+          {
+            "iso3": "RUS",
+            "severity": 52
+          }
+        ],
+        "sourceId": "JMOD_2026_0721",
+        "sourceUrl": "https://www.mod.go.jp/j/press/kisha/2026/0721a_r.html",
+        "summary": "防衛省は沖ノ鳥島南西で中露艦艇4隻を確認し、中国海軍艦艇が日本のEEZ内で射撃訓練を行ったと公表。沖縄の物流・観光・基地運用・心理に近接する監視シグナル。",
+        "lifeImpactChannels": [
+          "海上輸送",
+          "観光心理",
+          "基地運用",
+          "燃料・保険"
+        ]
+      },
+      {
+        "id": "UKRAINE_2026_07_27",
+        "title": "ウクライナ各地への大規模攻撃を受け国連安保理が緊急協議",
+        "region": "欧州",
+        "observationDate": "2026-07-27",
+        "severity": 92,
+        "state": "red",
+        "dataState": "observed_partial",
+        "countries": [
+          {
+            "iso3": "UKR",
+            "severity": 92
+          },
+          {
+            "iso3": "RUS",
+            "severity": 78
+          }
+        ],
+        "sourceId": "UNSC_UKRAINE_2026_07_27",
+        "sourceUrl": "https://www.un.org/en/security-council-live-briefing-ukraine-deadly-russian-strikes-hit-cities-and-ports",
+        "summary": "国連安保理はキーウなどへの大規模攻撃を受け協議。エネルギー・穀物・欧州財政・安全資産需要を通じて世界の生活コストへ波及し得る。",
+        "lifeImpactChannels": [
+          "穀物",
+          "エネルギー",
+          "欧州財政",
+          "安全資産"
+        ]
+      },
+      {
+        "id": "OPT_2026_07_23",
+        "title": "ガザで軍事活動・反復避難・生活基盤の毀損が継続",
+        "region": "中東",
+        "observationDate": "2026-07-23",
+        "severity": 95,
+        "state": "red",
+        "dataState": "observed_partial",
+        "countries": [
+          {
+            "iso3": "PSE",
+            "severity": 95
+          },
+          {
+            "iso3": "ISR",
+            "severity": 78
+          }
+        ],
+        "sourceId": "OCHA_OPT_2026_07_23",
+        "sourceUrl": "https://www.ochaopt.org/content/humanitarian-situation-report-23-july-2026",
+        "summary": "国連OCHAは軍事活動、反復避難、食料・医療・水への制約を報告。中東のエスカレーションは原油、海上輸送、保険料、家計物価へ伝播する。",
+        "lifeImpactChannels": [
+          "原油",
+          "海運",
+          "保険",
+          "食料・医療"
+        ]
+      },
+      {
+        "id": "SUDAN_2026_07_14",
+        "title": "スーダンでドローン攻撃と感染症が生活インフラを圧迫",
+        "region": "東アフリカ",
+        "observationDate": "2026-07-14",
+        "severity": 90,
+        "state": "red",
+        "dataState": "observed_partial",
+        "countries": [
+          {
+            "iso3": "SDN",
+            "severity": 90
+          },
+          {
+            "iso3": "TCD",
+            "severity": 55
+          },
+          {
+            "iso3": "CAF",
+            "severity": 58
+          }
+        ],
+        "sourceId": "UN_SG_SUDAN_2026_07_14",
+        "sourceUrl": "https://www.un.org/sg/en/content/highlight/2026-07-14.html",
+        "summary": "国連はダルフール・コルドファンでのドローン攻撃とコレラ拡大を報告。水・燃料・医療・物流が同時に傷む生活波及型の危機。",
+        "lifeImpactChannels": [
+          "水",
+          "燃料",
+          "医療",
+          "地域物流"
+        ]
+      },
+      {
+        "id": "SOUTH_SUDAN_2026_07_10",
+        "title": "南スーダンで武装衝突が公共施設と地域生活を圧迫",
+        "region": "東アフリカ",
+        "observationDate": "2026-07-10",
+        "severity": 82,
+        "state": "red",
+        "dataState": "observed_partial",
+        "countries": [
+          {
+            "iso3": "SSD",
+            "severity": 82
+          }
+        ],
+        "sourceId": "UN_SG_SSD_2026_07_10",
+        "sourceUrl": "https://www.un.org/sg/en/content/highlight/2026-07-10.html",
+        "summary": "国連は刑務所・警察署などへの武装攻撃と死傷者を報告。治安悪化が食料、移動、行政サービスへ直結する。",
+        "lifeImpactChannels": [
+          "治安",
+          "食料",
+          "移動",
+          "公共サービス"
+        ]
+      },
+      {
+        "id": "RED_SEA_MARAD_2026_006",
+        "title": "紅海・バブ・エル・マンデブの商船脅威は継続",
+        "region": "紅海・アデン湾",
+        "observationDate": null,
+        "severity": 58,
+        "state": "yellow",
+        "dataState": "observed_partial",
+        "countries": [
+          {
+            "iso3": "YEM",
+            "severity": 68
+          },
+          {
+            "iso3": "DJI",
+            "severity": 48
+          },
+          {
+            "iso3": "ERI",
+            "severity": 48
+          },
+          {
+            "iso3": "EGY",
+            "severity": 45
+          },
+          {
+            "iso3": "SAU",
+            "severity": 45
+          }
+        ],
+        "sourceId": "US_MARAD_2026_006",
+        "sourceUrl": "https://www.maritime.dot.gov/msci/2026-006-red-sea-bab-el-mandeb-strait-gulf-aden-arabian-sea-and-somali-basin-houthi-attacks",
+        "summary": "米国海事局は商船への脅威継続を注意喚起。攻撃件数が落ち着いていても、航路変更・保険・納期のリスクプレミアムは残る。",
+        "lifeImpactChannels": [
+          "海運",
+          "保険",
+          "納期",
+          "輸入物価"
+        ]
+      }
+    ]
+  },
+  "lifeImpact": {
+    "dataState": "estimated",
+    "score": 57.6,
+    "state": "yellow",
+    "label": "注意",
+    "formula": "ドル円30% + 原油25% + 米金利・信用・VIX20% + 沖縄近接・紅海・世界紛争25%。各成分を0–100に正規化し、取得できた成分だけで再加重",
+    "warning": "経営用の推定指数であり、物価統計や被害予測そのものではありません。",
+    "components": [
+      {
+        "key": "currency",
+        "label": "円安・輸入コスト",
+        "score": 72.9,
+        "state": "red",
+        "dataState": "observed",
+        "sourceIds": [
+          "FRED_DEXJPUS"
+        ],
+        "businessRead": "円安は輸入費・燃料費を押し上げる一方、米軍家族のドル購買力には追い風。価格と仕入れを別々に判断。"
+      },
+      {
+        "key": "energy",
+        "label": "原油・物流",
+        "score": 44.6,
+        "state": "yellow",
+        "dataState": "observed_partial",
+        "sourceIds": [
+          "FRED_DCOILWTICO",
+          "FRED_DCOILBRENTEU"
+        ],
+        "businessRead": "原油上昇は電力・航空・海運・配送へ時間差で波及。沖縄は島しょ物流のため継続監視。"
+      },
+      {
+        "key": "finance",
+        "label": "金利・信用不安",
+        "score": 34.5,
+        "state": "green",
+        "dataState": "estimated",
+        "sourceIds": [
+          "FRED_DGS10",
+          "FRED_BAMLH0A0HYM2",
+          "FRED_VIXCLS"
+        ],
+        "businessRead": "長期金利・信用スプレッド・市場不安の上昇は、住宅・設備投資・家計心理を弱めやすい。"
+      },
+      {
+        "key": "geopolitical",
+        "label": "軍事・紛争圧力",
+        "score": 70.8,
+        "state": "red",
+        "dataState": "estimated",
+        "sourceIds": [
+          "JMOD_2026_0721",
+          "UNSC_UKRAINE_2026_07_27",
+          "OCHA_OPT_2026_07_23",
+          "UN_SG_SUDAN_2026_07_14",
+          "UN_SG_SSD_2026_07_10",
+          "US_MARAD_2026_006"
+        ],
+        "businessRead": "沖縄近接の軍事活動、紅海航路、世界の高強度紛争を分離して重み付け。ニュース件数だけで危機認定しない。"
       }
     ]
   },
   "geopoliticalMethod": {
     "dataState": "strategic_interpretation",
-    "note": "政治安定性は世界銀行WGIの年次指標であり、速報的な紛争イベントではありません。国際政治ニュースは別のイベント監視レーンで二系統確認します。",
+    "note": "政治安定性は世界銀行WGIの年次指標であり速報的な戦況ではありません。現在イベントは公的機関の公開情報で別レーン確認し、記事量だけで安全・危機を断定しません。",
     "mearsheimerLens": [
       "相対的国力",
       "意図の不確実性",
