@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 4,
-  "generatedAt": "2026-07-29T11:32:46.411Z",
+  "schemaVersion": 5,
+  "generatedAt": "2026-07-30T03:29:55.751Z",
   "dashboardTimeZone": "Asia/Tokyo",
   "fxAudit": {
     "isRealtime": false,
@@ -16,10 +16,10 @@
       "observationDate": "2026-07-24",
       "previousValue": 163.8,
       "change": -0.09000000000000341,
-      "dataState": "observed",
+      "dataState": "stale_observed",
       "sourceId": "FRED_DEXJPUS",
       "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-      "fetchedAt": "2026-07-29T11:32:44.997Z"
+      "fetchedAt": "2026-07-30T03:29:54.518Z"
     },
     "realtimeProvider": {
       "state": "unknown",
@@ -42,10 +42,10 @@
         "observationDate": "2026-07-24",
         "previousValue": 163.8,
         "change": -0.09000000000000341,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DEXJPUS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-        "fetchedAt": "2026-07-29T11:32:44.997Z"
+        "fetchedAt": "2026-07-30T03:29:54.518Z"
       },
       "fedFunds": {
         "key": "fedFunds",
@@ -54,13 +54,13 @@
         "unit": "%",
         "cadence": "日次",
         "value": 3.63,
-        "observationDate": "2026-07-27",
+        "observationDate": "2026-07-28",
         "previousValue": 3.63,
         "change": 0,
         "dataState": "observed",
         "sourceId": "FRED_DFF",
         "sourceUrl": "https://fred.stlouisfed.org/series/DFF",
-        "fetchedAt": "2026-07-29T11:32:45.102Z"
+        "fetchedAt": "2026-07-30T03:29:54.524Z"
       },
       "treasury2y": {
         "key": "treasury2y",
@@ -68,14 +68,14 @@
         "label": "米国債2年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 4.31,
-        "observationDate": "2026-07-27",
-        "previousValue": 4.33,
-        "change": -0.020000000000000462,
+        "value": 4.26,
+        "observationDate": "2026-07-28",
+        "previousValue": 4.31,
+        "change": -0.04999999999999982,
         "dataState": "observed",
         "sourceId": "FRED_DGS2",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS2",
-        "fetchedAt": "2026-07-29T11:32:44.694Z"
+        "fetchedAt": "2026-07-30T03:29:54.520Z"
       },
       "treasury10y": {
         "key": "treasury10y",
@@ -83,14 +83,14 @@
         "label": "米国債10年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 4.65,
-        "observationDate": "2026-07-27",
-        "previousValue": 4.69,
+        "value": 4.61,
+        "observationDate": "2026-07-28",
+        "previousValue": 4.65,
         "change": -0.040000000000000036,
         "dataState": "observed",
         "sourceId": "FRED_DGS10",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
-        "fetchedAt": "2026-07-29T11:32:45.076Z"
+        "fetchedAt": "2026-07-30T03:29:54.550Z"
       },
       "treasury30y": {
         "key": "treasury30y",
@@ -98,14 +98,14 @@
         "label": "米国債30年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 5.12,
-        "observationDate": "2026-07-27",
-        "previousValue": 5.16,
-        "change": -0.040000000000000036,
+        "value": 5.09,
+        "observationDate": "2026-07-28",
+        "previousValue": 5.12,
+        "change": -0.03000000000000025,
         "dataState": "observed",
         "sourceId": "FRED_DGS30",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS30",
-        "fetchedAt": "2026-07-29T11:32:45.042Z"
+        "fetchedAt": "2026-07-30T03:29:54.555Z"
       },
       "dollarBroad": {
         "key": "dollarBroad",
@@ -117,10 +117,10 @@
         "observationDate": "2026-07-24",
         "previousValue": 120.9075,
         "change": -0.19700000000000273,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-07-29T11:32:45.073Z",
+        "fetchedAt": "2026-07-30T03:29:54.577Z",
         "change12m": 0.9568741720081819
       },
       "moneyMarketAssets": {
@@ -136,7 +136,7 @@
         "dataState": "observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-07-29T11:32:44.920Z",
+        "fetchedAt": "2026-07-30T03:29:54.529Z",
         "change12m": 12.052925794532365
       },
       "realDisposableIncomePc": {
@@ -152,7 +152,7 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-07-29T11:32:44.937Z",
+        "fetchedAt": "2026-07-30T03:29:54.538Z",
         "change12m": -0.2642133475260877
       },
       "unemployment": {
@@ -168,7 +168,7 @@
         "dataState": "observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-07-29T11:32:44.947Z"
+        "fetchedAt": "2026-07-30T03:29:54.574Z"
       },
       "cpi": {
         "key": "cpi",
@@ -183,7 +183,7 @@
         "dataState": "observed",
         "sourceId": "FRED_CPIAUCSL",
         "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCSL",
-        "fetchedAt": "2026-07-29T11:32:44.904Z",
+        "fetchedAt": "2026-07-30T03:29:54.564Z",
         "yoy": 3.463530729385411
       },
       "realGdp": {
@@ -199,7 +199,7 @@
         "dataState": "observed",
         "sourceId": "FRED_GDPC1",
         "sourceUrl": "https://fred.stlouisfed.org/series/GDPC1",
-        "fetchedAt": "2026-07-29T11:32:45.270Z",
+        "fetchedAt": "2026-07-30T03:29:54.563Z",
         "qoqAnnualized": 2.0891889857350465
       },
       "highYieldSpread": {
@@ -208,14 +208,14 @@
         "label": "米国ハイイールド債スプレッド",
         "unit": "%",
         "cadence": "日次",
-        "value": 2.81,
-        "observationDate": "2026-07-27",
-        "previousValue": 2.79,
-        "change": 0.020000000000000018,
+        "value": 2.84,
+        "observationDate": "2026-07-28",
+        "previousValue": 2.81,
+        "change": 0.029999999999999805,
         "dataState": "observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-07-29T11:32:45.067Z"
+        "fetchedAt": "2026-07-30T03:29:54.542Z"
       },
       "sofr": {
         "key": "sofr",
@@ -223,14 +223,14 @@
         "label": "担保付翌日物調達金利",
         "unit": "%",
         "cadence": "日次",
-        "value": 3.64,
-        "observationDate": "2026-07-27",
+        "value": 3.65,
+        "observationDate": "2026-07-28",
         "previousValue": 3.64,
-        "change": 0,
+        "change": 0.009999999999999787,
         "dataState": "observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-07-29T11:32:45.069Z"
+        "fetchedAt": "2026-07-30T03:29:54.554Z"
       },
       "ciTighteningLarge": {
         "key": "ciTighteningLarge",
@@ -245,7 +245,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-07-29T11:32:44.909Z"
+        "fetchedAt": "2026-07-30T03:29:54.551Z"
       },
       "ciTighteningSmall": {
         "key": "ciTighteningSmall",
@@ -260,7 +260,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-07-29T11:32:44.901Z"
+        "fetchedAt": "2026-07-30T03:29:54.546Z"
       },
       "businessLoanDelinquency": {
         "key": "businessLoanDelinquency",
@@ -275,7 +275,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-07-29T11:32:45.188Z"
+        "fetchedAt": "2026-07-30T03:29:54.542Z"
       },
       "wti": {
         "key": "wti",
@@ -283,14 +283,14 @@
         "label": "WTI原油スポット価格",
         "unit": "ドル/バレル",
         "cadence": "日次",
-        "value": 84.38,
-        "observationDate": "2026-07-20",
-        "previousValue": 83.43,
-        "change": 0.9499999999999886,
-        "dataState": "stale_observed",
+        "value": 84.25,
+        "observationDate": "2026-07-27",
+        "previousValue": 91.74,
+        "change": -7.489999999999995,
+        "dataState": "observed",
         "sourceId": "FRED_DCOILWTICO",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
-        "fetchedAt": "2026-07-29T11:32:45.053Z"
+        "fetchedAt": "2026-07-30T03:29:54.537Z"
       },
       "brent": {
         "key": "brent",
@@ -298,14 +298,14 @@
         "label": "ブレント原油スポット価格",
         "unit": "ドル/バレル",
         "cadence": "日次",
-        "value": 86.99,
-        "observationDate": "2026-07-20",
-        "previousValue": 85.01,
-        "change": 1.9799999999999898,
-        "dataState": "stale_observed",
+        "value": 91.82,
+        "observationDate": "2026-07-27",
+        "previousValue": 100.31,
+        "change": -8.490000000000009,
+        "dataState": "observed",
         "sourceId": "FRED_DCOILBRENTEU",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
-        "fetchedAt": "2026-07-29T11:32:45.018Z"
+        "fetchedAt": "2026-07-30T03:29:54.561Z"
       },
       "vix": {
         "key": "vix",
@@ -313,42 +313,42 @@
         "label": "VIX市場不安指数",
         "unit": "指数",
         "cadence": "日次",
-        "value": 18.67,
-        "observationDate": "2026-07-27",
-        "previousValue": 18.58,
-        "change": 0.09000000000000341,
+        "value": 18.21,
+        "observationDate": "2026-07-28",
+        "previousValue": 18.67,
+        "change": -0.46000000000000085,
         "dataState": "observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-07-29T11:32:44.712Z"
+        "fetchedAt": "2026-07-30T03:29:54.548Z"
       }
     },
     "treasuryDebt": {
       "key": "federalDebt",
       "label": "米国連邦債務残高",
-      "value": 39713964053447.11,
+      "value": 39797152899275.21,
       "unit": "ドル",
-      "observationDate": "2026-07-27",
+      "observationDate": "2026-07-28",
       "dataState": "observed",
       "sourceId": "UST_DEBT_TO_PENNY",
       "sourceUrl": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
-      "fetchedAt": "2026-07-29T11:32:46.410Z"
+      "fetchedAt": "2026-07-30T03:29:55.750Z"
     },
     "yieldCurve": [
       {
         "tenor": "2年",
-        "value": 4.31,
-        "date": "2026-07-27"
+        "value": 4.26,
+        "date": "2026-07-28"
       },
       {
         "tenor": "10年",
-        "value": 4.65,
-        "date": "2026-07-27"
+        "value": 4.61,
+        "date": "2026-07-28"
       },
       {
         "tenor": "30年",
-        "value": 5.12,
-        "date": "2026-07-27"
+        "value": 5.09,
+        "date": "2026-07-28"
       }
     ]
   },
@@ -4083,7 +4083,7 @@
   },
   "geopoliticalEvents": {
     "dataState": "observed_partial",
-    "verifiedAt": "2026-07-29T11:32:46.411Z",
+    "verifiedAt": "2026-07-30T03:29:55.751Z",
     "automatedFeeds": {
       "reliefWeb": {
         "dataState": "blocked_or_failed",
@@ -4283,7 +4283,7 @@
   },
   "lifeImpact": {
     "dataState": "estimated",
-    "score": 57.6,
+    "score": 58.2,
     "state": "yellow",
     "label": "注意",
     "formula": "ドル円30% + 原油25% + 米金利・信用・VIX20% + 沖縄近接・紅海・世界紛争25%。各成分を0–100に正規化し、取得できた成分だけで再加重",
@@ -4294,7 +4294,7 @@
         "label": "円安・輸入コスト",
         "score": 72.9,
         "state": "red",
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceIds": [
           "FRED_DEXJPUS"
         ],
@@ -4303,9 +4303,9 @@
       {
         "key": "energy",
         "label": "原油・物流",
-        "score": 44.6,
+        "score": 47.5,
         "state": "yellow",
-        "dataState": "observed_partial",
+        "dataState": "observed",
         "sourceIds": [
           "FRED_DCOILWTICO",
           "FRED_DCOILBRENTEU"
@@ -4315,7 +4315,7 @@
       {
         "key": "finance",
         "label": "金利・信用不安",
-        "score": 34.5,
+        "score": 33.8,
         "state": "green",
         "dataState": "estimated",
         "sourceIds": [
@@ -4355,7 +4355,7 @@
       {
         "key": "borrower",
         "label": "借り手返済力",
-        "score": 37.1,
+        "score": 37.2,
         "state": "yellow",
         "dataState": "estimated",
         "sourceIds": [
@@ -4391,7 +4391,7 @@
       {
         "key": "market",
         "label": "公開市場代理",
-        "score": 23.5,
+        "score": 23.1,
         "state": "green",
         "dataState": "estimated",
         "sourceIds": [
@@ -4583,14 +4583,14 @@
         "label": "担保付翌日物調達金利",
         "unit": "%",
         "cadence": "日次",
-        "value": 3.64,
-        "observationDate": "2026-07-27",
+        "value": 3.65,
+        "observationDate": "2026-07-28",
         "previousValue": 3.64,
-        "change": 0,
+        "change": 0.009999999999999787,
         "dataState": "observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-07-29T11:32:45.069Z"
+        "fetchedAt": "2026-07-30T03:29:54.554Z"
       },
       {
         "key": "ciTighteningLarge",
@@ -4605,7 +4605,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-07-29T11:32:44.909Z"
+        "fetchedAt": "2026-07-30T03:29:54.551Z"
       },
       {
         "key": "ciTighteningSmall",
@@ -4620,7 +4620,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-07-29T11:32:44.901Z"
+        "fetchedAt": "2026-07-30T03:29:54.546Z"
       },
       {
         "key": "businessLoanDelinquency",
@@ -4635,7 +4635,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-07-29T11:32:45.188Z"
+        "fetchedAt": "2026-07-30T03:29:54.542Z"
       }
     ],
     "monitoring": [
@@ -4696,10 +4696,10 @@
   },
   "capitalFlow": {
     "dataState": "estimated",
-    "score": 63.2,
+    "score": 64.8,
     "state": "yellow",
     "label": "資金再配分を警戒",
-    "conclusion": "ドル資産への吸引は強い一方、全面的なドル現金逃避ではない。民間の米長期証券買いが主役で、公的部門と短期証券は逆方向を含む。日本は企業価値改革と供給網投資が流入条件だが、足元の週次証券フローは反転が大きい。",
+    "conclusion": "ドル資産への吸引は強い一方、全面的なドル現金逃避ではない。FOMCは3.50〜3.75%を据え置いたが3名が利上げを主張し、金利差の急縮小はまだ確認できない。日本は株式買越しと債券売越しが同時進行しており、資産別に方向を分けて読む必要がある。",
     "formula": "ドル吸引28% + 円キャリー17% + 米国債パラドクス20% + 日本再配分15% + 供給網日本捕捉8% + 家計実質圧力12%。0〜100の実験推定で、方向と善悪は別判定",
     "warning": "指数は投資助言・為替予測ではありません。COFERの比率変化には為替評価、TICにはカストディ経由、MOF週次には大幅な反転があり、単月・単週を構造変化と断定しません。",
     "derived": {
@@ -4730,8 +4730,9 @@
         "score": 62.7,
         "state": "yellow",
         "direction": "短期金利差 2.63ポイント",
-        "read": "米実効FF金利と日銀誘導目標の差はドル保有を支えるが、米雇用悪化・FRB利下げ・日銀利上げで急反転し得る。",
+        "read": "FOMCは据え置き、3名は25bp利上げを主張。米実効FF金利と日銀誘導目標の差はドル保有を支えるが、7月31日の日銀声明と米雇用悪化で急反転し得る。",
         "sourceIds": [
+          "FRB_FOMC_2026_07_29",
           "FRED_DFF",
           "BOJ_MPM_2026_06",
           "FRED_DEXJPUS"
@@ -4741,7 +4742,7 @@
       {
         "key": "treasury_paradox",
         "label": "米国債・インフレのパラドクス",
-        "score": 64.5,
+        "score": 64.1,
         "state": "yellow",
         "direction": "需要の強さと利払い負担が併存",
         "read": "予想外インフレは既発固定債の実質価値を薄める一方、借換え金利・TIPS・歳出連動を通じ将来利払いを押し上げる。無料の債務圧縮ではない。",
@@ -4756,10 +4757,10 @@
       {
         "key": "japan_reallocation",
         "label": "日本への資金再配分",
-        "score": 49.9,
+        "score": 60.8,
         "state": "yellow",
-        "direction": "流入条件あり・足元は売越し",
-        "read": "東証の資本コスト経営、ROE・PBR改善、賃金と生産性、政策の予見可能性が揃えば流入余地。直近週は海外投資家が日本証券を5,703億円売り越し。",
+        "direction": "株式買越し・債券売越し",
+        "read": "直近週は日本株を9,121億円買い越す一方、日本証券全体は3兆4,891億円売り越し。長期債と短期債の売りが大きく、企業価値への投資と金利・流動性判断が分岐している。",
         "sourceIds": [
           "MOF_ITN_WEEKLY",
           "JPX_COST_OF_CAPITAL_2026",
@@ -4797,6 +4798,17 @@
       }
     ],
     "facts": [
+      {
+        "id": "FOMC_POLICY_2026_07_29",
+        "label": "FRB政策金利・目標レンジ中点",
+        "value": 3.625,
+        "unit": "%",
+        "observationDate": "2026-07-29",
+        "dataState": "observed",
+        "sourceId": "FRB_FOMC_2026_07_29",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+        "note": "3.50〜3.75%を9対3で据え置き。3名は25bp利上げを主張"
+      },
       {
         "id": "IMF_COFER_USD_SHARE_Q1_2026",
         "label": "世界外貨準備に占める米ドル比率",
@@ -4867,7 +4879,8 @@
         "observationDate": "2026-06-17",
         "dataState": "observed",
         "sourceId": "BOJ_MPM_2026_06",
-        "sourceUrl": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260616a.pdf"
+        "sourceUrl": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260616a.pdf",
+        "note": "7月30〜31日の金融政策決定会合は開催中。次の声明は7月31日予定"
       },
       {
         "id": "CBO_NET_INTEREST_2026",
@@ -4891,22 +4904,43 @@
         "sourceUrl": "https://www.cbo.gov/publication/62373"
       },
       {
-        "id": "MOF_JP_INWARD_TOTAL_2026_07_18",
+        "id": "MOF_JP_INWARD_TOTAL_2026_07_25",
         "label": "海外投資家の日本証券・週間純取得",
-        "value": -570.3,
+        "value": -3489.1,
         "unit": "10億円",
-        "observationDate": "2026-07-18",
+        "observationDate": "2026-07-25",
         "dataState": "observed",
         "sourceId": "MOF_ITN_WEEKLY",
         "sourceUrl": "https://www.mof.go.jp/english/policy/international_policy/reference/itn_transactions_in_securities/week.pdf",
-        "note": "前週は+669.3。週次フローは大きく反転"
+        "note": "株式は+912.1、長期債-1,513.9、短期債-2,887.4。債券売りが総額を押し下げ"
       },
       {
-        "id": "MOF_JP_INWARD_EQUITY_2026_07_18",
+        "id": "MOF_JP_INWARD_EQUITY_2026_07_25",
         "label": "海外投資家の日本株・週間純取得",
-        "value": -79.6,
+        "value": 912.1,
         "unit": "10億円",
-        "observationDate": "2026-07-18",
+        "observationDate": "2026-07-25",
+        "dataState": "observed",
+        "sourceId": "MOF_ITN_WEEKLY",
+        "sourceUrl": "https://www.mof.go.jp/english/policy/international_policy/reference/itn_transactions_in_securities/week.pdf",
+        "note": "株式は買越し。日本証券全体の売越しと方向が異なる"
+      },
+      {
+        "id": "MOF_JP_INWARD_LONG_DEBT_2026_07_25",
+        "label": "海外投資家の日本長期債・週間純取得",
+        "value": -1513.9,
+        "unit": "10億円",
+        "observationDate": "2026-07-25",
+        "dataState": "observed",
+        "sourceId": "MOF_ITN_WEEKLY",
+        "sourceUrl": "https://www.mof.go.jp/english/policy/international_policy/reference/itn_transactions_in_securities/week.pdf"
+      },
+      {
+        "id": "MOF_JP_INWARD_SHORT_DEBT_2026_07_25",
+        "label": "海外投資家の日本短期債・週間純取得",
+        "value": -2887.4,
+        "unit": "10億円",
+        "observationDate": "2026-07-25",
         "dataState": "observed",
         "sourceId": "MOF_ITN_WEEKLY",
         "sourceUrl": "https://www.mof.go.jp/english/policy/international_policy/reference/itn_transactions_in_securities/week.pdf"
@@ -4952,10 +4986,10 @@
         "observationDate": "2026-07-24",
         "previousValue": 120.9075,
         "change": -0.19700000000000273,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-07-29T11:32:45.073Z",
+        "fetchedAt": "2026-07-30T03:29:54.577Z",
         "change12m": 0.9568741720081819
       },
       {
@@ -4971,7 +5005,7 @@
         "dataState": "observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-07-29T11:32:44.920Z",
+        "fetchedAt": "2026-07-30T03:29:54.529Z",
         "change12m": 12.052925794532365
       },
       {
@@ -4987,7 +5021,7 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-07-29T11:32:44.937Z",
+        "fetchedAt": "2026-07-30T03:29:54.538Z",
         "change12m": -0.2642133475260877
       }
     ],
@@ -5019,6 +5053,12 @@
         "institution": "IMF",
         "cadence": "四半期",
         "url": "https://data.imf.org/en/news/imf%20data%20brief%20july%201"
+      },
+      {
+        "sourceId": "FRB_FOMC_2026_07_29",
+        "institution": "FRB",
+        "cadence": "会合ごと",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
       },
       {
         "sourceId": "UST_TIC_MAY_2026",
@@ -5063,6 +5103,106 @@
       "海上交通路",
       "抑止とエスカレーション"
     ]
+  },
+  "health": {
+    "status": "passed_with_warnings",
+    "label": "主要機能は正常・鮮度警告あり",
+    "checkedAt": "2026-07-30T03:29:55.751Z",
+    "totals": {
+      "failed": 0,
+      "unknown": 0,
+      "stale": 9
+    },
+    "sections": [
+      {
+        "key": "usMacro",
+        "label": "米国マクロ・為替・国債",
+        "total": 20,
+        "counts": {
+          "stale_observed": 3,
+          "observed": 17
+        },
+        "failedIds": []
+      },
+      {
+        "key": "worldMap",
+        "label": "世界地図",
+        "total": 216,
+        "counts": {
+          "observed_partial": 216
+        },
+        "failedIds": []
+      },
+      {
+        "key": "geopolitics",
+        "label": "地政学イベント",
+        "total": 6,
+        "counts": {
+          "observed_partial": 6
+        },
+        "failedIds": []
+      },
+      {
+        "key": "lifeImpact",
+        "label": "沖縄生活波及",
+        "total": 4,
+        "counts": {
+          "stale_observed": 1,
+          "observed": 1,
+          "estimated": 2
+        },
+        "failedIds": []
+      },
+      {
+        "key": "privateCredit",
+        "label": "プライベートクレジット",
+        "total": 15,
+        "counts": {
+          "stale_observed": 3,
+          "observed_partial": 8,
+          "observed": 4
+        },
+        "failedIds": []
+      },
+      {
+        "key": "capitalFlow",
+        "label": "ドル・資金フロー",
+        "total": 20,
+        "counts": {
+          "observed": 15,
+          "estimated": 2,
+          "observed_partial": 1,
+          "stale_observed": 2
+        },
+        "failedIds": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "schema",
+        "result": "passed",
+        "note": "スキーマ v5"
+      },
+      {
+        "id": "fxAudit",
+        "result": "passed",
+        "note": "公式日次値と市場ライブを分離"
+      },
+      {
+        "id": "worldCoverage",
+        "result": "passed",
+        "note": "216か国・地域"
+      },
+      {
+        "id": "sourceTrace",
+        "result": "passed",
+        "note": "source_idまたは識別子を検査"
+      },
+      {
+        "id": "noSilentZeroFill",
+        "result": "passed",
+        "note": "未取得値を0で補完しない"
+      }
+    ]
   }
 }
-
