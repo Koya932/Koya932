@@ -335,7 +335,7 @@ function renderLegend(){
 }
 function recolor(){d3.selectAll(".country").attr("fill",function(){const row=data.worldMap.countries.find(x=>x.iso3===this.dataset.iso);return C[signal(row)]});renderLegend();renderCountry()}
 document.querySelectorAll(".modes button").forEach(b=>b.addEventListener("click",()=>{mode=b.dataset.mode;document.querySelectorAll(".modes button").forEach(x=>x.classList.toggle("active",x===b));recolor()}));
-fetch("./data/global-monitor.json?v=20260731-hegemony-genius").then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(async d=>{data=d;renderHeader();await renderMap()}).catch(e=>{document.querySelector(".map-message").innerHTML=`<span class="error">データ読込に失敗しました：${e.message}</span>`});
+fetch(`./data/global-monitor.json?t=${Date.now()}`,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(async d=>{data=d;renderHeader();await renderMap()}).catch(e=>{document.querySelector(".map-message").innerHTML=`<span class="error">データ読込に失敗しました：${e.message}</span>`});
 </script>
 </body>
 </html>
