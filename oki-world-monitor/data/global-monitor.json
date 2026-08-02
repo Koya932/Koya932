@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "generatedAt": "2026-07-31T02:36:34.192Z",
+  "generatedAt": "2026-08-02T22:21:37.171Z",
   "dashboardTimeZone": "Asia/Tokyo",
   "fxAudit": {
     "isRealtime": false,
@@ -19,32 +19,34 @@
       "dataState": "stale_observed",
       "sourceId": "FRED_DEXJPUS",
       "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-      "fetchedAt": "2026-07-31T02:36:32.806Z",
+      "fetchedAt": "2026-08-02T22:21:37.108Z",
       "change3m": 2.7361154690932032,
       "change12m": 11.427988020691537,
       "change3mPoints": 4.360000000000014,
-      "change12mPoints": 16.79000000000002
+      "change12mPoints": 16.79000000000002,
+      "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+      "refreshError": "fetch failed"
     },
     "marketShock": {
       "id": "USDJPY_MARKET_SHOCK_2026_07_30",
       "label": "ドル円・市場急変スナップショット",
-      "dataState": "observed_partial",
+      "dataState": "stale_observed",
       "sourceId": "YAHOO_FINANCE_JPY=X",
       "sourceUrl": "https://finance.yahoo.com/quote/JPY=X/",
-      "fetchedAt": "2026-07-31T02:36:33.249Z",
-      "marketObservedAt": "2026-07-31T02:36:30.000Z",
+      "fetchedAt": "2026-08-02T22:21:37.116Z",
+      "marketObservedAt": "2026-07-31T01:08:46.000Z",
       "isRealtime": false,
       "note": "生成時点の市場スナップショット。TradingViewライブ表示とは更新間隔が異なり、売買・送金の執行価格ではありません。",
       "current": {
-        "value": 160.526,
+        "value": 160.562,
         "previousClose": 159.608,
-        "change": 0.918,
-        "changePct": 0.58,
-        "dayHigh": 160.746,
+        "change": 0.954,
+        "changePct": 0.6,
+        "dayHigh": 160.69,
         "dayLow": 159.353,
         "direction": "円安・ドル高",
         "observationDate": "2026-07-31",
-        "dataState": "observed_partial",
+        "dataState": "stale_observed",
         "sourceId": "YAHOO_FINANCE_JPY=X"
       },
       "shockSession": {
@@ -52,14 +54,14 @@
         "open": 163.375,
         "high": 163.739,
         "low": 157.923,
-        "close": 159.704,
-        "closeChange": -3.671,
-        "closeChangePct": -2.25,
+        "close": 159.463,
+        "closeChange": -3.912,
+        "closeChangePct": -2.39,
         "peakToTrough": -5.816,
         "peakToTroughPct": -3.55,
-        "currentVsShockHigh": -3.213,
-        "currentVsShockHighPct": -1.96,
-        "dataState": "observed_partial",
+        "currentVsShockHigh": -3.177,
+        "currentVsShockHighPct": -1.94,
+        "dataState": "stale_observed",
         "sourceId": "YAHOO_FINANCE_JPY=X"
       },
       "shockScore": {
@@ -131,18 +133,20 @@
       },
       "okinawaImpact": {
         "usd200YenBefore": 32748,
-        "usd200YenNow": 32105,
-        "usd200YenChange": -643,
+        "usd200YenNow": 32112,
+        "usd200YenChange": -635,
         "jpy20000UsdBefore": 122.15,
-        "jpy20000UsdNow": 124.59,
-        "jpy20000UsdChangePct": 2,
+        "jpy20000UsdNow": 124.56,
+        "jpy20000UsdChangePct": 1.98,
         "dataState": "estimated",
         "formula": "急変セッション高値と現在スナップショットを使った単純換算",
         "read": "円高方向は米軍家族のドル購買力を低下させ、同じ円価格のドル換算額を押し上げます。価格変更ではなく、まず見積表示と転換率を監視します。"
-      }
+      },
+      "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+      "refreshError": "fetch failed"
     },
     "realtimeProvider": {
-      "state": "observed_partial",
+      "state": "stale_observed",
       "provider": "TradingViewライブ表示 + Yahoo Finance生成時スナップショット",
       "required": "継続履歴保存には認証付きFX市場データAPIまたはブローカー配信",
       "example": "Twelve Data / Alpha Vantage FX_INTRADAY",
@@ -165,11 +169,13 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DEXJPUS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-        "fetchedAt": "2026-07-31T02:36:32.806Z",
+        "fetchedAt": "2026-08-02T22:21:37.108Z",
         "change3m": 2.7361154690932032,
         "change12m": 11.427988020691537,
         "change3mPoints": 4.360000000000014,
-        "change12mPoints": 16.79000000000002
+        "change12mPoints": 16.79000000000002,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "fedFunds": {
         "key": "fedFunds",
@@ -181,14 +187,16 @@
         "observationDate": "2026-07-29",
         "previousValue": 3.63,
         "change": 0,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DFF",
         "sourceUrl": "https://fred.stlouisfed.org/series/DFF",
-        "fetchedAt": "2026-07-31T02:36:32.491Z",
+        "fetchedAt": "2026-08-02T22:21:37.108Z",
         "change3m": -0.27472527472528485,
         "change12m": -16.16628175519631,
         "change3mPoints": -0.010000000000000231,
-        "change12mPoints": -0.7000000000000002
+        "change12mPoints": -0.7000000000000002,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "treasury2y": {
         "key": "treasury2y",
@@ -200,14 +208,16 @@
         "observationDate": "2026-07-29",
         "previousValue": 4.26,
         "change": -0.040000000000000036,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DGS2",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS2",
-        "fetchedAt": "2026-07-31T02:36:33.134Z",
+        "fetchedAt": "2026-08-02T22:21:37.109Z",
         "change3m": 7.653061224489788,
         "change12m": 9.32642487046631,
         "change3mPoints": 0.2999999999999998,
-        "change12mPoints": 0.3599999999999999
+        "change12mPoints": 0.3599999999999999,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "treasury10y": {
         "key": "treasury10y",
@@ -219,14 +229,16 @@
         "observationDate": "2026-07-29",
         "previousValue": 4.61,
         "change": 0.05999999999999961,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DGS10",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
-        "fetchedAt": "2026-07-31T02:36:32.513Z",
+        "fetchedAt": "2026-08-02T22:21:37.110Z",
         "change3m": 5.65610859728507,
         "change12m": 7.603686635944706,
         "change3mPoints": 0.25,
-        "change12mPoints": 0.33000000000000007
+        "change12mPoints": 0.33000000000000007,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "treasury30y": {
         "key": "treasury30y",
@@ -238,14 +250,16 @@
         "observationDate": "2026-07-29",
         "previousValue": 5.09,
         "change": 0.11000000000000032,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DGS30",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS30",
-        "fetchedAt": "2026-07-31T02:36:32.370Z",
+        "fetchedAt": "2026-08-02T22:21:37.111Z",
         "change3m": 4.417670682730912,
         "change12m": 6.995884773662553,
         "change3mPoints": 0.21999999999999975,
-        "change12mPoints": 0.33999999999999986
+        "change12mPoints": 0.33999999999999986,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "dollarBroad": {
         "key": "dollarBroad",
@@ -260,11 +274,13 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-07-31T02:36:33.139Z",
+        "fetchedAt": "2026-08-02T22:21:37.111Z",
         "change3m": 1.6685841922893463,
         "change12m": 0.9568741720081819,
         "change3mPoints": 1.9810999999999979,
-        "change12mPoints": 1.1440999999999946
+        "change12mPoints": 1.1440999999999946,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "moneyMarketAssets": {
         "key": "moneyMarketAssets",
@@ -276,14 +292,16 @@
         "observationDate": "2026-01-01",
         "previousValue": 8190235,
         "change": 99334,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-07-31T02:36:32.211Z",
+        "fetchedAt": "2026-08-02T22:21:37.111Z",
         "change3m": 1.2128345523663153,
         "change12m": 12.052925794532365,
         "change3mPoints": 99334,
-        "change12mPoints": 891664
+        "change12mPoints": 891664,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "realDisposableIncomePc": {
         "key": "realDisposableIncomePc",
@@ -295,14 +313,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 52516,
         "change": 153,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-07-31T02:36:32.249Z",
+        "fetchedAt": "2026-08-02T22:21:37.111Z",
         "change3m": 0.08551231377318391,
         "change12m": 0.26651944640103675,
         "change3mPoints": 45,
-        "change12mPoints": 140
+        "change12mPoints": 140,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "unemployment": {
         "key": "unemployment",
@@ -314,14 +334,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 4.3,
         "change": -0.09999999999999964,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-07-31T02:36:31.911Z",
+        "fetchedAt": "2026-08-02T22:21:37.111Z",
         "change3m": -2.3255813953488302,
         "change12m": 2.4390243902439046,
         "change3mPoints": -0.09999999999999964,
-        "change12mPoints": 0.10000000000000053
+        "change12mPoints": 0.10000000000000053,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "cpi": {
         "key": "cpi",
@@ -333,15 +355,17 @@
         "observationDate": "2026-06-01",
         "previousValue": 333.979,
         "change": -1.4110000000000014,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_CPIAUCSL",
         "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCSL",
-        "fetchedAt": "2026-07-31T02:36:32.920Z",
+        "fetchedAt": "2026-08-02T22:21:37.111Z",
         "change3m": 0.6887823841255969,
         "change12m": 3.463530729385411,
         "change3mPoints": 2.2749999999999773,
         "change12mPoints": 11.132999999999981,
-        "yoy": 3.463530729385411
+        "yoy": 3.463530729385411,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "realGdp": {
         "key": "realGdp",
@@ -353,15 +377,17 @@
         "observationDate": "2026-04-01",
         "previousValue": 24180.419,
         "change": 90.17999999999665,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_GDPC1",
         "sourceUrl": "https://fred.stlouisfed.org/series/GDPC1",
-        "fetchedAt": "2026-07-31T02:36:32.394Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 0.37294639104474836,
         "change12m": 2.1018194625243902,
         "change3mPoints": 90.17999999999665,
         "change12mPoints": 499.6229999999996,
-        "qoqAnnualized": 1.5001516732581655
+        "qoqAnnualized": 1.5001516732581655,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "highYieldSpread": {
         "key": "highYieldSpread",
@@ -373,14 +399,16 @@
         "observationDate": "2026-07-29",
         "previousValue": 2.84,
         "change": 0.03000000000000025,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-07-31T02:36:32.725Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 1.7730496453900901,
         "change12m": 0.34965034965035446,
         "change3mPoints": 0.050000000000000266,
-        "change12mPoints": 0.010000000000000231
+        "change12mPoints": 0.010000000000000231,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "sofr": {
         "key": "sofr",
@@ -392,14 +420,16 @@
         "observationDate": "2026-07-29",
         "previousValue": 3.65,
         "change": 0,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-07-31T02:36:33.099Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 0.5509641873278293,
         "change12m": -16.284403669724778,
         "change3mPoints": 0.020000000000000018,
-        "change12mPoints": -0.7100000000000004
+        "change12mPoints": -0.7100000000000004,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "ciTighteningLarge": {
         "key": "ciTighteningLarge",
@@ -411,14 +441,16 @@
         "observationDate": "2026-04-01",
         "previousValue": 5.3,
         "change": 2.8,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-07-31T02:36:32.267Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 52.83018867924527,
         "change12m": -56.21621621621622,
         "change3mPoints": 2.8,
-        "change12mPoints": -10.4
+        "change12mPoints": -10.4,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "ciTighteningSmall": {
         "key": "ciTighteningSmall",
@@ -430,14 +462,16 @@
         "observationDate": "2026-04-01",
         "previousValue": 8.9,
         "change": -2.3000000000000007,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-07-31T02:36:32.115Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": -25.842696629213492,
         "change12m": -58.49056603773586,
         "change3mPoints": -2.3000000000000007,
-        "change12mPoints": -9.3
+        "change12mPoints": -9.3,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "businessLoanDelinquency": {
         "key": "businessLoanDelinquency",
@@ -449,14 +483,16 @@
         "observationDate": "2026-01-01",
         "previousValue": 1.34,
         "change": 0,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-07-31T02:36:32.154Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 0,
         "change12m": 3.875968992248069,
         "change3mPoints": 0,
-        "change12mPoints": 0.050000000000000044
+        "change12mPoints": 0.050000000000000044,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "wti": {
         "key": "wti",
@@ -468,14 +504,16 @@
         "observationDate": "2026-07-27",
         "previousValue": 91.74,
         "change": -7.489999999999995,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DCOILWTICO",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
-        "fetchedAt": "2026-07-31T02:36:32.359Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": -15.657222945239768,
         "change12m": 26.92075926483881,
         "change3mPoints": -15.64,
-        "change12mPoints": 17.870000000000005
+        "change12mPoints": 17.870000000000005,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "brent": {
         "key": "brent",
@@ -487,14 +525,16 @@
         "observationDate": "2026-07-27",
         "previousValue": 100.31,
         "change": -8.490000000000009,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DCOILBRENTEU",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
-        "fetchedAt": "2026-07-31T02:36:32.616Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": -19.37834752831681,
         "change12m": 32.63036255958398,
         "change3mPoints": -22.070000000000007,
-        "change12mPoints": 22.58999999999999
+        "change12mPoints": 22.58999999999999,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "vix": {
         "key": "vix",
@@ -506,14 +546,16 @@
         "observationDate": "2026-07-29",
         "previousValue": 18.21,
         "change": 2.4499999999999993,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-07-31T02:36:32.188Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 9.835194045720375,
         "change12m": 29.28660826032541,
         "change3mPoints": 1.8500000000000014,
-        "change12mPoints": 4.68
+        "change12mPoints": 4.68,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "yieldCurve10y3m": {
         "key": "yieldCurve10y3m",
@@ -525,14 +567,16 @@
         "observationDate": "2026-07-30",
         "previousValue": 0.84,
         "change": 0.020000000000000018,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_T10Y3M",
         "sourceUrl": "https://fred.stlouisfed.org/series/T10Y3M",
-        "fetchedAt": "2026-07-31T02:36:33.242Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 19.444444444444443,
         "change12m": -2966.666666666667,
         "change3mPoints": 0.14,
-        "change12mPoints": 0.89
+        "change12mPoints": 0.89,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "sahmRule": {
         "key": "sahmRule",
@@ -544,14 +588,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 0.1,
         "change": -0.03,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_SAHMREALTIME",
         "sourceUrl": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-        "fetchedAt": "2026-07-31T02:36:32.148Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": -64.99999999999999,
         "change12m": -58.823529411764696,
         "change3mPoints": -0.13,
-        "change12mPoints": -0.1
+        "change12mPoints": -0.1,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "initialClaims": {
         "key": "initialClaims",
@@ -563,14 +609,16 @@
         "observationDate": "2026-07-25",
         "previousValue": 188000,
         "change": 9000,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_ICSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/ICSA",
-        "fetchedAt": "2026-07-31T02:36:32.208Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 3.6842105263157787,
         "change12m": -9.633027522935777,
         "change3mPoints": 7000,
-        "change12mPoints": -21000
+        "change12mPoints": -21000,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "continuedClaims": {
         "key": "continuedClaims",
@@ -582,14 +630,16 @@
         "observationDate": "2026-07-18",
         "previousValue": 1789000,
         "change": -7000,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_CCSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/CCSA",
-        "fetchedAt": "2026-07-31T02:36:32.180Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 0.33783783783782884,
         "change12m": -8.191653786707887,
         "change3mPoints": 6000,
-        "change12mPoints": -159000
+        "change12mPoints": -159000,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "payrolls": {
         "key": "payrolls",
@@ -601,14 +651,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 158927,
         "change": 57,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_PAYEMS",
         "sourceUrl": "https://fred.stlouisfed.org/series/PAYEMS",
-        "fetchedAt": "2026-07-31T02:36:32.256Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 0.21052631578948322,
         "change12m": 0.3192872196771779,
         "change3mPoints": 334,
-        "change12mPoints": 506
+        "change12mPoints": 506,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "jobOpenings": {
         "key": "jobOpenings",
@@ -623,11 +675,13 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_JTSJOL",
         "sourceUrl": "https://fred.stlouisfed.org/series/JTSJOL",
-        "fetchedAt": "2026-07-31T02:36:32.200Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 9.70817682750651,
         "change12m": 3.8850889192886484,
         "change3mPoints": 672,
-        "change12mPoints": 284
+        "change12mPoints": 284,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "tempHelp": {
         "key": "tempHelp",
@@ -639,14 +693,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 2489.9,
         "change": 9.299999999999727,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_TEMPHELPS",
         "sourceUrl": "https://fred.stlouisfed.org/series/TEMPHELPS",
-        "fetchedAt": "2026-07-31T02:36:32.168Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 0.7782571877898103,
         "change12m": -0.2156032899464977,
         "change3mPoints": 19.299999999999727,
-        "change12mPoints": -5.400000000000091
+        "change12mPoints": -5.400000000000091,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "industrialProduction": {
         "key": "industrialProduction",
@@ -658,14 +714,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 102.5606,
         "change": 0.07890000000000441,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_INDPRO",
         "sourceUrl": "https://fred.stlouisfed.org/series/INDPRO",
-        "fetchedAt": "2026-07-31T02:36:32.231Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 1.0060304751557725,
         "change12m": 1.1440847075981697,
         "change3mPoints": 1.0223000000000013,
-        "change12mPoints": 1.1610000000000014
+        "change12mPoints": 1.1610000000000014,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "realPce": {
         "key": "realPce",
@@ -677,14 +735,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 16817.2,
         "change": 68,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_PCEC96",
         "sourceUrl": "https://fred.stlouisfed.org/series/PCEC96",
-        "fetchedAt": "2026-07-31T02:36:32.303Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 0.9270715656212625,
         "change12m": 2.5439837729180237,
         "change3mPoints": 155.10000000000218,
-        "change12mPoints": 418.90000000000146
+        "change12mPoints": 418.90000000000146,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "retailSales": {
         "key": "retailSales",
@@ -696,14 +756,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 766876,
         "change": 1677,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_RSAFS",
         "sourceUrl": "https://fred.stlouisfed.org/series/RSAFS",
-        "fetchedAt": "2026-07-31T02:36:32.158Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 1.9283487154730716,
         "change12m": 6.719163968207242,
         "change3mPoints": 14540,
-        "change12mPoints": 48389
+        "change12mPoints": 48389,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "housingStarts": {
         "key": "housingStarts",
@@ -715,14 +777,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 1199,
         "change": 228,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_HOUST",
         "sourceUrl": "https://fred.stlouisfed.org/series/HOUST",
-        "fetchedAt": "2026-07-31T02:36:32.336Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": -6.24178712220762,
         "change12m": 3.4807831762146524,
         "change3mPoints": -95,
-        "change12mPoints": 48
+        "change12mPoints": 48,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "mortgageRate": {
         "key": "mortgageRate",
@@ -734,14 +798,16 @@
         "observationDate": "2026-07-30",
         "previousValue": 6.58,
         "change": 0.08000000000000007,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_MORTGAGE30US",
         "sourceUrl": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-        "fetchedAt": "2026-07-31T02:36:32.265Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 5.714285714285716,
         "change12m": -1.1869436201780381,
         "change3mPoints": 0.3600000000000003,
-        "change12mPoints": -0.08000000000000007
+        "change12mPoints": -0.08000000000000007,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "nfci": {
         "key": "nfci",
@@ -753,14 +819,16 @@
         "observationDate": "2026-07-24",
         "previousValue": -0.544,
         "change": -0.010000000000000009,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_NFCI",
         "sourceUrl": "https://fred.stlouisfed.org/series/NFCI",
-        "fetchedAt": "2026-07-31T02:36:32.171Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 13.292433537832316,
         "change12m": 8.414872798434448,
         "change3mPoints": -0.06500000000000006,
-        "change12mPoints": -0.04300000000000004
+        "change12mPoints": -0.04300000000000004,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       "privateDomesticDemand": {
         "key": "privateDomesticDemand",
@@ -772,14 +840,16 @@
         "observationDate": "2026-04-01",
         "previousValue": 2.1,
         "change": -0.6000000000000001,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_A191RL1Q225SBEA",
         "sourceUrl": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
-        "fetchedAt": "2026-07-31T02:36:32.797Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": -28.57142857142857,
         "change12m": -60.526315789473685,
         "change3mPoints": -0.6000000000000001,
-        "change12mPoints": -2.3
+        "change12mPoints": -2.3,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       }
     },
     "treasuryDebt": {
@@ -788,10 +858,12 @@
       "value": 39799618642771.12,
       "unit": "ドル",
       "observationDate": "2026-07-29",
-      "dataState": "observed",
+      "dataState": "stale_observed",
       "sourceId": "UST_DEBT_TO_PENNY",
       "sourceUrl": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
-      "fetchedAt": "2026-07-31T02:36:34.189Z"
+      "fetchedAt": "2026-08-02T22:21:37.167Z",
+      "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+      "refreshError": "fetch failed"
     },
     "yieldCurve": [
       {
@@ -812,7 +884,7 @@
     ]
   },
   "worldMap": {
-    "dataState": "observed_partial",
+    "dataState": "stale_observed",
     "growthSourceId": "WB_NY.GDP.MKTP.KD.ZG",
     "politicsSourceId": "WB_WGI_2025_PV",
     "growthSourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG",
@@ -850,7 +922,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ADO",
@@ -867,7 +939,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "AFG",
@@ -884,7 +956,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "AGO",
@@ -901,7 +973,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "AIA",
@@ -918,7 +990,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ALB",
@@ -935,7 +1007,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ANT",
@@ -952,7 +1024,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ARE",
@@ -969,7 +1041,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ARG",
@@ -986,7 +1058,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ARM",
@@ -1003,7 +1075,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ASM",
@@ -1020,7 +1092,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ATG",
@@ -1037,7 +1109,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "AUS",
@@ -1054,7 +1126,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "AUT",
@@ -1071,7 +1143,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "AZE",
@@ -1088,7 +1160,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BDI",
@@ -1105,7 +1177,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BEL",
@@ -1122,7 +1194,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BEN",
@@ -1139,7 +1211,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BFA",
@@ -1156,7 +1228,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BGD",
@@ -1173,7 +1245,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BGR",
@@ -1190,7 +1262,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BHR",
@@ -1207,7 +1279,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BHS",
@@ -1224,7 +1296,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BIH",
@@ -1241,7 +1313,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BLR",
@@ -1258,7 +1330,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BLZ",
@@ -1275,7 +1347,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BMU",
@@ -1292,7 +1364,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BOL",
@@ -1309,7 +1381,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BRA",
@@ -1326,7 +1398,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BRB",
@@ -1343,7 +1415,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BRN",
@@ -1360,7 +1432,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BTN",
@@ -1377,7 +1449,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "BWA",
@@ -1394,7 +1466,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CAF",
@@ -1413,7 +1485,7 @@
         "eventIds": [
           "SUDAN_2026_07_14"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CAN",
@@ -1430,7 +1502,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CHE",
@@ -1447,7 +1519,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CHL",
@@ -1464,7 +1536,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CHN",
@@ -1483,7 +1555,7 @@
         "eventIds": [
           "INDO_PACIFIC_2026_07_21"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CIV",
@@ -1500,7 +1572,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CMR",
@@ -1517,7 +1589,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "COD",
@@ -1534,7 +1606,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "COG",
@@ -1551,7 +1623,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "COK",
@@ -1568,7 +1640,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "COL",
@@ -1585,7 +1657,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "COM",
@@ -1602,7 +1674,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CPV",
@@ -1619,7 +1691,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CRI",
@@ -1636,7 +1708,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CUB",
@@ -1653,7 +1725,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CYM",
@@ -1670,7 +1742,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CYP",
@@ -1687,7 +1759,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "CZE",
@@ -1704,7 +1776,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "DEU",
@@ -1721,7 +1793,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "DJI",
@@ -1740,7 +1812,7 @@
         "eventIds": [
           "RED_SEA_MARAD_2026_006"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "DMA",
@@ -1757,7 +1829,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "DNK",
@@ -1774,7 +1846,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "DOM",
@@ -1791,7 +1863,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "DZA",
@@ -1808,7 +1880,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ECU",
@@ -1825,7 +1897,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "EGY",
@@ -1844,7 +1916,7 @@
         "eventIds": [
           "RED_SEA_MARAD_2026_006"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ERI",
@@ -1863,7 +1935,7 @@
         "eventIds": [
           "RED_SEA_MARAD_2026_006"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ESP",
@@ -1880,7 +1952,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "EST",
@@ -1897,7 +1969,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ETH",
@@ -1914,7 +1986,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "FIN",
@@ -1931,7 +2003,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "FJI",
@@ -1948,7 +2020,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "FRA",
@@ -1965,7 +2037,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "FSM",
@@ -1982,7 +2054,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GAB",
@@ -1999,7 +2071,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GBR",
@@ -2016,7 +2088,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GEO",
@@ -2033,7 +2105,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GHA",
@@ -2050,7 +2122,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GIN",
@@ -2067,7 +2139,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GMB",
@@ -2084,7 +2156,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GNB",
@@ -2101,7 +2173,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GNQ",
@@ -2118,7 +2190,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GRC",
@@ -2135,7 +2207,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GRD",
@@ -2152,7 +2224,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GRL",
@@ -2169,7 +2241,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GTM",
@@ -2186,7 +2258,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GUF",
@@ -2203,7 +2275,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GUM",
@@ -2220,7 +2292,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "GUY",
@@ -2237,7 +2309,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "HKG",
@@ -2254,7 +2326,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "HND",
@@ -2271,7 +2343,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "HRV",
@@ -2288,7 +2360,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "HTI",
@@ -2305,7 +2377,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "HUN",
@@ -2322,7 +2394,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "IDN",
@@ -2339,7 +2411,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "IND",
@@ -2356,7 +2428,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "IRL",
@@ -2373,7 +2445,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "IRN",
@@ -2390,7 +2462,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "IRQ",
@@ -2407,7 +2479,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ISL",
@@ -2424,7 +2496,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ISR",
@@ -2443,7 +2515,7 @@
         "eventIds": [
           "OPT_2026_07_23"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ITA",
@@ -2460,7 +2532,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "JAM",
@@ -2477,7 +2549,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "JEY",
@@ -2494,7 +2566,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "JOR",
@@ -2511,7 +2583,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "JPN",
@@ -2530,7 +2602,7 @@
         "eventIds": [
           "INDO_PACIFIC_2026_07_21"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "KAZ",
@@ -2547,7 +2619,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "KEN",
@@ -2564,7 +2636,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "KGZ",
@@ -2581,7 +2653,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "KHM",
@@ -2598,7 +2670,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "KIR",
@@ -2615,7 +2687,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "KNA",
@@ -2632,7 +2704,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "KOR",
@@ -2649,7 +2721,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "KWT",
@@ -2666,7 +2738,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LAO",
@@ -2683,7 +2755,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LBN",
@@ -2700,7 +2772,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LBR",
@@ -2717,7 +2789,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LBY",
@@ -2734,7 +2806,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LCA",
@@ -2751,7 +2823,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LIE",
@@ -2768,7 +2840,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LKA",
@@ -2785,7 +2857,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LSO",
@@ -2802,7 +2874,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LTU",
@@ -2819,7 +2891,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LUX",
@@ -2836,7 +2908,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "LVA",
@@ -2853,7 +2925,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MAC",
@@ -2870,7 +2942,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MAR",
@@ -2887,7 +2959,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MCO",
@@ -2904,7 +2976,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MDA",
@@ -2921,7 +2993,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MDG",
@@ -2938,7 +3010,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MDV",
@@ -2955,7 +3027,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MEX",
@@ -2972,7 +3044,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MHL",
@@ -2989,7 +3061,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MKD",
@@ -3006,7 +3078,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MLI",
@@ -3023,7 +3095,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MLT",
@@ -3040,7 +3112,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MMR",
@@ -3057,7 +3129,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MNE",
@@ -3074,7 +3146,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MNG",
@@ -3091,7 +3163,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MOZ",
@@ -3108,7 +3180,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MRT",
@@ -3125,7 +3197,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MTQ",
@@ -3142,7 +3214,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MUS",
@@ -3159,7 +3231,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MWI",
@@ -3176,7 +3248,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "MYS",
@@ -3193,7 +3265,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NAM",
@@ -3210,7 +3282,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NCL",
@@ -3227,7 +3299,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NER",
@@ -3244,7 +3316,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NGA",
@@ -3261,7 +3333,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NIC",
@@ -3278,7 +3350,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NIU",
@@ -3295,7 +3367,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NLD",
@@ -3312,7 +3384,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NOR",
@@ -3329,7 +3401,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NPL",
@@ -3346,7 +3418,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NRU",
@@ -3363,7 +3435,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "NZL",
@@ -3380,7 +3452,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "OMN",
@@ -3397,7 +3469,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PAK",
@@ -3414,7 +3486,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PAN",
@@ -3431,7 +3503,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PER",
@@ -3448,7 +3520,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PHL",
@@ -3465,7 +3537,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PLW",
@@ -3482,7 +3554,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PNG",
@@ -3499,7 +3571,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "POL",
@@ -3516,7 +3588,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PRI",
@@ -3533,7 +3605,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PRK",
@@ -3550,7 +3622,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PRT",
@@ -3567,7 +3639,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PRY",
@@ -3584,7 +3656,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PSE",
@@ -3603,7 +3675,7 @@
         "eventIds": [
           "OPT_2026_07_23"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "PYF",
@@ -3620,7 +3692,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "QAT",
@@ -3637,7 +3709,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "REU",
@@ -3654,7 +3726,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ROU",
@@ -3671,7 +3743,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "RUS",
@@ -3691,7 +3763,7 @@
           "INDO_PACIFIC_2026_07_21",
           "UKRAINE_2026_07_27"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "RWA",
@@ -3708,7 +3780,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SAU",
@@ -3727,7 +3799,7 @@
         "eventIds": [
           "RED_SEA_MARAD_2026_006"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SDN",
@@ -3746,7 +3818,7 @@
         "eventIds": [
           "SUDAN_2026_07_14"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SEN",
@@ -3763,7 +3835,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SGP",
@@ -3780,7 +3852,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SLB",
@@ -3797,7 +3869,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SLE",
@@ -3814,7 +3886,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SLV",
@@ -3831,7 +3903,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SMR",
@@ -3848,7 +3920,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SOM",
@@ -3865,7 +3937,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SRB",
@@ -3882,7 +3954,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SSD",
@@ -3901,7 +3973,7 @@
         "eventIds": [
           "SOUTH_SUDAN_2026_07_10"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "STP",
@@ -3918,7 +3990,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SUR",
@@ -3935,7 +4007,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SVK",
@@ -3952,7 +4024,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SVN",
@@ -3969,7 +4041,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SWE",
@@ -3986,7 +4058,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SWZ",
@@ -4003,7 +4075,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SYC",
@@ -4020,7 +4092,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "SYR",
@@ -4037,7 +4109,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TCD",
@@ -4056,7 +4128,7 @@
         "eventIds": [
           "SUDAN_2026_07_14"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TGO",
@@ -4073,7 +4145,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "THA",
@@ -4090,7 +4162,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TJK",
@@ -4107,7 +4179,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TKM",
@@ -4124,7 +4196,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TLS",
@@ -4141,7 +4213,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TON",
@@ -4158,7 +4230,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TTO",
@@ -4175,7 +4247,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TUN",
@@ -4192,7 +4264,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TUR",
@@ -4209,7 +4281,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TUV",
@@ -4226,7 +4298,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TWN",
@@ -4243,7 +4315,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "TZA",
@@ -4260,7 +4332,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "UGA",
@@ -4277,7 +4349,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "UKR",
@@ -4296,7 +4368,7 @@
         "eventIds": [
           "UKRAINE_2026_07_27"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "URY",
@@ -4313,7 +4385,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "USA",
@@ -4330,7 +4402,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "UZB",
@@ -4347,7 +4419,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "VCT",
@@ -4364,7 +4436,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "VEN",
@@ -4381,7 +4453,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "VIR",
@@ -4398,7 +4470,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "VNM",
@@ -4415,7 +4487,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "VUT",
@@ -4432,7 +4504,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "WSM",
@@ -4449,7 +4521,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "XKX",
@@ -4466,7 +4538,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "YEM",
@@ -4485,7 +4557,7 @@
         "eventIds": [
           "RED_SEA_MARAD_2026_006"
         ],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ZAF",
@@ -4502,7 +4574,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ZMB",
@@ -4519,7 +4591,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       },
       {
         "iso3": "ZWE",
@@ -4536,13 +4608,15 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "observed_partial"
+        "dataState": "stale_observed"
       }
-    ]
+    ],
+    "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+    "refreshError": "fetch failed"
   },
   "geopoliticalEvents": {
     "dataState": "observed_partial",
-    "verifiedAt": "2026-07-31T02:36:34.192Z",
+    "verifiedAt": "2026-08-02T22:21:37.171Z",
     "automatedFeeds": {
       "reliefWeb": {
         "dataState": "blocked_or_failed",
@@ -4764,7 +4838,7 @@
         "label": "原油・物流",
         "score": 47.5,
         "state": "yellow",
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceIds": [
           "FRED_DCOILWTICO",
           "FRED_DCOILBRENTEU"
@@ -5046,14 +5120,16 @@
         "observationDate": "2026-07-29",
         "previousValue": 3.65,
         "change": 0,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-07-31T02:36:33.099Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 0.5509641873278293,
         "change12m": -16.284403669724778,
         "change3mPoints": 0.020000000000000018,
-        "change12mPoints": -0.7100000000000004
+        "change12mPoints": -0.7100000000000004,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "ciTighteningLarge",
@@ -5065,14 +5141,16 @@
         "observationDate": "2026-04-01",
         "previousValue": 5.3,
         "change": 2.8,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-07-31T02:36:32.267Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 52.83018867924527,
         "change12m": -56.21621621621622,
         "change3mPoints": 2.8,
-        "change12mPoints": -10.4
+        "change12mPoints": -10.4,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "ciTighteningSmall",
@@ -5084,14 +5162,16 @@
         "observationDate": "2026-04-01",
         "previousValue": 8.9,
         "change": -2.3000000000000007,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-07-31T02:36:32.115Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": -25.842696629213492,
         "change12m": -58.49056603773586,
         "change3mPoints": -2.3000000000000007,
-        "change12mPoints": -9.3
+        "change12mPoints": -9.3,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "businessLoanDelinquency",
@@ -5103,14 +5183,16 @@
         "observationDate": "2026-01-01",
         "previousValue": 1.34,
         "change": 0,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-07-31T02:36:32.154Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 0,
         "change12m": 3.875968992248069,
         "change3mPoints": 0,
-        "change12mPoints": 0.050000000000000044
+        "change12mPoints": 0.050000000000000044,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       }
     ],
     "monitoring": [
@@ -5464,11 +5546,13 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-07-31T02:36:33.139Z",
+        "fetchedAt": "2026-08-02T22:21:37.111Z",
         "change3m": 1.6685841922893463,
         "change12m": 0.9568741720081819,
         "change3mPoints": 1.9810999999999979,
-        "change12mPoints": 1.1440999999999946
+        "change12mPoints": 1.1440999999999946,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "moneyMarketAssets",
@@ -5480,14 +5564,16 @@
         "observationDate": "2026-01-01",
         "previousValue": 8190235,
         "change": 99334,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-07-31T02:36:32.211Z",
+        "fetchedAt": "2026-08-02T22:21:37.111Z",
         "change3m": 1.2128345523663153,
         "change12m": 12.052925794532365,
         "change3mPoints": 99334,
-        "change12mPoints": 891664
+        "change12mPoints": 891664,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "realDisposableIncomePc",
@@ -5499,14 +5585,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 52516,
         "change": 153,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-07-31T02:36:32.249Z",
+        "fetchedAt": "2026-08-02T22:21:37.111Z",
         "change3m": 0.08551231377318391,
         "change12m": 0.26651944640103675,
         "change3mPoints": 45,
-        "change12mPoints": 140
+        "change12mPoints": 140,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       }
     ],
     "triggers": [
@@ -5583,8 +5671,8 @@
     "state": "green",
     "label": "拡大・軟着陸域",
     "conclusion": "現在は急収縮を示す一斉悪化ではない。ただし金利曲線、雇用、信用の先行指標が上向けば3〜12か月の圧力が変化する。",
-    "dataCoverage": 97.7,
-    "dataCoverageLabel": "高",
+    "dataCoverage": 65,
+    "dataCoverageLabel": "中",
     "formula": "雇用25% + 需要20% + 生産15% + 住宅10% + 金融15% + 金利曲線15%。0〜100は低下圧力で、景気後退確率ではない。",
     "warning": "シナリオ比率は信号の相対ウェイトであり確率ではありません。閾値は運用初版で、過去局面のバックテストと改定データの検証が今後必要です。",
     "releaseGate": {
@@ -5613,7 +5701,7 @@
         "value": 1.5,
         "unit": "%・前期比年率",
         "observationDate": "2026-04-01",
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "BEA_GDP_2026_Q1",
         "sourceUrl": "https://www.bea.gov/data/gdp/gross-domestic-product",
         "note": "公式実績。予測モデルの基準線"
@@ -8244,14 +8332,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 0.1,
         "change": -0.03,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_SAHMREALTIME",
         "sourceUrl": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-        "fetchedAt": "2026-07-31T02:36:32.148Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": -64.99999999999999,
         "change12m": -58.823529411764696,
         "change3mPoints": -0.13,
-        "change12mPoints": -0.1
+        "change12mPoints": -0.1,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "yieldCurve10y3m",
@@ -8263,14 +8353,16 @@
         "observationDate": "2026-07-30",
         "previousValue": 0.84,
         "change": 0.020000000000000018,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_T10Y3M",
         "sourceUrl": "https://fred.stlouisfed.org/series/T10Y3M",
-        "fetchedAt": "2026-07-31T02:36:33.242Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 19.444444444444443,
         "change12m": -2966.666666666667,
         "change3mPoints": 0.14,
-        "change12mPoints": 0.89
+        "change12mPoints": 0.89,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "initialClaims",
@@ -8282,14 +8374,16 @@
         "observationDate": "2026-07-25",
         "previousValue": 188000,
         "change": 9000,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_ICSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/ICSA",
-        "fetchedAt": "2026-07-31T02:36:32.208Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 3.6842105263157787,
         "change12m": -9.633027522935777,
         "change3mPoints": 7000,
-        "change12mPoints": -21000
+        "change12mPoints": -21000,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "continuedClaims",
@@ -8301,14 +8395,16 @@
         "observationDate": "2026-07-18",
         "previousValue": 1789000,
         "change": -7000,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_CCSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/CCSA",
-        "fetchedAt": "2026-07-31T02:36:32.180Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 0.33783783783782884,
         "change12m": -8.191653786707887,
         "change3mPoints": 6000,
-        "change12mPoints": -159000
+        "change12mPoints": -159000,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "unemployment",
@@ -8320,14 +8416,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 4.3,
         "change": -0.09999999999999964,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-07-31T02:36:31.911Z",
+        "fetchedAt": "2026-08-02T22:21:37.111Z",
         "change3m": -2.3255813953488302,
         "change12m": 2.4390243902439046,
         "change3mPoints": -0.09999999999999964,
-        "change12mPoints": 0.10000000000000053
+        "change12mPoints": 0.10000000000000053,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "jobOpenings",
@@ -8342,11 +8440,13 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_JTSJOL",
         "sourceUrl": "https://fred.stlouisfed.org/series/JTSJOL",
-        "fetchedAt": "2026-07-31T02:36:32.200Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 9.70817682750651,
         "change12m": 3.8850889192886484,
         "change3mPoints": 672,
-        "change12mPoints": 284
+        "change12mPoints": 284,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "tempHelp",
@@ -8358,14 +8458,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 2489.9,
         "change": 9.299999999999727,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_TEMPHELPS",
         "sourceUrl": "https://fred.stlouisfed.org/series/TEMPHELPS",
-        "fetchedAt": "2026-07-31T02:36:32.168Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 0.7782571877898103,
         "change12m": -0.2156032899464977,
         "change3mPoints": 19.299999999999727,
-        "change12mPoints": -5.400000000000091
+        "change12mPoints": -5.400000000000091,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "realPce",
@@ -8377,14 +8479,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 16817.2,
         "change": 68,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_PCEC96",
         "sourceUrl": "https://fred.stlouisfed.org/series/PCEC96",
-        "fetchedAt": "2026-07-31T02:36:32.303Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 0.9270715656212625,
         "change12m": 2.5439837729180237,
         "change3mPoints": 155.10000000000218,
-        "change12mPoints": 418.90000000000146
+        "change12mPoints": 418.90000000000146,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "retailSales",
@@ -8396,14 +8500,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 766876,
         "change": 1677,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_RSAFS",
         "sourceUrl": "https://fred.stlouisfed.org/series/RSAFS",
-        "fetchedAt": "2026-07-31T02:36:32.158Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 1.9283487154730716,
         "change12m": 6.719163968207242,
         "change3mPoints": 14540,
-        "change12mPoints": 48389
+        "change12mPoints": 48389,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "industrialProduction",
@@ -8415,14 +8521,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 102.5606,
         "change": 0.07890000000000441,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_INDPRO",
         "sourceUrl": "https://fred.stlouisfed.org/series/INDPRO",
-        "fetchedAt": "2026-07-31T02:36:32.231Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 1.0060304751557725,
         "change12m": 1.1440847075981697,
         "change3mPoints": 1.0223000000000013,
-        "change12mPoints": 1.1610000000000014
+        "change12mPoints": 1.1610000000000014,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "housingStarts",
@@ -8434,14 +8542,16 @@
         "observationDate": "2026-06-01",
         "previousValue": 1199,
         "change": 228,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_HOUST",
         "sourceUrl": "https://fred.stlouisfed.org/series/HOUST",
-        "fetchedAt": "2026-07-31T02:36:32.336Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": -6.24178712220762,
         "change12m": 3.4807831762146524,
         "change3mPoints": -95,
-        "change12mPoints": 48
+        "change12mPoints": 48,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "mortgageRate",
@@ -8453,14 +8563,16 @@
         "observationDate": "2026-07-30",
         "previousValue": 6.58,
         "change": 0.08000000000000007,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_MORTGAGE30US",
         "sourceUrl": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-        "fetchedAt": "2026-07-31T02:36:32.265Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 5.714285714285716,
         "change12m": -1.1869436201780381,
         "change3mPoints": 0.3600000000000003,
-        "change12mPoints": -0.08000000000000007
+        "change12mPoints": -0.08000000000000007,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "nfci",
@@ -8472,14 +8584,16 @@
         "observationDate": "2026-07-24",
         "previousValue": -0.544,
         "change": -0.010000000000000009,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_NFCI",
         "sourceUrl": "https://fred.stlouisfed.org/series/NFCI",
-        "fetchedAt": "2026-07-31T02:36:32.171Z",
+        "fetchedAt": "2026-08-02T22:21:37.113Z",
         "change3m": 13.292433537832316,
         "change12m": 8.414872798434448,
         "change3mPoints": -0.06500000000000006,
-        "change12mPoints": -0.04300000000000004
+        "change12mPoints": -0.04300000000000004,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "highYieldSpread",
@@ -8491,14 +8605,16 @@
         "observationDate": "2026-07-29",
         "previousValue": 2.84,
         "change": 0.03000000000000025,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-07-31T02:36:32.725Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 1.7730496453900901,
         "change12m": 0.34965034965035446,
         "change3mPoints": 0.050000000000000266,
-        "change12mPoints": 0.010000000000000231
+        "change12mPoints": 0.010000000000000231,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       },
       {
         "key": "vix",
@@ -8510,14 +8626,16 @@
         "observationDate": "2026-07-29",
         "previousValue": 18.21,
         "change": 2.4499999999999993,
-        "dataState": "observed",
+        "dataState": "stale_observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-07-31T02:36:32.188Z",
+        "fetchedAt": "2026-08-02T22:21:37.112Z",
         "change3m": 9.835194045720375,
         "change12m": 29.28660826032541,
         "change3mPoints": 1.8500000000000014,
-        "change12mPoints": 4.68
+        "change12mPoints": 4.68,
+        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
+        "refreshError": "fetch failed"
       }
     ],
     "actions": [
@@ -8558,11 +8676,11 @@
   "health": {
     "status": "passed_with_warnings",
     "label": "主要機能は正常・鮮度警告あり",
-    "checkedAt": "2026-07-31T02:36:34.192Z",
+    "checkedAt": "2026-08-02T22:21:37.171Z",
     "totals": {
       "failed": 0,
       "unknown": 0,
-      "stale": 10
+      "stale": 280
     },
     "sections": [
       {
@@ -8570,7 +8688,8 @@
         "label": "ドル円急変",
         "total": 6,
         "counts": {
-          "observed_partial": 3,
+          "stale_observed": 1,
+          "observed_partial": 2,
           "estimated": 2,
           "strategic_interpretation": 1
         },
@@ -8581,8 +8700,7 @@
         "label": "米国マクロ・為替・国債",
         "total": 34,
         "counts": {
-          "stale_observed": 3,
-          "observed": 31
+          "stale_observed": 34
         },
         "failedIds": []
       },
@@ -8591,7 +8709,7 @@
         "label": "世界地図",
         "total": 216,
         "counts": {
-          "observed_partial": 216
+          "stale_observed": 216
         },
         "failedIds": []
       },
@@ -8609,8 +8727,7 @@
         "label": "沖縄生活波及",
         "total": 4,
         "counts": {
-          "stale_observed": 1,
-          "observed": 1,
+          "stale_observed": 2,
           "estimated": 2
         },
         "failedIds": []
@@ -8620,9 +8737,8 @@
         "label": "プライベートクレジット",
         "total": 15,
         "counts": {
-          "stale_observed": 3,
-          "observed_partial": 8,
-          "observed": 4
+          "stale_observed": 7,
+          "observed_partial": 8
         },
         "failedIds": []
       },
@@ -8631,10 +8747,10 @@
         "label": "ドル・資金フロー",
         "total": 20,
         "counts": {
-          "observed": 16,
+          "observed": 14,
           "estimated": 2,
           "observed_partial": 1,
-          "stale_observed": 1
+          "stale_observed": 3
         },
         "failedIds": []
       },
@@ -8643,8 +8759,7 @@
         "label": "米国景気・世界波及予測",
         "total": 17,
         "counts": {
-          "observed": 15,
-          "stale_observed": 2
+          "stale_observed": 17
         },
         "failedIds": []
       },
