@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "generatedAt": "2026-08-02T22:21:37.171Z",
+  "generatedAt": "2026-08-03T23:32:03.496Z",
   "dashboardTimeZone": "Asia/Tokyo",
   "fxAudit": {
     "isRealtime": false,
@@ -12,41 +12,39 @@
       "label": "ドル円・米国連邦準備制度公表値",
       "unit": "円/ドル",
       "cadence": "日次",
-      "value": 163.71,
-      "observationDate": "2026-07-24",
-      "previousValue": 163.8,
-      "change": -0.09000000000000341,
-      "dataState": "stale_observed",
+      "value": 159.16,
+      "observationDate": "2026-07-31",
+      "previousValue": 159.47,
+      "change": -0.3100000000000023,
+      "dataState": "observed",
       "sourceId": "FRED_DEXJPUS",
       "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-      "fetchedAt": "2026-08-02T22:21:37.108Z",
-      "change3m": 2.7361154690932032,
-      "change12m": 11.427988020691537,
-      "change3mPoints": 4.360000000000014,
-      "change12mPoints": 16.79000000000002,
-      "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-      "refreshError": "fetch failed"
+      "fetchedAt": "2026-08-03T23:32:02.499Z",
+      "change3m": 1.5310028068384884,
+      "change12m": 5.683930942895099,
+      "change3mPoints": 2.4000000000000057,
+      "change12mPoints": 8.560000000000002
     },
     "marketShock": {
       "id": "USDJPY_MARKET_SHOCK_2026_07_30",
       "label": "ドル円・市場急変スナップショット",
-      "dataState": "stale_observed",
+      "dataState": "observed_partial",
       "sourceId": "YAHOO_FINANCE_JPY=X",
       "sourceUrl": "https://finance.yahoo.com/quote/JPY=X/",
-      "fetchedAt": "2026-08-02T22:21:37.116Z",
-      "marketObservedAt": "2026-07-31T01:08:46.000Z",
+      "fetchedAt": "2026-08-03T23:32:02.505Z",
+      "marketObservedAt": "2026-08-03T23:31:57.000Z",
       "isRealtime": false,
       "note": "生成時点の市場スナップショット。TradingViewライブ表示とは更新間隔が異なり、売買・送金の執行価格ではありません。",
       "current": {
-        "value": 160.562,
-        "previousClose": 159.608,
-        "change": 0.954,
-        "changePct": 0.6,
-        "dayHigh": 160.69,
-        "dayLow": 159.353,
+        "value": 157.425,
+        "previousClose": 157.191,
+        "change": 0.234,
+        "changePct": 0.15,
+        "dayHigh": 157.438,
+        "dayLow": 157.131,
         "direction": "円安・ドル高",
-        "observationDate": "2026-07-31",
-        "dataState": "stale_observed",
+        "observationDate": "2026-08-03",
+        "dataState": "observed_partial",
         "sourceId": "YAHOO_FINANCE_JPY=X"
       },
       "shockSession": {
@@ -54,14 +52,14 @@
         "open": 163.375,
         "high": 163.739,
         "low": 157.923,
-        "close": 159.463,
-        "closeChange": -3.912,
-        "closeChangePct": -2.39,
+        "close": 159.704,
+        "closeChange": -3.671,
+        "closeChangePct": -2.25,
         "peakToTrough": -5.816,
         "peakToTroughPct": -3.55,
-        "currentVsShockHigh": -3.177,
-        "currentVsShockHighPct": -1.94,
-        "dataState": "stale_observed",
+        "currentVsShockHigh": -6.314,
+        "currentVsShockHighPct": -3.86,
+        "dataState": "observed_partial",
         "sourceId": "YAHOO_FINANCE_JPY=X"
       },
       "shockScore": {
@@ -73,7 +71,8 @@
         "warning": "相場急変の大きさを示す運用指数であり、将来の方向や損失確率ではありません。"
       },
       "eventAssessment": {
-        "conclusion": "主因は、日本当局による円買い・ドル売り介入と米当局のレートチェックが行われたとの市場報道です。FRB据え置き後のドル買い縮小と、円売りキャリーの巻き戻しが値幅を増幅した可能性があります。",
+        "assessmentDate": "2026-07-30",
+        "conclusion": "市場報道では、日本当局による円買い・ドル売り介入と米当局のレートチェックが直接要因とされています。財務省の正式確認前のため断定せず、FRB据え置き後のドル調整と円売りキャリーの巻き戻しを増幅要因として監視します。",
         "officialConfirmation": "財務省の月次統計で7月30日の介入を確認できるのは、2026年8月28日19時の公表予定。現時点では市場報道・市場値は一部実測、介入額は不明です。",
         "officialConfirmationState": "unknown",
         "officialSourceId": "MOF_FEIO_RELEASE_SCHEDULE",
@@ -104,7 +103,8 @@
             "label": "FRB据え置き後のドル調整",
             "role": "補助要因",
             "evidenceScore": 55,
-            "dataState": "strategic_interpretation",
+            "dataState": "estimated",
+            "analysisType": "strategic_interpretation",
             "sourceId": "FRB_FOMC_2026_07_29",
             "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
             "read": "3.50〜3.75%据え置きで利上げサプライズは回避。ただし3名が利上げを主張し、ドル高圧力は消えていない。"
@@ -114,10 +114,10 @@
             "label": "日銀会合・追加正常化観測",
             "role": "イベント要因",
             "evidenceScore": 60,
-            "dataState": "observed_partial",
-            "sourceId": "BOJ_MPM_SCHEDULE_2026_07",
-            "sourceUrl": "https://www.boj.or.jp/mopo/mpmsche_minu/",
-            "read": "7月30〜31日の会合を前に円売りポジションを持ち続けにくい時間帯だった。声明内容は更新ゲート。"
+            "dataState": "observed",
+            "sourceId": "BOJ_MPM_2026_07_31",
+            "sourceUrl": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260731a.pdf",
+            "read": "日銀は7月31日に1.0%程度を維持。反対1名の1.25%提案は正常化圧力を示すが、政策金利差はなおドル保有を支える。"
           },
           {
             "key": "structuralCounterforce",
@@ -133,20 +133,18 @@
       },
       "okinawaImpact": {
         "usd200YenBefore": 32748,
-        "usd200YenNow": 32112,
-        "usd200YenChange": -635,
+        "usd200YenNow": 31485,
+        "usd200YenChange": -1263,
         "jpy20000UsdBefore": 122.15,
-        "jpy20000UsdNow": 124.56,
-        "jpy20000UsdChangePct": 1.98,
+        "jpy20000UsdNow": 127.04,
+        "jpy20000UsdChangePct": 4.01,
         "dataState": "estimated",
         "formula": "急変セッション高値と現在スナップショットを使った単純換算",
         "read": "円高方向は米軍家族のドル購買力を低下させ、同じ円価格のドル換算額を押し上げます。価格変更ではなく、まず見積表示と転換率を監視します。"
-      },
-      "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-      "refreshError": "fetch failed"
+      }
     },
     "realtimeProvider": {
-      "state": "stale_observed",
+      "state": "observed_partial",
       "provider": "TradingViewライブ表示 + Yahoo Finance生成時スナップショット",
       "required": "継続履歴保存には認証付きFX市場データAPIまたはブローカー配信",
       "example": "Twelve Data / Alpha Vantage FX_INTRADAY",
@@ -162,20 +160,18 @@
         "label": "ドル円・米国連邦準備制度公表値",
         "unit": "円/ドル",
         "cadence": "日次",
-        "value": 163.71,
-        "observationDate": "2026-07-24",
-        "previousValue": 163.8,
-        "change": -0.09000000000000341,
-        "dataState": "stale_observed",
+        "value": 159.16,
+        "observationDate": "2026-07-31",
+        "previousValue": 159.47,
+        "change": -0.3100000000000023,
+        "dataState": "observed",
         "sourceId": "FRED_DEXJPUS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-        "fetchedAt": "2026-08-02T22:21:37.108Z",
-        "change3m": 2.7361154690932032,
-        "change12m": 11.427988020691537,
-        "change3mPoints": 4.360000000000014,
-        "change12mPoints": 16.79000000000002,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.499Z",
+        "change3m": 1.5310028068384884,
+        "change12m": 5.683930942895099,
+        "change3mPoints": 2.4000000000000057,
+        "change12mPoints": 8.560000000000002
       },
       "fedFunds": {
         "key": "fedFunds",
@@ -184,19 +180,17 @@
         "unit": "%",
         "cadence": "日次",
         "value": 3.63,
-        "observationDate": "2026-07-29",
+        "observationDate": "2026-07-31",
         "previousValue": 3.63,
         "change": 0,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_DFF",
         "sourceUrl": "https://fred.stlouisfed.org/series/DFF",
-        "fetchedAt": "2026-08-02T22:21:37.108Z",
+        "fetchedAt": "2026-08-03T23:32:02.119Z",
         "change3m": -0.27472527472528485,
         "change12m": -16.16628175519631,
         "change3mPoints": -0.010000000000000231,
-        "change12mPoints": -0.7000000000000002,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -0.7000000000000002
       },
       "treasury2y": {
         "key": "treasury2y",
@@ -204,20 +198,18 @@
         "label": "米国債2年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 4.22,
-        "observationDate": "2026-07-29",
-        "previousValue": 4.26,
-        "change": -0.040000000000000036,
-        "dataState": "stale_observed",
+        "value": 4.28,
+        "observationDate": "2026-07-31",
+        "previousValue": 4.23,
+        "change": 0.04999999999999982,
+        "dataState": "observed",
         "sourceId": "FRED_DGS2",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS2",
-        "fetchedAt": "2026-08-02T22:21:37.109Z",
-        "change3m": 7.653061224489788,
-        "change12m": 9.32642487046631,
-        "change3mPoints": 0.2999999999999998,
-        "change12mPoints": 0.3599999999999999,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.260Z",
+        "change3m": 10.309278350515472,
+        "change12m": 8.629441624365498,
+        "change3mPoints": 0.40000000000000036,
+        "change12mPoints": 0.3400000000000003
       },
       "treasury10y": {
         "key": "treasury10y",
@@ -225,20 +217,18 @@
         "label": "米国債10年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 4.67,
-        "observationDate": "2026-07-29",
-        "previousValue": 4.61,
-        "change": 0.05999999999999961,
-        "dataState": "stale_observed",
+        "value": 4.75,
+        "observationDate": "2026-07-31",
+        "previousValue": 4.68,
+        "change": 0.07000000000000028,
+        "dataState": "observed",
         "sourceId": "FRED_DGS10",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
-        "fetchedAt": "2026-08-02T22:21:37.110Z",
-        "change3m": 5.65610859728507,
-        "change12m": 7.603686635944706,
-        "change3mPoints": 0.25,
-        "change12mPoints": 0.33000000000000007,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.375Z",
+        "change3m": 8.200455580865619,
+        "change12m": 8.695652173913038,
+        "change3mPoints": 0.3600000000000003,
+        "change12mPoints": 0.3799999999999999
       },
       "treasury30y": {
         "key": "treasury30y",
@@ -246,20 +236,18 @@
         "label": "米国債30年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 5.2,
-        "observationDate": "2026-07-29",
-        "previousValue": 5.09,
-        "change": 0.11000000000000032,
-        "dataState": "stale_observed",
+        "value": 5.27,
+        "observationDate": "2026-07-31",
+        "previousValue": 5.21,
+        "change": 0.05999999999999961,
+        "dataState": "observed",
         "sourceId": "FRED_DGS30",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS30",
-        "fetchedAt": "2026-08-02T22:21:37.111Z",
-        "change3m": 4.417670682730912,
-        "change12m": 6.995884773662553,
-        "change3mPoints": 0.21999999999999975,
-        "change12mPoints": 0.33999999999999986,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.309Z",
+        "change3m": 6.036217303822933,
+        "change12m": 7.770961145194266,
+        "change3mPoints": 0.2999999999999998,
+        "change12mPoints": 0.3799999999999999
       },
       "dollarBroad": {
         "key": "dollarBroad",
@@ -267,20 +255,18 @@
         "label": "名目実効ドル指数・広義",
         "unit": "指数",
         "cadence": "日次",
-        "value": 120.7105,
-        "observationDate": "2026-07-24",
-        "previousValue": 120.9075,
-        "change": -0.19700000000000273,
-        "dataState": "stale_observed",
+        "value": 119.7034,
+        "observationDate": "2026-07-31",
+        "previousValue": 119.6753,
+        "change": 0.028100000000009118,
+        "dataState": "observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-08-02T22:21:37.111Z",
-        "change3m": 1.6685841922893463,
-        "change12m": 0.9568741720081819,
-        "change3mPoints": 1.9810999999999979,
-        "change12mPoints": 1.1440999999999946,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.060Z",
+        "change3m": 1.1071637923316224,
+        "change12m": -1.6575611439275106,
+        "change3mPoints": 1.3108000000000004,
+        "change12mPoints": -2.0176000000000016
       },
       "moneyMarketAssets": {
         "key": "moneyMarketAssets",
@@ -292,16 +278,14 @@
         "observationDate": "2026-01-01",
         "previousValue": 8190235,
         "change": 99334,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-08-02T22:21:37.111Z",
+        "fetchedAt": "2026-08-03T23:32:02.061Z",
         "change3m": 1.2128345523663153,
         "change12m": 12.052925794532365,
         "change3mPoints": 99334,
-        "change12mPoints": 891664,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 891664
       },
       "realDisposableIncomePc": {
         "key": "realDisposableIncomePc",
@@ -313,16 +297,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 52516,
         "change": 153,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-08-02T22:21:37.111Z",
+        "fetchedAt": "2026-08-03T23:32:02.057Z",
         "change3m": 0.08551231377318391,
         "change12m": 0.26651944640103675,
         "change3mPoints": 45,
-        "change12mPoints": 140,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 140
       },
       "unemployment": {
         "key": "unemployment",
@@ -334,16 +316,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 4.3,
         "change": -0.09999999999999964,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-08-02T22:21:37.111Z",
+        "fetchedAt": "2026-08-03T23:32:02.047Z",
         "change3m": -2.3255813953488302,
         "change12m": 2.4390243902439046,
         "change3mPoints": -0.09999999999999964,
-        "change12mPoints": 0.10000000000000053,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 0.10000000000000053
       },
       "cpi": {
         "key": "cpi",
@@ -355,17 +335,15 @@
         "observationDate": "2026-06-01",
         "previousValue": 333.979,
         "change": -1.4110000000000014,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_CPIAUCSL",
         "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCSL",
-        "fetchedAt": "2026-08-02T22:21:37.111Z",
+        "fetchedAt": "2026-08-03T23:32:01.940Z",
         "change3m": 0.6887823841255969,
         "change12m": 3.463530729385411,
         "change3mPoints": 2.2749999999999773,
         "change12mPoints": 11.132999999999981,
-        "yoy": 3.463530729385411,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "yoy": 3.463530729385411
       },
       "realGdp": {
         "key": "realGdp",
@@ -377,17 +355,15 @@
         "observationDate": "2026-04-01",
         "previousValue": 24180.419,
         "change": 90.17999999999665,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_GDPC1",
         "sourceUrl": "https://fred.stlouisfed.org/series/GDPC1",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
+        "fetchedAt": "2026-08-03T23:32:02.059Z",
         "change3m": 0.37294639104474836,
         "change12m": 2.1018194625243902,
         "change3mPoints": 90.17999999999665,
         "change12mPoints": 499.6229999999996,
-        "qoqAnnualized": 1.5001516732581655,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "qoqAnnualized": 1.5001516732581655
       },
       "highYieldSpread": {
         "key": "highYieldSpread",
@@ -395,20 +371,18 @@
         "label": "米国ハイイールド債スプレッド",
         "unit": "%",
         "cadence": "日次",
-        "value": 2.87,
-        "observationDate": "2026-07-29",
-        "previousValue": 2.84,
-        "change": 0.03000000000000025,
-        "dataState": "stale_observed",
+        "value": 2.84,
+        "observationDate": "2026-07-30",
+        "previousValue": 2.87,
+        "change": -0.03000000000000025,
+        "dataState": "observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": 1.7730496453900901,
-        "change12m": 0.34965034965035446,
-        "change3mPoints": 0.050000000000000266,
-        "change12mPoints": 0.010000000000000231,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.249Z",
+        "change3m": 0.35335689045936647,
+        "change12m": -1.730103806228378,
+        "change3mPoints": 0.009999999999999787,
+        "change12mPoints": -0.050000000000000266
       },
       "sofr": {
         "key": "sofr",
@@ -416,20 +390,18 @@
         "label": "担保付翌日物調達金利",
         "unit": "%",
         "cadence": "日次",
-        "value": 3.65,
-        "observationDate": "2026-07-29",
+        "value": 3.66,
+        "observationDate": "2026-07-31",
         "previousValue": 3.65,
-        "change": 0,
-        "dataState": "stale_observed",
+        "change": 0.010000000000000231,
+        "dataState": "observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": 0.5509641873278293,
-        "change12m": -16.284403669724778,
+        "fetchedAt": "2026-08-03T23:32:02.199Z",
+        "change3m": 0.5494505494505475,
+        "change12m": -16.628701594533023,
         "change3mPoints": 0.020000000000000018,
-        "change12mPoints": -0.7100000000000004,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -0.7299999999999995
       },
       "ciTighteningLarge": {
         "key": "ciTighteningLarge",
@@ -437,20 +409,18 @@
         "label": "米銀行・大中堅企業向け融資基準厳格化",
         "unit": "%",
         "cadence": "四半期",
-        "value": 8.1,
-        "observationDate": "2026-04-01",
-        "previousValue": 5.3,
-        "change": 2.8,
-        "dataState": "stale_observed",
+        "value": 0,
+        "observationDate": "2026-07-01",
+        "previousValue": 8.1,
+        "change": -8.1,
+        "dataState": "observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": 52.83018867924527,
-        "change12m": -56.21621621621622,
-        "change3mPoints": 2.8,
-        "change12mPoints": -10.4,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.042Z",
+        "change3m": -100,
+        "change12m": -100,
+        "change3mPoints": -8.1,
+        "change12mPoints": -9.5
       },
       "ciTighteningSmall": {
         "key": "ciTighteningSmall",
@@ -458,20 +428,18 @@
         "label": "米銀行・中小企業向け融資基準厳格化",
         "unit": "%",
         "cadence": "四半期",
-        "value": 6.6,
-        "observationDate": "2026-04-01",
-        "previousValue": 8.9,
-        "change": -2.3000000000000007,
-        "dataState": "stale_observed",
+        "value": 1.8,
+        "observationDate": "2026-07-01",
+        "previousValue": 6.6,
+        "change": -4.8,
+        "dataState": "observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": -25.842696629213492,
-        "change12m": -58.49056603773586,
-        "change3mPoints": -2.3000000000000007,
-        "change12mPoints": -9.3,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:01.923Z",
+        "change3m": -72.72727272727273,
+        "change12m": -78.04878048780488,
+        "change3mPoints": -4.8,
+        "change12mPoints": -6.3999999999999995
       },
       "businessLoanDelinquency": {
         "key": "businessLoanDelinquency",
@@ -483,16 +451,14 @@
         "observationDate": "2026-01-01",
         "previousValue": 1.34,
         "change": 0,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
+        "fetchedAt": "2026-08-03T23:32:02.061Z",
         "change3m": 0,
         "change12m": 3.875968992248069,
         "change3mPoints": 0,
-        "change12mPoints": 0.050000000000000044,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 0.050000000000000044
       },
       "wti": {
         "key": "wti",
@@ -507,13 +473,11 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DCOILWTICO",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
+        "fetchedAt": "2026-08-03T23:32:01.994Z",
         "change3m": -15.657222945239768,
         "change12m": 26.92075926483881,
         "change3mPoints": -15.64,
-        "change12mPoints": 17.870000000000005,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 17.870000000000005
       },
       "brent": {
         "key": "brent",
@@ -528,13 +492,11 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DCOILBRENTEU",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
+        "fetchedAt": "2026-08-03T23:32:01.994Z",
         "change3m": -19.37834752831681,
         "change12m": 32.63036255958398,
         "change3mPoints": -22.070000000000007,
-        "change12mPoints": 22.58999999999999,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 22.58999999999999
       },
       "vix": {
         "key": "vix",
@@ -542,20 +504,18 @@
         "label": "VIX市場不安指数",
         "unit": "指数",
         "cadence": "日次",
-        "value": 20.66,
-        "observationDate": "2026-07-29",
-        "previousValue": 18.21,
-        "change": 2.4499999999999993,
-        "dataState": "stale_observed",
+        "value": 15.99,
+        "observationDate": "2026-07-31",
+        "previousValue": 17.09,
+        "change": -1.0999999999999996,
+        "dataState": "observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": 9.835194045720375,
-        "change12m": 29.28660826032541,
-        "change3mPoints": 1.8500000000000014,
-        "change12mPoints": 4.68,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.052Z",
+        "change3m": -5.885815185403165,
+        "change12m": -4.366028708133962,
+        "change3mPoints": -0.9999999999999982,
+        "change12mPoints": -0.7299999999999986
       },
       "yieldCurve10y3m": {
         "key": "yieldCurve10y3m",
@@ -563,20 +523,18 @@
         "label": "米10年国債－3か月国債スプレッド",
         "unit": "%ポイント",
         "cadence": "日次",
-        "value": 0.86,
-        "observationDate": "2026-07-30",
-        "previousValue": 0.84,
-        "change": 0.020000000000000018,
-        "dataState": "stale_observed",
+        "value": 0.79,
+        "observationDate": "2026-08-03",
+        "previousValue": 0.92,
+        "change": -0.13,
+        "dataState": "observed",
         "sourceId": "FRED_T10Y3M",
         "sourceUrl": "https://fred.stlouisfed.org/series/T10Y3M",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": 19.444444444444443,
-        "change12m": -2966.666666666667,
-        "change3mPoints": 0.14,
-        "change12mPoints": 0.89,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.065Z",
+        "change3m": 11.267605633802823,
+        "change12m": -758.3333333333334,
+        "change3mPoints": 0.08000000000000007,
+        "change12mPoints": 0.91
       },
       "sahmRule": {
         "key": "sahmRule",
@@ -588,16 +546,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 0.1,
         "change": -0.03,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_SAHMREALTIME",
         "sourceUrl": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.900Z",
         "change3m": -64.99999999999999,
         "change12m": -58.823529411764696,
         "change3mPoints": -0.13,
-        "change12mPoints": -0.1,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -0.1
       },
       "initialClaims": {
         "key": "initialClaims",
@@ -609,16 +565,14 @@
         "observationDate": "2026-07-25",
         "previousValue": 188000,
         "change": 9000,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_ICSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/ICSA",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.929Z",
         "change3m": 3.6842105263157787,
         "change12m": -9.633027522935777,
         "change3mPoints": 7000,
-        "change12mPoints": -21000,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -21000
       },
       "continuedClaims": {
         "key": "continuedClaims",
@@ -630,16 +584,14 @@
         "observationDate": "2026-07-18",
         "previousValue": 1789000,
         "change": -7000,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_CCSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/CCSA",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.070Z",
         "change3m": 0.33783783783782884,
         "change12m": -8.191653786707887,
         "change3mPoints": 6000,
-        "change12mPoints": -159000,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -159000
       },
       "payrolls": {
         "key": "payrolls",
@@ -651,16 +603,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 158927,
         "change": 57,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_PAYEMS",
         "sourceUrl": "https://fred.stlouisfed.org/series/PAYEMS",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.947Z",
         "change3m": 0.21052631578948322,
         "change12m": 0.3192872196771779,
         "change3mPoints": 334,
-        "change12mPoints": 506,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 506
       },
       "jobOpenings": {
         "key": "jobOpenings",
@@ -675,13 +625,11 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_JTSJOL",
         "sourceUrl": "https://fred.stlouisfed.org/series/JTSJOL",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.044Z",
         "change3m": 9.70817682750651,
         "change12m": 3.8850889192886484,
         "change3mPoints": 672,
-        "change12mPoints": 284,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 284
       },
       "tempHelp": {
         "key": "tempHelp",
@@ -693,16 +641,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 2489.9,
         "change": 9.299999999999727,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_TEMPHELPS",
         "sourceUrl": "https://fred.stlouisfed.org/series/TEMPHELPS",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.936Z",
         "change3m": 0.7782571877898103,
         "change12m": -0.2156032899464977,
         "change3mPoints": 19.299999999999727,
-        "change12mPoints": -5.400000000000091,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -5.400000000000091
       },
       "industrialProduction": {
         "key": "industrialProduction",
@@ -714,16 +660,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 102.5606,
         "change": 0.07890000000000441,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_INDPRO",
         "sourceUrl": "https://fred.stlouisfed.org/series/INDPRO",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.914Z",
         "change3m": 1.0060304751557725,
         "change12m": 1.1440847075981697,
         "change3mPoints": 1.0223000000000013,
-        "change12mPoints": 1.1610000000000014,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 1.1610000000000014
       },
       "realPce": {
         "key": "realPce",
@@ -735,16 +679,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 16817.2,
         "change": 68,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_PCEC96",
         "sourceUrl": "https://fred.stlouisfed.org/series/PCEC96",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.899Z",
         "change3m": 0.9270715656212625,
         "change12m": 2.5439837729180237,
         "change3mPoints": 155.10000000000218,
-        "change12mPoints": 418.90000000000146,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 418.90000000000146
       },
       "retailSales": {
         "key": "retailSales",
@@ -756,16 +698,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 766876,
         "change": 1677,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_RSAFS",
         "sourceUrl": "https://fred.stlouisfed.org/series/RSAFS",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.195Z",
         "change3m": 1.9283487154730716,
         "change12m": 6.719163968207242,
         "change3mPoints": 14540,
-        "change12mPoints": 48389,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 48389
       },
       "housingStarts": {
         "key": "housingStarts",
@@ -777,16 +717,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 1199,
         "change": 228,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_HOUST",
         "sourceUrl": "https://fred.stlouisfed.org/series/HOUST",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.082Z",
         "change3m": -6.24178712220762,
         "change12m": 3.4807831762146524,
         "change3mPoints": -95,
-        "change12mPoints": 48,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 48
       },
       "mortgageRate": {
         "key": "mortgageRate",
@@ -798,16 +736,14 @@
         "observationDate": "2026-07-30",
         "previousValue": 6.58,
         "change": 0.08000000000000007,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_MORTGAGE30US",
         "sourceUrl": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.133Z",
         "change3m": 5.714285714285716,
         "change12m": -1.1869436201780381,
         "change3mPoints": 0.3600000000000003,
-        "change12mPoints": -0.08000000000000007,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -0.08000000000000007
       },
       "nfci": {
         "key": "nfci",
@@ -819,16 +755,14 @@
         "observationDate": "2026-07-24",
         "previousValue": -0.544,
         "change": -0.010000000000000009,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_NFCI",
         "sourceUrl": "https://fred.stlouisfed.org/series/NFCI",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.248Z",
         "change3m": 13.292433537832316,
         "change12m": 8.414872798434448,
         "change3mPoints": -0.06500000000000006,
-        "change12mPoints": -0.04300000000000004,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -0.04300000000000004
       },
       "privateDomesticDemand": {
         "key": "privateDomesticDemand",
@@ -840,51 +774,47 @@
         "observationDate": "2026-04-01",
         "previousValue": 2.1,
         "change": -0.6000000000000001,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_A191RL1Q225SBEA",
         "sourceUrl": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.932Z",
         "change3m": -28.57142857142857,
         "change12m": -60.526315789473685,
         "change3mPoints": -0.6000000000000001,
-        "change12mPoints": -2.3,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -2.3
       }
     },
     "treasuryDebt": {
       "key": "federalDebt",
       "label": "米国連邦債務残高",
-      "value": 39799618642771.12,
+      "value": 39771617162466.97,
       "unit": "ドル",
-      "observationDate": "2026-07-29",
-      "dataState": "stale_observed",
+      "observationDate": "2026-07-31",
+      "dataState": "observed",
       "sourceId": "UST_DEBT_TO_PENNY",
       "sourceUrl": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
-      "fetchedAt": "2026-08-02T22:21:37.167Z",
-      "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-      "refreshError": "fetch failed"
+      "fetchedAt": "2026-08-03T23:32:03.494Z"
     },
     "yieldCurve": [
       {
         "tenor": "2年",
-        "value": 4.22,
-        "date": "2026-07-29"
+        "value": 4.28,
+        "date": "2026-07-31"
       },
       {
         "tenor": "10年",
-        "value": 4.67,
-        "date": "2026-07-29"
+        "value": 4.75,
+        "date": "2026-07-31"
       },
       {
         "tenor": "30年",
-        "value": 5.2,
-        "date": "2026-07-29"
+        "value": 5.27,
+        "date": "2026-07-31"
       }
     ]
   },
   "worldMap": {
-    "dataState": "stale_observed",
+    "dataState": "observed_partial",
     "growthSourceId": "WB_NY.GDP.MKTP.KD.ZG",
     "politicsSourceId": "WB_WGI_2025_PV",
     "growthSourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG",
@@ -902,9 +832,9 @@
       "yellow": 101
     },
     "conflictCounts": {
-      "green": 186,
+      "green": 183,
       "yellow": 24,
-      "red": 6
+      "red": 9
     },
     "countries": [
       {
@@ -922,7 +852,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ADO",
@@ -939,7 +869,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "AFG",
@@ -956,7 +886,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "AGO",
@@ -973,7 +903,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "AIA",
@@ -990,7 +920,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ALB",
@@ -1007,7 +937,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ANT",
@@ -1024,7 +954,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ARE",
@@ -1035,13 +965,15 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
-        "conflictPressure": 11.3,
-        "conflictState": "green",
-        "conflictDataState": "estimated",
-        "eventCount": 0,
-        "latestEventDate": null,
-        "eventIds": [],
-        "dataState": "stale_observed"
+        "conflictPressure": 68,
+        "conflictState": "yellow",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-07",
+        "eventIds": [
+          "HORMUZ_EIA_2026_07_07"
+        ],
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ARG",
@@ -1058,7 +990,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ARM",
@@ -1075,7 +1007,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ASM",
@@ -1092,7 +1024,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ATG",
@@ -1109,7 +1041,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "AUS",
@@ -1126,7 +1058,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "AUT",
@@ -1143,7 +1075,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "AZE",
@@ -1160,7 +1092,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BDI",
@@ -1177,7 +1109,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BEL",
@@ -1194,7 +1126,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BEN",
@@ -1211,7 +1143,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BFA",
@@ -1228,7 +1160,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BGD",
@@ -1245,7 +1177,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BGR",
@@ -1262,7 +1194,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BHR",
@@ -1279,7 +1211,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BHS",
@@ -1296,7 +1228,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BIH",
@@ -1313,7 +1245,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BLR",
@@ -1330,7 +1262,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BLZ",
@@ -1347,7 +1279,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BMU",
@@ -1364,7 +1296,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BOL",
@@ -1381,7 +1313,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BRA",
@@ -1398,7 +1330,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BRB",
@@ -1415,7 +1347,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BRN",
@@ -1432,7 +1364,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BTN",
@@ -1449,7 +1381,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "BWA",
@@ -1466,7 +1398,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CAF",
@@ -1485,7 +1417,7 @@
         "eventIds": [
           "SUDAN_2026_07_14"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CAN",
@@ -1502,7 +1434,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CHE",
@@ -1519,7 +1451,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CHL",
@@ -1536,7 +1468,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CHN",
@@ -1555,7 +1487,7 @@
         "eventIds": [
           "INDO_PACIFIC_2026_07_21"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CIV",
@@ -1572,7 +1504,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CMR",
@@ -1589,7 +1521,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "COD",
@@ -1606,7 +1538,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "COG",
@@ -1623,7 +1555,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "COK",
@@ -1640,7 +1572,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "COL",
@@ -1657,7 +1589,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "COM",
@@ -1674,7 +1606,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CPV",
@@ -1691,7 +1623,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CRI",
@@ -1708,7 +1640,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CUB",
@@ -1725,7 +1657,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CYM",
@@ -1742,7 +1674,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CYP",
@@ -1759,7 +1691,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "CZE",
@@ -1776,7 +1708,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "DEU",
@@ -1793,7 +1725,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "DJI",
@@ -1812,7 +1744,7 @@
         "eventIds": [
           "RED_SEA_MARAD_2026_006"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "DMA",
@@ -1829,7 +1761,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "DNK",
@@ -1846,7 +1778,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "DOM",
@@ -1863,7 +1795,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "DZA",
@@ -1880,7 +1812,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ECU",
@@ -1897,7 +1829,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "EGY",
@@ -1916,7 +1848,7 @@
         "eventIds": [
           "RED_SEA_MARAD_2026_006"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ERI",
@@ -1935,7 +1867,7 @@
         "eventIds": [
           "RED_SEA_MARAD_2026_006"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ESP",
@@ -1952,7 +1884,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "EST",
@@ -1969,7 +1901,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ETH",
@@ -1986,7 +1918,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "FIN",
@@ -2003,7 +1935,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "FJI",
@@ -2020,7 +1952,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "FRA",
@@ -2037,7 +1969,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "FSM",
@@ -2054,7 +1986,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GAB",
@@ -2071,7 +2003,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GBR",
@@ -2088,7 +2020,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GEO",
@@ -2105,7 +2037,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GHA",
@@ -2122,7 +2054,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GIN",
@@ -2139,7 +2071,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GMB",
@@ -2156,7 +2088,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GNB",
@@ -2173,7 +2105,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GNQ",
@@ -2190,7 +2122,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GRC",
@@ -2207,7 +2139,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GRD",
@@ -2224,7 +2156,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GRL",
@@ -2241,7 +2173,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GTM",
@@ -2258,7 +2190,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GUF",
@@ -2275,7 +2207,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GUM",
@@ -2292,7 +2224,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "GUY",
@@ -2309,7 +2241,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "HKG",
@@ -2326,7 +2258,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "HND",
@@ -2343,7 +2275,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "HRV",
@@ -2360,7 +2292,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "HTI",
@@ -2377,7 +2309,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "HUN",
@@ -2394,7 +2326,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "IDN",
@@ -2411,7 +2343,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "IND",
@@ -2428,7 +2360,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "IRL",
@@ -2445,7 +2377,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "IRN",
@@ -2456,13 +2388,15 @@
         "economyState": "red",
         "politicsState": "yellow",
         "combinedState": "red",
-        "conflictPressure": 33.6,
-        "conflictState": "green",
-        "conflictDataState": "estimated",
-        "eventCount": 0,
-        "latestEventDate": null,
-        "eventIds": [],
-        "dataState": "stale_observed"
+        "conflictPressure": 90,
+        "conflictState": "red",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-07",
+        "eventIds": [
+          "HORMUZ_EIA_2026_07_07"
+        ],
+        "dataState": "observed_partial"
       },
       {
         "iso3": "IRQ",
@@ -2479,7 +2413,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ISL",
@@ -2496,7 +2430,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ISR",
@@ -2515,7 +2449,7 @@
         "eventIds": [
           "OPT_2026_07_23"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ITA",
@@ -2532,7 +2466,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "JAM",
@@ -2549,7 +2483,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "JEY",
@@ -2566,7 +2500,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "JOR",
@@ -2583,7 +2517,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "JPN",
@@ -2602,7 +2536,7 @@
         "eventIds": [
           "INDO_PACIFIC_2026_07_21"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "KAZ",
@@ -2619,7 +2553,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "KEN",
@@ -2636,7 +2570,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "KGZ",
@@ -2653,7 +2587,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "KHM",
@@ -2670,7 +2604,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "KIR",
@@ -2687,7 +2621,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "KNA",
@@ -2704,7 +2638,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "KOR",
@@ -2721,7 +2655,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "KWT",
@@ -2738,7 +2672,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LAO",
@@ -2755,7 +2689,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LBN",
@@ -2772,7 +2706,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LBR",
@@ -2789,7 +2723,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LBY",
@@ -2806,7 +2740,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LCA",
@@ -2823,7 +2757,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LIE",
@@ -2840,7 +2774,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LKA",
@@ -2857,7 +2791,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LSO",
@@ -2874,7 +2808,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LTU",
@@ -2891,7 +2825,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LUX",
@@ -2908,7 +2842,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "LVA",
@@ -2925,7 +2859,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MAC",
@@ -2942,7 +2876,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MAR",
@@ -2959,7 +2893,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MCO",
@@ -2976,7 +2910,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MDA",
@@ -2993,7 +2927,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MDG",
@@ -3010,7 +2944,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MDV",
@@ -3027,7 +2961,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MEX",
@@ -3044,7 +2978,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MHL",
@@ -3061,7 +2995,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MKD",
@@ -3078,7 +3012,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MLI",
@@ -3095,7 +3029,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MLT",
@@ -3112,7 +3046,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MMR",
@@ -3129,7 +3063,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MNE",
@@ -3146,7 +3080,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MNG",
@@ -3163,7 +3097,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MOZ",
@@ -3180,7 +3114,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MRT",
@@ -3197,7 +3131,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MTQ",
@@ -3214,7 +3148,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MUS",
@@ -3231,7 +3165,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MWI",
@@ -3248,7 +3182,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "MYS",
@@ -3265,7 +3199,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NAM",
@@ -3282,7 +3216,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NCL",
@@ -3299,7 +3233,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NER",
@@ -3316,7 +3250,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NGA",
@@ -3333,7 +3267,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NIC",
@@ -3350,7 +3284,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NIU",
@@ -3367,7 +3301,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NLD",
@@ -3384,7 +3318,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NOR",
@@ -3401,7 +3335,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NPL",
@@ -3418,7 +3352,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NRU",
@@ -3435,7 +3369,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "NZL",
@@ -3452,7 +3386,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "OMN",
@@ -3463,13 +3397,15 @@
         "economyState": "yellow",
         "politicsState": "green",
         "combinedState": "yellow",
-        "conflictPressure": 12.9,
-        "conflictState": "green",
-        "conflictDataState": "estimated",
-        "eventCount": 0,
-        "latestEventDate": null,
-        "eventIds": [],
-        "dataState": "stale_observed"
+        "conflictPressure": 72,
+        "conflictState": "red",
+        "conflictDataState": "observed_partial",
+        "eventCount": 1,
+        "latestEventDate": "2026-07-07",
+        "eventIds": [
+          "HORMUZ_EIA_2026_07_07"
+        ],
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PAK",
@@ -3486,7 +3422,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PAN",
@@ -3503,7 +3439,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PER",
@@ -3520,7 +3456,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PHL",
@@ -3537,7 +3473,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PLW",
@@ -3554,7 +3490,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PNG",
@@ -3571,7 +3507,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "POL",
@@ -3588,7 +3524,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PRI",
@@ -3605,7 +3541,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PRK",
@@ -3622,7 +3558,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PRT",
@@ -3639,7 +3575,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PRY",
@@ -3656,7 +3592,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PSE",
@@ -3675,7 +3611,7 @@
         "eventIds": [
           "OPT_2026_07_23"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "PYF",
@@ -3692,7 +3628,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "QAT",
@@ -3709,7 +3645,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "REU",
@@ -3726,7 +3662,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ROU",
@@ -3743,7 +3679,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "RUS",
@@ -3763,7 +3699,7 @@
           "INDO_PACIFIC_2026_07_21",
           "UKRAINE_2026_07_27"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "RWA",
@@ -3780,7 +3716,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SAU",
@@ -3791,15 +3727,16 @@
         "economyState": "green",
         "politicsState": "green",
         "combinedState": "green",
-        "conflictPressure": 45,
-        "conflictState": "yellow",
+        "conflictPressure": 72,
+        "conflictState": "red",
         "conflictDataState": "observed_partial",
-        "eventCount": 1,
-        "latestEventDate": null,
+        "eventCount": 2,
+        "latestEventDate": "2026-07-07",
         "eventIds": [
+          "HORMUZ_EIA_2026_07_07",
           "RED_SEA_MARAD_2026_006"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SDN",
@@ -3818,7 +3755,7 @@
         "eventIds": [
           "SUDAN_2026_07_14"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SEN",
@@ -3835,7 +3772,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SGP",
@@ -3852,7 +3789,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SLB",
@@ -3869,7 +3806,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SLE",
@@ -3886,7 +3823,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SLV",
@@ -3903,7 +3840,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SMR",
@@ -3920,7 +3857,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SOM",
@@ -3937,7 +3874,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SRB",
@@ -3954,7 +3891,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SSD",
@@ -3973,7 +3910,7 @@
         "eventIds": [
           "SOUTH_SUDAN_2026_07_10"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "STP",
@@ -3990,7 +3927,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SUR",
@@ -4007,7 +3944,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SVK",
@@ -4024,7 +3961,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SVN",
@@ -4041,7 +3978,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SWE",
@@ -4058,7 +3995,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SWZ",
@@ -4075,7 +4012,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SYC",
@@ -4092,7 +4029,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "SYR",
@@ -4109,7 +4046,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TCD",
@@ -4128,7 +4065,7 @@
         "eventIds": [
           "SUDAN_2026_07_14"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TGO",
@@ -4145,7 +4082,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "THA",
@@ -4162,7 +4099,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TJK",
@@ -4179,7 +4116,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TKM",
@@ -4196,7 +4133,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TLS",
@@ -4213,7 +4150,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TON",
@@ -4230,7 +4167,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TTO",
@@ -4247,7 +4184,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TUN",
@@ -4264,7 +4201,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TUR",
@@ -4281,7 +4218,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TUV",
@@ -4298,7 +4235,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TWN",
@@ -4315,7 +4252,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "TZA",
@@ -4332,7 +4269,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "UGA",
@@ -4349,7 +4286,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "UKR",
@@ -4368,7 +4305,7 @@
         "eventIds": [
           "UKRAINE_2026_07_27"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "URY",
@@ -4385,7 +4322,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "USA",
@@ -4402,7 +4339,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "UZB",
@@ -4419,7 +4356,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "VCT",
@@ -4436,7 +4373,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "VEN",
@@ -4453,7 +4390,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "VIR",
@@ -4470,7 +4407,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "VNM",
@@ -4487,7 +4424,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "VUT",
@@ -4504,7 +4441,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "WSM",
@@ -4521,7 +4458,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "XKX",
@@ -4538,7 +4475,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "YEM",
@@ -4557,7 +4494,7 @@
         "eventIds": [
           "RED_SEA_MARAD_2026_006"
         ],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ZAF",
@@ -4574,7 +4511,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ZMB",
@@ -4591,7 +4528,7 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       },
       {
         "iso3": "ZWE",
@@ -4608,15 +4545,13 @@
         "eventCount": 0,
         "latestEventDate": null,
         "eventIds": [],
-        "dataState": "stale_observed"
+        "dataState": "observed_partial"
       }
-    ],
-    "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-    "refreshError": "fetch failed"
+    ]
   },
   "geopoliticalEvents": {
     "dataState": "observed_partial",
-    "verifiedAt": "2026-08-02T22:21:37.171Z",
+    "verifiedAt": "2026-08-03T23:32:03.496Z",
     "automatedFeeds": {
       "reliefWeb": {
         "dataState": "blocked_or_failed",
@@ -4628,6 +4563,42 @@
       }
     },
     "events": [
+      {
+        "id": "HORMUZ_EIA_2026_07_07",
+        "title": "ホルムズ海峡の通航制約と中東原油供給の毀損が継続",
+        "region": "中東・ホルムズ海峡",
+        "observationDate": "2026-07-07",
+        "severity": 90,
+        "state": "red",
+        "dataState": "observed_partial",
+        "countries": [
+          {
+            "iso3": "IRN",
+            "severity": 90
+          },
+          {
+            "iso3": "OMN",
+            "severity": 72
+          },
+          {
+            "iso3": "ARE",
+            "severity": 68
+          },
+          {
+            "iso3": "SAU",
+            "severity": 72
+          }
+        ],
+        "sourceId": "EIA_STEO_2026_07",
+        "sourceUrl": "https://www.eia.gov/outlooks/steo/archives/jul26.pdf",
+        "summary": "EIAはホルムズ海峡の通航が近く再開しても正常化には時間を要し、中東の原油生産停止と在庫取り崩しが続く前提を示した。予測条件を含むため実測と見通しを分離して扱う。",
+        "lifeImpactChannels": [
+          "原油",
+          "海運",
+          "保険",
+          "沖縄の電力・物流"
+        ]
+      },
       {
         "id": "INDO_PACIFIC_2026_07_21",
         "title": "沖縄南方・日本周辺で中露海軍の共同航行と射撃訓練",
@@ -4816,7 +4787,7 @@
   },
   "lifeImpact": {
     "dataState": "estimated",
-    "score": 58.9,
+    "score": 55.8,
     "state": "yellow",
     "label": "注意",
     "formula": "ドル円30% + 原油25% + 米金利・信用・VIX20% + 沖縄近接・紅海・世界紛争25%。各成分を0–100に正規化し、取得できた成分だけで再加重",
@@ -4825,9 +4796,9 @@
       {
         "key": "currency",
         "label": "円安・輸入コスト",
-        "score": 72.9,
-        "state": "red",
-        "dataState": "stale_observed",
+        "score": 65.3,
+        "state": "yellow",
+        "dataState": "observed",
         "sourceIds": [
           "FRED_DEXJPUS"
         ],
@@ -4848,8 +4819,8 @@
       {
         "key": "finance",
         "label": "金利・信用不安",
-        "score": 37.4,
-        "state": "yellow",
+        "score": 32.3,
+        "state": "green",
         "dataState": "estimated",
         "sourceIds": [
           "FRED_DGS10",
@@ -4861,10 +4832,11 @@
       {
         "key": "geopolitical",
         "label": "軍事・紛争圧力",
-        "score": 70.8,
+        "score": 71.5,
         "state": "red",
         "dataState": "estimated",
         "sourceIds": [
+          "EIA_STEO_2026_07",
           "JMOD_2026_0721",
           "UNSC_UKRAINE_2026_07_27",
           "OCHA_OPT_2026_07_23",
@@ -4878,7 +4850,7 @@
   },
   "privateCredit": {
     "dataState": "estimated",
-    "score": 51.8,
+    "score": 50.5,
     "state": "yellow",
     "label": "警戒",
     "conclusion": "即時のシステム危機とは断定しない。一方、デフォルト率の上昇、半流動型ファンドの解約超過、銀行・保険との連結、非公開評価の遅れが同時に進む局面を警戒する。",
@@ -4888,7 +4860,7 @@
       {
         "key": "borrower",
         "label": "借り手返済力",
-        "score": 37.2,
+        "score": 37.3,
         "state": "yellow",
         "dataState": "estimated",
         "sourceIds": [
@@ -4924,7 +4896,7 @@
       {
         "key": "market",
         "label": "公開市場代理",
-        "score": 26.2,
+        "score": 17.3,
         "state": "green",
         "dataState": "estimated",
         "sourceIds": [
@@ -4939,7 +4911,8 @@
         "label": "評価・情報不透明性",
         "score": 75,
         "state": "red",
-        "dataState": "strategic_interpretation",
+        "dataState": "estimated",
+        "analysisType": "strategic_interpretation",
         "sourceIds": [
           "FSB_PRIVATE_CREDIT_2026"
         ],
@@ -4949,7 +4922,7 @@
     "regionImpacts": [
       {
         "region": "米国経済",
-        "score": 66.1,
+        "score": 64.6,
         "state": "yellow",
         "dataState": "estimated",
         "channels": [
@@ -4961,7 +4934,7 @@
       },
       {
         "region": "世界経済",
-        "score": 53.8,
+        "score": 52.5,
         "state": "yellow",
         "dataState": "estimated",
         "channels": [
@@ -4973,7 +4946,7 @@
       },
       {
         "region": "日本経済",
-        "score": 43.4,
+        "score": 42.4,
         "state": "yellow",
         "dataState": "estimated",
         "channels": [
@@ -4985,7 +4958,7 @@
       },
       {
         "region": "沖縄・koya",
-        "score": 30.5,
+        "score": 29.8,
         "state": "green",
         "dataState": "estimated",
         "channels": [
@@ -5116,20 +5089,18 @@
         "label": "担保付翌日物調達金利",
         "unit": "%",
         "cadence": "日次",
-        "value": 3.65,
-        "observationDate": "2026-07-29",
+        "value": 3.66,
+        "observationDate": "2026-07-31",
         "previousValue": 3.65,
-        "change": 0,
-        "dataState": "stale_observed",
+        "change": 0.010000000000000231,
+        "dataState": "observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": 0.5509641873278293,
-        "change12m": -16.284403669724778,
+        "fetchedAt": "2026-08-03T23:32:02.199Z",
+        "change3m": 0.5494505494505475,
+        "change12m": -16.628701594533023,
         "change3mPoints": 0.020000000000000018,
-        "change12mPoints": -0.7100000000000004,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -0.7299999999999995
       },
       {
         "key": "ciTighteningLarge",
@@ -5137,20 +5108,18 @@
         "label": "米銀行・大中堅企業向け融資基準厳格化",
         "unit": "%",
         "cadence": "四半期",
-        "value": 8.1,
-        "observationDate": "2026-04-01",
-        "previousValue": 5.3,
-        "change": 2.8,
-        "dataState": "stale_observed",
+        "value": 0,
+        "observationDate": "2026-07-01",
+        "previousValue": 8.1,
+        "change": -8.1,
+        "dataState": "observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": 52.83018867924527,
-        "change12m": -56.21621621621622,
-        "change3mPoints": 2.8,
-        "change12mPoints": -10.4,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.042Z",
+        "change3m": -100,
+        "change12m": -100,
+        "change3mPoints": -8.1,
+        "change12mPoints": -9.5
       },
       {
         "key": "ciTighteningSmall",
@@ -5158,20 +5127,18 @@
         "label": "米銀行・中小企業向け融資基準厳格化",
         "unit": "%",
         "cadence": "四半期",
-        "value": 6.6,
-        "observationDate": "2026-04-01",
-        "previousValue": 8.9,
-        "change": -2.3000000000000007,
-        "dataState": "stale_observed",
+        "value": 1.8,
+        "observationDate": "2026-07-01",
+        "previousValue": 6.6,
+        "change": -4.8,
+        "dataState": "observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": -25.842696629213492,
-        "change12m": -58.49056603773586,
-        "change3mPoints": -2.3000000000000007,
-        "change12mPoints": -9.3,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:01.923Z",
+        "change3m": -72.72727272727273,
+        "change12m": -78.04878048780488,
+        "change3mPoints": -4.8,
+        "change12mPoints": -6.3999999999999995
       },
       {
         "key": "businessLoanDelinquency",
@@ -5183,16 +5150,14 @@
         "observationDate": "2026-01-01",
         "previousValue": 1.34,
         "change": 0,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
+        "fetchedAt": "2026-08-03T23:32:02.061Z",
         "change3m": 0,
         "change12m": 3.875968992248069,
         "change3mPoints": 0,
-        "change12mPoints": 0.050000000000000044,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 0.050000000000000044
       }
     ],
     "monitoring": [
@@ -5253,7 +5218,7 @@
   },
   "capitalFlow": {
     "dataState": "estimated",
-    "score": 64.6,
+    "score": 63.6,
     "state": "yellow",
     "label": "資金再配分を警戒",
     "conclusion": "ドル資産への吸引は強い一方、全面的なドル現金逃避ではない。FOMCは3.50〜3.75%を据え置いたが3名が利上げを主張し、金利差の急縮小はまだ確認できない。日本は株式買越しと債券売越しが同時進行しており、資産別に方向を分けて読む必要がある。",
@@ -5261,7 +5226,7 @@
     "warning": "指数は投資助言・為替予測ではありません。COFERの比率変化には為替評価、TICにはカストディ経由、MOF週次には大幅な反転があり、単月・単週を構造変化と断定しません。",
     "derived": {
       "carrySpread": 2.6,
-      "dollarBroadChange12m": 1,
+      "dollarBroadChange12m": -1.7,
       "realDisposableIncomePcChange12m": 0.3,
       "moneyMarketAssetsChange12m": 12.1
     },
@@ -5269,7 +5234,7 @@
       {
         "key": "dollar_magnet",
         "label": "ドル資産吸引力",
-        "score": 72.9,
+        "score": 70.8,
         "state": "red",
         "direction": "米長期証券へ流入",
         "read": "外貨準備のドル比率は57.13%。ただし上昇の約半分は評価要因。TICでは民間流入が公的流出を上回り、長期証券需要が強い。",
@@ -5284,14 +5249,14 @@
       {
         "key": "carry",
         "label": "ドル買い・円売りキャリー",
-        "score": 62.7,
+        "score": 58.9,
         "state": "yellow",
         "direction": "短期金利差 2.63ポイント",
-        "read": "FOMCは据え置き、3名は25bp利上げを主張。米実効FF金利と日銀誘導目標の差はドル保有を支えるが、7月31日の日銀声明と米雇用悪化で急反転し得る。",
+        "read": "FOMCは据え置き、3名は25bp利上げを主張。日銀も7月31日に1.0%を維持したため、米実効FF金利との約2.63ポイント差はドル保有を支えるが、米雇用悪化や日銀正常化観測で急反転し得る。",
         "sourceIds": [
           "FRB_FOMC_2026_07_29",
           "FRED_DFF",
-          "BOJ_MPM_2026_06",
+          "BOJ_MPM_2026_07_31",
           "FRED_DEXJPUS"
         ],
         "dataState": "estimated"
@@ -5299,7 +5264,7 @@
       {
         "key": "treasury_paradox",
         "label": "米国債・インフレのパラドクス",
-        "score": 65.1,
+        "score": 65.9,
         "state": "yellow",
         "direction": "需要の強さと利払い負担が併存",
         "read": "予想外インフレは既発固定債の実質価値を薄める一方、借換え金利・TIPS・歳出連動を通じ将来利払いを押し上げる。無料の債務圧縮ではない。",
@@ -5314,7 +5279,7 @@
       {
         "key": "japan_reallocation",
         "label": "日本への資金再配分",
-        "score": 60.8,
+        "score": 61.4,
         "state": "yellow",
         "direction": "株式買越し・債券売越し",
         "read": "直近週は日本株を9,121億円買い越す一方、日本証券全体は3兆4,891億円売り越し。長期債と短期債の売りが大きく、企業価値への投資と金利・流動性判断が分岐している。",
@@ -5429,15 +5394,15 @@
         "note": "週間では225.7億ドル減。大きな待機資金残高であり、当週の流入ではない"
       },
       {
-        "id": "BOJ_POLICY_RATE_2026_06",
+        "id": "BOJ_POLICY_RATE_2026_07",
         "label": "日本銀行・無担保コール翌日物誘導",
         "value": 1,
         "unit": "%",
-        "observationDate": "2026-06-17",
+        "observationDate": "2026-07-31",
         "dataState": "observed",
-        "sourceId": "BOJ_MPM_2026_06",
-        "sourceUrl": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260616a.pdf",
-        "note": "7月30〜31日の金融政策決定会合は開催中。次の声明は7月31日予定"
+        "sourceId": "BOJ_MPM_2026_07_31",
+        "sourceUrl": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260731a.pdf",
+        "note": "8対1で1.0%程度を維持。反対1名は海外発の需要ショックと物価上振れリスクを理由に1.25%を提案"
       },
       {
         "id": "CBO_NET_INTEREST_2026",
@@ -5539,20 +5504,18 @@
         "label": "名目実効ドル指数・広義",
         "unit": "指数",
         "cadence": "日次",
-        "value": 120.7105,
-        "observationDate": "2026-07-24",
-        "previousValue": 120.9075,
-        "change": -0.19700000000000273,
-        "dataState": "stale_observed",
+        "value": 119.7034,
+        "observationDate": "2026-07-31",
+        "previousValue": 119.6753,
+        "change": 0.028100000000009118,
+        "dataState": "observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-08-02T22:21:37.111Z",
-        "change3m": 1.6685841922893463,
-        "change12m": 0.9568741720081819,
-        "change3mPoints": 1.9810999999999979,
-        "change12mPoints": 1.1440999999999946,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.060Z",
+        "change3m": 1.1071637923316224,
+        "change12m": -1.6575611439275106,
+        "change3mPoints": 1.3108000000000004,
+        "change12mPoints": -2.0176000000000016
       },
       {
         "key": "moneyMarketAssets",
@@ -5564,16 +5527,14 @@
         "observationDate": "2026-01-01",
         "previousValue": 8190235,
         "change": 99334,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-08-02T22:21:37.111Z",
+        "fetchedAt": "2026-08-03T23:32:02.061Z",
         "change3m": 1.2128345523663153,
         "change12m": 12.052925794532365,
         "change3mPoints": 99334,
-        "change12mPoints": 891664,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 891664
       },
       {
         "key": "realDisposableIncomePc",
@@ -5585,16 +5546,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 52516,
         "change": 153,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-08-02T22:21:37.111Z",
+        "fetchedAt": "2026-08-03T23:32:02.057Z",
         "change3m": 0.08551231377318391,
         "change12m": 0.26651944640103675,
         "change3mPoints": 45,
-        "change12mPoints": 140,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 140
       }
     ],
     "triggers": [
@@ -5645,10 +5604,10 @@
         "url": "https://www.mof.go.jp/english/policy/international_policy/reference/itn_transactions_in_securities/week.pdf"
       },
       {
-        "sourceId": "BOJ_MPM_2026_06",
+        "sourceId": "BOJ_MPM_2026_07_31",
         "institution": "日本銀行",
         "cadence": "会合ごと",
-        "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260616a.pdf"
+        "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260731a.pdf"
       },
       {
         "sourceId": "CBO_BUDGET_2026_2036",
@@ -5667,23 +5626,37 @@
   "fundamentalOutlook": {
     "dataState": "estimated",
     "modelVersion": "KOYA-US-GLOBAL-FUNDAMENTALS-1.0",
-    "score": 26.6,
+    "score": 26,
     "state": "green",
     "label": "拡大・軟着陸域",
     "conclusion": "現在は急収縮を示す一斉悪化ではない。ただし金利曲線、雇用、信用の先行指標が上向けば3〜12か月の圧力が変化する。",
-    "dataCoverage": 65,
-    "dataCoverageLabel": "中",
+    "dataCoverage": 97.7,
+    "dataCoverageLabel": "高",
     "formula": "雇用25% + 需要20% + 生産15% + 住宅10% + 金融15% + 金利曲線15%。0〜100は低下圧力で、景気後退確率ではない。",
     "warning": "シナリオ比率は信号の相対ウェイトであり確率ではありません。閾値は運用初版で、過去局面のバックテストと改定データの検証が今後必要です。",
     "releaseGate": {
       "label": "米国2026年4〜6月期GDP・速報",
       "expectedAt": "2026-07-30T08:30:00-04:00",
-      "dataState": "blocked_or_failed",
-      "note": "公表予定時刻は経過したが、今回の公式ページ確認では速報値を取得・検証できなかった。値を推測せず、取得後に再計算する。",
-      "sourceId": "BEA_GDP_RELEASE_SCHEDULE_2026",
-      "sourceUrl": "https://www.bea.gov/news/schedule/full"
+      "value": 1.5,
+      "unit": "%・前期比年率",
+      "observationDate": "2026-06-30",
+      "dataState": "observed",
+      "note": "BEA速報。1〜3月期2.1%から減速した一方、民間国内最終需要は3.9%増。次の第2次推計は8月26日。",
+      "sourceId": "BEA_GDP_2026_Q2_ADV",
+      "sourceUrl": "https://www.bea.gov/sites/default/files/2026-07/gdp2q26-adv.pdf"
     },
     "externalAnchors": [
+      {
+        "id": "BEA_REAL_GDP_2026_Q2_ADV",
+        "label": "米実質GDP・2026年4〜6月期速報",
+        "value": 1.5,
+        "unit": "%・前期比年率",
+        "observationDate": "2026-06-30",
+        "dataState": "observed",
+        "sourceId": "BEA_GDP_2026_Q2_ADV",
+        "sourceUrl": "https://www.bea.gov/sites/default/files/2026-07/gdp2q26-adv.pdf",
+        "note": "公式速報。民間国内最終需要3.9%、PCE価格指数5.1%。次回第2次推計は8月26日"
+      },
       {
         "id": "ATL_GDPNOW_2026_Q2_0717",
         "label": "アトランタ連銀GDPNow・2026年4〜6月期",
@@ -5701,7 +5674,7 @@
         "value": 1.5,
         "unit": "%・前期比年率",
         "observationDate": "2026-04-01",
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "BEA_GDP_2026_Q1",
         "sourceUrl": "https://www.bea.gov/data/gdp/gross-domestic-product",
         "note": "公式実績。予測モデルの基準線"
@@ -5770,7 +5743,7 @@
       {
         "key": "finance",
         "label": "金融・信用",
-        "score": 26.1,
+        "score": 22.3,
         "weight": 0.15,
         "read": "NFCI、HYスプレッド、VIX、プライベートクレジットを統合。",
         "sourceIds": [
@@ -5810,7 +5783,7 @@
       {
         "horizon": "3か月",
         "months": 3,
-        "score": 25.6,
+        "score": 25,
         "formula": "先行55% + 現在45%",
         "state": "green",
         "label": "拡大・軟着陸域",
@@ -5819,7 +5792,7 @@
       {
         "horizon": "6か月",
         "months": 6,
-        "score": 24.9,
+        "score": 24.2,
         "formula": "先行65% + 現在35%",
         "state": "green",
         "label": "拡大・軟着陸域",
@@ -5828,7 +5801,7 @@
       {
         "horizon": "12か月",
         "months": 12,
-        "score": 17.1,
+        "score": 16.2,
         "formula": "金利曲線40% + 金融25% + 雇用20% + 需要15%",
         "state": "green",
         "label": "拡大・軟着陸域",
@@ -5839,27 +5812,27 @@
       {
         "key": "dollar",
         "label": "ドル資金調達",
-        "score": 36.4,
+        "score": 30.2,
         "direction": "ドル高・高金利・流動性",
         "read": "新興国、輸入企業、ドル建て債務の返済負担へ伝播。",
         "action": "ドル資金・為替ヘッジ・輸入原価を再計算",
-        "state": "yellow",
+        "state": "green",
         "dataState": "estimated"
       },
       {
         "key": "trade",
         "label": "世界貿易・輸出",
-        "score": 36,
+        "score": 31.7,
         "direction": "米需要→世界輸出",
         "read": "米家計需要と企業投資の低下がアジア・欧州の輸出、生産へ波及。",
         "action": "輸出依存国と沖縄物流の需要変化を確認",
-        "state": "yellow",
+        "state": "green",
         "dataState": "estimated"
       },
       {
         "key": "credit",
         "label": "信用・資産価格",
-        "score": 33.9,
+        "score": 31.7,
         "direction": "信用収縮→投資減",
         "read": "銀行、HY、プライベートクレジット、株式評価を通じ設備投資へ波及。",
         "action": "借換え・延滞・解約・銀行連結を同時監視",
@@ -5869,17 +5842,17 @@
       {
         "key": "commodities",
         "label": "資源・海運",
-        "score": 36.4,
+        "score": 32.8,
         "direction": "需要減と供給ショック",
         "read": "景気低下は需要を弱めるが、軍事・供給制約は原油と運賃を逆方向へ押し上げ得る。",
         "action": "需要要因と地政学供給要因を分離",
-        "state": "yellow",
+        "state": "green",
         "dataState": "estimated"
       },
       {
         "key": "japan",
         "label": "日本経済",
-        "score": 38.1,
+        "score": 35.7,
         "direction": "輸出・円・金利",
         "read": "米需要、ドル円、米金利、海外投資家の株式・債券配分を通じて伝播。",
         "action": "株式・債券・為替を資産別に確認",
@@ -5889,7 +5862,7 @@
       {
         "key": "okinawa",
         "label": "沖縄・koya",
-        "score": 33.9,
+        "score": 30.8,
         "direction": "ドル購買力・物流・心理",
         "read": "米軍家族のドル購買力、予約心理、燃料・物流費、価格転換へ時間差で伝播。",
         "action": "予約、客単価、キャンセル、米軍顧客比率を確認",
@@ -5901,25 +5874,25 @@
       {
         "key": "soft_landing",
         "label": "拡大・軟着陸",
-        "value": 73.425,
+        "value": 73.995,
         "read": "実質需要が維持され、金融環境の急激な引締まりがない。",
-        "weight": 52.4,
+        "weight": 53.1,
         "dataState": "estimated"
       },
       {
         "key": "slowdown",
         "label": "減速",
-        "value": 64.8625,
+        "value": 64.0075,
         "read": "雇用・需要は鈍化するが、信用収縮と連鎖的失業は限定。",
-        "weight": 46.2,
+        "weight": 46,
         "dataState": "estimated"
       },
       {
         "key": "contraction",
         "label": "収縮",
-        "value": 1.9687499999999991,
+        "value": 1.2562499999999988,
         "read": "雇用、需要、信用の複数レーンが同時に悪化。",
-        "weight": 1.4,
+        "weight": 0.9,
         "dataState": "estimated"
       }
     ],
@@ -5934,7 +5907,7 @@
         {
           "key": "regime",
           "label": "通貨制度・信認",
-          "score": 50.2,
+          "score": 46.8,
           "sourceIds": [
             "FRED_CPIAUCSL",
             "FRED_DTWEXBGS",
@@ -6031,7 +6004,7 @@
         {
           "key": "credit",
           "label": "銀行・信用ストレス",
-          "score": 26.1,
+          "score": 22.3,
           "sourceIds": [
             "FRED_NFCI",
             "FRED_BAMLH0A0HYM2",
@@ -6044,7 +6017,7 @@
         {
           "key": "market",
           "label": "市場ボラティリティ",
-          "score": 21.9,
+          "score": 14.1,
           "sourceIds": [
             "FRED_VIXCLS",
             "FRED_BAMLH0A0HYM2"
@@ -6056,14 +6029,14 @@
         {
           "key": "dollar",
           "label": "ドル資金圧力",
-          "score": 40.6,
+          "score": 28.2,
           "sourceIds": [
             "FRED_DTWEXBGS",
             "FRED_DFF",
             "FRED_NFCI"
           ],
           "read": "ドル高、高金利、金融環境を通じたドル調達負担。",
-          "state": "yellow",
+          "state": "green",
           "dataState": "estimated"
         },
         {
@@ -6093,13 +6066,13 @@
         {
           "key": "trade",
           "label": "貿易・外需低下",
-          "score": 36,
+          "score": 31.7,
           "sourceIds": [
             "FRED_INDPRO",
             "FRED_DTWEXBGS"
           ],
           "read": "米需要、生産、ドルを通じる世界貿易への波及圧力。",
-          "state": "yellow",
+          "state": "green",
           "dataState": "estimated"
         },
         {
@@ -6163,7 +6136,7 @@
         {
           "key": "nbfi",
           "label": "非銀行・プライベート信用",
-          "score": 64.8,
+          "score": 64.4,
           "sourceIds": [
             "FSB_PRIVATE_CREDIT_2026_05",
             "FRB_FSR_2026_05_FUNDING",
@@ -6221,15 +6194,15 @@
           }
         ],
         "current": {
-          "score": 26.6,
+          "score": 26,
           "state": "green",
           "zoneLabel": "安定・低圧力",
-          "distanceToDanger": 43.4,
-          "positionPercent": 26.6
+          "distanceToDanger": 44,
+          "positionPercent": 26
         },
         "counts": {
-          "green": 6,
-          "yellow": 14,
+          "green": 8,
+          "yellow": 12,
           "red": 1,
           "unknown": 0
         },
@@ -6292,7 +6265,7 @@
           {
             "key": "nbfi",
             "label": "非銀行・プライベート信用",
-            "score": 64.8,
+            "score": 64.4,
             "sourceIds": [
               "FSB_PRIVATE_CREDIT_2026_05",
               "FRB_FSR_2026_05_FUNDING",
@@ -6303,10 +6276,10 @@
             "dataState": "estimated",
             "zone": "yellow",
             "zoneLabel": "中間・注意",
-            "distanceToDanger": 5.2,
-            "distanceToAttention": -29.8,
-            "positionPercent": 64.8,
-            "positionText": "危険線まで 5.2pt"
+            "distanceToDanger": 5.6,
+            "distanceToAttention": -29.4,
+            "positionPercent": 64.4,
+            "positionText": "危険線まで 5.6pt"
           },
           {
             "key": "digitalDollar",
@@ -6367,7 +6340,7 @@
           {
             "key": "regime",
             "label": "通貨制度・信認",
-            "score": 50.2,
+            "score": 46.8,
             "sourceIds": [
               "FRED_CPIAUCSL",
               "FRED_DTWEXBGS",
@@ -6378,10 +6351,10 @@
             "dataState": "estimated",
             "zone": "yellow",
             "zoneLabel": "中間・注意",
-            "distanceToDanger": 19.8,
-            "distanceToAttention": -15.2,
-            "positionPercent": 50.2,
-            "positionText": "危険線まで 19.8pt"
+            "distanceToDanger": 23.2,
+            "distanceToAttention": -11.8,
+            "positionPercent": 46.8,
+            "positionText": "危険線まで 23.2pt"
           }
         ],
         "parameters": [
@@ -6441,7 +6414,7 @@
           {
             "key": "nbfi",
             "label": "非銀行・プライベート信用",
-            "score": 64.8,
+            "score": 64.4,
             "sourceIds": [
               "FSB_PRIVATE_CREDIT_2026_05",
               "FRB_FSR_2026_05_FUNDING",
@@ -6452,10 +6425,10 @@
             "dataState": "estimated",
             "zone": "yellow",
             "zoneLabel": "中間・注意",
-            "distanceToDanger": 5.2,
-            "distanceToAttention": -29.8,
-            "positionPercent": 64.8,
-            "positionText": "危険線まで 5.2pt"
+            "distanceToDanger": 5.6,
+            "distanceToAttention": -29.4,
+            "positionPercent": 64.4,
+            "positionText": "危険線まで 5.6pt"
           },
           {
             "key": "digitalDollar",
@@ -6532,7 +6505,7 @@
           {
             "key": "regime",
             "label": "通貨制度・信認",
-            "score": 50.2,
+            "score": 46.8,
             "sourceIds": [
               "FRED_CPIAUCSL",
               "FRED_DTWEXBGS",
@@ -6543,10 +6516,10 @@
             "dataState": "estimated",
             "zone": "yellow",
             "zoneLabel": "中間・注意",
-            "distanceToDanger": 19.8,
-            "distanceToAttention": -15.2,
-            "positionPercent": 50.2,
-            "positionText": "危険線まで 19.8pt"
+            "distanceToDanger": 23.2,
+            "distanceToAttention": -11.8,
+            "positionPercent": 46.8,
+            "positionText": "危険線まで 23.2pt"
           },
           {
             "key": "inflation",
@@ -6584,25 +6557,6 @@
             "positionText": "危険線まで 27.5pt"
           },
           {
-            "key": "dollar",
-            "label": "ドル資金圧力",
-            "score": 40.6,
-            "sourceIds": [
-              "FRED_DTWEXBGS",
-              "FRED_DFF",
-              "FRED_NFCI"
-            ],
-            "read": "ドル高、高金利、金融環境を通じたドル調達負担。",
-            "state": "yellow",
-            "dataState": "estimated",
-            "zone": "yellow",
-            "zoneLabel": "中間・注意",
-            "distanceToDanger": 29.4,
-            "distanceToAttention": -5.6,
-            "positionPercent": 40.6,
-            "positionText": "危険線まで 29.4pt"
-          },
-          {
             "key": "reserve",
             "label": "基軸通貨・準備信認",
             "score": 40.4,
@@ -6620,24 +6574,6 @@
             "distanceToAttention": -5.4,
             "positionPercent": 40.4,
             "positionText": "危険線まで 29.6pt"
-          },
-          {
-            "key": "trade",
-            "label": "貿易・外需低下",
-            "score": 36,
-            "sourceIds": [
-              "FRED_INDPRO",
-              "FRED_DTWEXBGS"
-            ],
-            "read": "米需要、生産、ドルを通じる世界貿易への波及圧力。",
-            "state": "yellow",
-            "dataState": "estimated",
-            "zone": "yellow",
-            "zoneLabel": "中間・注意",
-            "distanceToDanger": 34,
-            "distanceToAttention": -1,
-            "positionPercent": 36,
-            "positionText": "危険線まで 34.0pt"
           },
           {
             "key": "protectionism",
@@ -6676,23 +6612,41 @@
             "positionText": "注意線まで 2.2pt"
           },
           {
-            "key": "credit",
-            "label": "銀行・信用ストレス",
-            "score": 26.1,
+            "key": "trade",
+            "label": "貿易・外需低下",
+            "score": 31.7,
             "sourceIds": [
-              "FRED_NFCI",
-              "FRED_BAMLH0A0HYM2",
-              "KOYA_PC_INDEX"
+              "FRED_INDPRO",
+              "FRED_DTWEXBGS"
             ],
-            "read": "金融環境、HY、VIX、プライベートクレジットの複合信号。",
+            "read": "米需要、生産、ドルを通じる世界貿易への波及圧力。",
             "state": "green",
             "dataState": "estimated",
             "zone": "green",
             "zoneLabel": "安定・低圧力",
-            "distanceToDanger": 43.9,
-            "distanceToAttention": 8.9,
-            "positionPercent": 26.1,
-            "positionText": "注意線まで 8.9pt"
+            "distanceToDanger": 38.3,
+            "distanceToAttention": 3.3,
+            "positionPercent": 31.7,
+            "positionText": "注意線まで 3.3pt"
+          },
+          {
+            "key": "dollar",
+            "label": "ドル資金圧力",
+            "score": 28.2,
+            "sourceIds": [
+              "FRED_DTWEXBGS",
+              "FRED_DFF",
+              "FRED_NFCI"
+            ],
+            "read": "ドル高、高金利、金融環境を通じたドル調達負担。",
+            "state": "green",
+            "dataState": "estimated",
+            "zone": "green",
+            "zoneLabel": "安定・低圧力",
+            "distanceToDanger": 41.8,
+            "distanceToAttention": 6.8,
+            "positionPercent": 28.2,
+            "positionText": "注意線まで 6.8pt"
           },
           {
             "key": "policy",
@@ -6713,22 +6667,23 @@
             "positionText": "注意線まで 11.7pt"
           },
           {
-            "key": "market",
-            "label": "市場ボラティリティ",
-            "score": 21.9,
+            "key": "credit",
+            "label": "銀行・信用ストレス",
+            "score": 22.3,
             "sourceIds": [
-              "FRED_VIXCLS",
-              "FRED_BAMLH0A0HYM2"
+              "FRED_NFCI",
+              "FRED_BAMLH0A0HYM2",
+              "KOYA_PC_INDEX"
             ],
-            "read": "VIXとハイイールドスプレッドの同時上昇を監視。",
+            "read": "金融環境、HY、VIX、プライベートクレジットの複合信号。",
             "state": "green",
             "dataState": "estimated",
             "zone": "green",
             "zoneLabel": "安定・低圧力",
-            "distanceToDanger": 48.1,
-            "distanceToAttention": 13.1,
-            "positionPercent": 21.9,
-            "positionText": "注意線まで 13.1pt"
+            "distanceToDanger": 47.7,
+            "distanceToAttention": 12.7,
+            "positionPercent": 22.3,
+            "positionText": "注意線まで 12.7pt"
           },
           {
             "key": "labor",
@@ -6748,6 +6703,24 @@
             "distanceToAttention": 20.7,
             "positionPercent": 14.3,
             "positionText": "注意線まで 20.7pt"
+          },
+          {
+            "key": "market",
+            "label": "市場ボラティリティ",
+            "score": 14.1,
+            "sourceIds": [
+              "FRED_VIXCLS",
+              "FRED_BAMLH0A0HYM2"
+            ],
+            "read": "VIXとハイイールドスプレッドの同時上昇を監視。",
+            "state": "green",
+            "dataState": "estimated",
+            "zone": "green",
+            "zoneLabel": "安定・低圧力",
+            "distanceToDanger": 55.9,
+            "distanceToAttention": 20.9,
+            "positionPercent": 14.1,
+            "positionText": "注意線まで 20.9pt"
           },
           {
             "key": "curve",
@@ -6773,7 +6746,7 @@
         "modelVersion": "KOYA-HEGEMONY-PARADOX-1.0",
         "dataState": "estimated",
         "label": "覇権国パラドクス早期警戒",
-        "score": 54.7,
+        "score": 54.1,
         "state": "yellow",
         "nixonSimilarity": 52,
         "nixonState": "yellow",
@@ -6894,7 +6867,7 @@
           {
             "key": "nbfi",
             "label": "現代固有・非銀行信用",
-            "score": 64.8,
+            "score": 64.4,
             "resemblance": "危機前にレバレッジと相互連結が見えにくい点は2008年以前と共通。",
             "current": "FSB推計1.5〜2.0兆ドル。FRBは高いヘッジファンドレバレッジと一部ファンドの解約要求を報告。",
             "counterEvidence": "長期ロックアップ資金は預金取付けと異なり、即時の強制売却を弱める場合がある。",
@@ -6929,7 +6902,7 @@
           {
             "key": "strong_dollar",
             "label": "強いドルの二面性",
-            "score": 49.9,
+            "score": 44.3,
             "support": "安全資産需要と高金利がドル・米国資産への資金集中を支える。",
             "reversal": "輸出競争力、海外ドル債務、米国外の流動性を圧迫し、危機時のドル買いを自己増幅する。",
             "watch": "ドル指数、TIC民間/公的、クロスカレンシー、BISドル信用",
@@ -6958,7 +6931,7 @@
           {
             "key": "rates_treasury",
             "label": "高金利と国債需要",
-            "score": 60.5,
+            "score": 60.9,
             "support": "相対的な利回りが海外・国内資金を米国債へ引き付ける。",
             "reversal": "保有債券評価損、銀行・ファンドの流動性、政府利払いを悪化させる。",
             "watch": "10年債、入札テール、TIC、銀行含み損、MMF",
@@ -6974,7 +6947,7 @@
           {
             "key": "tariff_reshoring",
             "label": "関税・国内回帰",
-            "score": 37.5,
+            "score": 36.2,
             "support": "関税収入、国内生産、供給網再配置、安全保障上の冗長性を狙う。",
             "reversal": "輸入価格、部材コスト、報復、投資縮小で成長と家計を圧迫し得る。",
             "watch": "実効関税率、輸入物価、設備投資、国別FDI、実質消費",
@@ -7032,7 +7005,7 @@
           {
             "key": "nbfi_migration",
             "label": "銀行外への信用移転",
-            "score": 64.8,
+            "score": 64.4,
             "support": "長期資金と分散投資により、銀行預金の即時取付けリスクを分散できる。",
             "reversal": "評価遅延、解約制限、NAV融資、銀行コミットメントが同時に動くと損失が遅れて顕在化する。",
             "watch": "PIK、NAV、解約要求、BDC価格、銀行コミットメント",
@@ -7420,7 +7393,7 @@
             "ファンド別NAV・PIK・延滞・コベナンツ",
             "銀行、保険、年金、ファンド間の重複エクスポージャー"
           ],
-          "score": 40.4,
+          "score": 39.1,
           "state": "yellow",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -7428,7 +7401,7 @@
             {
               "key": "nbfi",
               "label": "非銀行・プライベート信用",
-              "score": 64.8
+              "score": 64.4
             },
             {
               "key": "liquidity",
@@ -7445,12 +7418,81 @@
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 26.1
+              "score": 22.3
             },
             {
               "key": "market",
               "label": "市場ボラティリティ",
-              "score": 21.9
+              "score": 14.1
+            },
+            {
+              "key": "policy",
+              "label": "政策引締め",
+              "score": 23.3
+            }
+          ]
+        },
+        {
+          "id": "oil_stagflation_1973",
+          "label": "石油危機・スタグフレーション",
+          "period": "1973〜1982",
+          "sourceId": "FRB_HISTORY_GREAT_INFLATION",
+          "sourceUrl": "https://www.federalreservehistory.org/essays/great-inflation",
+          "trigger": "供給制約と原油急騰が物価・実質所得・政策へ連鎖",
+          "signature": [
+            {
+              "key": "energy",
+              "weight": 0.3
+            },
+            {
+              "key": "inflation",
+              "weight": 0.25
+            },
+            {
+              "key": "policy",
+              "weight": 0.2
+            },
+            {
+              "key": "demand",
+              "weight": 0.15
+            },
+            {
+              "key": "regime",
+              "weight": 0.1
+            }
+          ],
+          "flow": [
+            "緩和的政策と物価圧力が蓄積",
+            "地政学的な原油供給制約が発生",
+            "エネルギー高が家計実質所得と企業原価を圧迫",
+            "期待インフレと賃金・価格調整が持続",
+            "急激な金融引締めと景気後退で鎮静化"
+          ],
+          "missing": [
+            "期待インフレの長期歴史整合系列",
+            "賃金・価格転嫁の国際比較"
+          ],
+          "score": 34.9,
+          "state": "green",
+          "dataCoverage": 76,
+          "dataState": "estimated",
+          "matches": [
+            {
+              "key": "energy",
+              "label": "エネルギー・地政学",
+              "score": 69.4
+            },
+            {
+              "key": "regime",
+              "label": "通貨制度・信認",
+              "score": 46.8
+            }
+          ],
+          "contradictions": [
+            {
+              "key": "demand",
+              "label": "家計需要低下",
+              "score": 32.8
             },
             {
               "key": "policy",
@@ -7503,8 +7545,8 @@
             "国別の外貨債務返済比率",
             "企業・政府の変動金利ドル債務満期表"
           ],
-          "score": 36.6,
-          "state": "yellow",
+          "score": 34.4,
+          "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
           "matches": [
@@ -7526,6 +7568,11 @@
           ],
           "contradictions": [
             {
+              "key": "dollar",
+              "label": "ドル資金圧力",
+              "score": 28.2
+            },
+            {
               "key": "policy",
               "label": "政策引締め",
               "score": 23.3
@@ -7533,131 +7580,67 @@
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 26.1
+              "score": 22.3
             }
           ]
         },
         {
-          "id": "oil_stagflation_1973",
-          "label": "石油危機・スタグフレーション",
-          "period": "1973〜1982",
-          "sourceId": "FRB_HISTORY_GREAT_INFLATION",
-          "sourceUrl": "https://www.federalreservehistory.org/essays/great-inflation",
-          "trigger": "供給制約と原油急騰が物価・実質所得・政策へ連鎖",
+          "id": "wwii_postwar_repression",
+          "label": "第二次大戦・戦後金融抑圧",
+          "period": "1941〜1951",
+          "sourceId": "FED_HISTORY_TREASURY_FED_ACCORD",
+          "sourceUrl": "https://www.federalreservehistory.org/essays/treasury-fed-accord",
+          "trigger": "戦費調達、金利上限、インフレによる政府債務の実質圧縮",
           "signature": [
             {
-              "key": "energy",
+              "key": "fiscal",
               "weight": 0.3
             },
             {
               "key": "inflation",
-              "weight": 0.25
+              "weight": 0.2
             },
             {
               "key": "policy",
               "weight": 0.2
             },
             {
-              "key": "demand",
+              "key": "reserve",
               "weight": 0.15
             },
             {
-              "key": "regime",
-              "weight": 0.1
-            }
-          ],
-          "flow": [
-            "緩和的政策と物価圧力が蓄積",
-            "地政学的な原油供給制約が発生",
-            "エネルギー高が家計実質所得と企業原価を圧迫",
-            "期待インフレと賃金・価格調整が持続",
-            "急激な金融引締めと景気後退で鎮静化"
-          ],
-          "missing": [
-            "期待インフレの長期歴史整合系列",
-            "賃金・価格転嫁の国際比較"
-          ],
-          "score": 35.2,
-          "state": "yellow",
-          "dataCoverage": 76,
-          "dataState": "estimated",
-          "matches": [
-            {
-              "key": "energy",
-              "label": "エネルギー・地政学",
-              "score": 69.4
-            },
-            {
-              "key": "regime",
-              "label": "通貨制度・信認",
-              "score": 50.2
-            }
-          ],
-          "contradictions": [
-            {
-              "key": "demand",
-              "label": "家計需要低下",
-              "score": 32.8
-            },
-            {
-              "key": "policy",
-              "label": "政策引締め",
-              "score": 23.3
-            }
-          ]
-        },
-        {
-          "id": "nixon_1971",
-          "label": "ニクソン・ショック",
-          "period": "1965〜1973",
-          "sourceId": "FRB_HISTORY_GOLD_CONVERTIBILITY_ENDS",
-          "sourceUrl": "https://www.federalreservehistory.org/essays/gold-convertibility-ends",
-          "trigger": "ドルの金交換停止、賃金・物価統制、輸入課徴金",
-          "signature": [
-            {
-              "key": "regime",
-              "weight": 0.35
-            },
-            {
-              "key": "inflation",
-              "weight": 0.25
-            },
-            {
-              "key": "dollar",
-              "weight": 0.2
-            },
-            {
-              "key": "policy",
-              "weight": 0.1
-            },
-            {
               "key": "trade",
-              "weight": 0.1
+              "weight": 0.15
             }
           ],
           "flow": [
-            "米国の国際収支赤字と海外ドル残高が累積",
-            "インフレと金交換要求で準備資産への圧力",
-            "ドル信認と固定相場制度の維持が困難化",
-            "1971年に金交換停止・価格統制・輸入課徴金",
-            "ブレトンウッズ体制終結と変動相場へ"
+            "戦争支出と政府債務が急拡大",
+            "中央銀行が国債金利を低位に固定",
+            "物価上昇と低い名目金利で実質金利を抑制",
+            "資本規制・金融規制・国内貯蓄で国債需要を支える",
+            "1951年の財務省・FRBアコードで金融政策の独立性を回復"
           ],
           "missing": [
-            "米公式金準備に対する外国保有ドル比率",
-            "各国の金交換請求・準備通貨構成の高頻度系列"
+            "家計・機関別の実質国債保有損益",
+            "資本規制と強制的国債需要の現代比較指標"
           ],
-          "score": 32.3,
+          "score": 30.9,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
           "matches": [
             {
-              "key": "regime",
-              "label": "通貨制度・信認",
-              "score": 50.2
+              "key": "fiscal",
+              "label": "財政・国債利払い",
+              "score": 54.9
             }
           ],
           "contradictions": [
+            {
+              "key": "trade",
+              "label": "貿易・外需低下",
+              "score": 31.7
+            },
             {
               "key": "policy",
               "label": "政策引締め",
@@ -7709,7 +7692,7 @@
             "国別銀行の自国債保有集中",
             "国債CDS・クロスボーダー決済分断の統合"
           ],
-          "score": 32.3,
+          "score": 30.8,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -7734,7 +7717,7 @@
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 26.1
+              "score": 22.3
             },
             {
               "key": "policy",
@@ -7744,62 +7727,72 @@
             {
               "key": "market",
               "label": "市場ボラティリティ",
-              "score": 21.9
+              "score": 14.1
             }
           ]
         },
         {
-          "id": "wwii_postwar_repression",
-          "label": "第二次大戦・戦後金融抑圧",
-          "period": "1941〜1951",
-          "sourceId": "FED_HISTORY_TREASURY_FED_ACCORD",
-          "sourceUrl": "https://www.federalreservehistory.org/essays/treasury-fed-accord",
-          "trigger": "戦費調達、金利上限、インフレによる政府債務の実質圧縮",
+          "id": "nixon_1971",
+          "label": "ニクソン・ショック",
+          "period": "1965〜1973",
+          "sourceId": "FRB_HISTORY_GOLD_CONVERTIBILITY_ENDS",
+          "sourceUrl": "https://www.federalreservehistory.org/essays/gold-convertibility-ends",
+          "trigger": "ドルの金交換停止、賃金・物価統制、輸入課徴金",
           "signature": [
             {
-              "key": "fiscal",
-              "weight": 0.3
+              "key": "regime",
+              "weight": 0.35
             },
             {
               "key": "inflation",
+              "weight": 0.25
+            },
+            {
+              "key": "dollar",
               "weight": 0.2
             },
             {
               "key": "policy",
-              "weight": 0.2
-            },
-            {
-              "key": "reserve",
-              "weight": 0.15
+              "weight": 0.1
             },
             {
               "key": "trade",
-              "weight": 0.15
+              "weight": 0.1
             }
           ],
           "flow": [
-            "戦争支出と政府債務が急拡大",
-            "中央銀行が国債金利を低位に固定",
-            "物価上昇と低い名目金利で実質金利を抑制",
-            "資本規制・金融規制・国内貯蓄で国債需要を支える",
-            "1951年の財務省・FRBアコードで金融政策の独立性を回復"
+            "米国の国際収支赤字と海外ドル残高が累積",
+            "インフレと金交換要求で準備資産への圧力",
+            "ドル信認と固定相場制度の維持が困難化",
+            "1971年に金交換停止・価格統制・輸入課徴金",
+            "ブレトンウッズ体制終結と変動相場へ"
           ],
           "missing": [
-            "家計・機関別の実質国債保有損益",
-            "資本規制と強制的国債需要の現代比較指標"
+            "米公式金準備に対する外国保有ドル比率",
+            "各国の金交換請求・準備通貨構成の高頻度系列"
           ],
-          "score": 31.4,
+          "score": 29.2,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
           "matches": [
             {
-              "key": "fiscal",
-              "label": "財政・国債利払い",
-              "score": 54.9
+              "key": "regime",
+              "label": "通貨制度・信認",
+              "score": 46.8
             }
           ],
           "contradictions": [
+            {
+              "key": "dollar",
+              "label": "ドル資金圧力",
+              "score": 28.2
+            },
+            {
+              "key": "trade",
+              "label": "貿易・外需低下",
+              "score": 31.7
+            },
             {
               "key": "policy",
               "label": "政策引締め",
@@ -7851,7 +7844,7 @@
             "感染、医療逼迫、移動制限のリアルタイム系列",
             "事業停止・供給網寸断の国際高頻度データ"
           ],
-          "score": 29.2,
+          "score": 28.3,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -7881,7 +7874,7 @@
             {
               "key": "market",
               "label": "市場ボラティリティ",
-              "score": 21.9
+              "score": 14.1
             }
           ]
         },
@@ -7929,7 +7922,7 @@
             "商業用不動産価格所得比",
             "担保価値と銀行・ノンバンク融資のルックスルー"
           ],
-          "score": 26.7,
+          "score": 25.3,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -7944,7 +7937,7 @@
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 26.1
+              "score": 22.3
             },
             {
               "key": "policy",
@@ -7954,80 +7947,7 @@
             {
               "key": "market",
               "label": "市場ボラティリティ",
-              "score": 21.9
-            }
-          ]
-        },
-        {
-          "id": "dotcom_2000",
-          "label": "ITバブル崩壊",
-          "period": "1997〜2002",
-          "sourceId": "FRB_HISTORY_RECESSION_2001",
-          "sourceUrl": "https://www.federalreservehistory.org/essays/recession-of-2001",
-          "trigger": "高い評価倍率と投資期待の反転、株価・設備投資の縮小",
-          "signature": [
-            {
-              "key": "market",
-              "weight": 0.3
-            },
-            {
-              "key": "production",
-              "weight": 0.2
-            },
-            {
-              "key": "credit",
-              "weight": 0.15
-            },
-            {
-              "key": "demand",
-              "weight": 0.15
-            },
-            {
-              "key": "policy",
-              "weight": 0.1
-            },
-            {
-              "key": "liquidity",
-              "weight": 0.1
-            }
-          ],
-          "flow": [
-            "技術期待と資金流入で株価・設備投資が急拡大",
-            "収益と評価倍率の乖離が拡大",
-            "金融引締めと業績失望で株価が反転",
-            "資金調達悪化から設備投資・雇用を削減",
-            "企業部門主導の景気後退へ"
-          ],
-          "missing": [
-            "株式の評価倍率・IPO・利益なき企業比率",
-            "AI関連設備投資と収益化の企業別ギャップ"
-          ],
-          "score": 25.6,
-          "state": "green",
-          "dataCoverage": 76,
-          "dataState": "estimated",
-          "matches": [
-            {
-              "key": "liquidity",
-              "label": "流動性・償還圧力",
-              "score": 75
-            }
-          ],
-          "contradictions": [
-            {
-              "key": "market",
-              "label": "市場ボラティリティ",
-              "score": 21.9
-            },
-            {
-              "key": "demand",
-              "label": "家計需要低下",
-              "score": 32.8
-            },
-            {
-              "key": "credit",
-              "label": "銀行・信用ストレス",
-              "score": 26.1
+              "score": 14.1
             }
           ]
         },
@@ -8075,7 +7995,7 @@
             "銀行保有証券の含み損と預金流出の最新統合",
             "企業別の借換え壁と固定金利満期分布"
           ],
-          "score": 24.9,
+          "score": 24,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -8098,60 +8018,59 @@
               "score": 32.8
             },
             {
-              "key": "curve",
-              "label": "逆イールド・金利曲線",
-              "score": 7
+              "key": "dollar",
+              "label": "ドル資金圧力",
+              "score": 28.2
             }
           ]
         },
         {
-          "id": "asia_1997",
-          "label": "アジア通貨危機",
-          "period": "1994〜1998",
-          "sourceId": "IMF_ASIAN_CRISIS_CAUSES",
-          "sourceUrl": "https://www.imf.org/external/pubs/ft/fandd/1999/06/aghevli.htm",
-          "trigger": "短期外貨債務と固定相場への信認低下、資本流出",
+          "id": "dotcom_2000",
+          "label": "ITバブル崩壊",
+          "period": "1997〜2002",
+          "sourceId": "FRB_HISTORY_RECESSION_2001",
+          "sourceUrl": "https://www.federalreservehistory.org/essays/recession-of-2001",
+          "trigger": "高い評価倍率と投資期待の反転、株価・設備投資の縮小",
           "signature": [
             {
-              "key": "dollar",
+              "key": "market",
               "weight": 0.3
             },
             {
-              "key": "credit",
+              "key": "production",
               "weight": 0.2
             },
             {
-              "key": "market",
+              "key": "credit",
               "weight": 0.15
             },
             {
-              "key": "trade",
+              "key": "demand",
               "weight": 0.15
-            },
-            {
-              "key": "liquidity",
-              "weight": 0.1
             },
             {
               "key": "policy",
               "weight": 0.1
+            },
+            {
+              "key": "liquidity",
+              "weight": 0.1
             }
           ],
           "flow": [
-            "資本流入・不動産投資・ドル連動相場が拡大",
-            "銀行の短期外貨調達と長期国内融資が累積",
-            "ドル高・輸出鈍化・資産価格低下で脆弱性が顕在化",
-            "資本反転と通貨防衛で外貨準備が減少",
-            "通貨安で外貨債務が膨張し域内へ連鎖"
+            "技術期待と資金流入で株価・設備投資が急拡大",
+            "収益と評価倍率の乖離が拡大",
+            "金融引締めと業績失望で株価が反転",
+            "資金調達悪化から設備投資・雇用を削減",
+            "企業部門主導の景気後退へ"
           ],
           "missing": [
-            "国別の短期対外債務／外貨準備比率",
-            "企業の未ヘッジ外貨債務",
-            "固定・管理相場の防衛余力"
+            "株式の評価倍率・IPO・利益なき企業比率",
+            "AI関連設備投資と収益化の企業別ギャップ"
           ],
-          "score": 23,
+          "score": 23.4,
           "state": "green",
-          "dataCoverage": 64,
+          "dataCoverage": 76,
           "dataState": "estimated",
           "matches": [
             {
@@ -8162,19 +8081,19 @@
           ],
           "contradictions": [
             {
-              "key": "credit",
-              "label": "銀行・信用ストレス",
-              "score": 26.1
+              "key": "demand",
+              "label": "家計需要低下",
+              "score": 32.8
             },
             {
               "key": "market",
               "label": "市場ボラティリティ",
-              "score": 21.9
+              "score": 14.1
             },
             {
-              "key": "policy",
-              "label": "政策引締め",
-              "score": 23.3
+              "key": "credit",
+              "label": "銀行・信用ストレス",
+              "score": 22.3
             }
           ]
         },
@@ -8223,7 +8142,7 @@
             "銀行・ノンバンクのレバレッジと担保追証",
             "プライベート資産の実勢評価損"
           ],
-          "score": 22.8,
+          "score": 21.7,
           "state": "green",
           "dataCoverage": 64,
           "dataState": "estimated",
@@ -8243,17 +8162,91 @@
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 26.1
-            },
-            {
-              "key": "market",
-              "label": "市場ボラティリティ",
-              "score": 21.9
+              "score": 22.3
             },
             {
               "key": "labor",
               "label": "雇用悪化",
               "score": 14.3
+            },
+            {
+              "key": "market",
+              "label": "市場ボラティリティ",
+              "score": 14.1
+            }
+          ]
+        },
+        {
+          "id": "asia_1997",
+          "label": "アジア通貨危機",
+          "period": "1994〜1998",
+          "sourceId": "IMF_ASIAN_CRISIS_CAUSES",
+          "sourceUrl": "https://www.imf.org/external/pubs/ft/fandd/1999/06/aghevli.htm",
+          "trigger": "短期外貨債務と固定相場への信認低下、資本流出",
+          "signature": [
+            {
+              "key": "dollar",
+              "weight": 0.3
+            },
+            {
+              "key": "credit",
+              "weight": 0.2
+            },
+            {
+              "key": "market",
+              "weight": 0.15
+            },
+            {
+              "key": "trade",
+              "weight": 0.15
+            },
+            {
+              "key": "liquidity",
+              "weight": 0.1
+            },
+            {
+              "key": "policy",
+              "weight": 0.1
+            }
+          ],
+          "flow": [
+            "資本流入・不動産投資・ドル連動相場が拡大",
+            "銀行の短期外貨調達と長期国内融資が累積",
+            "ドル高・輸出鈍化・資産価格低下で脆弱性が顕在化",
+            "資本反転と通貨防衛で外貨準備が減少",
+            "通貨安で外貨債務が膨張し域内へ連鎖"
+          ],
+          "missing": [
+            "国別の短期対外債務／外貨準備比率",
+            "企業の未ヘッジ外貨債務",
+            "固定・管理相場の防衛余力"
+          ],
+          "score": 19,
+          "state": "green",
+          "dataCoverage": 64,
+          "dataState": "estimated",
+          "matches": [
+            {
+              "key": "liquidity",
+              "label": "流動性・償還圧力",
+              "score": 75
+            }
+          ],
+          "contradictions": [
+            {
+              "key": "dollar",
+              "label": "ドル資金圧力",
+              "score": 28.2
+            },
+            {
+              "key": "trade",
+              "label": "貿易・外需低下",
+              "score": 31.7
+            },
+            {
+              "key": "credit",
+              "label": "銀行・信用ストレス",
+              "score": 22.3
             }
           ]
         }
@@ -8265,19 +8258,19 @@
           "url": "https://www.fsb.org/2026/05/report-on-vulnerabilities-in-private-credit/"
         },
         {
-          "sourceId": "FED_HISTORY_LATIN_DEBT_CRISIS",
-          "label": "中南米債務危機",
-          "url": "https://www.federalreservehistory.org/essays/latin-american-debt-crisis"
-        },
-        {
           "sourceId": "FRB_HISTORY_GREAT_INFLATION",
           "label": "石油危機・スタグフレーション",
           "url": "https://www.federalreservehistory.org/essays/great-inflation"
         },
         {
-          "sourceId": "FRB_HISTORY_GOLD_CONVERTIBILITY_ENDS",
-          "label": "ニクソン・ショック",
-          "url": "https://www.federalreservehistory.org/essays/gold-convertibility-ends"
+          "sourceId": "FED_HISTORY_LATIN_DEBT_CRISIS",
+          "label": "中南米債務危機",
+          "url": "https://www.federalreservehistory.org/essays/latin-american-debt-crisis"
+        },
+        {
+          "sourceId": "FED_HISTORY_TREASURY_FED_ACCORD",
+          "label": "第二次大戦・戦後金融抑圧",
+          "url": "https://www.federalreservehistory.org/essays/treasury-fed-accord"
         },
         {
           "sourceId": "ECB_EURO_CRISIS_2012",
@@ -8285,9 +8278,9 @@
           "url": "https://www.ecb.europa.eu/press/key/date/2012/html/sp121126_1.en.html"
         },
         {
-          "sourceId": "FED_HISTORY_TREASURY_FED_ACCORD",
-          "label": "第二次大戦・戦後金融抑圧",
-          "url": "https://www.federalreservehistory.org/essays/treasury-fed-accord"
+          "sourceId": "FRB_HISTORY_GOLD_CONVERTIBILITY_ENDS",
+          "label": "ニクソン・ショック",
+          "url": "https://www.federalreservehistory.org/essays/gold-convertibility-ends"
         },
         {
           "sourceId": "FED_MONETARY_POLICY_COVID",
@@ -8300,24 +8293,24 @@
           "url": "https://www.mof.go.jp/english/pri/publication/policy_1972-1990/Chapter3-2.pdf"
         },
         {
-          "sourceId": "FRB_HISTORY_RECESSION_2001",
-          "label": "ITバブル崩壊",
-          "url": "https://www.federalreservehistory.org/essays/recession-of-2001"
-        },
-        {
           "sourceId": "FRB_MPR_2023",
           "label": "インフレ・急速引締め",
           "url": "https://www.federalreserve.gov/monetarypolicy/2023-03-mpr-summary.htm"
         },
         {
-          "sourceId": "IMF_ASIAN_CRISIS_CAUSES",
-          "label": "アジア通貨危機",
-          "url": "https://www.imf.org/external/pubs/ft/fandd/1999/06/aghevli.htm"
+          "sourceId": "FRB_HISTORY_RECESSION_2001",
+          "label": "ITバブル崩壊",
+          "url": "https://www.federalreservehistory.org/essays/recession-of-2001"
         },
         {
           "sourceId": "FRB_HISTORY_GREAT_RECESSION",
           "label": "リーマン・世界金融危機",
           "url": "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath"
+        },
+        {
+          "sourceId": "IMF_ASIAN_CRISIS_CAUSES",
+          "label": "アジア通貨危機",
+          "url": "https://www.imf.org/external/pubs/ft/fandd/1999/06/aghevli.htm"
         }
       ]
     },
@@ -8332,16 +8325,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 0.1,
         "change": -0.03,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_SAHMREALTIME",
         "sourceUrl": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.900Z",
         "change3m": -64.99999999999999,
         "change12m": -58.823529411764696,
         "change3mPoints": -0.13,
-        "change12mPoints": -0.1,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -0.1
       },
       {
         "key": "yieldCurve10y3m",
@@ -8349,20 +8340,18 @@
         "label": "米10年国債－3か月国債スプレッド",
         "unit": "%ポイント",
         "cadence": "日次",
-        "value": 0.86,
-        "observationDate": "2026-07-30",
-        "previousValue": 0.84,
-        "change": 0.020000000000000018,
-        "dataState": "stale_observed",
+        "value": 0.79,
+        "observationDate": "2026-08-03",
+        "previousValue": 0.92,
+        "change": -0.13,
+        "dataState": "observed",
         "sourceId": "FRED_T10Y3M",
         "sourceUrl": "https://fred.stlouisfed.org/series/T10Y3M",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": 19.444444444444443,
-        "change12m": -2966.666666666667,
-        "change3mPoints": 0.14,
-        "change12mPoints": 0.89,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.065Z",
+        "change3m": 11.267605633802823,
+        "change12m": -758.3333333333334,
+        "change3mPoints": 0.08000000000000007,
+        "change12mPoints": 0.91
       },
       {
         "key": "initialClaims",
@@ -8374,16 +8363,14 @@
         "observationDate": "2026-07-25",
         "previousValue": 188000,
         "change": 9000,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_ICSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/ICSA",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.929Z",
         "change3m": 3.6842105263157787,
         "change12m": -9.633027522935777,
         "change3mPoints": 7000,
-        "change12mPoints": -21000,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -21000
       },
       {
         "key": "continuedClaims",
@@ -8395,16 +8382,14 @@
         "observationDate": "2026-07-18",
         "previousValue": 1789000,
         "change": -7000,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_CCSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/CCSA",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.070Z",
         "change3m": 0.33783783783782884,
         "change12m": -8.191653786707887,
         "change3mPoints": 6000,
-        "change12mPoints": -159000,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -159000
       },
       {
         "key": "unemployment",
@@ -8416,16 +8401,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 4.3,
         "change": -0.09999999999999964,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-08-02T22:21:37.111Z",
+        "fetchedAt": "2026-08-03T23:32:02.047Z",
         "change3m": -2.3255813953488302,
         "change12m": 2.4390243902439046,
         "change3mPoints": -0.09999999999999964,
-        "change12mPoints": 0.10000000000000053,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 0.10000000000000053
       },
       {
         "key": "jobOpenings",
@@ -8440,13 +8423,11 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_JTSJOL",
         "sourceUrl": "https://fred.stlouisfed.org/series/JTSJOL",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.044Z",
         "change3m": 9.70817682750651,
         "change12m": 3.8850889192886484,
         "change3mPoints": 672,
-        "change12mPoints": 284,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 284
       },
       {
         "key": "tempHelp",
@@ -8458,16 +8439,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 2489.9,
         "change": 9.299999999999727,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_TEMPHELPS",
         "sourceUrl": "https://fred.stlouisfed.org/series/TEMPHELPS",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.936Z",
         "change3m": 0.7782571877898103,
         "change12m": -0.2156032899464977,
         "change3mPoints": 19.299999999999727,
-        "change12mPoints": -5.400000000000091,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -5.400000000000091
       },
       {
         "key": "realPce",
@@ -8479,16 +8458,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 16817.2,
         "change": 68,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_PCEC96",
         "sourceUrl": "https://fred.stlouisfed.org/series/PCEC96",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.899Z",
         "change3m": 0.9270715656212625,
         "change12m": 2.5439837729180237,
         "change3mPoints": 155.10000000000218,
-        "change12mPoints": 418.90000000000146,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 418.90000000000146
       },
       {
         "key": "retailSales",
@@ -8500,16 +8477,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 766876,
         "change": 1677,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_RSAFS",
         "sourceUrl": "https://fred.stlouisfed.org/series/RSAFS",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.195Z",
         "change3m": 1.9283487154730716,
         "change12m": 6.719163968207242,
         "change3mPoints": 14540,
-        "change12mPoints": 48389,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 48389
       },
       {
         "key": "industrialProduction",
@@ -8521,16 +8496,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 102.5606,
         "change": 0.07890000000000441,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_INDPRO",
         "sourceUrl": "https://fred.stlouisfed.org/series/INDPRO",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:01.914Z",
         "change3m": 1.0060304751557725,
         "change12m": 1.1440847075981697,
         "change3mPoints": 1.0223000000000013,
-        "change12mPoints": 1.1610000000000014,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 1.1610000000000014
       },
       {
         "key": "housingStarts",
@@ -8542,16 +8515,14 @@
         "observationDate": "2026-06-01",
         "previousValue": 1199,
         "change": 228,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_HOUST",
         "sourceUrl": "https://fred.stlouisfed.org/series/HOUST",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.082Z",
         "change3m": -6.24178712220762,
         "change12m": 3.4807831762146524,
         "change3mPoints": -95,
-        "change12mPoints": 48,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": 48
       },
       {
         "key": "mortgageRate",
@@ -8563,16 +8534,14 @@
         "observationDate": "2026-07-30",
         "previousValue": 6.58,
         "change": 0.08000000000000007,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_MORTGAGE30US",
         "sourceUrl": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.133Z",
         "change3m": 5.714285714285716,
         "change12m": -1.1869436201780381,
         "change3mPoints": 0.3600000000000003,
-        "change12mPoints": -0.08000000000000007,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -0.08000000000000007
       },
       {
         "key": "nfci",
@@ -8584,16 +8553,14 @@
         "observationDate": "2026-07-24",
         "previousValue": -0.544,
         "change": -0.010000000000000009,
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceId": "FRED_NFCI",
         "sourceUrl": "https://fred.stlouisfed.org/series/NFCI",
-        "fetchedAt": "2026-08-02T22:21:37.113Z",
+        "fetchedAt": "2026-08-03T23:32:02.248Z",
         "change3m": 13.292433537832316,
         "change12m": 8.414872798434448,
         "change3mPoints": -0.06500000000000006,
-        "change12mPoints": -0.04300000000000004,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "change12mPoints": -0.04300000000000004
       },
       {
         "key": "highYieldSpread",
@@ -8601,20 +8568,18 @@
         "label": "米国ハイイールド債スプレッド",
         "unit": "%",
         "cadence": "日次",
-        "value": 2.87,
-        "observationDate": "2026-07-29",
-        "previousValue": 2.84,
-        "change": 0.03000000000000025,
-        "dataState": "stale_observed",
+        "value": 2.84,
+        "observationDate": "2026-07-30",
+        "previousValue": 2.87,
+        "change": -0.03000000000000025,
+        "dataState": "observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": 1.7730496453900901,
-        "change12m": 0.34965034965035446,
-        "change3mPoints": 0.050000000000000266,
-        "change12mPoints": 0.010000000000000231,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.249Z",
+        "change3m": 0.35335689045936647,
+        "change12m": -1.730103806228378,
+        "change3mPoints": 0.009999999999999787,
+        "change12mPoints": -0.050000000000000266
       },
       {
         "key": "vix",
@@ -8622,20 +8587,18 @@
         "label": "VIX市場不安指数",
         "unit": "指数",
         "cadence": "日次",
-        "value": 20.66,
-        "observationDate": "2026-07-29",
-        "previousValue": 18.21,
-        "change": 2.4499999999999993,
-        "dataState": "stale_observed",
+        "value": 15.99,
+        "observationDate": "2026-07-31",
+        "previousValue": 17.09,
+        "change": -1.0999999999999996,
+        "dataState": "observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-08-02T22:21:37.112Z",
-        "change3m": 9.835194045720375,
-        "change12m": 29.28660826032541,
-        "change3mPoints": 1.8500000000000014,
-        "change12mPoints": 4.68,
-        "retainedFromGeneratedAt": "2026-07-31T01:08:49.143Z",
-        "refreshError": "fetch failed"
+        "fetchedAt": "2026-08-03T23:32:02.052Z",
+        "change3m": -5.885815185403165,
+        "change12m": -4.366028708133962,
+        "change3mPoints": -0.9999999999999982,
+        "change12mPoints": -0.7299999999999986
       }
     ],
     "actions": [
@@ -8661,8 +8624,51 @@
       }
     ]
   },
+  "latestOfficialFindings": [
+    {
+      "id": "FRB_FOMC_2026_07_29",
+      "label": "FRBは3.50〜3.75%を維持",
+      "observationDate": "2026-07-29",
+      "value": "9対3で据え置き",
+      "dataState": "observed",
+      "sourceId": "FRB_FOMC_2026_07_29",
+      "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "finding": "3名が25bp利上げを主張。ドルを支える金利差と、信用コスト上昇を同時監視。"
+    },
+    {
+      "id": "BOJ_MPM_2026_07_31",
+      "label": "日銀は1.0%程度を維持",
+      "observationDate": "2026-07-31",
+      "value": "8対1で据え置き",
+      "dataState": "observed",
+      "sourceId": "BOJ_MPM_2026_07_31",
+      "sourceUrl": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260731a.pdf",
+      "finding": "反対1名は1.25%を提案。円高反転リスクは残るが、日米金利差はなお大きい。"
+    },
+    {
+      "id": "BEA_GDP_2026_Q2_ADV",
+      "label": "米実質GDPは年率1.5%増",
+      "observationDate": "2026-06-30",
+      "value": "民間国内最終需要 +3.9%",
+      "dataState": "observed",
+      "sourceId": "BEA_GDP_2026_Q2_ADV",
+      "sourceUrl": "https://www.bea.gov/sites/default/files/2026-07/gdp2q26-adv.pdf",
+      "finding": "GDPは減速した一方、民間需要は底堅い。PCE価格+5.1%、コア+3.4%で物価再加速を警戒。"
+    },
+    {
+      "id": "MOF_FEIO_2026_08_28_GATE",
+      "label": "7月30日の為替介入は正式確認待ち",
+      "observationDate": "2026-08-28",
+      "value": "介入額は不明",
+      "dataState": "unknown",
+      "sourceId": "MOF_FEIO_RELEASE_SCHEDULE",
+      "sourceUrl": "https://www.mof.go.jp/policy/international_policy/reference/feio/index.html",
+      "finding": "財務省の7月30日〜8月26日分は8月28日19時公表予定。報道と公式値を混同しない。"
+    }
+  ],
   "geopoliticalMethod": {
-    "dataState": "strategic_interpretation",
+    "dataState": "estimated",
+    "analysisType": "strategic_interpretation",
     "note": "政治安定性は世界銀行WGIの年次指標であり速報的な戦況ではありません。現在イベントは公的機関の公開情報で別レーン確認し、記事量だけで安全・危機を断定しません。",
     "mearsheimerLens": [
       "相対的国力",
@@ -8676,11 +8682,11 @@
   "health": {
     "status": "passed_with_warnings",
     "label": "主要機能は正常・鮮度警告あり",
-    "checkedAt": "2026-08-02T22:21:37.171Z",
+    "checkedAt": "2026-08-03T23:32:03.497Z",
     "totals": {
       "failed": 0,
       "unknown": 0,
-      "stale": 280
+      "stale": 9
     },
     "sections": [
       {
@@ -8688,10 +8694,9 @@
         "label": "ドル円急変",
         "total": 6,
         "counts": {
-          "stale_observed": 1,
           "observed_partial": 2,
-          "estimated": 2,
-          "strategic_interpretation": 1
+          "estimated": 3,
+          "observed": 1
         },
         "failedIds": []
       },
@@ -8700,7 +8705,8 @@
         "label": "米国マクロ・為替・国債",
         "total": 34,
         "counts": {
-          "stale_observed": 34
+          "observed": 31,
+          "stale_observed": 3
         },
         "failedIds": []
       },
@@ -8709,16 +8715,16 @@
         "label": "世界地図",
         "total": 216,
         "counts": {
-          "stale_observed": 216
+          "observed_partial": 216
         },
         "failedIds": []
       },
       {
         "key": "geopolitics",
         "label": "地政学イベント",
-        "total": 6,
+        "total": 7,
         "counts": {
-          "observed_partial": 6
+          "observed_partial": 7
         },
         "failedIds": []
       },
@@ -8727,7 +8733,8 @@
         "label": "沖縄生活波及",
         "total": 4,
         "counts": {
-          "stale_observed": 2,
+          "observed": 1,
+          "stale_observed": 1,
           "estimated": 2
         },
         "failedIds": []
@@ -8737,8 +8744,9 @@
         "label": "プライベートクレジット",
         "total": 15,
         "counts": {
-          "stale_observed": 7,
-          "observed_partial": 8
+          "stale_observed": 3,
+          "observed_partial": 8,
+          "observed": 4
         },
         "failedIds": []
       },
@@ -8747,19 +8755,19 @@
         "label": "ドル・資金フロー",
         "total": 20,
         "counts": {
-          "observed": 14,
+          "observed": 17,
           "estimated": 2,
-          "observed_partial": 1,
-          "stale_observed": 3
+          "observed_partial": 1
         },
         "failedIds": []
       },
       {
         "key": "fundamentalOutlook",
         "label": "米国景気・世界波及予測",
-        "total": 17,
+        "total": 18,
         "counts": {
-          "stale_observed": 17
+          "observed": 16,
+          "stale_observed": 2
         },
         "failedIds": []
       },
