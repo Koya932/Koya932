@@ -315,8 +315,25 @@
       node.textContent=Number(value).toFixed(digits);
       article.classList.remove("unknown");
     }
-    fetch("./data/global-monitor.json?v=20260731-home",{cache:"no-store"})
-      .then(response=>{if(!response.ok)throw Error(response.status);return response.json()})
+    const HOME_DATA_VERSION="20260812-jptus-v12b";
+    async function fetchHomeData(){
+      let lastError;
+      const urls=[`./data/global-monitor.json?v=${HOME_DATA_VERSION}`,`/Koya932/oki-world-monitor/data/global-monitor.json?v=${HOME_DATA_VERSION}`];
+      for(let attempt=0;attempt<2;attempt++){
+        for(const url of urls){
+          try{
+            const response=await fetch(url,{cache:"default"});
+            if(!response.ok)throw Error(`HTTP ${response.status}`);
+            const candidate=await response.json();
+            if(candidate.schemaVersion<12||!candidate.overallJudgment)throw Error("配信JSONの版が古いか必須項目がありません");
+            return candidate;
+          }catch(error){lastError=error}
+        }
+        await new Promise(resolve=>setTimeout(resolve,900));
+      }
+      throw lastError||Error("原因不明の取得失敗");
+    }
+    fetchHomeData()
       .then(data=>{
         const lab=data.fundamentalOutlook?.crisisLab;
         const heg=lab?.hegemonyMonitor;
@@ -337,3 +354,4 @@
   </script>
 </body>
 </html>
+
