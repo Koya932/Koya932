@@ -19,7 +19,312 @@
     .layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:12px;margin-top:12px}.panel{overflow:hidden}.panel-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--line)}.panel-head small{color:var(--cyan);font-size:10px;font-weight:900}.panel-head h2{margin:4px 0 0;font-size:18px}.modes{display:flex;gap:5px}.modes button{cursor:pointer;border:1px solid var(--line);border-radius:5px;background:#08141e;color:var(--muted);padding:8px 10px;font-weight:800;font-size:11px}.modes button.active{border-color:#24887e;background:#103f3b;color:#d9fffa}.map-wrap{position:relative;min-height:510px;background:radial-gradient(circle at 50% 45%,#10283a,#06101a 70%)}#map{display:block;width:100%;height:510px}.country{stroke:#7790a0;stroke-width:.42;vector-effect:non-scaling-stroke;cursor:pointer;transition:filter .12s,opacity .12s}.country:hover{filter:brightness(1.35);stroke:#fff;stroke-width:1}.country.selected{stroke:#fff;stroke-width:1.7;filter:brightness(1.2)}.map-message{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:12px}.legend{position:absolute;left:14px;bottom:12px;display:flex;gap:12px;flex-wrap:wrap;padding:9px 11px;border:1px solid var(--line);background:#06101de6;border-radius:5px;font-size:10px}.legend span{display:flex;align-items:center;gap:5px}.legend i{width:9px;height:9px;border-radius:2px}.country-card{padding:18px}.country-card>small{color:var(--cyan);font:800 10px ui-monospace,monospace}.country-card h3{font-size:27px;margin:7px 0}.verdict{display:inline-flex;border:1px solid;border-radius:99px;padding:6px 10px;font-size:11px;font-weight:900}.verdict.green{color:#8aebc9;border-color:#247d63;background:#0f352c}.verdict.yellow{color:#ffda7a;border-color:#856a25;background:#332912}.verdict.red{color:#ff9ca5;border-color:#8e3943;background:#34161c}.verdict.unknown{color:#b0c2cc;border-color:#445b69;background:#172630}.facts{margin:18px 0 0}.facts div{padding:13px 0;border-top:1px solid var(--line)}.facts dt{color:var(--muted);font-size:10px}.facts dd{margin:5px 0 0;font-size:20px;font-weight:900}.facts dd small{display:block;color:var(--muted);font-size:10px;font-weight:500;margin-top:3px}.counts{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:15px}.count{padding:10px 5px;text-align:center;border:1px solid var(--line);border-radius:5px}.count b{display:block;font-size:17px}.count small{color:var(--muted);font-size:9px}.method{margin:14px 0 0;color:var(--muted);font-size:10px;line-height:1.6}
     .impact{margin-top:12px;padding:18px}.impact-grid{display:grid;grid-template-columns:250px minmax(0,1fr);gap:10px;margin-top:14px}.impact-score,.impact-item{border:1px solid var(--line);border-radius:7px;background:#0d1e2b}.impact-score{padding:18px}.impact-score small,.impact-head small{color:var(--cyan);font-size:10px;font-weight:900}.impact-score b{display:block;margin:17px 0 6px;font-size:48px;line-height:.9}.impact-score h3{margin:12px 0 6px;font-size:16px}.impact-score p,.impact-item p{margin:0;color:var(--muted);font-size:10px;line-height:1.6}.impact-components{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.impact-item{padding:12px}.impact-item>div{display:flex;justify-content:space-between;font-size:11px;font-weight:900}.meter{height:5px;margin:9px 0;border-radius:9px;background:#213846;overflow:hidden}.meter i{display:block;height:100%}.events{margin-top:10px;border:1px solid var(--line);border-radius:7px;overflow:hidden}.events>header{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid var(--line)}.events>header h3{margin:0;font-size:14px}.event-grid{display:grid;grid-template-columns:repeat(2,1fr)}.event{padding:13px;display:grid;grid-template-columns:37px 1fr;gap:9px;color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}.event:nth-child(odd){border-right:1px solid var(--line)}.event>span{width:34px;height:34px;display:grid;place-items:center;border:1px solid;border-radius:50%;font:900 11px ui-monospace,monospace}.event small{color:var(--muted);font-size:9px}.event h4{margin:4px 0;font-size:12px}.event p{margin:0;color:var(--muted);font-size:10px;line-height:1.5}.event.red>span{color:#ff9ca5}.event.yellow>span{color:#ffda7a}.impact-method{margin:10px 0 0;color:var(--muted);font-size:10px;line-height:1.6}
     .pt{margin-top:12px;padding:18px;border-color:#725c91;background:linear-gradient(150deg,#1a1530,#0a1b27 58%)}.pt-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.pt-head small{color:#c4b5fd;font-size:10px;font-weight:900}.pt-head h2{margin:4px 0 0;font-size:19px}.pt-summary{display:grid;grid-template-columns:300px minmax(0,1fr);gap:9px;margin-top:14px}.pt-score,.pt-pillar,.pt-signal,.pt-branch,.pt-source{border:1px solid #3d3655;border-radius:7px;background:#0d1e2b}.pt-score{padding:18px;border-left:5px solid #a78bfa}.pt-score small,.pt-score strong,.pt-score span{display:block}.pt-score small{color:#c4b5fd;font-size:10px}.pt-score b{display:block;margin:16px 0 6px;font-size:48px;line-height:.9}.pt-score strong{font-size:14px}.pt-score p{margin:9px 0;color:#c4ccd6;font-size:10px;line-height:1.65}.pt-score span{color:#7f8b9c;font-size:9px}.pt-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.pt-pillar,.pt-signal,.pt-branch,.pt-source{padding:12px}.pt-pillar header,.pt-signal header,.pt-branch header{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}.pt-pillar small,.pt-signal small,.pt-source small{color:var(--muted);font-size:9px}.pt-pillar h3,.pt-signal h3,.pt-branch h3{margin:4px 0;font-size:12px}.pt-pillar b,.pt-signal b,.pt-branch b{font-size:21px}.pt-pillar p,.pt-signal p,.pt-branch p,.pt-source p{margin:7px 0 0;color:#8fa3b2;font-size:9px;line-height:1.55}.pt-signals{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:9px}.pt-signal dl{margin:8px 0 0;font-size:9px}.pt-signal dl div{padding:5px 0;border-top:1px solid var(--line)}.pt-signal dt{color:#a7f3d0}.pt-signal dd{margin:2px 0 0;color:#90a4b2}.pt-bottom{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.pt-branches{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.pt-source strong{display:block;margin:5px 0;font-size:12px}.pt-source ul{margin:8px 0 0;padding-left:17px;color:#94a5b3;font-size:9px;line-height:1.6}.pt-source a{color:#93c5fd}.pt-note{margin:9px 0 0;padding:10px 12px;border-left:3px solid #a78bfa;color:#c7bddb;background:#8b5cf615;font-size:10px;line-height:1.6}
-    .cf{margin-top:12px;padding:18px}.cf-head small{color:var(--cyan);font-size:10px;font-weight:900}.cf-head h2{margin:4px 0 0;font-size:18px}.cf-summary{display:grid;grid-template-columns:340px minmax(0,1fr);gap:9px;margin-top:14px}.cf-score,.cf-derived article,.cf-lane,.cf-fact,.cf-trigger{border:1px solid var(--line);border-radius:7px;background:#0d1e2b}.cf-score{padding:18px;border-color:#7b642b;background:linear-gradient(145deg,#302815,#0b1d29)}.cf-score small{color:#f2cc78;font-size:10px;font-weight:900}.cf-score b{display:block;margin:17px 0 6px;font-size:48px;line-height:.9}.cf-score h3{margin:12px 0 6px}.cf-score p,.cf-lane p,.cf-fact p{margin:0;color:var(--muted);font-size:10px;line-height:1.6}.cf-derived{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.cf-derived article{padding:13px}.cf-derived small,.cf-lane small{display:block;color:var(--muted);font-size:9px}.cf-derived b{display:block;margin:7px 0;font-size:21px}.cf-derived span{color:#6f8c98;font-size:9px}.cf-lanes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:9px}.cf-lane{padding:12px}.cf-lane>div{display:flex;justify-content:space-between;gap:8px}.cf-lane h3{margin:4px 0;font-size:13px}.cf-lane>div>b{font-size:20px}.cf-lane p{min-height:64px;margin-top:7px}.cf-facts{display:grid;grid-template-columns:repe…13216 tokens truncated…｜${v.channel}｜${v.publishedAt}`;
+    .cf{margin-top:12px;padding:18px}.cf-head small{color:var(--cyan);font-size:10px;font-weight:900}.cf-head h2{margin:4px 0 0;font-size:18px}.cf-summary{display:grid;grid-template-columns:340px minmax(0,1fr);gap:9px;margin-top:14px}.cf-score,.cf-derived article,.cf-lane,.cf-fact,.cf-trigger{border:1px solid var(--line);border-radius:7px;background:#0d1e2b}.cf-score{padding:18px;border-color:#7b642b;background:linear-gradient(145deg,#302815,#0b1d29)}.cf-score small{color:#f2cc78;font-size:10px;font-weight:900}.cf-score b{display:block;margin:17px 0 6px;font-size:48px;line-height:.9}.cf-score h3{margin:12px 0 6px}.cf-score p,.cf-lane p,.cf-fact p{margin:0;color:var(--muted);font-size:10px;line-height:1.6}.cf-derived{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.cf-derived article{padding:13px}.cf-derived small,.cf-lane small{display:block;color:var(--muted);font-size:9px}.cf-derived b{display:block;margin:7px 0;font-size:21px}.cf-derived span{color:#6f8c98;font-size:9px}.cf-lanes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:9px}.cf-lane{padding:12px}.cf-lane>div{display:flex;justify-content:space-between;gap:8px}.cf-lane h3{margin:4px 0;font-size:13px}.cf-lane>div>b{font-size:20px}.cf-lane p{min-height:64px;margin-top:7px}.cf-facts{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-top:9px}.cf-fact{min-width:0;padding:11px;color:inherit;text-decoration:none}.cf-fact small{display:block;min-height:32px;color:var(--muted);font-size:9px;line-height:1.4}.cf-fact b{display:block;margin:7px 0;font-size:18px}.cf-fact span{display:block;overflow:hidden;color:#6f8c98;font-size:8px;text-overflow:ellipsis;white-space:nowrap}.cf-triggers{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-top:9px}.cf-trigger{padding:10px;display:grid;grid-template-columns:28px 1fr;gap:8px}.cf-trigger>b{width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:#854d0e}.cf-trigger.red>b{background:#7f1d2d}.cf-trigger strong,.cf-trigger span{display:block;font-size:10px;line-height:1.45}.cf-trigger span{margin-top:3px;color:var(--muted)}
+    .fo{margin-top:12px;padding:18px;border-color:#365267;background:linear-gradient(155deg,#0b202c,#08141d 66%)}.fo-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.fo-head small,.lab-head small{color:var(--cyan);font-size:10px;font-weight:900}.fo-head h2,.lab-head h2{margin:4px 0 0;font-size:18px}.state{display:inline-flex;padding:4px 7px;border:1px solid currentColor;border-radius:99px;color:#c4b5fd;background:#67508f22;font-size:9px;font-weight:900}.fo-summary{display:grid;grid-template-columns:330px minmax(0,1fr);gap:9px;margin-top:14px}.fo-score,.fo-horizon,.fo-pillar,.fo-lane,.scenario,.variable,.template{border:1px solid var(--line);border-radius:7px;background:#0d1e2b}.fo-score{padding:18px}.fo-score small{color:var(--cyan);font-size:10px;font-weight:900}.fo-score>b{display:block;margin:17px 0 6px;font-size:48px;line-height:.9}.fo-score h3{margin:12px 0 6px}.fo-score p{margin:0;color:var(--muted);font-size:10px;line-height:1.6}.fo-score footer{margin-top:10px;color:#708c99;font-size:9px}.fo-horizons{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.fo-horizon,.fo-pillar,.fo-lane,.scenario,.variable{padding:11px}.fo-horizon>div,.fo-pillar>div,.variable>div,.scenario>div{display:flex;justify-content:space-between;gap:7px;font-size:10px;font-weight:900}.fo-horizon b,.fo-pillar b,.variable b{font-size:18px}.fo-horizon strong{font-size:11px}.fo-horizon span{display:block;margin-top:5px;color:var(--muted);font-size:9px}.fo-pillars,.fo-lanes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:9px}.fo-pillar p,.fo-lane p,.scenario p{margin:7px 0 0;color:var(--muted);font-size:9px;line-height:1.5}.fo-lane{display:grid;grid-template-columns:22px 1fr auto;gap:7px}.fo-lane>span{color:var(--cyan);font:900 9px ui-monospace,monospace}.fo-lane h3{margin:3px 0;font-size:12px}.fo-lane small{color:var(--cyan);font-size:8px}.fo-lane>b{font-size:17px}.scenarios{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:9px}.scenario>div b{color:var(--cyan);font-size:17px}.fo-warning,.lab-warning{margin:9px 0 0;padding:10px 12px;border-left:3px solid var(--yellow);color:#d8c18f;background:#d79a2512;font-size:10px;line-height:1.55}.lab{margin-top:16px;padding-top:16px;border-top:1px solid #355164}.lab-head{display:flex;align-items:center;justify-content:space-between}.lab-head small{color:#c4b5fd}.lab-verdict{margin-top:10px;padding:12px;border:1px solid #5e4f82;border-radius:7px;color:#eee9ff;background:#5b418526;font-size:11px;line-height:1.55}.lab-verdict small{display:block;margin-top:5px;color:#a89fbe;font-size:9px}.variables{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:9px}.variable{min-width:0;padding:9px}.variable small{font-size:9px}.variable code{display:block;overflow:hidden;color:#607e8c;font-size:7px;text-overflow:ellipsis;white-space:nowrap}.templates{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:9px}.template{padding:13px}.template>header{display:flex;justify-content:space-between;gap:8px}.template header small{color:var(--muted);font-size:9px}.template h3{margin:3px 0;font-size:14px}.match{text-align:right}.match b{display:block;font-size:23px}.match span{font-size:8px;color:var(--muted)}.top-match{display:inline-block;margin-top:6px;padding:3px 6px;border:1px solid #8a6f2f;border-radius:99px;color:#fcd34d;font-size:8px}.trigger{color:#c7d7dd;font-size:10px;line-height:1.5}.flow{margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:4px;list-style:none}.flow li{position:relative;padding:7px;border:1px solid #2b4252;border-radius:5px;background:#081620}.flow li:not(:last-child):after{content:"›";position:absolute;right:-6px;top:50%;color:#7dd3fc}.flow b{width:17px;height:17px;display:grid;place-items:center;border-radius:50%;color:#07131d;background:#7dd3fc;font-size:8px}.flow p{margin:5px 0 0;color:#a8bdc6;font-size:8px;line-height:1.4}.evidence{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:7px}.evidence div{padding:7px;border:1px solid #2b4252;border-radius:5px;background:#07131d}.evidence small{color:#7dd3fc;font-size:8px}.evidence p{margin:4px 0 0;color:var(--muted);font-size:8px;line-height:1.4}.template>footer{margin-top:7px;display:flex;justify-content:space-between;gap:7px;color:#718f9c;font-size:8px}.template a{color:#7dd3fc;text-decoration:none}.lab-warning{border-left-color:#8b5cf6;color:#c4b5fd;background:#5b41851c}
+    .hegemony{margin-top:12px;padding:14px;border:1px solid #795f2c;border-radius:8px;background:linear-gradient(145deg,#201b12,#081620 55%)}.hegemony>header{display:flex;align-items:center;justify-content:space-between;gap:12px}.hegemony>header small{color:#f2cc78;font-size:12px;font-weight:900}.hegemony h3{margin:4px 0 0;font-size:19px}.heg-summary{display:grid;grid-template-columns:190px 190px minmax(0,1fr);gap:8px;margin-top:12px}.heg-score,.heg-reading,.heg-dimension,.heg-paradox,.heg-fact,.heg-counter,.heg-derived article,.heg-chain{border:1px solid #4b4433;border-radius:7px;background:#0b1d29}.heg-score{padding:14px}.heg-score small{display:block;color:#c6b37f;font-size:12px}.heg-score b{display:block;margin:13px 0 5px;font-size:40px;line-height:.9}.heg-score strong{font-size:13px}.heg-reading{padding:14px}.heg-reading strong{display:block;color:#ffe099;font-size:13px}.heg-reading p{margin:7px 0 0;color:#bbcbd1;font-size:12px;line-height:1.65}.heg-critical{margin:9px 0 0;padding:11px 13px;border-left:4px solid var(--cyan);color:#d8e8ed;background:#42d6c911;font-size:12px;line-height:1.65}.heg-derived{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:9px}.heg-derived article{padding:11px}.heg-derived small{display:block;color:#a7bbc3;font-size:11px}.heg-derived b{display:block;margin:7px 0;color:#ffe099;font-size:21px}.heg-derived span{color:#7895a2;font-size:10px}.heg-dimensions{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:9px}.heg-dimension{padding:12px;border-left-width:4px}.heg-dimension.green{border-left-color:var(--green)}.heg-dimension.yellow{border-left-color:var(--yellow)}.heg-dimension.red{border-left-color:var(--red)}.heg-dimension>header{display:flex;justify-content:space-between;gap:8px}.heg-dimension small{color:#8fa8b2;font-size:12px}.heg-dimension h4{margin:3px 0;font-size:14px}.heg-dimension b{font-size:23px}.heg-dimension p{margin:7px 0 0;color:#a9bec7;font-size:12px;line-height:1.6}.heg-dimension p strong{color:#e6f0f2}.heg-paradoxes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:9px}.heg-paradox{padding:12px}.heg-paradox>header{display:flex;justify-content:space-between;gap:8px}.heg-paradox h4{margin:0;font-size:14px}.heg-paradox b{font-size:20px}.heg-paradox p{margin:7px 0 0;color:#a9bec7;font-size:12px;line-height:1.55}.heg-paradox p strong{color:#8de8d5}.heg-paradox p.reverse strong{color:#ffb1b8}.heg-paradox small{display:block;margin-top:8px;color:#7895a2;font-size:11px;line-height:1.45}.heg-chains{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:9px}.heg-chain{padding:12px}.heg-chain h4{margin:0;color:#ffe099;font-size:14px}.heg-chain>p{margin:8px 0;color:#d9e5e8;font-size:12px;line-height:1.6}.heg-chain dl{margin:0}.heg-chain dl div{padding:6px 0;border-top:1px solid #2b4252}.heg-chain dt{color:#7dd3fc;font-size:11px;font-weight:900}.heg-chain dd{margin:3px 0 0;color:#9eb5bf;font-size:11px;line-height:1.5}.heg-counters{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-top:9px}.heg-counter{padding:10px;color:#c2d2d8;font-size:12px;line-height:1.55}.heg-counter:before{content:"反証";display:inline-block;margin-right:7px;padding:2px 5px;border:1px solid #24887e;border-radius:99px;color:#8de8d5;font-size:10px;font-weight:900}.heg-facts{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-top:9px}.heg-fact{min-width:0;padding:10px;color:inherit;text-decoration:none}.heg-fact small{display:block;min-height:34px;color:#a7bbc3;font-size:11px;line-height:1.35}.heg-fact b{display:block;margin:7px 0;font-size:17px}.heg-fact span{display:block;overflow:hidden;color:#6f8c98;font-size:10px;text-overflow:ellipsis;white-space:nowrap}.heg-warning{margin:9px 0 0;padding:10px 12px;border-left:3px solid var(--yellow);color:#d8c18f;background:#d79a2512;font-size:12px;line-height:1.55}
+    .pc{margin-top:12px;padding:18px}.pc-head small{color:var(--cyan);font-size:10px;font-weight:900}.pc-head h2{margin:4px 0 0;font-size:18px}.pc-grid{display:grid;grid-template-columns:260px minmax(0,1fr);gap:9px;margin-top:14px}.pc-score,.pc-component,.pc-region,.pc-fact{border:1px solid var(--line);border-radius:7px;background:#0d1e2b}.pc-score{padding:18px;border-color:#7b642b;background:linear-gradient(145deg,#302815,#0b1d29)}.pc-score small{color:#f2cc78;font-size:10px;font-weight:900}.pc-score b{display:block;margin:17px 0 6px;font-size:48px;line-height:.9}.pc-score h3{margin:12px 0 6px}.pc-score p,.pc-component p,.pc-region p{margin:0;color:var(--muted);font-size:11px;line-height:1.6}.pc-components{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.pc-component{padding:12px}.pc-component>div,.pc-region>div{display:flex;justify-content:space-between;gap:8px;font-size:11px;font-weight:900}.pc-regions{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:9px}.pc-region{padding:12px}.pc-region p{margin-top:7px}.pc-facts{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-top:9px}.pc-fact{min-width:0;padding:11px;color:inherit;text-decoration:none}.pc-fact small{display:block;min-height:32px;color:var(--muted);font-size:10px;line-height:1.4}.pc-fact b{display:block;margin:7px 0;font-size:19px}.pc-fact span{display:block;overflow:hidden;color:#6f8c98;font-size:9px;text-overflow:ellipsis;white-space:nowrap}
+    .lower{display:grid;grid-template-columns:1.1fr .9fr;gap:12px;margin-top:12px}.source-grid{display:grid;grid-template-columns:repeat(2,1fr)}.source{padding:15px 18px;border-bottom:1px solid var(--line)}.source:nth-child(odd){border-right:1px solid var(--line)}.source span{font-size:10px;color:var(--muted)}.source b{display:block;margin:5px 0;font-size:13px}.source a{color:var(--cyan);font-size:10px;text-decoration:none}.curve{padding:20px}.bars{height:180px;display:flex;align-items:end;justify-content:space-around;gap:20px;border-bottom:1px solid var(--line);padding:0 15px}.bar{flex:1;max-width:90px;display:flex;flex-direction:column;align-items:center;gap:6px}.bar b{font-size:14px}.bar i{display:block;width:100%;background:linear-gradient(#43d6ca,#1d716f);border-radius:4px 4px 0 0}.bar span{color:var(--muted);font-size:11px}.curve-note{margin:14px 0 0;color:var(--muted);font-size:11px;line-height:1.7}
+    .ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.idea{padding:17px}.idea small{color:var(--cyan);font:900 10px ui-monospace,monospace}.idea h3{font-size:14px;margin:8px 0}.idea p{margin:0;color:var(--muted);font-size:11px;line-height:1.7}.foot{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:10px;line-height:1.7}.error{color:#ff9da6}
+    .zone-board{margin-top:10px;padding:13px;border:1px solid #3b5666;border-radius:8px;background:#071721}.zone-board>header{display:flex;align-items:center;justify-content:space-between;gap:10px}.zone-board>header small{color:#7dd3fc;font-size:11px;font-weight:900}.zone-board h3{margin:3px 0 0;font-size:17px}.zone-overview{display:grid;grid-template-columns:210px minmax(0,1fr);gap:8px;margin-top:11px}.zone-current,.zone-panel,.zone-param{border:1px solid #304b5a;border-radius:7px;background:#0b1d29}.zone-current{padding:14px}.zone-current>small{color:#a9c0ca;font-size:11px;font-weight:900}.zone-current>b{display:block;margin:13px 0 6px;font-size:39px;line-height:.9}.zone-current strong{font-size:13px}.zone-current p{margin:6px 0 0;color:#b7cad2;font-size:11px}.zone-panel{padding:11px}.zone-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.zone-summary article{padding:8px;border:1px solid #304b5a;border-radius:5px;background:#081620}.zone-summary b{display:block;font-size:22px}.zone-summary span,.zone-summary small{display:block}.zone-summary span{font-size:10px;font-weight:900}.zone-summary small{margin-top:3px;overflow:hidden;color:#849faa;font-size:9px;text-overflow:ellipsis;white-space:nowrap}.zone-scale{margin:29px 3px 0}.zone-track,.param-track{position:relative}.zone-track{height:26px}.zone-band{position:absolute;top:0;bottom:0}.band-green{left:0;width:35%;background:#1f8b68}.band-yellow{left:35%;width:35%;background:#bd8f24}.band-red{left:70%;width:30%;background:#be4654}.zone-line{position:absolute;top:-7px;bottom:-7px;z-index:2;border-left:1px dashed #fff}.zone-line.danger{border-left:2px solid #ffe1e4}.zone-line em{position:absolute;bottom:calc(100% + 4px);padding:2px 4px;border-radius:3px;color:#fff;background:#102735;font-size:9px;font-style:normal;white-space:nowrap;transform:translateX(-50%)}.zone-pointer{position:absolute;bottom:-10px;z-index:4;width:0;height:0;border-right:7px solid transparent;border-bottom:11px solid #eaf4f4;border-left:7px solid transparent;transform:translateX(-50%)}.zone-pointer em{position:absolute;top:13px;left:0;padding:3px 5px;border-radius:3px;color:#07131d;background:#eaf4f4;font-size:10px;font-style:normal;font-weight:900;white-space:nowrap;transform:translateX(-50%)}.zone-ticks{margin-top:23px;display:flex;justify-content:space-between;color:#829da8;font-size:9px}.zone-legend{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:8px}.zone-legend div{padding:6px;border:1px solid #34505e;border-left-width:4px;border-radius:4px}.zone-legend .green{border-left-color:#28a77c}.zone-legend .yellow{border-left-color:#d6a62e}.zone-legend .red{border-left-color:#dc5b67}.zone-legend b,.zone-legend small{display:block}.zone-legend b{font-size:10px}.zone-legend small{margin-top:3px;color:#7895a2;font-size:8px;line-height:1.35}.zone-params{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:8px}.zone-param{min-width:0;padding:10px;border-left-width:4px}.zone-param.green{border-left-color:#28a77c}.zone-param.yellow{border-left-color:#d6a62e}.zone-param.red{border-left-color:#dc5b67}.zone-param>div:first-child{display:flex;align-items:center;justify-content:space-between;gap:7px}.zone-param small{color:#8ca9b4;font-size:9px}.zone-param h4{margin:2px 0;font-size:12px}.zone-param>div>b{font-size:19px}.param-track{height:10px;margin:9px 0 7px}.param-mid,.param-danger{position:absolute;top:-3px;bottom:-3px;z-index:2;width:1px;background:#fff}.param-danger{width:2px}.param-pointer{position:absolute;top:-5px;z-index:4;width:4px;height:20px;border:1px solid #06131b;border-radius:2px;background:#f4fbfb;transform:translateX(-50%)}.zone-param>p{margin:0 0 6px;color:#b2c5cd;font-size:10px;font-weight:800}.zone-param code{display:block;overflow:hidden;color:#66838f;font-size:8px;text-overflow:ellipsis;white-space:nowrap}.zone-note{margin:9px 0 0;padding:9px 11px;border-left:3px solid var(--yellow);color:#d8c18f;background:#d79a2512;font-size:10px;line-height:1.5}
+    @media(max-width:1050px){.kpis{grid-template-columns:repeat(3,1fr)}.official-grid{grid-template-columns:repeat(2,1fr)}.live-grid{grid-template-columns:1fr}.fx-factors{grid-template-columns:repeat(3,1fr)}.pt-signals{grid-template-columns:repeat(2,1fr)}.cf-summary{grid-template-columns:280px minmax(0,1fr)}.cf-lanes,.fo-pillars,.fo-lanes{grid-template-columns:repeat(2,1fr)}.cf-facts{grid-template-columns:repeat(3,1fr)}.variables{grid-template-columns:repeat(4,1fr)}.heg-summary{grid-template-columns:repeat(2,1fr)}.heg-reading{grid-column:1/-1}.heg-derived{grid-template-columns:repeat(2,1fr)}.heg-paradoxes{grid-template-columns:repeat(2,1fr)}.heg-facts{grid-template-columns:repeat(3,1fr)}.pc-components{grid-template-columns:repeat(2,1fr)}.pc-facts{grid-template-columns:repeat(3,1fr)}.layout{grid-template-columns:1fr}.country-card{display:grid;grid-template-columns:1fr 1.7fr;gap:10px}.facts{margin:0}.counts,.method{grid-column:1/-1}.lower{grid-template-columns:1fr}}
+    @media(max-width:680px){.wrap{width:min(100% - 20px,1380px)}.top{height:auto;min-height:64px;gap:8px;flex-wrap:wrap;padding:9px 0}.wordmark{min-width:56px;font-size:20px}.product small{display:none}.product{padding-left:8px}.actions{width:100%;margin-left:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.actions .btn{display:flex!important;min-height:42px;padding:0 5px;font-size:10px;white-space:nowrap}.audit{grid-template-columns:1fr}.audit time{text-align:left}.hero{grid-template-columns:1fr}.status{width:max-content}.kpis{grid-template-columns:repeat(2,1fr)}.official-panel>header,.overall-head,.pt-head{align-items:flex-start;flex-direction:column}.official-grid,.overall-grid,.overall-components,.overall-footer{grid-template-columns:1fr}.live-fx{padding:14px}.live-fx>header{align-items:flex-start}.live-title h2{font-size:18px}.live-chart{height:390px}.fx-shock-summary,.fx-bottom{grid-template-columns:1fr}.fx-metrics{grid-template-columns:repeat(2,1fr)}.fx-factors{grid-template-columns:1fr}.pt-summary,.pt-pillars,.pt-signals,.pt-bottom,.pt-branches,.cf-summary,.fo-summary,.pc-grid,.impact-grid,.zone-overview,.heg-summary{grid-template-columns:1fr}.heg-reading{grid-column:auto}.cf-derived,.cf-lanes,.cf-facts,.cf-triggers,.fo-horizons,.fo-pillars,.fo-lanes,.scenarios,.variables,.templates,.heg-derived,.heg-dimensions,.heg-paradoxes,.heg-chains,.heg-counters,.heg-facts,.pc-components,.pc-regions,.pc-facts,.impact-components,.event-grid,.zone-summary,.zone-legend,.zone-params{grid-template-columns:1fr}.zone-summary small{white-space:normal}.flow{grid-template-columns:1fr}.flow li:not(:last-child):after{right:50%;top:auto;bottom:-12px;transform:rotate(90deg)}.evidence{grid-template-columns:1fr}.event:nth-child(odd){border-right:0}.panel-head{display:block}.modes{margin-top:12px;overflow:auto}.modes button{flex:1;white-space:nowrap}.map-wrap,#map{min-height:390px;height:390px}.legend{right:10px;gap:7px}.country-card{grid-template-columns:1fr}.facts{margin-top:6px}.source-grid,.ideas{grid-template-columns:1fr}.source:nth-child(odd){border-right:0}.hero h1{font-size:36px}.lower{grid-template-columns:1fr}}
+    @media(max-width:680px){.quality-head{align-items:flex-start;flex-direction:column}.quality-grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+  <style>
+    .jt{margin-top:12px;padding:18px;border-color:#315c79;background:linear-gradient(145deg,#10283a,#08151f 58%)}.jt-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.jt-head small{color:#7dd3fc;font-size:10px;font-weight:900}.jt-head h2{margin:4px 0 0;font-size:20px}.jt-summary{display:grid;grid-template-columns:290px minmax(0,1fr);gap:9px;margin-top:14px}.jt-score,.jt-channel,.jt-stat,.jt-scenario,.jt-evidence{border:1px solid #294b60;border-radius:7px;background:#0d1e2b}.jt-score{padding:18px;border-left:6px solid var(--yellow)}.jt-score small,.jt-score strong,.jt-score span{display:block}.jt-score small{color:#7dd3fc;font-size:10px}.jt-score b{display:block;margin:15px 0 7px;font-size:52px;line-height:.9}.jt-score strong{font-size:14px}.jt-score p{margin:9px 0;color:#c2d1d7;font-size:10px;line-height:1.65}.jt-score span{color:#7895a2;font-size:9px}.jt-channels{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.jt-channel{padding:12px}.jt-channel header{display:flex;justify-content:space-between;gap:8px}.jt-channel h3{margin:2px 0;font-size:12px}.jt-channel b{font-size:21px}.jt-channel p{margin:7px 0 0;color:#8fa7b1;font-size:9px;line-height:1.55}.jt-stats{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-top:9px}.jt-stat{padding:11px}.jt-stat small,.jt-stat span{display:block;color:var(--muted);font-size:8px;line-height:1.45}.jt-stat b{display:block;margin:6px 0;font-size:17px}.jt-lower{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.jt-scenarios{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.jt-scenario{padding:11px}.jt-scenario small,.jt-scenario span{display:block;color:var(--muted);font-size:8px;line-height:1.5}.jt-scenario b{display:block;margin:6px 0;font-size:19px}.jt-evidence{padding:12px}.jt-evidence h3{margin:0 0 7px;font-size:12px}.jt-evidence a{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-top:1px solid var(--line);color:inherit;text-decoration:none;font-size:9px}.jt-evidence a b{color:#8de8d5}.jt-note{margin:9px 0 0;padding:10px 12px;border-left:3px solid #60a5fa;color:#b9cfe0;background:#3b82f612;font-size:10px;line-height:1.6}.load-error{display:grid;place-items:center;min-height:250px;padding:24px;text-align:center;color:#ffd47b}.load-error button{margin-top:12px}
+    @media(max-width:680px){.jt-head{align-items:flex-start;flex-direction:column}.jt-summary,.jt-channels,.jt-lower,.jt-scenarios{grid-template-columns:1fr}.jt-stats{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+<header><div class="wrap top"><div class="wordmark" aria-label="koya">koya<span>.</span></div><div class="product"><b>世界・ドル統合監視</b><small>沖縄から世界を読む</small></div><nav class="actions" aria-label="画面移動"><button class="btn nav-back" type="button" onclick="goBackOrHome()">← 戻る</button><a class="btn" href="./index.html">監視ホーム</a><a class="btn crisis-link" href="./crisis-zone.html">危機ゾーン</a><a class="btn analysis-link" href="./world-os.html">分析思想</a><a class="btn primary sheet-link" href="https://docs.google.com/spreadsheets/d/197bo-Kw09GJtn0ClzJgd4BL0g5Q6JojpCiHftZS1GiY/edit" target="_blank" rel="noreferrer">データ正本</a></nav></div></header>
+<main class="wrap">
+  <section class="audit"><div><strong id="audit-label">全項目のデータ・表示・出典を監査中</strong><p id="audit-detail">市場ライブと公式観測値を分離し、未取得・旧実測・取得失敗を隠さず確認します。</p></div><time id="audit-time">データ読込中</time></section>
+  <section class="panel quality-panel" aria-labelledby="quality-title"><header class="quality-head"><div><small>同一版・鮮度・証拠・検証</small><h2 id="quality-title">データ品質と学習準備度</h2></div><span id="quality-status">品質指標を計算中</span></header><div class="quality-grid" id="quality-grid"></div><p class="quality-note" id="quality-note">総合点とは別に、入力鮮度、証拠の保存率、出典不整合、モデル検証状況を確認します。</p></section>
+  <section class="hero"><div><div class="eyebrow">koya 世界戦略経済モニター</div><h1>ドルの動きから、<br>世界の広がりと縮小を見る。</h1><p>米国経済・金融政策・国債・信用ストレスと、216か国・地域の経済成長・政治安定性を一画面に統合。</p></div><div class="status"><i class="pulse"></i>公式データ監視スナップショット</div></section>
+  <section class="live-fx" aria-label="ドル円リアルタイム市場表示">
+    <header><div class="live-title"><span class="live-icon">◉</span><div><small>リアルタイム市場レーン</small><h2>ドル円・現在値と1分足</h2></div></div><span class="live-label"><i></i>ライブ表示</span></header>
+    <div class="live-grid">
+      <div class="live-quote">
+        <div class="tradingview-widget-container" style="width:100%;height:175px">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+          {"symbol":"FX_IDC:USDJPY","width":"100%","locale":"ja","colorTheme":"dark","isTransparent":true}
+          </script>
+        </div>
+        <div class="live-api"><strong>市場ライブと監査スナップショットを分離</strong><span>上はTradingViewライブ、下は生成時点のYahoo Finance市場値、公式基準値はFRED日次です。</span></div>
+        <div class="live-source"><span>表示元：TradingView 為替統合データ</span><a href="https://www.tradingview.com/symbols/USDJPY/" target="_blank" rel="noreferrer">原画面 →</a></div>
+      </div>
+      <div class="tradingview-widget-container live-chart">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {"autosize":true,"symbol":"FX_IDC:USDJPY","interval":"1","timezone":"Asia/Tokyo","theme":"dark","style":"1","locale":"ja","backgroundColor":"#07131d","gridColor":"rgba(56,189,248,0.08)","hide_top_toolbar":false,"hide_side_toolbar":true,"hide_legend":false,"hide_volume":true,"allow_symbol_change":false,"save_image":false,"calendar":false,"withdateranges":true}
+        </script>
+      </div>
+    </div>
+    <section class="fx-shock" aria-label="ドル円急変の要因分析">
+      <header><div><small>急落→反発を同じ時系列で監視</small><h3>ドル円急変レーダー</h3></div><span id="fx-shock-zone">計算中</span></header>
+      <div class="fx-shock-summary"><article class="fx-score"><small>急変度｜推定0–100</small><b id="fx-shock-score">—</b><strong id="fx-shock-label">判定中</strong><span id="fx-shock-formula"></span></article><div class="fx-metrics" id="fx-shock-metrics"></div></div>
+      <p class="fx-conclusion" id="fx-shock-conclusion">市場・政策・キャリーの因果レーンを読込中です。</p>
+      <div class="fx-factors" id="fx-shock-factors"></div>
+      <div class="fx-bottom" id="fx-shock-bottom"></div>
+    </section>
+    <footer><strong>二重レーン運用：</strong>売買市場の動きはライブ表示、公式な基準値と監査履歴はFRED日次値を使用します。表示値は投資・送金の執行価格ではありません。</footer>
+  </section>
+  <section class="kpis" id="kpis"></section>
+  <section class="panel official-panel" aria-label="最新公式更新">
+    <header><div><small>政府・中央銀行の一次情報</small><h2>最新公式更新</h2></div><span>観測値・解釈・未確認を分離</span></header>
+    <div class="official-grid" id="official-findings"></div>
+  </section>
+
+  <section class="panel overall" aria-label="総合判断と現在位置">
+    <header class="overall-head"><div><small>全項目を8領域へ統合</small><h2>総合判断・現在位置</h2></div><span class="state">推定モデル・危機確率ではない</span></header>
+    <div class="overall-grid">
+      <article class="overall-score" id="overall-score-card"><small>koya 経営監視圧力指数｜0〜100</small><b id="overall-score">—</b><strong id="overall-zone">判定中</strong><p id="overall-conclusion"></p><span id="overall-coverage"></span></article>
+      <div>
+        <div class="overall-scale" aria-label="緑、黄、赤の総合判断スケール"><em style="left:35%">注意35</em><em style="left:70%">危険70</em><i id="overall-pointer" style="left:0" data-score="—"></i></div>
+        <div class="overall-components" id="overall-components"></div>
+      </div>
+    </div>
+    <div class="overall-footer"><article class="overall-counter"><h3>反証・危機を上げ過ぎない材料</h3><div id="overall-counters"></div></article><article class="overall-action"><h3>合同会社koyaの現在行動</h3><ol id="overall-actions"></ol></article></div>
+    <p class="overall-note" id="overall-note"></p>
+  </section>
+
+  <section class="panel jt" aria-label="日本から米国債市場への伝播圧力">
+    <header class="jt-head"><div><small>日本政府・日銀・生命保険・米国債市場</small><h2>日本→米国債 伝播圧力レーダー</h2></div><span class="state">証拠圧力≠危機確率</span></header>
+    <div class="jt-summary">
+      <article class="jt-score" id="jt-score-card"><small>伝播圧力｜推定0〜100</small><b id="jt-score">—</b><strong id="jt-label">判定中</strong><p id="jt-conclusion">公式統計と反証を読込中です。</p><span id="jt-formula"></span></article>
+      <div class="jt-channels" id="jt-channels"></div>
+    </div>
+    <div class="jt-stats" id="jt-stats"></div>
+    <div class="jt-lower"><div class="jt-scenarios" id="jt-scenarios"></div><article class="jt-evidence"><h3>危機を上げ過ぎない反証</h3><div id="jt-counters"></div></article></div>
+    <p class="jt-note" id="jt-note"></p>
+  </section>
+
+  <section class="panel pt" aria-label="米国三重制約と政策信認の監視">
+    <div class="pt-head"><div><small>動画の論理を一次情報へ変換</small><h2>米国三重制約・政策信認レーダー</h2></div><span class="state">証拠圧力≠危機確率</span></div>
+    <div class="pt-summary">
+      <article class="pt-score"><small>三重制約の衝突圧力｜実験推定</small><b id="pt-score">—</b><strong id="pt-label">判定中</strong><p id="pt-conclusion"></p><span id="pt-formula"></span></article>
+      <div class="pt-pillars" id="pt-pillars"></div>
+    </div>
+    <div class="pt-signals" id="pt-signals"></div>
+    <div class="pt-bottom">
+      <div class="pt-branches" id="pt-branches"></div>
+      <article class="pt-source"><small>解説動画の採用・除外を分離</small><strong id="pt-video-title"></strong><p id="pt-video-note"></p><ul id="pt-video-rules"></ul><a id="pt-video-link" target="_blank" rel="noreferrer">動画を確認する →</a></article>
+    </div>
+    <p class="pt-note" id="pt-note"></p>
+  </section>
+
+  <section class="panel fo">
+    <div class="fo-head"><div><small>米国景気・世界波及予測</small><h2>現在・3か月・6か月・12か月の低下圧力</h2></div><span class="state">推定モデル</span></div>
+    <div class="fo-summary"><article class="fo-score"><small>米国ファンダメンタル低下圧力</small><b id="fo-score">—</b><h3 id="fo-label">判定中</h3><p id="fo-conclusion"></p><footer id="fo-coverage"></footer></article><div class="fo-horizons" id="fo-horizons"></div></div>
+    <div class="fo-pillars" id="fo-pillars"></div>
+    <div class="fo-lanes" id="fo-lanes"></div>
+    <div class="scenarios" id="fo-scenarios"></div>
+    <p class="fo-warning" id="fo-warning"></p>
+    <section class="lab">
+      <div class="lab-head"><div><small>歴史危機テンプレート比較</small><h2>歴史危機研究所</h2></div><span class="state">推定・反証可能</span></div>
+      <div class="lab-verdict" id="lab-verdict"></div>
+      <section class="zone-board" aria-label="危機パラメータの三色ゾーン">
+        <header><div><small>現在位置・中間地点・危険線</small><h3 id="zone-title">危機パラメータ・ゾーンボード</h3></div><span class="state">推定モデル</span></header>
+        <div class="zone-overview">
+          <article class="zone-current"><small>統合した現在位置</small><b id="zone-current-score">—</b><strong id="zone-current-label">判定中</strong><p id="zone-current-distance"></p></article>
+          <div class="zone-panel">
+            <div class="zone-summary" id="zone-summary"></div>
+            <div class="zone-scale"><div class="zone-track" id="zone-track"></div><div class="zone-ticks"><span>0</span><span>注意 35</span><span>中間 50</span><span>危険 70</span><span>100</span></div></div>
+            <div class="zone-legend" id="zone-legend"></div>
+          </div>
+        </div>
+        <div class="zone-params" id="zone-params"></div>
+        <p class="zone-note" id="zone-note"></p>
+      </section>
+      <section class="hegemony" aria-label="覇権国パラドクス早期警戒">
+        <header><div><small>1971年との構造類似・現代固有リスクを分離</small><h3>覇権国パラドクス早期警戒</h3></div><span class="state">類似度≠発生確率</span></header>
+        <div class="heg-summary">
+          <article class="heg-score"><small>ニクソン構造類似度</small><b id="heg-nixon-score">—</b><strong id="heg-nixon-label">判定中</strong></article>
+          <article class="heg-score"><small>総合早期警戒</small><b id="heg-warning-score">—</b><strong id="heg-warning-label">判定中</strong></article>
+          <article class="heg-reading"><strong>現在の読み</strong><p id="heg-conclusion"></p><p id="heg-formula"></p></article>
+        </div>
+        <p class="heg-critical" id="heg-critical"></p>
+        <div class="heg-derived" id="heg-derived"></div>
+        <div class="heg-dimensions" id="heg-dimensions"></div>
+        <div class="heg-paradoxes" id="heg-paradoxes"></div>
+        <div class="heg-chains" id="heg-chains"></div>
+        <div class="heg-counters" id="heg-counters"></div>
+        <div class="heg-facts" id="heg-facts"></div>
+        <p class="heg-warning" id="heg-warning"></p>
+      </section>
+      <div class="templates" id="lab-templates"></div>
+      <p class="lab-warning" id="lab-warning"></p>
+    </section>
+  </section>
+
+  <section class="panel cf">
+    <div class="cf-head"><small>世界資金・ドル・円キャリー</small><h2>資金がどこへ逃げ、どこへ再配分されるか</h2></div>
+    <div class="cf-summary"><article class="cf-score"><small>世界資金再配分指数｜実験推定</small><b id="cf-score">—</b><h3 id="cf-label">判定中</h3><p id="cf-conclusion"></p></article><div class="cf-derived" id="cf-derived"></div></div>
+    <div class="cf-lanes" id="cf-lanes"></div>
+    <div class="cf-facts" id="cf-facts"></div>
+    <div class="cf-triggers" id="cf-triggers"></div>
+    <p class="impact-method" id="cf-method"></p>
+  </section>
+
+  <section class="panel pc">
+    <div class="pc-head"><small>プライベートクレジット・信用伝播</small><h2>見えにくい信用を、5レーンで監視</h2></div>
+    <div class="pc-grid"><article class="pc-score"><small>PCストレス指数｜実験推定</small><b id="pc-score">—</b><h3 id="pc-label">判定中</h3><p id="pc-conclusion"></p></article><div class="pc-components" id="pc-components"></div></div>
+    <div class="pc-regions" id="pc-regions"></div>
+    <div class="pc-facts" id="pc-facts"></div>
+    <p class="impact-method" id="pc-method"></p>
+  </section>
+
+  <section class="panel impact">
+    <div class="impact-head"><small>地政学・軍事・生活コスト</small><h2>紛争から沖縄の暮らしまでの波及</h2></div>
+    <div class="impact-grid"><article class="impact-score"><small>沖縄生活・事業波及指数｜推定</small><b id="impact-score">—</b><h3 id="impact-label">判定中</h3><p id="impact-warning"></p></article><div class="impact-components" id="impact-components"></div></div>
+    <section class="events"><header><h3>現在確認した高優先シグナル</h3><small>公的公開情報を個別確認</small></header><div class="event-grid" id="events"></div></section>
+    <p class="impact-method" id="impact-method"></p>
+  </section>
+
+  <section class="layout">
+    <article class="panel">
+      <div class="panel-head"><div><small>216か国・地域 / 4軸監視</small><h2>世界経済・国際政治マップ</h2></div><div class="modes"><button data-mode="combined" class="active">統合判定</button><button data-mode="economy">経済成長</button><button data-mode="politics">国際政治</button><button data-mode="conflict">紛争・軍事</button></div></div>
+      <div class="map-wrap"><svg id="map" aria-label="世界経済と国際政治の三色地図"></svg><div class="map-message">世界地図を読込中…</div><div class="legend"><span><i style="background:var(--green)"></i>緑：安定・拡大</span><span><i style="background:var(--yellow)"></i>黄：注意</span><span><i style="background:var(--red)"></i>赤：高リスク・縮小</span><span><i style="background:var(--gray)"></i>灰：未取得</span></div></div>
+    </article>
+    <aside class="panel country-card"><div><small id="country-code">JPN / 東アジア</small><h3 id="country-name">日本</h3><span id="country-verdict" class="verdict yellow">注意・低成長</span></div><dl class="facts"><div><dt>実質GDP成長率</dt><dd id="growth">—</dd></div><div><dt>政治安定性</dt><dd id="politics">—</dd></div><div><dt>紛争・軍事圧力</dt><dd id="conflict">—</dd></div></dl><div class="counts" id="counts"></div><p class="method" id="method"></p></aside>
+  </section>
+
+  <section class="lower">
+    <article class="panel"><div class="panel-head"><div><small>一次情報と証拠状態</small><h2>監視ソース台帳</h2></div></div><div class="source-grid" id="sources"></div></article>
+    <article class="panel"><div class="panel-head"><div><small>米国債市場</small><h2>利回り曲線</h2></div></div><div class="curve"><div class="bars" id="curve"></div><p class="curve-note">長期金利上昇はドル・世界の資金調達・不動産・信用へ波及します。単独の数値では断定せず、政策金利と信用スプレッドを同時に確認します。</p></div></article>
+  </section>
+
+  <section class="ideas">
+    <article class="panel idea"><small>提案 01 / 為替</small><h3>ドル円の二重レーン化</h3><p>公式日次参照と認証済み市場速報を並べ、差分と最終更新秒を表示。接続前はリアルタイムと呼ばない。</p></article>
+    <article class="panel idea"><small>提案 02 / 沖縄</small><h3>沖縄波及スコア</h3><p>ドル、原油、米国債、基地購買力を、観光・物流・FamilyTreeOki需要への波及確率へ変換。</p></article>
+    <article class="panel idea"><small>提案 03 / 反証</small><h3>シナリオ反証アラート</h3><p>予測を当てるより、前提が崩れた瞬間を通知。緑・黄・赤の変更理由を時系列で保存。</p></article>
+  </section>
+  <p class="foot">判定方法：経済はGDP成長率、政治は世界銀行WGI「政治的安定と暴力・テロ不在」のパーセンタイル順位を使用。統合は「どちらか赤なら赤、赤なしでどちらか黄なら黄、両方緑なら緑」。ミアシャイマー理論は構造仮説の一つとして用い、唯一の答えとは扱いません。未取得値は推測で補完しません。</p>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script>
+const C={green:"#28a77c",yellow:"#d6a62e",red:"#dc5b67",unknown:"#304655"};
+const L={green:"安定・拡大",yellow:"注意・低成長",red:"高リスク・縮小",unknown:"未取得"};
+const LC={green:"観測圧力低",yellow:"注意",red:"高い圧力",unknown:"未取得"};
+const S={observed:"実測",observed_partial:"一部実測",stale_observed:"取得済み・更新遅延",estimated:"推定",mock:"仮データ",fallback:"代替値",unknown:"不明",blocked_or_failed:"取得失敗"};
+const R={Africa:"アフリカ",Americas:"南北アメリカ",Asia:"アジア",Europe:"ヨーロッパ",Oceania:"オセアニア",Antarctic:"南極"};
+let data, mode="combined", selected="JPN", nameByNumeric=new Map(), countryMeta=new Map();
+const el=id=>document.getElementById(id);
+const fmt=(v,d=2)=>v==null?"不明":Number(v).toLocaleString("ja-JP",{minimumFractionDigits:d,maximumFractionDigits:d});
+function goBackOrHome(){
+ try{
+  if(document.referrer&&new URL(document.referrer).origin===location.origin){history.back();return}
+ }catch{}
+ location.href="./index.html";
+}
+function signal(row){return row?row[mode+"State"]||row.combinedState:"unknown"}
+function metric(label,item,value,unit){return `<article class="kpi"><small>${label}</small><b>${value}</b><em class="${item.dataState==="stale_observed"?"stale":"observed"}">${unit}｜${item.observationDate}<br>${S[item.dataState]||"状態不明"}</em></article>`}
+const signed=(v,d=2,suffix="")=>v==null?"不明":`${v>0?"+":""}${fmt(v,d)}${suffix}`;
+function renderFxShock(){
+ const x=data.fxAudit.marketShock;
+ if(!x||!x.current){
+  el("fx-shock-zone").textContent="取得失敗";
+  el("fx-shock-conclusion").textContent=x?.error||"市場スナップショットを取得できませんでした。TradingViewライブ表示とFRED日次値を確認してください。";
+  return;
+ }
+ const c=x.current,q=x.shockSession,s=x.shockScore,o=x.okinawaImpact,a=x.eventAssessment,official=data.fxAudit.officialReference;
+ el("fx-shock-zone").textContent=s.label;
+ el("fx-shock-score").textContent=fmt(s.value,1);
+ el("fx-shock-score").style.color=C[s.state];
+ el("fx-shock-label").textContent=`${q.observationDate} 高値→安値 ${signed(q.peakToTroughPct,2,"%")}`;
+ el("fx-shock-formula").textContent=s.warning;
+ el("fx-shock-metrics").innerHTML=[
+  ["市場スナップショット",`${fmt(c.value,3)}円`,`${new Date(x.marketObservedAt).toLocaleString("ja-JP")}｜一部実測`],
+  ["本日・前日終値比",signed(c.changePct,2,"%"),`${c.direction}｜前日終値 ${fmt(c.previousClose,3)}`],
+  ["急変セッション",`${fmt(q.high,3)} → ${fmt(q.low,3)}`,`高値→安値 ${signed(q.peakToTrough,3)}円`],
+  ["FRED公式日次",`${fmt(official.value,2)}円`,`${official.observationDate}｜${S[official.dataState]}`]
+ ].map(v=>`<article><small>${v[0]}</small><b>${v[1]}</b><span>${v[2]}</span></article>`).join("");
+ el("fx-shock-conclusion").textContent=a.conclusion;
+ el("fx-shock-factors").innerHTML=a.factors.map(v=>`<a class="fx-factor" href="${v.sourceUrl}" target="_blank" rel="noreferrer"><div><small>${v.role}<br>証拠強度｜${S[v.dataState]||v.dataState}</small><b style="color:${v.evidenceScore>=70?C.red:C.yellow}">${v.evidenceScore}</b></div><strong>${v.label}</strong><p>${v.read}</p></a>`).join("");
+ el("fx-shock-bottom").innerHTML=[
+  `<article class="fx-impact"><small>沖縄・米軍家族のドル購買力</small><strong>$200換算 ${fmt(o.usd200YenBefore,0)}円 → ${fmt(o.usd200YenNow,0)}円（${signed(o.usd200YenChange,0)}円）</strong><p>20,000円サービスのドル換算は $${fmt(o.jpy20000UsdBefore,2)} → $${fmt(o.jpy20000UsdNow,2)}。${o.read}</p></article>`,
+  `<article class="fx-impact"><small>正式確認ゲート｜<span class="fx-state-${a.officialConfirmationState}">${S[a.officialConfirmationState]}</span></small><strong>介入額はまだ確定していません</strong><p>${a.officialConfirmation} <a href="${a.officialSourceUrl}" target="_blank" rel="noreferrer">財務省の公表予定 →</a></p></article>`
+ ].join("");
+}
+function renderOverallJudgment(){
+ const p=data.overallJudgment;
+ if(!p){el("overall-conclusion").textContent="総合判断データを取得できません。";return}
+ el("overall-score").textContent=p.score==null?"—":fmt(p.score,1);
+ el("overall-score").style.color=C[p.state];
+ el("overall-zone").textContent=p.zoneLabel;
+ el("overall-conclusion").textContent=p.conclusion;
+ el("overall-coverage").textContent=`網羅度 ${fmt(p.dataCoverage,1)}%｜${p.modelVersion}｜危険線まで ${p.distanceToDanger==null?"未判定":p.distanceToDanger>=0?fmt(p.distanceToDanger,1)+"pt":fmt(Math.abs(p.distanceToDanger),1)+"pt超過"}`;
+ el("overall-score-card").style.borderLeftColor=C[p.state];
+ const pointer=el("overall-pointer");pointer.style.left=`${Math.max(0,Math.min(100,p.score??0))}%`;pointer.dataset.score=p.score==null?"—":fmt(p.score,1);
+ el("overall-components").innerHTML=p.components.map(x=>`<article class="overall-component"><header><div><small>重み ${fmt(x.weightPct,0)}%｜${S[x.dataState]||x.dataState}</small><strong>${x.label}</strong></div><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></header><div class="meter"><i style="width:${x.score||0}%;background:${C[x.state]}"></i></div><p>${x.read}<br>${(x.sourceIds||[]).slice(0,2).join(" / ")||"参照ID不明"}</p></article>`).join("");
+ el("overall-counters").innerHTML=p.counterEvidence.map(x=>`<a href="${x.sourceUrl}" target="_blank" rel="noreferrer"><span>${x.label}</span><b>${x.value}</b></a>`).join("");
+ el("overall-actions").innerHTML=p.actions.map(x=>`<li>${x}</li>`).join("");
+ el("overall-note").textContent=`${p.formula} ${p.warning}`;
+}
+function renderJapanUsTreasury(){
+ const p=data.japanUsTreasuryTransmission;
+ if(!p){el("jt-conclusion").textContent="日本→米国債の伝播データを取得できません。";return}
+ el("jt-score").textContent=p.score==null?"—":fmt(p.score,1);
+ el("jt-score").style.color=C[p.state];
+ el("jt-score-card").style.borderLeftColor=C[p.state];
+ el("jt-label").textContent=p.zoneLabel;
+ el("jt-conclusion").textContent=p.conclusion;
+ el("jt-formula").textContent=p.formula;
+ el("jt-channels").innerHTML=p.channels.map(x=>`<article class="jt-channel"><header><div><small>${S[x.dataState]||x.dataState}</small><h3>${x.label}</h3></div><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></header><div class="meter"><i style="width:${x.score||0}%;background:${C[x.state]}"></i></div><p>${x.read}<br>${x.sourceIds.slice(0,2).join(" / ")}</p></article>`).join("");
+ const d=p.derived;
+ el("jt-stats").innerHTML=[
+  ["日本の米国債保有","1兆1,431億ドル",`前月比 ${signed(d.japanHoldingsMonthChangePct,2,"%")}｜TIC 2026-05`],
+  ["外国保有に占める日本",`${fmt(d.japanShareForeignHoldingsPct,2)}%`,"大口保有の集中度"],
+  ["前年同月比",signed(d.japanHoldingsYearChangePct,2,"%"),"ほぼ横ばい・反証"],
+  ["外国全体・前月差",`${signed(d.foreignHoldingsMonthChangeUsdBn*10,0)}億ドル`,"日本減でも全体は増加"],
+  ["外貨準備証券・3→7月",signed(d.reserveSecuritiesMarToJulChangePct,2,"%"),"売却と評価変動は未分離"],
+  ["反証強度",`${fmt(d.counterEvidenceStrength,1)} / 100`,"強いほど危機判定を減圧"]
+ ].map(x=>`<article class="jt-stat"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></article>`).join("");
+ el("jt-scenarios").innerHTML=p.scenarios.map(x=>`<article class="jt-scenario"><small>保有残高の${fmt(x.sharePct,0)}%感応度</small><b>${fmt(x.grossFlowAtRiskUsdBn*10,0)}億ドル</b><span>${x.note}</span></article>`).join("");
+ el("jt-counters").innerHTML=p.counterEvidence.map(x=>`<a href="${x.sourceUrl}" target="_blank" rel="noreferrer"><span>${x.label}</span><b>${x.value}</b></a>`).join("");
+ el("jt-note").textContent=`確認条件：${p.confirmations.join("／")}。${p.warning}`;
+}
+function renderImpact(){
+ const p=data.lifeImpact;el("impact-score").textContent=p.score==null?"—":fmt(p.score,1);el("impact-label").textContent=p.label;el("impact-warning").textContent=p.warning;el("impact-method").textContent=p.formula;
+ el("impact-components").innerHTML=p.components.map(x=>`<article class="impact-item"><div><span>${x.label}</span><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></div><div class="meter"><i style="width:${x.score||0}%;background:${C[x.state]}"></i></div><p>${x.businessRead}</p></article>`).join("");
+ el("events").innerHTML=data.geopoliticalEvents.events.map(x=>`<a class="event ${x.state}" href="${x.sourceUrl}" target="_blank" rel="noreferrer"><span>${x.severity}</span><div><small>${x.region}｜${x.observationDate||"継続注意情報"}</small><h4>${x.title}</h4><p>${x.summary}</p></div></a>`).join("");
+}
+function renderPrivateCredit(){
+ const p=data.privateCredit;
+ el("pc-score").textContent=p.score==null?"—":fmt(p.score,1);el("pc-label").textContent=p.label;el("pc-conclusion").textContent=p.conclusion;el("pc-method").textContent=`${p.formula} ${p.warning}`;
+ el("pc-components").innerHTML=p.components.map(x=>`<article class="pc-component"><div><span>${x.label}</span><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></div><div class="meter"><i style="width:${x.score||0}%;background:${C[x.state]}"></i></div><p>${x.read}</p></article>`).join("");
+ el("pc-regions").innerHTML=p.regionImpacts.map(x=>`<article class="pc-region"><div><span>${x.region}</span><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></div><p>${x.channels.join(" → ")}</p></article>`).join("");
+ const ids=["FRB_PC_US_MARKET","FRB_PC_US_CORP_SHARE","PROSKAUER_PC_DEFAULT","WI_PC_REDEMPTION","SOFR","DRBLACBS"];
+ el("pc-facts").innerHTML=ids.map(id=>p.facts.find(x=>x.id===id)).filter(Boolean).map(x=>`<a class="pc-fact" href="${x.sourceUrl}" target="_blank" rel="noreferrer"><small>${x.label}<br>${S[x.dataState]||x.dataState}</small><b>${fmt(x.value,2)}${x.unit}</b><span>${x.observationDate}｜${x.sourceId}</span></a>`).join("");
+}
+function renderCapitalFlow(){
+ const p=data.capitalFlow;
+ el("cf-score").textContent=p.score==null?"—":fmt(p.score,1);el("cf-label").textContent=p.label;el("cf-conclusion").textContent=p.conclusion;el("cf-method").textContent=`${p.formula} ${p.warning}`;
+ const derived=[
+  ["日米短期金利差",p.derived.carrySpread,"pt"],
+  ["広義ドル指数・12か月",p.derived.dollarBroadChange12m,"%"],
+  ["米実質可処分所得・12か月",p.derived.realDisposableIncomePcChange12m,"%"],
+  ["米MMF総資産・12か月",p.derived.moneyMarketAssetsChange12m,"%"]
+ ];
+ el("cf-derived").innerHTML=derived.map(x=>`<article><small>${x[0]}</small><b>${x[1]==null?"不明":`${x[1]>0?"+":""}${fmt(x[1],2)}${x[2]}`}</b><span>実測系列から計算</span></article>`).join("");
+ el("cf-lanes").innerHTML=p.lanes.map(x=>`<article class="cf-lane"><div><div><small>${x.direction}</small><h3>${x.label}</h3></div><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></div><div class="meter"><i style="width:${x.score||0}%;background:${C[x.state]}"></i></div><p>${x.read}</p></article>`).join("");
+ const ids=["FOMC_POLICY_2026_07_29","IMF_COFER_USD_SHARE_Q1_2026","UST_TIC_TOTAL_MAY_2026","ICI_MMF_2026_07_22","MOF_JP_INWARD_TOTAL_2026_07_25","MOF_JP_INWARD_EQUITY_2026_07_25"];
+ el("cf-facts").innerHTML=ids.map(id=>p.facts.find(x=>x.id===id)).filter(Boolean).map(x=>`<a class="cf-fact" href="${x.sourceUrl}" target="_blank" rel="noreferrer"><small>${x.label}<br>${S[x.dataState]||x.dataState}</small><b>${fmt(x.value,2)} ${x.unit}</b>${x.note?`<p>${x.note}</p>`:""}<span>${x.observationDate}｜${x.sourceId}</span></a>`).join("");
+ el("cf-triggers").innerHTML=p.triggers.map(x=>`<article class="cf-trigger ${x.level==="赤"?"red":""}"><b>${x.level}</b><div><strong>${x.condition}</strong><span>${x.action}</span></div></article>`).join("");
+}
+function renderPolicyCredibility(){
+ const p=data.policyCredibility,v=p.videoAssessment;
+ el("pt-score").textContent=p.score==null?"—":fmt(p.score,1);
+ el("pt-score").style.color=C[p.state];
+ el("pt-label").textContent=p.label;
+ el("pt-conclusion").textContent=p.conclusion;
+ el("pt-formula").textContent=p.formula;
+ el("pt-pillars").innerHTML=p.pillars.map((x,n)=>`<article class="pt-pillar"><header><div><small>${String(n+1).padStart(2,"0")}｜${S[x.dataState]}</small><h3>${x.label}</h3></div><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></header><div class="meter"><i style="width:${x.score||0}%;background:${C[x.state]}"></i></div><p>${x.tension}</p><small>${x.sourceIds.slice(0,2).join(" / ")}</small></article>`).join("");
+ el("pt-signals").innerHTML=p.signals.map(x=>`<article class="pt-signal"><header><div><small>${S[x.dataState]||x.dataState}</small><h3>${x.label}</h3></div><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></header><div class="meter"><i style="width:${x.score||0}%;background:${C[x.state]}"></i></div><dl><div><dt>仮説を強める確認</dt><dd>${x.confirm}</dd></div><div><dt>誤警報を防ぐ反証</dt><dd>${x.counter}</dd></div></dl></article>`).join("");
+ el("pt-branches").innerHTML=p.scenarioBranches.map(x=>`<article class="pt-branch"><header><h3>${x.label}</h3><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></header><div class="meter"><i style="width:${x.score||0}%;background:${C[x.state]}"></i></div><p>${x.read}<br><small>証拠支持度であり確率ではありません。</small></p></article>`).join("");
+ el("pt-video-title").textContent=`${v.title}｜${v.channel}｜${v.publishedAt}`;
  el("pt-video-note").textContent=v.note;
  el("pt-video-rules").innerHTML=`<li>採用：${v.adopted.join("、")}</li><li>除外：${v.excluded.join("、")}</li>`;
  el("pt-video-link").href=v.url;
@@ -188,4 +493,3 @@ loadDashboard();
 </script>
 </body>
 </html>
-
