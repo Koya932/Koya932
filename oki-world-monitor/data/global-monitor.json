@@ -1,10 +1,10 @@
 {
   "schemaVersion": 10,
-  "generatedAt": "2026-08-06T23:51:17.489Z",
+  "generatedAt": "2026-08-11T00:36:18.052Z",
   "dashboardTimeZone": "Asia/Tokyo",
   "releaseControl": {
-    "runId": "KOYA-20260806T235117489Z",
-    "generatedAt": "2026-08-06T23:51:17.489Z",
+    "runId": "KOYA-20260811T003618052Z",
+    "generatedAt": "2026-08-11T00:36:18.052Z",
     "publicHashMethod": "ブラウザで公開JSON本文のSHA-256を算出",
     "sheetSyncState": "observed_partial",
     "sheetSyncNote": "同一run_idを19_日次監視・20_総合判断・10_取得ログへ記録し、各タブの算定版と品質監査版を分離する"
@@ -30,20 +30,22 @@
       "label": "ドル円・米国連邦準備制度公表値",
       "unit": "円/ドル",
       "cadence": "日次",
-      "value": 159.16,
-      "observationDate": "2026-07-31",
-      "previousValue": 159.47,
-      "change": -0.3100000000000023,
-      "dataState": "stale_observed",
+      "value": 157.54,
+      "observationDate": "2026-08-07",
+      "previousValue": 158.45,
+      "change": -0.91,
+      "dataState": "observed",
       "sourceId": "FRED_DEXJPUS",
       "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-      "fetchedAt": "2026-08-06T23:51:17.562Z",
+      "fetchedAt": "2026-08-11T00:36:18.215Z",
       "change3m": 1.5310028068384884,
       "change12m": 5.683930942895099,
       "change3mPoints": 2.4000000000000057,
       "change12mPoints": 8.560000000000002,
-      "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
-      "refreshError": "fetch failed"
+      "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
+      "observationSourceId": "FRED_DEXJPUS_2026_08_07",
+      "releaseDate": "2026-08-10",
+      "retrievalMethod": "browser_verified_primary_source"
     },
     "marketShock": {
       "id": "USDJPY_MARKET_SHOCK_2026_07_31",
@@ -51,7 +53,7 @@
       "dataState": "stale_observed",
       "sourceId": "YAHOO_FINANCE_JPY=X",
       "sourceUrl": "https://finance.yahoo.com/quote/JPY=X/",
-      "fetchedAt": "2026-08-06T23:51:17.569Z",
+      "fetchedAt": "2026-08-11T00:36:18.217Z",
       "marketObservedAt": "2026-08-05T23:00:55.000Z",
       "isRealtime": false,
       "note": "生成時点の市場スナップショット。TradingViewライブ表示とは更新間隔が異なり、売買・送金の執行価格ではありません。",
@@ -162,7 +164,7 @@
         "formula": "急変セッション高値と現在スナップショットを使った単純換算",
         "read": "円高方向は米軍家族のドル購買力を低下させ、同じ円価格のドル換算額を押し上げます。価格変更ではなく、まず見積表示と転換率を監視します。"
       },
-      "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+      "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
       "refreshError": "fetch failed"
     },
     "realtimeProvider": {
@@ -182,20 +184,22 @@
         "label": "ドル円・米国連邦準備制度公表値",
         "unit": "円/ドル",
         "cadence": "日次",
-        "value": 159.16,
-        "observationDate": "2026-07-31",
-        "previousValue": 159.47,
-        "change": -0.3100000000000023,
-        "dataState": "stale_observed",
+        "value": 157.54,
+        "observationDate": "2026-08-07",
+        "previousValue": 158.45,
+        "change": -0.91,
+        "dataState": "observed",
         "sourceId": "FRED_DEXJPUS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-        "fetchedAt": "2026-08-06T23:51:17.562Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 1.5310028068384884,
         "change12m": 5.683930942895099,
         "change3mPoints": 2.4000000000000057,
         "change12mPoints": 8.560000000000002,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
-        "refreshError": "fetch failed"
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
+        "observationSourceId": "FRED_DEXJPUS_2026_08_07",
+        "releaseDate": "2026-08-10",
+        "retrievalMethod": "browser_verified_primary_source"
       },
       "fedFunds": {
         "key": "fedFunds",
@@ -210,12 +214,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DFF",
         "sourceUrl": "https://fred.stlouisfed.org/series/DFF",
-        "fetchedAt": "2026-08-06T23:51:17.562Z",
+        "fetchedAt": "2026-08-11T00:36:18.209Z",
         "change3m": -0.27472527472528485,
         "change12m": -16.16628175519631,
         "change3mPoints": -0.010000000000000231,
         "change12mPoints": -0.7000000000000002,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "treasury2y": {
@@ -231,12 +235,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DGS2",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS2",
-        "fetchedAt": "2026-08-06T23:51:17.564Z",
+        "fetchedAt": "2026-08-11T00:36:18.211Z",
         "change3m": 6.329113924050622,
         "change12m": 13.821138211382111,
         "change3mPoints": 0.25,
         "change12mPoints": 0.5100000000000002,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "treasury10y": {
@@ -245,21 +249,21 @@
         "label": "米国債10年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 4.63,
-        "observationDate": "2026-08-05",
-        "previousValue": 4.63,
-        "change": 0,
+        "value": 4.65,
+        "observationDate": "2026-08-07",
+        "previousValue": 4.69,
+        "change": -0.04,
         "dataState": "observed",
         "sourceId": "FRED_DGS10",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 4.044943820224711,
         "change12m": 9.715639810426534,
         "change3mPoints": 0.17999999999999972,
         "change12mPoints": 0.41000000000000014,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
-        "observationSourceId": "FRED_DGS10_2026_08_05",
-        "releaseDate": "2026-08-06",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
+        "observationSourceId": "FRED_DGS10_2026_08_07",
+        "releaseDate": "2026-08-10",
         "retrievalMethod": "browser_verified_primary_source"
       },
       "treasury30y": {
@@ -275,12 +279,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DGS30",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS30",
-        "fetchedAt": "2026-08-06T23:51:17.564Z",
+        "fetchedAt": "2026-08-11T00:36:18.211Z",
         "change3m": 3.1872509960159334,
         "change12m": 7.916666666666661,
         "change3mPoints": 0.16000000000000014,
         "change12mPoints": 0.3799999999999999,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "dollarBroad": {
@@ -296,12 +300,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-08-06T23:51:17.564Z",
+        "fetchedAt": "2026-08-11T00:36:18.212Z",
         "change3m": 1.1071637923316224,
         "change12m": -1.6575611439275106,
         "change3mPoints": 1.3108000000000004,
         "change12mPoints": -2.0176000000000016,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "moneyMarketAssets": {
@@ -317,12 +321,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-08-06T23:51:17.564Z",
+        "fetchedAt": "2026-08-11T00:36:18.212Z",
         "change3m": 1.2128345523663153,
         "change12m": 12.052925794532365,
         "change3mPoints": 99334,
         "change12mPoints": 891664,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "realDisposableIncomePc": {
@@ -338,12 +342,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-08-06T23:51:17.564Z",
+        "fetchedAt": "2026-08-11T00:36:18.212Z",
         "change3m": 0.08551231377318391,
         "change12m": 0.26651944640103675,
         "change3mPoints": 45,
         "change12mPoints": 140,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "unemployment": {
@@ -352,20 +356,22 @@
         "label": "米国失業率",
         "unit": "%",
         "cadence": "月次",
-        "value": 4.2,
-        "observationDate": "2026-06-01",
-        "previousValue": 4.3,
-        "change": -0.09999999999999964,
-        "dataState": "stale_observed",
+        "value": 4.1,
+        "observationDate": "2026-07-01",
+        "previousValue": 4.2,
+        "change": -0.1,
+        "dataState": "observed",
         "sourceId": "FRED_UNRATE",
-        "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-08-06T23:51:17.565Z",
+        "sourceUrl": "https://www.bls.gov/news.release/empsit.nr0.htm",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": -2.3255813953488302,
         "change12m": 2.4390243902439046,
         "change3mPoints": -0.09999999999999964,
         "change12mPoints": 0.10000000000000053,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
-        "refreshError": "fetch failed"
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
+        "observationSourceId": "BLS_EMPSIT_2026_M07",
+        "releaseDate": "2026-08-07",
+        "retrievalMethod": "browser_verified_primary_source"
       },
       "cpi": {
         "key": "cpi",
@@ -380,13 +386,13 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_CPIAUCSL",
         "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCSL",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.213Z",
         "change3m": 0.6887823841255969,
         "change12m": 3.463530729385411,
         "change3mPoints": 2.2749999999999773,
         "change12mPoints": 11.132999999999981,
         "yoy": 3.463530729385411,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "realGdp": {
@@ -402,13 +408,13 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_GDPC1",
         "sourceUrl": "https://fred.stlouisfed.org/series/GDPC1",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.213Z",
         "change3m": 0.37294639104474836,
         "change12m": 2.1018194625243902,
         "change3mPoints": 90.17999999999665,
         "change12mPoints": 499.6229999999996,
         "qoqAnnualized": 1.5001516732581655,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "highYieldSpread": {
@@ -424,12 +430,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.213Z",
         "change3m": -1.7985611510791255,
         "change12m": -9.60264900662252,
         "change3mPoints": -0.04999999999999982,
         "change12mPoints": -0.29000000000000004,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "sofr": {
@@ -445,12 +451,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.213Z",
         "change3m": 0.8264462809917328,
         "change12m": -15.473441108545028,
         "change3mPoints": 0.03000000000000025,
         "change12mPoints": -0.6699999999999999,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "ciTighteningLarge": {
@@ -466,12 +472,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.213Z",
         "change3m": -100,
         "change12m": -100,
         "change3mPoints": -8.1,
         "change12mPoints": -9.5,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "ciTighteningSmall": {
@@ -487,12 +493,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.213Z",
         "change3m": -72.72727272727273,
         "change12m": -78.04878048780488,
         "change3mPoints": -4.8,
         "change12mPoints": -6.3999999999999995,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "businessLoanDelinquency": {
@@ -508,12 +514,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": 0,
         "change12m": 3.875968992248069,
         "change3mPoints": 0,
         "change12mPoints": 0.050000000000000044,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "wti": {
@@ -529,12 +535,12 @@
         "dataState": "observed",
         "sourceId": "FRED_DCOILWTICO",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": -22.22433099259822,
         "change12m": 19.84208217575667,
         "change3mPoints": -23.42,
         "change12mPoints": 13.569999999999993,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "observationSourceId": "FRED_DCOILWTICO_2026_08_03",
         "releaseDate": "2026-08-05",
         "retrievalMethod": "browser_verified_primary_source"
@@ -552,12 +558,12 @@
         "dataState": "observed",
         "sourceId": "FRED_DCOILBRENTEU",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": -24.826653137155418,
         "change12m": 26.009922041105614,
         "change3mPoints": -29.36,
         "change12mPoints": 18.35000000000001,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "observationSourceId": "FRED_DCOILBRENTEU_2026_08_03",
         "releaseDate": "2026-08-05",
         "retrievalMethod": "browser_verified_primary_source"
@@ -575,12 +581,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": -9.78676872607982,
         "change12m": -5.82191780821918,
         "change3mPoints": -1.7899999999999991,
         "change12mPoints": -1.0199999999999996,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "yieldCurve10y3m": {
@@ -596,12 +602,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_T10Y3M",
         "sourceUrl": "https://fred.stlouisfed.org/series/T10Y3M",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": 0,
         "change12m": -716.6666666666667,
         "change3mPoints": 0,
         "change12mPoints": 0.86,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "sahmRule": {
@@ -617,12 +623,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_SAHMREALTIME",
         "sourceUrl": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": -64.99999999999999,
         "change12m": -58.823529411764696,
         "change3mPoints": -0.13,
         "change12mPoints": -0.1,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "initialClaims": {
@@ -638,12 +644,12 @@
         "dataState": "observed",
         "sourceId": "FRED_ICSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/ICSA",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 3.6842105263157787,
         "change12m": -9.633027522935777,
         "change3mPoints": 7000,
         "change12mPoints": -21000,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "observationSourceId": "FRED_ICSA_2026_08_01",
         "releaseDate": "2026-08-06",
         "retrievalMethod": "browser_verified_primary_source"
@@ -661,12 +667,12 @@
         "dataState": "observed",
         "sourceId": "FRED_CCSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/CCSA",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 0.33783783783782884,
         "change12m": -8.191653786707887,
         "change3mPoints": 6000,
         "change12mPoints": -159000,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "observationSourceId": "FRED_CCSA_2026_07_25",
         "releaseDate": "2026-08-06",
         "retrievalMethod": "browser_verified_primary_source"
@@ -677,20 +683,22 @@
         "label": "米非農業部門雇用者数",
         "unit": "千人",
         "cadence": "月次",
-        "value": 158984,
-        "observationDate": "2026-06-01",
-        "previousValue": 158927,
-        "change": 57,
-        "dataState": "stale_observed",
+        "value": 158858,
+        "observationDate": "2026-07-01",
+        "previousValue": 158881,
+        "change": -23,
+        "dataState": "observed",
         "sourceId": "FRED_PAYEMS",
-        "sourceUrl": "https://fred.stlouisfed.org/series/PAYEMS",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "sourceUrl": "https://www.bls.gov/news.release/empsit.nr0.htm",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 0.21052631578948322,
         "change12m": 0.3192872196771779,
         "change3mPoints": 334,
         "change12mPoints": 506,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
-        "refreshError": "fetch failed"
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
+        "observationSourceId": "BLS_EMPSIT_2026_M07",
+        "releaseDate": "2026-08-07",
+        "retrievalMethod": "browser_verified_primary_source"
       },
       "jobOpenings": {
         "key": "jobOpenings",
@@ -705,10 +713,10 @@
         "dataState": "observed",
         "sourceId": "BLS_JOLTS_2026_M06",
         "sourceUrl": "https://www.bls.gov/news.release/jolts.nr0.htm",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "retrievalMethod": "browser_verified_primary_source",
         "releaseDate": "2026-08-04",
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z"
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z"
       },
       "tempHelp": {
         "key": "tempHelp",
@@ -716,20 +724,22 @@
         "label": "米一時雇用サービス雇用者数",
         "unit": "千人",
         "cadence": "月次",
-        "value": 2499.2,
-        "observationDate": "2026-06-01",
-        "previousValue": 2489.9,
-        "change": 9.299999999999727,
-        "dataState": "stale_observed",
+        "value": 2505,
+        "observationDate": "2026-07-01",
+        "previousValue": 2501.6,
+        "change": 3.4,
+        "dataState": "observed",
         "sourceId": "FRED_TEMPHELPS",
         "sourceUrl": "https://fred.stlouisfed.org/series/TEMPHELPS",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 0.7782571877898103,
         "change12m": -0.2156032899464977,
         "change3mPoints": 19.299999999999727,
         "change12mPoints": -5.400000000000091,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
-        "refreshError": "fetch failed"
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
+        "observationSourceId": "FRED_TEMPHELPS_2026_M07",
+        "releaseDate": "2026-08-10",
+        "retrievalMethod": "browser_verified_primary_source"
       },
       "industrialProduction": {
         "key": "industrialProduction",
@@ -744,12 +754,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_INDPRO",
         "sourceUrl": "https://fred.stlouisfed.org/series/INDPRO",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": 1.0060304751557725,
         "change12m": 1.1440847075981697,
         "change3mPoints": 1.0223000000000013,
         "change12mPoints": 1.1610000000000014,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "realPce": {
@@ -765,12 +775,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_PCEC96",
         "sourceUrl": "https://fred.stlouisfed.org/series/PCEC96",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": 0.9270715656212625,
         "change12m": 2.5439837729180237,
         "change3mPoints": 155.10000000000218,
         "change12mPoints": 418.90000000000146,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "retailSales": {
@@ -786,12 +796,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_RSAFS",
         "sourceUrl": "https://fred.stlouisfed.org/series/RSAFS",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": 1.9283487154730716,
         "change12m": 6.719163968207242,
         "change3mPoints": 14540,
         "change12mPoints": 48389,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "housingStarts": {
@@ -807,12 +817,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_HOUST",
         "sourceUrl": "https://fred.stlouisfed.org/series/HOUST",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": -6.24178712220762,
         "change12m": 3.4807831762146524,
         "change3mPoints": -95,
         "change12mPoints": 48,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "mortgageRate": {
@@ -828,12 +838,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_MORTGAGE30US",
         "sourceUrl": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 5.714285714285716,
         "change12m": -1.1869436201780381,
         "change3mPoints": 0.3600000000000003,
         "change12mPoints": -0.08000000000000007,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "nfci": {
@@ -849,12 +859,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_NFCI",
         "sourceUrl": "https://fred.stlouisfed.org/series/NFCI",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 6.012024048096198,
         "change12m": 2.7184466019417597,
         "change3mPoints": -0.030000000000000027,
         "change12mPoints": -0.014000000000000012,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       "privateDomesticDemand": {
@@ -870,12 +880,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_A191RL1Q225SBEA",
         "sourceUrl": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": -28.57142857142857,
         "change12m": -60.526315789473685,
         "change3mPoints": -0.6000000000000001,
         "change12mPoints": -2.3,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       }
     },
@@ -888,8 +898,8 @@
       "dataState": "stale_observed",
       "sourceId": "UST_DEBT_TO_PENNY",
       "sourceUrl": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
-      "fetchedAt": "2026-08-06T23:51:17.610Z",
-      "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+      "fetchedAt": "2026-08-11T00:36:18.262Z",
+      "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
       "refreshError": "fetch failed"
     },
     "yieldCurve": [
@@ -900,8 +910,8 @@
       },
       {
         "tenor": "10年",
-        "value": 4.63,
-        "date": "2026-08-05"
+        "value": 4.65,
+        "date": "2026-08-07"
       },
       {
         "tenor": "30年",
@@ -4645,12 +4655,12 @@
         "dataState": "stale_observed"
       }
     ],
-    "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+    "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
     "refreshError": "fetch failed"
   },
   "geopoliticalEvents": {
     "dataState": "observed_partial",
-    "verifiedAt": "2026-08-06T23:51:17.787Z",
+    "verifiedAt": "2026-08-11T00:36:18.266Z",
     "automatedFeeds": {
       "reliefWeb": {
         "dataState": "blocked_or_failed",
@@ -4881,12 +4891,48 @@
           "納期",
           "輸入物価"
         ]
+      },
+      {
+        "id": "UST_OFAC_IRAN_CRYPTO_2026_08_07",
+        "title": "米財務省がIRGC資金網・暗号資産取引所への制裁を強化",
+        "region": "中東・国際金融",
+        "observationDate": "2026-08-07",
+        "severity": 74,
+        "state": "yellow",
+        "dataState": "observed",
+        "countries": [
+          {
+            "iso3": "IRN",
+            "severity": 78
+          },
+          {
+            "iso3": "ARE",
+            "severity": 55
+          },
+          {
+            "iso3": "GEO",
+            "severity": 45
+          },
+          {
+            "iso3": "POL",
+            "severity": 40
+          }
+        ],
+        "sourceId": "UST_OFAC_SB0598_2026_08_07",
+        "sourceUrl": "https://home.treasury.gov/news/press-releases/sb0598",
+        "summary": "米財務省OFACは、IRGC等への資金供与、制裁回避、国際金融への隠密アクセスに利用された暗号資産取引所と企業網を指定した。制裁の二次波及、暗号資産・シャドーバンキング、対イラン決済の分断を別レーンで監視する。",
+        "lifeImpactChannels": [
+          "制裁",
+          "暗号資産",
+          "シャドーバンキング",
+          "エネルギー決済"
+        ]
       }
     ]
   },
   "lifeImpact": {
     "dataState": "estimated",
-    "score": 54.8,
+    "score": 54,
     "state": "yellow",
     "label": "注意",
     "formula": "ドル円30% + 原油25% + 米金利・信用・VIX20% + 沖縄近接・紅海・世界紛争25%。各成分を0–100に正規化し、取得できた成分だけで再加重",
@@ -4895,9 +4941,9 @@
       {
         "key": "currency",
         "label": "円安・輸入コスト",
-        "score": 65.3,
+        "score": 62.6,
         "state": "yellow",
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceIds": [
           "FRED_DEXJPUS"
         ],
@@ -4918,7 +4964,7 @@
       {
         "key": "finance",
         "label": "金利・信用不安",
-        "score": 31.3,
+        "score": 31.5,
         "state": "green",
         "dataState": "estimated",
         "sourceIds": [
@@ -4941,7 +4987,8 @@
           "OCHA_OPT_2026_07_23",
           "UN_SG_SUDAN_2026_07_14",
           "UN_SG_SSD_2026_07_10",
-          "US_MARAD_2026_006"
+          "US_MARAD_2026_006",
+          "UST_OFAC_SB0598_2026_08_07"
         ],
         "businessRead": "沖縄近接の軍事活動、紅海航路、世界の高強度紛争を分離して重み付け。ニュース件数だけで危機認定しない。"
       }
@@ -5195,12 +5242,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.213Z",
         "change3m": 0.8264462809917328,
         "change12m": -15.473441108545028,
         "change3mPoints": 0.03000000000000025,
         "change12mPoints": -0.6699999999999999,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -5216,12 +5263,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.213Z",
         "change3m": -100,
         "change12m": -100,
         "change3mPoints": -8.1,
         "change12mPoints": -9.5,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -5237,12 +5284,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.213Z",
         "change3m": -72.72727272727273,
         "change12m": -78.04878048780488,
         "change3mPoints": -4.8,
         "change12mPoints": -6.3999999999999995,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -5258,12 +5305,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": 0,
         "change12m": 3.875968992248069,
         "change3mPoints": 0,
         "change12mPoints": 0.050000000000000044,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       }
     ],
@@ -5325,7 +5372,7 @@
   },
   "capitalFlow": {
     "dataState": "estimated",
-    "score": 63.4,
+    "score": 63.2,
     "state": "yellow",
     "label": "資金再配分を警戒",
     "conclusion": "ドル資産への吸引は強い一方、全面的なドル現金逃避ではない。FOMCは3.50〜3.75%を据え置いたが3名が利上げを主張し、金利差の急縮小はまだ確認できない。日本は株式買越しと債券売越しが同時進行しており、資産別に方向を分けて読む必要がある。",
@@ -5341,7 +5388,7 @@
       {
         "key": "dollar_magnet",
         "label": "ドル資産吸引力",
-        "score": 70.8,
+        "score": 70.6,
         "state": "red",
         "direction": "米長期証券へ流入",
         "read": "外貨準備のドル比率は57.13%。ただし上昇の約半分は評価要因。TICでは民間流入が公的流出を上回り、長期証券需要が強い。",
@@ -5356,7 +5403,7 @@
       {
         "key": "carry",
         "label": "ドル買い・円売りキャリー",
-        "score": 58.9,
+        "score": 57.6,
         "state": "yellow",
         "direction": "短期金利差 2.63ポイント",
         "read": "FOMCは据え置き、3名は25bp利上げを主張。日銀も7月31日に1.0%を維持したため、米実効FF金利との約2.63ポイント差はドル保有を支えるが、米雇用悪化や日銀正常化観測で急反転し得る。",
@@ -5371,7 +5418,7 @@
       {
         "key": "treasury_paradox",
         "label": "米国債・インフレのパラドクス",
-        "score": 64.7,
+        "score": 64.8,
         "state": "yellow",
         "direction": "需要の強さと利払い負担が併存",
         "read": "予想外インフレは既発固定債の実質価値を薄める一方、借換え金利・TIPS・歳出連動を通じ将来利払いを押し上げる。無料の債務圧縮ではない。",
@@ -5386,7 +5433,7 @@
       {
         "key": "japan_reallocation",
         "label": "日本への資金再配分",
-        "score": 61.4,
+        "score": 61.6,
         "state": "yellow",
         "direction": "株式買越し・債券売越し",
         "read": "直近週は日本株を9,121億円買い越す一方、日本証券全体は3兆4,891億円売り越し。長期債と短期債の売りが大きく、企業価値への投資と金利・流動性判断が分岐している。",
@@ -5618,12 +5665,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-08-06T23:51:17.564Z",
+        "fetchedAt": "2026-08-11T00:36:18.212Z",
         "change3m": 1.1071637923316224,
         "change12m": -1.6575611439275106,
         "change3mPoints": 1.3108000000000004,
         "change12mPoints": -2.0176000000000016,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -5639,12 +5686,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-08-06T23:51:17.564Z",
+        "fetchedAt": "2026-08-11T00:36:18.212Z",
         "change3m": 1.2128345523663153,
         "change12m": 12.052925794532365,
         "change3mPoints": 99334,
         "change12mPoints": 891664,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -5660,12 +5707,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-08-06T23:51:17.564Z",
+        "fetchedAt": "2026-08-11T00:36:18.212Z",
         "change3m": 0.08551231377318391,
         "change12m": 0.26651944640103675,
         "change3mPoints": 45,
         "change12mPoints": 140,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       }
     ],
@@ -5743,7 +5790,7 @@
     "state": "green",
     "label": "拡大・軟着陸域",
     "conclusion": "現在は急収縮を示す一斉悪化ではない。ただし金利曲線、雇用、信用の先行指標が上向けば3〜12か月の圧力が変化する。",
-    "dataCoverage": 72,
+    "dataCoverage": 76.7,
     "dataCoverageLabel": "中",
     "formula": "雇用25% + 需要20% + 生産15% + 住宅10% + 金融15% + 金利曲線15%。0〜100は低下圧力で、景気後退確率ではない。",
     "warning": "シナリオ比率は信号の相対ウェイトであり確率ではありません。閾値は運用初版で、過去局面のバックテストと改定データの検証が今後必要です。",
@@ -8441,12 +8488,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_SAHMREALTIME",
         "sourceUrl": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": -64.99999999999999,
         "change12m": -58.823529411764696,
         "change3mPoints": -0.13,
         "change12mPoints": -0.1,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -8462,12 +8509,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_T10Y3M",
         "sourceUrl": "https://fred.stlouisfed.org/series/T10Y3M",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": 0,
         "change12m": -716.6666666666667,
         "change3mPoints": 0,
         "change12mPoints": 0.86,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -8483,12 +8530,12 @@
         "dataState": "observed",
         "sourceId": "FRED_ICSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/ICSA",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 3.6842105263157787,
         "change12m": -9.633027522935777,
         "change3mPoints": 7000,
         "change12mPoints": -21000,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "observationSourceId": "FRED_ICSA_2026_08_01",
         "releaseDate": "2026-08-06",
         "retrievalMethod": "browser_verified_primary_source"
@@ -8506,12 +8553,12 @@
         "dataState": "observed",
         "sourceId": "FRED_CCSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/CCSA",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 0.33783783783782884,
         "change12m": -8.191653786707887,
         "change3mPoints": 6000,
         "change12mPoints": -159000,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "observationSourceId": "FRED_CCSA_2026_07_25",
         "releaseDate": "2026-08-06",
         "retrievalMethod": "browser_verified_primary_source"
@@ -8522,20 +8569,22 @@
         "label": "米国失業率",
         "unit": "%",
         "cadence": "月次",
-        "value": 4.2,
-        "observationDate": "2026-06-01",
-        "previousValue": 4.3,
-        "change": -0.09999999999999964,
-        "dataState": "stale_observed",
+        "value": 4.1,
+        "observationDate": "2026-07-01",
+        "previousValue": 4.2,
+        "change": -0.1,
+        "dataState": "observed",
         "sourceId": "FRED_UNRATE",
-        "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-08-06T23:51:17.565Z",
+        "sourceUrl": "https://www.bls.gov/news.release/empsit.nr0.htm",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": -2.3255813953488302,
         "change12m": 2.4390243902439046,
         "change3mPoints": -0.09999999999999964,
         "change12mPoints": 0.10000000000000053,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
-        "refreshError": "fetch failed"
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
+        "observationSourceId": "BLS_EMPSIT_2026_M07",
+        "releaseDate": "2026-08-07",
+        "retrievalMethod": "browser_verified_primary_source"
       },
       {
         "key": "jobOpenings",
@@ -8550,10 +8599,10 @@
         "dataState": "observed",
         "sourceId": "BLS_JOLTS_2026_M06",
         "sourceUrl": "https://www.bls.gov/news.release/jolts.nr0.htm",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "retrievalMethod": "browser_verified_primary_source",
         "releaseDate": "2026-08-04",
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z"
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z"
       },
       {
         "key": "tempHelp",
@@ -8561,20 +8610,22 @@
         "label": "米一時雇用サービス雇用者数",
         "unit": "千人",
         "cadence": "月次",
-        "value": 2499.2,
-        "observationDate": "2026-06-01",
-        "previousValue": 2489.9,
-        "change": 9.299999999999727,
-        "dataState": "stale_observed",
+        "value": 2505,
+        "observationDate": "2026-07-01",
+        "previousValue": 2501.6,
+        "change": 3.4,
+        "dataState": "observed",
         "sourceId": "FRED_TEMPHELPS",
         "sourceUrl": "https://fred.stlouisfed.org/series/TEMPHELPS",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 0.7782571877898103,
         "change12m": -0.2156032899464977,
         "change3mPoints": 19.299999999999727,
         "change12mPoints": -5.400000000000091,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
-        "refreshError": "fetch failed"
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
+        "observationSourceId": "FRED_TEMPHELPS_2026_M07",
+        "releaseDate": "2026-08-10",
+        "retrievalMethod": "browser_verified_primary_source"
       },
       {
         "key": "realPce",
@@ -8589,12 +8640,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_PCEC96",
         "sourceUrl": "https://fred.stlouisfed.org/series/PCEC96",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": 0.9270715656212625,
         "change12m": 2.5439837729180237,
         "change3mPoints": 155.10000000000218,
         "change12mPoints": 418.90000000000146,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -8610,12 +8661,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_RSAFS",
         "sourceUrl": "https://fred.stlouisfed.org/series/RSAFS",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": 1.9283487154730716,
         "change12m": 6.719163968207242,
         "change3mPoints": 14540,
         "change12mPoints": 48389,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -8631,12 +8682,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_INDPRO",
         "sourceUrl": "https://fred.stlouisfed.org/series/INDPRO",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": 1.0060304751557725,
         "change12m": 1.1440847075981697,
         "change3mPoints": 1.0223000000000013,
         "change12mPoints": 1.1610000000000014,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -8652,12 +8703,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_HOUST",
         "sourceUrl": "https://fred.stlouisfed.org/series/HOUST",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": -6.24178712220762,
         "change12m": 3.4807831762146524,
         "change3mPoints": -95,
         "change12mPoints": 48,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -8673,12 +8724,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_MORTGAGE30US",
         "sourceUrl": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 5.714285714285716,
         "change12m": -1.1869436201780381,
         "change3mPoints": 0.3600000000000003,
         "change12mPoints": -0.08000000000000007,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -8694,12 +8745,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_NFCI",
         "sourceUrl": "https://fred.stlouisfed.org/series/NFCI",
-        "fetchedAt": "2026-08-06T23:51:17.567Z",
+        "fetchedAt": "2026-08-11T00:36:18.215Z",
         "change3m": 6.012024048096198,
         "change12m": 2.7184466019417597,
         "change3mPoints": -0.030000000000000027,
         "change12mPoints": -0.014000000000000012,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -8715,12 +8766,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.213Z",
         "change3m": -1.7985611510791255,
         "change12m": -9.60264900662252,
         "change3mPoints": -0.04999999999999982,
         "change12mPoints": -0.29000000000000004,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       },
       {
@@ -8736,12 +8787,12 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-08-06T23:51:17.566Z",
+        "fetchedAt": "2026-08-11T00:36:18.214Z",
         "change3m": -9.78676872607982,
         "change12m": -5.82191780821918,
         "change3mPoints": -1.7899999999999991,
         "change12mPoints": -1.0199999999999996,
-        "retainedFromGeneratedAt": "2026-08-06T23:13:14.946Z",
+        "retainedFromGeneratedAt": "2026-08-06T23:51:17.489Z",
         "refreshError": "fetch failed"
       }
     ],
@@ -8773,11 +8824,11 @@
     "label": "koya 総合判断・経営監視圧力指数",
     "modelVersion": "KOYA-OVERALL-PRESSURE-1.0",
     "dataState": "estimated",
-    "score": 50.2,
+    "score": 50,
     "state": "yellow",
     "zoneLabel": "注意・重点監視",
     "dataCoverage": 100,
-    "distanceToDanger": 19.8,
+    "distanceToDanger": 20,
     "thresholds": {
       "attention": 35,
       "midpoint": 50,
@@ -8834,7 +8885,7 @@
       {
         "key": "capital_flow",
         "label": "ドル・世界資金フロー",
-        "score": 63.4,
+        "score": 63.2,
         "weight": 0.15,
         "sourceIds": [
           "UST_TIC_MAY_2026",
@@ -8849,7 +8900,7 @@
       {
         "key": "okinawa_life",
         "label": "沖縄生活・事業波及",
-        "score": 54.8,
+        "score": 54,
         "weight": 0.15,
         "sourceIds": [
           "FRED_DEXJPUS",
@@ -8900,13 +8951,13 @@
       {
         "key": "capital_flow",
         "label": "ドル・世界資金フロー",
-        "score": 63.4,
+        "score": 63.2,
         "state": "yellow"
       },
       {
-        "key": "okinawa_life",
-        "label": "沖縄生活・事業波及",
-        "score": 54.8,
+        "key": "fiscal_hegemony",
+        "label": "財政・覇権構造",
+        "score": 54,
         "state": "yellow"
       }
     ],
@@ -8930,7 +8981,7 @@
       {
         "label": "米景気6本柱は低圧力",
         "value": "26 / 100",
-        "observationDate": "2026-08-06",
+        "observationDate": "2026-08-11",
         "sourceId": "KOYA-US-GLOBAL-FUNDAMENTALS-1.0",
         "sourceUrl": "https://fred.stlouisfed.org/",
         "dataState": "estimated"
@@ -8946,6 +8997,27 @@
     ]
   },
   "latestOfficialFindings": [
+    {
+      "id": "BLS_EMPSIT_2026_M07",
+      "label": "米雇用は2.3万人減・失業率4.1%",
+      "observationDate": "2026-07-31",
+      "releaseDate": "2026-08-07",
+      "value": "5〜6月分は合計10.3万人下方修正",
+      "dataState": "observed",
+      "sourceId": "BLS_EMPSIT_2026_M07",
+      "sourceUrl": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "finding": "雇用減と過去2か月の下方修正は景気・購買力の警戒材料。一方、失業率低下、医療雇用+2.2万人、一時雇用+3.4千人は急激な雇用崩壊への反証。"
+    },
+    {
+      "id": "UST_OFAC_SB0598_2026_08_07",
+      "label": "米財務省が対イラン暗号資産制裁を強化",
+      "observationDate": "2026-08-07",
+      "value": "IRGC資金網・制裁回避取引所を指定",
+      "dataState": "observed",
+      "sourceId": "UST_OFAC_SB0598_2026_08_07",
+      "sourceUrl": "https://home.treasury.gov/news/press-releases/sb0598",
+      "finding": "軍事衝突だけでなく、暗号資産・シャドーバンキング・二次制裁を通じた戦争経済の金融分断を監視。原油・海運・ドル資金調達への直接波及は別途確認が必要。"
+    },
     {
       "id": "FRB_FOMC_2026_07_29",
       "label": "FRBは3.50〜3.75%を維持",
@@ -9048,21 +9120,21 @@
   "health": {
     "status": "passed_with_warnings",
     "label": "主要機能は正常・鮮度警告あり",
-    "checkedAt": "2026-08-06T23:51:17.788Z",
+    "checkedAt": "2026-08-11T00:36:18.266Z",
     "totals": {
       "failed": 0,
       "unknown": 0,
-      "stale": 270,
-      "total": 351,
-      "observed": 45,
+      "stale": 263,
+      "total": 352,
+      "observed": 53,
       "observedPartial": 20,
       "estimated": 16
     },
     "quality": {
-      "currentObservedSharePct": 18.5,
-      "observedEvidenceSharePct": 95.4,
-      "staleObservedSharePct": 76.9,
-      "estimatedSharePct": 4.6,
+      "currentObservedSharePct": 20.7,
+      "observedEvidenceSharePct": 95.5,
+      "staleObservedSharePct": 74.7,
+      "estimatedSharePct": 4.5,
       "definitions": {
         "currentObservedSharePct": "observedとobserved_partialの合計÷監視本体総数",
         "observedEvidenceSharePct": "observed・observed_partial・stale_observedの合計÷監視本体総数",
@@ -9094,8 +9166,8 @@
         "label": "米国マクロ・為替・国債",
         "total": 34,
         "counts": {
-          "stale_observed": 28,
-          "observed": 6
+          "observed": 10,
+          "stale_observed": 24
         },
         "failedIds": []
       },
@@ -9111,9 +9183,10 @@
       {
         "key": "geopolitics",
         "label": "地政学イベント",
-        "total": 7,
+        "total": 8,
         "counts": {
-          "observed_partial": 7
+          "observed_partial": 7,
+          "observed": 1
         },
         "failedIds": []
       },
@@ -9122,8 +9195,7 @@
         "label": "沖縄生活波及",
         "total": 4,
         "counts": {
-          "stale_observed": 1,
-          "observed": 1,
+          "observed": 2,
           "estimated": 2
         },
         "failedIds": []
@@ -9155,8 +9227,8 @@
         "label": "米国景気・世界波及予測",
         "total": 18,
         "counts": {
-          "stale_observed": 14,
-          "observed": 4
+          "stale_observed": 12,
+          "observed": 6
         },
         "failedIds": []
       },
@@ -9205,7 +9277,7 @@
       {
         "id": "overallJudgment",
         "result": "passed",
-        "note": "7領域・総合 50.2"
+        "note": "7領域・総合 50"
       },
       {
         "id": "sourceMismatch",
