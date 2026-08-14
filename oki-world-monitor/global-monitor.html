@@ -457,7 +457,7 @@ function recolor(){d3.selectAll(".country").attr("fill",function(){const row=dat
 document.querySelectorAll(".modes button").forEach(b=>b.addEventListener("click",()=>{mode=b.dataset.mode;document.querySelectorAll(".modes button").forEach(x=>x.classList.toggle("active",x===b));recolor()}));
 let publicJsonHash="";
 async function sha256(text){if(!globalThis.crypto?.subtle)return"ブラウザ未対応";const bytes=new TextEncoder().encode(text);const digest=await crypto.subtle.digest("SHA-256",bytes);return Array.from(new Uint8Array(digest)).map(x=>x.toString(16).padStart(2,"0")).join("").toUpperCase()}
-const DATA_VERSION="20260812-jptus-v12b";
+const DATA_VERSION=Date.now();
 const DATA_URLS=[`./data/global-monitor.json?v=${DATA_VERSION}`,`/Koya932/oki-world-monitor/data/global-monitor.json?v=${DATA_VERSION}`];
 const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 async function fetchDashboardJson(){
@@ -465,7 +465,7 @@ async function fetchDashboardJson(){
  for(let attempt=0;attempt<2;attempt++){
   for(const url of DATA_URLS){
    try{
-    const response=await fetch(url,{cache:"default"});
+    const response=await fetch(url,{cache:"no-store"});
     if(!response.ok)throw Error(`HTTP ${response.status}`);
     const text=await response.text();
     const parsed=JSON.parse(text);
