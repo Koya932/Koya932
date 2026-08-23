@@ -236,8 +236,8 @@ function renderFxShock(){
  el("fx-shock-label").textContent=`${q.observationDate} 高値→安値 ${signed(q.peakToTroughPct,2,"%")}`;
  el("fx-shock-formula").textContent=s.warning;
  el("fx-shock-metrics").innerHTML=[
-  ["市場スナップショット",`${fmt(c.value,3)}円`,`${new Date(x.marketObservedAt).toLocaleString("ja-JP")}｜一部実測`],
-  ["本日・前日終値比",signed(c.changePct,2,"%"),`${c.direction}｜前日終値 ${fmt(c.previousClose,3)}`],
+  ["今日時点の最新市場値",`${fmt(c.value,3)}円`,`${new Date(x.marketObservedAt).toLocaleString("ja-JP")}｜${x.marketStatus==="closed"?"休場・最終観測":"市場観測"}`],
+  ["最新市場・前日終値比",signed(c.changePct,2,"%"),`${c.direction}｜前日終値 ${fmt(c.previousClose,3)}`],
   ["急変セッション",`${fmt(q.high,3)} → ${fmt(q.low,3)}`,`高値→安値 ${signed(q.peakToTrough,3)}円`],
   ["FRED公式日次",`${fmt(official.value,2)}円`,`${official.observationDate}｜${S[official.dataState]}`]
  ].map(v=>`<article><small>${v[0]}</small><b>${v[1]}</b><span>${v[2]}</span></article>`).join("");
@@ -390,7 +390,7 @@ function renderHeader(){
  el("audit-label").textContent=`全項目監査：${data.health.label}`;
  el("audit-detail").textContent=`取得失敗 ${data.health.totals.failed}件｜不明 ${data.health.totals.unknown}件｜旧実測 ${data.health.totals.stale}件。ドル円はライブ・生成時スナップショット・公式日次を分離。`;
  el("audit-time").innerHTML=`観測日 ${i.usdjpy.observationDate}<br>取得 ${new Date(i.usdjpy.fetchedAt).toLocaleString("ja-JP")}`;
- const q=data.health.quality||{},v=data.modelValidation||{},rc=data.releaseControl||{};
+ const q=data.health.quality||{},v=data.modelValidation||{},rc=data.releaseControl||{},fp=data.freshnessPolicy||{};
  el("quality-status").textContent=`run_id ${rc.runId||"不明"}｜JSON SHA-256 ${publicJsonHash||"計算中"}`;
  el("quality-grid").innerHTML=[
   ["現行実測比率",q.currentObservedSharePct==null?"不明":fmt(q.currentObservedSharePct,1)+"%","observed + observed_partial / 監視本体"],
@@ -398,7 +398,9 @@ function renderHeader(){
   ["旧実測比率",q.staleObservedSharePct==null?"不明":fmt(q.staleObservedSharePct,1)+"%","stale_observed / 監視本体"],
   ["推定比率",q.estimatedSharePct==null?"不明":fmt(q.estimatedSharePct,1)+"%","推定値を実測へ混ぜない"],
   ["出典不整合",`${(data.health.sourceIssues||[]).length}件`,"解消までobserved_partial"],
-  ["モデル検証",v.status||"不明",`${S[v.dataState]||v.dataState||"不明"}｜最終判断は人間`]
+  ["モデル検証",v.status||"不明",`${S[v.dataState]||v.dataState||"不明"}｜最終判断は人間`],
+  ["市場最終観測",data.fxAudit?.marketShock?.current?.observationDate||"不明",data.fxAudit?.marketShock?.marketStatus==="closed"?"休場中・前営業日を保持":"市場配信時刻を確認"],
+  ["最新値ルール",fp.basis?"適用中":"未設定","最終観測日を今日へ付け替えない"]
  ].map(x=>`<article class="quality-card"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></article>`).join("");
  el("quality-note").textContent=(data.health.sourceIssues||[]).map(x=>`${x.sourceId}：${x.issue}`).join("｜")||"出典不整合は検出されていません。";
  el("kpis").innerHTML=[
