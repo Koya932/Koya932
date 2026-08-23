@@ -273,12 +273,14 @@ function renderJapanUsTreasury(){
  el("jt-conclusion").textContent=p.conclusion;
  el("jt-formula").textContent=p.formula;
  el("jt-channels").innerHTML=p.channels.map(x=>`<article class="jt-channel"><header><div><small>${S[x.dataState]||x.dataState}</small><h3>${x.label}</h3></div><b style="color:${C[x.state]}">${x.score==null?"—":fmt(x.score,1)}</b></header><div class="meter"><i style="width:${x.score||0}%;background:${C[x.state]}"></i></div><p>${x.read}<br>${x.sourceIds.slice(0,2).join(" / ")}</p></article>`).join("");
- const d=p.derived;
+ const d=p.derived,holdings=p.facts?.find(x=>x.id==="UST_TIC_JAPAN_JUN_2026");
+ const holdingsOku=Number.isFinite(holdings?.value)?Math.round(holdings.value*10):null;
+ const holdingsLabel=holdingsOku==null?"不明":`${Math.floor(holdingsOku/10000)}兆${(holdingsOku%10000).toLocaleString("ja-JP")}億ドル`;
  el("jt-stats").innerHTML=[
-  ["日本の米国債保有","1兆1,431億ドル",`前月比 ${signed(d.japanHoldingsMonthChangePct,2,"%")}｜TIC 2026-05`],
+  ["日本の米国債保有",holdingsLabel,`前月比 ${signed(d.japanHoldingsMonthChangePct,2,"%")}｜TIC ${holdings?.observationDate?.slice(0,7)||"不明"}`],
   ["外国保有に占める日本",`${fmt(d.japanShareForeignHoldingsPct,2)}%`,"大口保有の集中度"],
-  ["前年同月比",signed(d.japanHoldingsYearChangePct,2,"%"),"ほぼ横ばい・反証"],
-  ["外国全体・前月差",`${signed(d.foreignHoldingsMonthChangeUsdBn*10,0)}億ドル`,"日本減でも全体は増加"],
+  ["前年同月比",signed(d.japanHoldingsYearChangePct,2,"%"),"減少・単月で構造転換を断定しない"],
+  ["外国全体・前月差",`${signed(d.foreignHoldingsMonthChangeUsdBn*10,0)}億ドル`,d.foreignHoldingsMonthChangeUsdBn<0?"外国全体も減少":"日本減でも外国全体は増加"],
   ["外貨準備証券・3→7月",signed(d.reserveSecuritiesMarToJulChangePct,2,"%"),"売却と評価変動は未分離"],
   ["反証強度",`${fmt(d.counterEvidenceStrength,1)} / 100`,"強いほど危機判定を減圧"]
  ].map(x=>`<article class="jt-stat"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></article>`).join("");
