@@ -440,14 +440,14 @@ function renderIntegratedDiscovery(){
  if(!p){el("discovery-thesis").textContent="統合発見データは未取得です。";return}
  el("discovery-thesis").innerHTML=`<strong>${p.role}</strong><br>${p.foundation.theory}。${p.foundation.guardrail}<br>事業KPIは発見成立の必須条件から除外し、世界分析後の任意レイヤーへ分離。`;
  el("discovery-lenses").innerHTML=p.lenses.map((x,n)=>`<article class="discovery-lens"><strong>${String(n+1).padStart(2,"0")}｜${x.label}</strong><p>${x.question}</p></article>`).join("");
- el("discovery-findings").innerHTML=p.findings.map(x=>`<article class="discovery-finding"><header><div><small>${S[x.dataState]||x.dataState}｜${x.observationDate||"観測日不明"}</small><h3>${x.title}</h3></div><b>${fmt(x.priorityScore,1)}</b></header><p class="chain">${x.causalChain}</p><div class="discovery-evidence">${x.evidence.map(e=>`<a href="${e.sourceUrl}" target="_blank" rel="noreferrer"><strong>${e.label}｜${e.value==null?"不明":e.value}${e.unit||""}</strong><span>${S[e.dataState]||e.dataState}｜${e.sourceId}</span></a>`).join("")}</div><dl><div><dt>反証</dt><dd>${x.counterEvidence}</dd></div><div><dt>仮説を弱める条件</dt><dd>${x.falsification}</dd></div><div><dt>次の一次情報</dt><dd>${x.nextPrimarySource}</dd></div><div><dt>任意の事業翻訳</dt><dd>${x.optionalBusinessTranslation}</dd></div></dl></article>`).join("");
+ el("discovery-findings").innerHTML=p.findings.map(x=>{const c=x.scoreComponents||{};const gate=x.gateStatus==="passed"?"発見ゲート合格":"証拠追加待ち";return `<article class="discovery-finding"><header><div><small>${gate}｜${S[x.dataState]||x.dataState}｜${x.observationDate||"観測日不明"}</small><h3>${x.title}</h3></div><b>${fmt(x.priorityScore,1)}</b></header><p class="chain">${x.causalChain}</p><div class="discovery-evidence">${x.evidence.map(e=>`<a href="${e.sourceUrl}" target="_blank" rel="noreferrer"><strong>${e.label}｜${e.value==null?"不明":e.value}${e.unit||""}</strong><span>${S[e.dataState]||e.dataState}｜${e.seriesId}｜観測 ${e.observationDate||"不明"}｜取得 ${e.retrievedAt?new Date(e.retrievedAt).toLocaleString("ja-JP"):"不明"}</span></a>`).join("")}</div><dl><div><dt>優先度の構成点</dt><dd>証拠 ${fmt(c.evidenceQualityCoverage?.score,0)}×35%｜分野横断 ${fmt(c.crossDisciplinaryConvergence?.score,0)}×25%｜先行価値 ${fmt(c.leadingValue?.score,0)}×25%｜反証可能性 ${fmt(c.falsifiabilityMonitoring?.score,0)}×15%</dd></div><div><dt>反証</dt><dd>${x.counterEvidence}</dd></div><div><dt>数値で弱める条件</dt><dd>${(x.falsificationTests||[]).map(t=>`${t.metric} ${t.operator} ${t.threshold}${t.unit||""}（期限 ${t.deadline}｜${t.thresholdState==="estimated"?"モデル閾値":"観測閾値"}）`).join(" / ")||x.falsification}</dd></div><div><dt>次の一次情報</dt><dd>${x.nextPrimarySource}｜${x.nextCheck?.expectedDate||x.nextCheck?.trigger||"更新条件不明"}</dd></div><div><dt>任意の事業翻訳</dt><dd>${x.optionalBusinessTranslation}</dd></div></dl></article>`}).join("");
  el("discovery-loop").innerHTML=p.updateLoop.map((x,n)=>`<li><strong>${String(n+1).padStart(2,"0")}</strong><br>${x}</li>`).join("");
  el("discovery-note").textContent=`発見ゲート：${p.discoveryRule.gate}。優先度式：${p.discoveryRule.rankingFormula}。${p.warning}`;
 }
 function renderHeader(){
  const i=data.usMacro.indicators,d=data.usMacro.treasuryDebt;
  el("audit-label").textContent=`全項目監査：${data.health.label}`;
- el("audit-detail").textContent=`取得失敗 ${data.health.totals.failed}件｜不明 ${data.health.totals.unknown}件｜旧実測 ${data.health.totals.stale}件。ドル円はライブ・生成時スナップショット・公式日次を分離。`;
+ el("audit-detail").textContent=`監視本体 ${data.health.totals.total}件：取得失敗 ${data.health.totals.failed}件｜不明 ${data.health.totals.unknown}件｜旧実測 ${data.health.totals.stale}件。全JSON状態ノードは別母数で表示。`;
  el("audit-time").innerHTML=`観測日 ${i.usdjpy.observationDate}<br>取得 ${new Date(i.usdjpy.fetchedAt).toLocaleString("ja-JP")}`;
  const q=data.health.quality||{},v=data.modelValidation||{},rc=data.releaseControl||{},fp=data.freshnessPolicy||{};
  el("quality-status").textContent=`run_id ${rc.runId||"不明"}｜JSON SHA-256 ${publicJsonHash||"計算中"}`;
@@ -459,7 +459,11 @@ function renderHeader(){
   ["出典不整合",`${(data.health.sourceIssues||[]).length}件`,"解消までobserved_partial"],
   ["モデル検証",v.status||"不明",`${S[v.dataState]||v.dataState||"不明"}｜最終判断は人間`],
   ["市場最終観測",data.fxAudit?.marketShock?.current?.observationDate||"不明",data.fxAudit?.marketShock?.marketStatus==="closed"?"休場中・前営業日を保持":"市場配信時刻を確認"],
-  ["最新値ルール",fp.basis?"適用中":"未設定","最終観測日を今日へ付け替えない"]
+  ["最新値ルール",fp.basis?"適用中":"未設定","最終観測日を今日へ付け替えない"],
+  ["監視本体の母数",data.health.scopeBreakdown?.monitorCore?.total??"不明","総合鮮度の計算対象"],
+  ["地図を除く実測",q.mapExcludedCurrentObservedSharePct==null?"不明":fmt(q.mapExcludedCurrentObservedSharePct,1)+"%",`独立指標中心 ${data.health.scopeBreakdown?.independentIndicatorCore?.total??"不明"}件`],
+  ["世界地図の行数",data.health.scopeBreakdown?.worldMapRows?.total??"不明","国行の多さで鮮度を膨らませない"],
+  ["全JSON状態ノード",data.health.scopeBreakdown?.allJsonStateNodes?.total??"不明","証拠・派生・取得経路を含む別母数"]
  ].map(x=>`<article class="quality-card"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></article>`).join("");
  el("quality-note").textContent=(data.health.sourceIssues||[]).map(x=>`${x.sourceId}：${x.issue}`).join("｜")||"出典不整合は検出されていません。";
  const rel=data.decisionReliability||{},gradeColor={A:"var(--green)",B:"var(--cyan)",C:"var(--yellow)",D:"var(--red)"}[rel.grade]||"var(--gray)";
@@ -551,7 +555,7 @@ async function fetchDashboardJson(){
     if(!response.ok)throw Error(`HTTP ${response.status}`);
     const text=await response.text();
     const parsed=JSON.parse(text);
-    if(parsed.schemaVersion<16||!parsed.overallJudgment||!parsed.integratedDiscoveryEngine||!parsed.businessCompass||!parsed.japanUsTreasuryTransmission||!parsed.decisionReliability)throw Error("配信JSONの版が古いか必須項目がありません");
+    if(parsed.schemaVersion<17||!parsed.overallJudgment||!parsed.integratedDiscoveryEngine||!parsed.businessCompass||!parsed.japanUsTreasuryTransmission||!parsed.decisionReliability)throw Error("配信JSONの版が古いか必須項目がありません");
     publicJsonHash=await sha256(text);
     return parsed;
    }catch(error){lastError=error}
