@@ -250,6 +250,7 @@ const R={Africa:"アフリカ",Americas:"南北アメリカ",Asia:"アジア",Eu
 let data, mode="combined", selected="JPN", nameByNumeric=new Map(), countryMeta=new Map();
 const el=id=>document.getElementById(id);
 const fmt=(v,d=2)=>v==null?"不明":Number(v).toLocaleString("ja-JP",{minimumFractionDigits:d,maximumFractionDigits:d});
+const fmtUnit=(v,u)=>{if(v==null)return "不明";const value=String(v),unit=String(u||"").trim();return unit&&!value.trim().endsWith(unit)?`${value}${unit}`:value};
 function goBackOrHome(){
  try{
   if(document.referrer&&new URL(document.referrer).origin===location.origin){history.back();return}
@@ -442,7 +443,7 @@ function renderIntegratedDiscovery(){
  if(!p){el("discovery-thesis").textContent="統合発見データは未取得です。";return}
  el("discovery-thesis").innerHTML=`<strong>${p.role}</strong><br>${p.foundation.theory}。${p.foundation.guardrail}<br>事業KPIは発見成立の必須条件から除外し、世界分析後の任意レイヤーへ分離。`;
  el("discovery-lenses").innerHTML=p.lenses.map((x,n)=>`<article class="discovery-lens"><strong>${String(n+1).padStart(2,"0")}｜${x.label}</strong><p>${x.question}</p></article>`).join("");
- el("discovery-findings").innerHTML=p.findings.map(x=>{const c=x.scoreComponents||{};const gate=x.gateStatus==="passed"?"発見ゲート合格":"証拠追加待ち";return `<article class="discovery-finding"><header><div><small>${gate}｜${S[x.dataState]||x.dataState}｜${x.observationDate||"観測日不明"}</small><h3>${x.title}</h3></div><b>${fmt(x.priorityScore,1)}</b></header><p class="chain">${x.causalChain}</p><div class="discovery-evidence">${x.evidence.map(e=>`<a href="${e.sourceUrl}" target="_blank" rel="noreferrer"><strong>${e.label}｜${e.value==null?"不明":e.value}${e.unit||""}</strong><span>${S[e.dataState]||e.dataState}｜${e.seriesId}｜観測 ${e.observationDate||"不明"}｜取得 ${e.retrievedAt?new Date(e.retrievedAt).toLocaleString("ja-JP"):"不明"}</span></a>`).join("")}</div><dl><div><dt>優先度の構成点</dt><dd>証拠 ${fmt(c.evidenceQualityCoverage?.score,0)}×35%｜分野横断 ${fmt(c.crossDisciplinaryConvergence?.score,0)}×25%｜先行価値 ${fmt(c.leadingValue?.score,0)}×25%｜反証可能性 ${fmt(c.falsifiabilityMonitoring?.score,0)}×15%</dd></div><div><dt>反証</dt><dd>${x.counterEvidence}</dd></div><div><dt>数値で弱める条件</dt><dd>${(x.falsificationTests||[]).map(t=>`${t.metric} ${t.operator} ${t.threshold}${t.unit||""}（期限 ${t.deadline}｜${t.thresholdState==="estimated"?"モデル閾値":"観測閾値"}）`).join(" / ")||x.falsification}</dd></div><div><dt>次の一次情報</dt><dd>${x.nextPrimarySource}｜${x.nextCheck?.expectedDate||x.nextCheck?.trigger||"更新条件不明"}</dd></div><div><dt>任意の事業翻訳</dt><dd>${x.optionalBusinessTranslation}</dd></div></dl></article>`}).join("");
+ el("discovery-findings").innerHTML=p.findings.map(x=>{const c=x.scoreComponents||{};const gate=x.gateStatus==="passed"?"発見ゲート合格":"証拠追加待ち";return `<article class="discovery-finding"><header><div><small>${gate}｜${S[x.dataState]||x.dataState}｜${x.observationDate||"観測日不明"}</small><h3>${x.title}</h3></div><b>${fmt(x.priorityScore,1)}</b></header><p class="chain">${x.causalChain}</p><div class="discovery-evidence">${x.evidence.map(e=>`<a href="${e.sourceUrl}" target="_blank" rel="noreferrer"><strong>${e.label}｜${fmtUnit(e.value,e.unit)}</strong><span>${S[e.dataState]||e.dataState}｜${e.seriesId}｜観測 ${e.observationDate||"不明"}｜取得 ${e.retrievedAt?new Date(e.retrievedAt).toLocaleString("ja-JP"):"不明"}</span></a>`).join("")}</div><dl><div><dt>優先度の構成点</dt><dd>証拠 ${fmt(c.evidenceQualityCoverage?.score,0)}×35%｜分野横断 ${fmt(c.crossDisciplinaryConvergence?.score,0)}×25%｜先行価値 ${fmt(c.leadingValue?.score,0)}×25%｜反証可能性 ${fmt(c.falsifiabilityMonitoring?.score,0)}×15%</dd></div><div><dt>反証</dt><dd>${x.counterEvidence}</dd></div><div><dt>数値で弱める条件</dt><dd>${(x.falsificationTests||[]).map(t=>`${t.metric} ${t.operator} ${t.threshold}${t.unit||""}（期限 ${t.deadline}｜${t.thresholdState==="estimated"?"モデル閾値":"観測閾値"}）`).join(" / ")||x.falsification}</dd></div><div><dt>次の一次情報</dt><dd>${x.nextPrimarySource}｜${x.nextCheck?.expectedDate||x.nextCheck?.trigger||"更新条件不明"}</dd></div><div><dt>任意の事業翻訳</dt><dd>${x.optionalBusinessTranslation}</dd></div></dl></article>`}).join("");
  el("discovery-loop").innerHTML=p.updateLoop.map((x,n)=>`<li><strong>${String(n+1).padStart(2,"0")}</strong><br>${x}</li>`).join("");
  el("discovery-note").textContent=`発見ゲート：${p.discoveryRule.gate}。優先度式：${p.discoveryRule.rankingFormula}。${p.warning}`;
 }
@@ -478,7 +479,7 @@ function renderHeader(){
   ["90日将来検証",`${pr.maturedPredictionCount??0}/${pr.snapshotCount??0}`,"成熟スナップショット / 保存総数"],
   ["将来検証状態",pr.status||"不明",pr.minimumMaturedPredictions?`判定開始 ${pr.minimumMaturedPredictions}件以上`:"閾値不明"]
  ].map(x=>`<article class="validation-card"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></article>`).join("");
- el("source-network-grid").innerHTML=(sn.adapters||[]).map(x=>`<article class="source-adapter ${x.dataState||"unknown"}"><small>${S[x.dataState]||x.dataState||"不明"}｜${x.family}</small><strong>${x.label}</strong><span>${x.purpose}</span></article>`).join("");
+ el("source-network-grid").innerHTML=(sn.adapters||[]).map(x=>`<article class="source-adapter ${x.dataState||"unknown"}"><small>${S[x.dataState]||x.dataState||"不明"}｜${x.mode||"取得方式不明"}・${x.cadence||"頻度不明"}</small><strong>${x.family||"データ系統不明"}</strong><span>${x.purpose||"用途未登録"}</span></article>`).join("");
  el("validation-note").textContent=`暫定過去再生は危機確率ではありません。${(v.limitations||[]).join(" ")} 最終判断は人間が行います。`;
  const rel=data.decisionReliability||{},gradeColor={A:"var(--green)",B:"var(--cyan)",C:"var(--yellow)",D:"var(--red)"}[rel.grade]||"var(--gray)";
  el("reliability-score").textContent=rel.score==null?"—":fmt(rel.score,1);
@@ -593,4 +594,3 @@ loadDashboard();
 </script>
 </body>
 </html>
-
