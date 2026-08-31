@@ -1,6 +1,6 @@
 {
   "schemaVersion": 18,
-  "generatedAt": "2026-08-29T22:26:36.090Z",
+  "generatedAt": "2026-08-31T02:48:02.138Z",
   "dashboardTimeZone": "Asia/Tokyo",
   "freshnessPolicy": {
     "basis": "as_of_now_latest_available",
@@ -24,12 +24,12 @@
     ]
   },
   "releaseControl": {
-    "runId": "KOYA-20260829T222636090Z",
-    "generatedAt": "2026-08-29T22:26:36.090Z",
+    "runId": "KOYA-20260831T024802138Z",
+    "generatedAt": "2026-08-31T02:48:02.138Z",
     "publicHashMethod": "ブラウザで公開JSON本文のSHA-256を算出",
     "releaseManifestVersion": "KOYA-RUN-MANIFEST-1.0",
     "sheetSyncState": "observed",
-    "publicationState": "observed",
+    "publicationState": "unknown",
     "requiredSheetTabs": [
       "10_取得ログ",
       "19_日次監視",
@@ -42,11 +42,9 @@
       "26_世界データ取得網"
     ],
     "publishGate": "ローカル監査、Sheet同一run読戻し、許可ファイル確認の全合格後だけ公開",
-    "sheetSyncNote": "Google Sheet主要9タブを同一run_idで読み戻し確認",
-    "sheetSyncedAt": "2026-08-29T22:27:56.093Z",
-    "sheetReadbackRunId": "KOYA-20260829T222636090Z",
-    "publishedAt": "2026-08-29T22:33:00.000Z",
-    "publicReadbackRunId": "KOYA-20260829T222636090Z"
+    "sheetSyncNote": "Google Sheet主要9タブを同一run_idで読み戻し確認。Family Tree Oki実績KPIは対象外",
+    "sheetSyncedAt": "2026-08-31T02:48:49.494Z",
+    "sheetReadbackRunId": "KOYA-20260831T024802138Z"
   },
   "modelValidation": {
     "modelVersion": "KOYA-DUAL-TRACK-VALIDATION-1.0",
@@ -64,7 +62,7 @@
     "averageLeadDays": null,
     "historicalReplay": {
       "modelVersion": "KOYA-HISTORICAL-REPLAY-1.0",
-      "generatedAt": "2026-08-29T22:26:39.197Z",
+      "generatedAt": "2026-08-31T02:48:07.479Z",
       "dataState": "observed_partial",
       "status": "provisional_current_vintage_replay",
       "window": {
@@ -318,6 +316,1957 @@
           },
           "classification": "true_negative"
         }
+      ],
+      "eventSamples": [
+        {
+          "date": "2023-09-04",
+          "score": 30.7,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2023-10-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 27
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2023-09-11",
+          "score": 30.3,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2023-10-20",
+              "type": "credit_stress"
+            },
+            "leadDays": 39
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2023-09-18",
+          "score": 29.8,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2023-10-20",
+              "type": "credit_stress"
+            },
+            "leadDays": 32
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2023-09-25",
+          "score": 30.6,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2023-10-20",
+              "type": "credit_stress"
+            },
+            "leadDays": 25
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2023-10-02",
+          "score": 30.7,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2023-10-20",
+              "type": "credit_stress"
+            },
+            "leadDays": 18
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2023-10-09",
+          "score": 31.3,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2023-10-20",
+              "type": "credit_stress"
+            },
+            "leadDays": 11
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2023-10-16",
+          "score": 32.6,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2023-10-20",
+              "type": "credit_stress"
+            },
+            "leadDays": 4
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2023-10-23",
+          "score": 32.3,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2023-10-26",
+              "type": "credit_stress"
+            },
+            "leadDays": 3
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2023-10-30",
+          "score": 33.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2023-11-06",
+          "score": 34.3,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2023-11-13",
+          "score": 33.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2023-11-20",
+          "score": 34.8,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2023-11-27",
+          "score": 32.4,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2023-12-04",
+          "score": 33.2,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2023-12-11",
+          "score": 26.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2023-12-18",
+          "score": 26.4,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2023-12-25",
+          "score": 26.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-01-01",
+          "score": 26.5,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-01-08",
+          "score": 28.1,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-01-15",
+          "score": 27.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-01-22",
+          "score": 26.5,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-01-29",
+          "score": 27.9,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-02-05",
+          "score": 27.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-02-12",
+          "score": 25,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-02-19",
+          "score": 25,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-02-26",
+          "score": 23.9,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-03-04",
+          "score": 24.6,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-06-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 89
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-03-11",
+          "score": 28.9,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-03-18",
+          "score": 27.4,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-03-25",
+          "score": 26.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-04-01",
+          "score": 27.1,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-04-08",
+          "score": 26.9,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 84
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-04-15",
+          "score": 26.8,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 77
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-04-22",
+          "score": 27.3,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 70
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-04-29",
+          "score": 24.3,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 63
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-05-06",
+          "score": 25.4,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 56
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-05-13",
+          "score": 26.7,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 49
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-05-20",
+          "score": 26.1,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 42
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-05-27",
+          "score": 25.5,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 35
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-06-03",
+          "score": 26.4,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 28
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-06-10",
+          "score": 24,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 21
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-06-17",
+          "score": 26.8,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 14
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-06-24",
+          "score": 26.3,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-07-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 7
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-07-01",
+          "score": 25.1,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-08-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 31
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-07-08",
+          "score": 29,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-08-05",
+              "type": "volatility_stress"
+            },
+            "leadDays": 28
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-07-15",
+          "score": 28.2,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-08-05",
+              "type": "volatility_stress"
+            },
+            "leadDays": 21
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-07-22",
+          "score": 30.9,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-08-05",
+              "type": "volatility_stress"
+            },
+            "leadDays": 14
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-07-29",
+          "score": 30.7,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2024-08-05",
+              "type": "volatility_stress"
+            },
+            "leadDays": 7
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2024-08-05",
+          "score": 40.3,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-08-12",
+          "score": 36.5,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-08-19",
+          "score": 32.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-08-26",
+          "score": 33.1,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-09-02",
+          "score": 31.8,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-09-09",
+          "score": 36.5,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-09-16",
+          "score": 32.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-09-23",
+          "score": 30,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-09-30",
+          "score": 29.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-10-07",
+          "score": 25,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-10-14",
+          "score": 27.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-10-21",
+          "score": 24.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-10-28",
+          "score": 24.1,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-11-04",
+          "score": 23,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-11-11",
+          "score": 19.1,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-11-18",
+          "score": 19,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-11-25",
+          "score": 18.2,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-12-02",
+          "score": 18.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-12-09",
+          "score": 17.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-12-16",
+          "score": 17.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-12-23",
+          "score": 19,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2024-12-30",
+          "score": 16.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-01-06",
+          "score": 16.5,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "credit_stress"
+            },
+            "leadDays": 87
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-01-13",
+          "score": 17.1,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "credit_stress"
+            },
+            "leadDays": 80
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-01-20",
+          "score": 16.1,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "credit_stress"
+            },
+            "leadDays": 73
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-01-27",
+          "score": 15.6,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "credit_stress"
+            },
+            "leadDays": 66
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-02-03",
+          "score": 15.9,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "credit_stress"
+            },
+            "leadDays": 59
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-02-10",
+          "score": 17.1,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "credit_stress"
+            },
+            "leadDays": 52
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-02-17",
+          "score": 15.8,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "credit_stress"
+            },
+            "leadDays": 45
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-02-24",
+          "score": 18.8,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "credit_stress"
+            },
+            "leadDays": 38
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-03-03",
+          "score": 22.1,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "credit_stress"
+            },
+            "leadDays": 31
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-03-10",
+          "score": 23.1,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "credit_stress"
+            },
+            "leadDays": 24
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-03-17",
+          "score": 23.2,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "volatility_stress"
+            },
+            "leadDays": 17
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-03-24",
+          "score": 22.5,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "volatility_stress"
+            },
+            "leadDays": 10
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-03-31",
+          "score": 24.6,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-03",
+              "type": "volatility_stress"
+            },
+            "leadDays": 3
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-04-07",
+          "score": 40.2,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-08",
+              "type": "credit_stress"
+            },
+            "leadDays": 1
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-04-14",
+          "score": 36.5,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-15",
+              "type": "volatility_stress"
+            },
+            "leadDays": 1
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-04-21",
+          "score": 31.9,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-04-22",
+              "type": "volatility_stress"
+            },
+            "leadDays": 1
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-04-28",
+          "score": 28.8,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-05-05",
+          "score": 28.2,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-05-12",
+          "score": 28,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-05-19",
+          "score": 23.8,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-05-26",
+          "score": 26.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-06-02",
+          "score": 25.5,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-06-09",
+          "score": 22.5,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-06-16",
+          "score": 25.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-06-23",
+          "score": 24.9,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-06-30",
+          "score": 22.2,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-07-07",
+          "score": 20,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-09-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 56
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-07-14",
+          "score": 19.2,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-09-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 49
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-07-21",
+          "score": 18.5,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-09-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 42
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-07-28",
+          "score": 17.4,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-09-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 35
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-08-04",
+          "score": 21.8,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2025-09-01",
+              "type": "unemployment_rise"
+            },
+            "leadDays": 28
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2025-08-11",
+          "score": 20,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-08-18",
+          "score": 19.2,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-08-25",
+          "score": 19.5,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-09-01",
+          "score": 19.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-09-08",
+          "score": 18.4,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-09-15",
+          "score": 19.8,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-09-22",
+          "score": 17.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-09-29",
+          "score": 16.3,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-10-06",
+          "score": 22.5,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-10-13",
+          "score": 27.3,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-10-20",
+          "score": 25.7,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-10-27",
+          "score": 23.1,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-11-03",
+          "score": 22.6,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-11-10",
+          "score": 24.8,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-11-17",
+          "score": 25,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-11-24",
+          "score": 27.1,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-12-01",
+          "score": 22.2,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-12-08",
+          "score": 18.4,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-12-15",
+          "score": 19.4,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-12-22",
+          "score": 18.2,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        },
+        {
+          "date": "2025-12-29",
+          "score": 16.9,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 88
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-01-05",
+          "score": 13.1,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 81
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-01-12",
+          "score": 12.9,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 74
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-01-19",
+          "score": 12.7,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 67
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-01-26",
+          "score": 13.7,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 60
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-02-02",
+          "score": 14.9,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 53
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-02-09",
+          "score": 16.6,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 46
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-02-16",
+          "score": 19.3,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 39
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-02-23",
+          "score": 16.7,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 32
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-03-02",
+          "score": 18.8,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 25
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-03-09",
+          "score": 23.6,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 18
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-03-16",
+          "score": 22.5,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 11
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-03-23",
+          "score": 21.3,
+          "alert": false,
+          "outcome": {
+            "occurred": true,
+            "first": {
+              "date": "2026-03-27",
+              "type": "volatility_stress"
+            },
+            "leadDays": 4
+          },
+          "classification": "false_negative"
+        },
+        {
+          "date": "2026-03-30",
+          "score": 24.4,
+          "alert": false,
+          "outcome": {
+            "occurred": false,
+            "first": null,
+            "leadDays": null
+          },
+          "classification": "true_negative"
+        }
+      ]
+    },
+    "eventReplay": {
+      "modelVersion": "KOYA-EVENT-REPLAY-1.0",
+      "generatedAt": "2026-08-31T02:48:07.540Z",
+      "dataState": "observed_partial",
+      "status": "provisional_event_level_diagnostic",
+      "sourceReplayGeneratedAt": "2026-08-31T02:48:07.479Z",
+      "definition": "同一90日窓で同じ日付・同じストレス種別に紐づく週次重複を1イベントへ集約。警戒の有無は元の閾値を保持し、閾値掃引は採用候補の比較にのみ使用。",
+      "sampleCount": 135,
+      "uniqueEventCount": 14,
+      "detectedEventCount": 0,
+      "eventRecall": 0,
+      "events": [
+        {
+          "eventId": "2023-10-01:unemployment_rise",
+          "date": "2023-10-01",
+          "type": "unemployment_rise",
+          "sampleDates": [
+            "2023-09-04"
+          ],
+          "maxScore": 30.7,
+          "detected": false
+        },
+        {
+          "eventId": "2023-10-20:credit_stress",
+          "date": "2023-10-20",
+          "type": "credit_stress",
+          "sampleDates": [
+            "2023-09-11",
+            "2023-09-18",
+            "2023-09-25",
+            "2023-10-02",
+            "2023-10-09",
+            "2023-10-16"
+          ],
+          "maxScore": 32.6,
+          "detected": false
+        },
+        {
+          "eventId": "2023-10-26:credit_stress",
+          "date": "2023-10-26",
+          "type": "credit_stress",
+          "sampleDates": [
+            "2023-10-23"
+          ],
+          "maxScore": 32.3,
+          "detected": false
+        },
+        {
+          "eventId": "2024-06-01:unemployment_rise",
+          "date": "2024-06-01",
+          "type": "unemployment_rise",
+          "sampleDates": [
+            "2024-03-04"
+          ],
+          "maxScore": 24.6,
+          "detected": false
+        },
+        {
+          "eventId": "2024-07-01:unemployment_rise",
+          "date": "2024-07-01",
+          "type": "unemployment_rise",
+          "sampleDates": [
+            "2024-04-08",
+            "2024-04-15",
+            "2024-04-22",
+            "2024-04-29",
+            "2024-05-06",
+            "2024-05-13",
+            "2024-05-20",
+            "2024-05-27",
+            "2024-06-03",
+            "2024-06-10",
+            "2024-06-17",
+            "2024-06-24"
+          ],
+          "maxScore": 27.3,
+          "detected": false
+        },
+        {
+          "eventId": "2024-08-01:unemployment_rise",
+          "date": "2024-08-01",
+          "type": "unemployment_rise",
+          "sampleDates": [
+            "2024-07-01"
+          ],
+          "maxScore": 25.1,
+          "detected": false
+        },
+        {
+          "eventId": "2024-08-05:volatility_stress",
+          "date": "2024-08-05",
+          "type": "volatility_stress",
+          "sampleDates": [
+            "2024-07-08",
+            "2024-07-15",
+            "2024-07-22",
+            "2024-07-29"
+          ],
+          "maxScore": 30.9,
+          "detected": false
+        },
+        {
+          "eventId": "2025-04-03:credit_stress",
+          "date": "2025-04-03",
+          "type": "credit_stress",
+          "sampleDates": [
+            "2025-01-06",
+            "2025-01-13",
+            "2025-01-20",
+            "2025-01-27",
+            "2025-02-03",
+            "2025-02-10",
+            "2025-02-17",
+            "2025-02-24",
+            "2025-03-03",
+            "2025-03-10"
+          ],
+          "maxScore": 23.1,
+          "detected": false
+        },
+        {
+          "eventId": "2025-04-03:volatility_stress",
+          "date": "2025-04-03",
+          "type": "volatility_stress",
+          "sampleDates": [
+            "2025-03-17",
+            "2025-03-24",
+            "2025-03-31"
+          ],
+          "maxScore": 24.6,
+          "detected": false
+        },
+        {
+          "eventId": "2025-04-08:credit_stress",
+          "date": "2025-04-08",
+          "type": "credit_stress",
+          "sampleDates": [
+            "2025-04-07"
+          ],
+          "maxScore": 40.2,
+          "detected": false
+        },
+        {
+          "eventId": "2025-04-15:volatility_stress",
+          "date": "2025-04-15",
+          "type": "volatility_stress",
+          "sampleDates": [
+            "2025-04-14"
+          ],
+          "maxScore": 36.5,
+          "detected": false
+        },
+        {
+          "eventId": "2025-04-22:volatility_stress",
+          "date": "2025-04-22",
+          "type": "volatility_stress",
+          "sampleDates": [
+            "2025-04-21"
+          ],
+          "maxScore": 31.9,
+          "detected": false
+        },
+        {
+          "eventId": "2025-09-01:unemployment_rise",
+          "date": "2025-09-01",
+          "type": "unemployment_rise",
+          "sampleDates": [
+            "2025-07-07",
+            "2025-07-14",
+            "2025-07-21",
+            "2025-07-28",
+            "2025-08-04"
+          ],
+          "maxScore": 21.8,
+          "detected": false
+        },
+        {
+          "eventId": "2026-03-27:volatility_stress",
+          "date": "2026-03-27",
+          "type": "volatility_stress",
+          "sampleDates": [
+            "2025-12-29",
+            "2026-01-05",
+            "2026-01-12",
+            "2026-01-19",
+            "2026-01-26",
+            "2026-02-02",
+            "2026-02-09",
+            "2026-02-16",
+            "2026-02-23",
+            "2026-03-02",
+            "2026-03-09",
+            "2026-03-16",
+            "2026-03-23"
+          ],
+          "maxScore": 23.6,
+          "detected": false
+        }
+      ],
+      "thresholdSweep": [
+        {
+          "threshold": 20,
+          "alertSampleCount": 96,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 14,
+          "eventRecall": 100
+        },
+        {
+          "threshold": 25,
+          "alertSampleCount": 68,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 9,
+          "eventRecall": 64.3
+        },
+        {
+          "threshold": 30,
+          "alertSampleCount": 26,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 7,
+          "eventRecall": 50
+        },
+        {
+          "threshold": 35,
+          "alertSampleCount": 5,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 2,
+          "eventRecall": 14.3
+        },
+        {
+          "threshold": 40,
+          "alertSampleCount": 2,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 1,
+          "eventRecall": 7.1
+        },
+        {
+          "threshold": 45,
+          "alertSampleCount": 0,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 0,
+          "eventRecall": 0
+        },
+        {
+          "threshold": 50,
+          "alertSampleCount": 0,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 0,
+          "eventRecall": 0
+        },
+        {
+          "threshold": 55,
+          "alertSampleCount": 0,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 0,
+          "eventRecall": 0
+        },
+        {
+          "threshold": 60,
+          "alertSampleCount": 0,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 0,
+          "eventRecall": 0
+        },
+        {
+          "threshold": 65,
+          "alertSampleCount": 0,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 0,
+          "eventRecall": 0
+        },
+        {
+          "threshold": 70,
+          "alertSampleCount": 0,
+          "uniqueEventCount": 14,
+          "detectedEventCount": 0,
+          "eventRecall": 0
+        }
+      ],
+      "limitations": [
+        "recentSamplesに含まれる期間だけの診断であり、完全な全期間イベント再生ではない。",
+        "閾値変更は自動採用せず、人間承認と別期間検証が必要。",
+        "危機発生確率や投資予測ではない。"
       ]
     },
     "prospective90Day": {
@@ -326,7 +2275,7 @@
       "dataState": "unknown",
       "startedAt": "2026-08-26T07:29:01.963Z",
       "horizonDays": 90,
-      "snapshotCount": 4,
+      "snapshotCount": 6,
       "maturedPredictionCount": 0,
       "minimumMaturedPredictions": 20,
       "minimumCalendarDays": 90,
@@ -342,7 +2291,7 @@
       "rule": "日次スナップショットを固定し、90日後に信用・VIX・NFCI・失業率・為替急変の実測で支持／誤警報／見逃しを判定",
       "stopRule": "20件以上の成熟予測かつ90日以上の保存が揃うまで精度を確定しない"
     },
-    "businessKpiConnection": "unknown",
+    "businessKpiConnection": "not_in_scope",
     "humanFinalApproval": "required",
     "limitations": [
       "現時点で入手できる改定後系列を使うため、完全なリアルタイム・ヴィンテージ検証ではない。",
@@ -370,7 +2319,7 @@
       "dataState": "observed",
       "sourceId": "FRED_DEXJPUS",
       "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-      "fetchedAt": "2026-08-29T22:26:37.116Z",
+      "fetchedAt": "2026-08-31T02:48:04.905Z",
       "authenticationState": "authenticated",
       "retrievalTransport": "FRED_API_v2",
       "observationSourceId": "FRED_DEXJPUS_2026_08_21",
@@ -390,7 +2339,7 @@
       "dataState": "observed",
       "sourceId": "ECB_EXR_D_USD_JPY_EUR_SP00_A",
       "sourceUrl": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+JPY.EUR.SP00.A?lastNObservations=5&format=csvdata",
-      "fetchedAt": "2026-08-29T22:26:37.125Z",
+      "fetchedAt": "2026-08-31T02:48:04.913Z",
       "authenticationState": "unauthenticated_official_public_api",
       "retrievalTransport": "ECB_SDMX_2_1_CSV",
       "formula": "EUR/JPY ÷ EUR/USD = USD/JPY",
@@ -432,10 +2381,10 @@
       ],
       "comparison": {
         "market": {
-          "value": 160.038,
-          "observationDate": "2026-08-28",
-          "differencePct": -0.221,
-          "sameObservationDate": true
+          "value": 159.782,
+          "observationDate": "2026-08-31",
+          "differencePct": -0.061,
+          "sameObservationDate": false
         },
         "fred": {
           "value": 158.91,
@@ -453,21 +2402,21 @@
       "dataState": "observed_partial",
       "sourceId": "YAHOO_FINANCE_JPY=X",
       "sourceUrl": "https://finance.yahoo.com/quote/JPY=X/",
-      "fetchedAt": "2026-08-29T22:26:37.124Z",
-      "marketObservedAt": "2026-08-28T20:59:47.000Z",
-      "marketStatus": "closed_or_delayed",
+      "fetchedAt": "2026-08-31T02:48:04.912Z",
+      "marketObservedAt": "2026-08-31T02:48:00.000Z",
+      "marketStatus": "open",
       "latestAvailable": true,
       "isRealtime": false,
       "note": "生成時点の市場スナップショット。TradingViewライブ表示とは更新間隔が異なり、売買・送金の執行価格ではありません。",
       "current": {
-        "value": 160.038,
-        "previousClose": 159.371,
-        "change": 0.667,
-        "changePct": 0.42,
-        "dayHigh": 160.202,
-        "dayLow": 159.292,
-        "direction": "円安・ドル高",
-        "observationDate": "2026-08-28",
+        "value": 159.782,
+        "previousClose": 160.038,
+        "change": -0.256,
+        "changePct": -0.16,
+        "dayHigh": 160.201,
+        "dayLow": 159.726,
+        "direction": "円高・ドル安",
+        "observationDate": "2026-08-31",
         "dataState": "observed_partial",
         "sourceId": "YAHOO_FINANCE_JPY=X"
       },
@@ -481,8 +2430,8 @@
         "closeChangePct": 0.43,
         "peakToTrough": -0.91,
         "peakToTroughPct": -0.57,
-        "currentVsShockHigh": -0.164,
-        "currentVsShockHighPct": -0.1,
+        "currentVsShockHigh": -0.42,
+        "currentVsShockHighPct": -0.26,
         "dataState": "observed_partial",
         "sourceId": "YAHOO_FINANCE_JPY=X"
       },
@@ -557,11 +2506,11 @@
       },
       "okinawaImpact": {
         "usd200YenBefore": 32040,
-        "usd200YenNow": 32008,
-        "usd200YenChange": -33,
+        "usd200YenNow": 31956,
+        "usd200YenChange": -84,
         "jpy20000UsdBefore": 124.84,
-        "jpy20000UsdNow": 124.97,
-        "jpy20000UsdChangePct": 0.1,
+        "jpy20000UsdNow": 125.17,
+        "jpy20000UsdChangePct": 0.26,
         "dataState": "estimated",
         "formula": "急変セッション高値と現在スナップショットを使った単純換算",
         "read": "円高方向は米軍家族のドル購買力を低下させ、同じ円価格のドル換算額を押し上げます。価格変更ではなく、まず見積表示と転換率を監視します。"
@@ -596,7 +2545,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DEXJPUS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "FRED_DEXJPUS_2026_08_21",
@@ -620,7 +2569,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DFF",
         "sourceUrl": "https://fred.stlouisfed.org/series/DFF",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "FRED_DFF_2026_08_21",
@@ -644,7 +2593,7 @@
         "dataState": "observed",
         "sourceId": "UST_DAILY_TREASURY_PAR_YIELD_2026_08_24",
         "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "UST_DAILY_TREASURY_PAR_YIELD_2026_08_24_2Y",
@@ -668,7 +2617,7 @@
         "dataState": "observed",
         "sourceId": "UST_DAILY_TREASURY_PAR_YIELD_2026_08_24",
         "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.906Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "UST_DAILY_TREASURY_PAR_YIELD_2026_08_24_10Y",
@@ -692,7 +2641,7 @@
         "dataState": "observed",
         "sourceId": "UST_DAILY_TREASURY_PAR_YIELD_2026_08_24",
         "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.906Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "UST_DAILY_TREASURY_PAR_YIELD_2026_08_24_30Y",
@@ -716,7 +2665,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "FRED_DTWEXBGS_2026_08_21",
@@ -740,7 +2689,7 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-08-29T22:26:36.691Z",
+        "fetchedAt": "2026-08-31T02:48:04.372Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 1.2128345523663153,
@@ -761,7 +2710,7 @@
         "dataState": "observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-08-29T22:26:36.772Z",
+        "fetchedAt": "2026-08-31T02:48:04.066Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.8530208770657577,
@@ -782,7 +2731,7 @@
         "dataState": "observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://www.bls.gov/news.release/empsit.nr0.htm",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "BLS_EMPSIT_2026_M07",
@@ -806,7 +2755,7 @@
         "dataState": "observed",
         "sourceId": "FRED_CPIAUCSL",
         "sourceUrl": "https://www.bls.gov/news.release/cpi.nr0.htm",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "BLS_CPI_2026_M07",
@@ -831,7 +2780,7 @@
         "dataState": "observed",
         "sourceId": "FRED_GDPC1",
         "sourceUrl": "https://fred.stlouisfed.org/series/GDPC1",
-        "fetchedAt": "2026-08-29T22:26:36.763Z",
+        "fetchedAt": "2026-08-31T02:48:04.008Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.36886871149750533,
@@ -853,7 +2802,7 @@
         "dataState": "observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-08-29T22:26:36.744Z",
+        "fetchedAt": "2026-08-31T02:48:04.066Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -2.9520295202952074,
@@ -874,7 +2823,7 @@
         "dataState": "observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-08-29T22:26:36.732Z",
+        "fetchedAt": "2026-08-31T02:48:04.237Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.27548209366392573,
@@ -895,7 +2844,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-08-29T22:26:36.739Z",
+        "fetchedAt": "2026-08-31T02:48:04.121Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -100,
@@ -916,7 +2865,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-08-29T22:26:36.769Z",
+        "fetchedAt": "2026-08-31T02:48:04.399Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -72.72727272727273,
@@ -937,7 +2886,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-08-29T22:26:36.775Z",
+        "fetchedAt": "2026-08-31T02:48:04.227Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -4.511278195488721,
@@ -958,7 +2907,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DCOILWTICO",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.906Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "FRED_DCOILWTICO_2026_08_18",
@@ -982,7 +2931,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DCOILBRENTEU",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.906Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "FRED_DCOILBRENTEU_2026_08_18",
@@ -1006,7 +2955,7 @@
         "dataState": "observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-08-29T22:26:36.767Z",
+        "fetchedAt": "2026-08-31T02:48:04.278Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -10.926949048496004,
@@ -1027,7 +2976,7 @@
         "dataState": "observed",
         "sourceId": "FRED_T10Y3M",
         "sourceUrl": "https://fred.stlouisfed.org/series/T10Y3M",
-        "fetchedAt": "2026-08-29T22:26:36.770Z",
+        "fetchedAt": "2026-08-31T02:48:04.262Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 9.210526315789469,
@@ -1048,7 +2997,7 @@
         "dataState": "observed",
         "sourceId": "FRED_SAHMREALTIME",
         "sourceUrl": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-        "fetchedAt": "2026-08-29T22:26:36.781Z",
+        "fetchedAt": "2026-08-31T02:48:04.185Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -123.07692307692308,
@@ -1069,7 +3018,7 @@
         "dataState": "observed",
         "sourceId": "FRED_ICSA",
         "sourceUrl": "https://www.dol.gov/ui/data.pdf",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "DOL_UI_2026_08_20_INITIAL",
@@ -1094,7 +3043,7 @@
         "dataState": "observed",
         "sourceId": "FRED_CCSA",
         "sourceUrl": "https://www.dol.gov/ui/data.pdf",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "DOL_UI_2026_08_20_CONTINUED",
@@ -1119,7 +3068,7 @@
         "dataState": "observed",
         "sourceId": "FRED_PAYEMS",
         "sourceUrl": "https://www.bls.gov/news.release/empsit.nr0.htm",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "BLS_EMPSIT_2026_M07",
@@ -1143,7 +3092,7 @@
         "dataState": "observed",
         "sourceId": "BLS_JOLTS_2026_M06",
         "sourceUrl": "https://www.bls.gov/news.release/jolts.nr0.htm",
-        "fetchedAt": "2026-08-29T22:26:37.115Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "releaseDate": "2026-08-04",
@@ -1166,7 +3115,7 @@
         "dataState": "observed",
         "sourceId": "FRED_TEMPHELPS",
         "sourceUrl": "https://fred.stlouisfed.org/series/TEMPHELPS",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "FRED_TEMPHELPS_2026_M07",
@@ -1190,7 +3139,7 @@
         "dataState": "observed",
         "sourceId": "FRB_G17_2026_M07",
         "sourceUrl": "https://www.federalreserve.gov/releases/g17/current/default.htm",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change12m": 1.0854417335662392,
@@ -1215,7 +3164,7 @@
         "dataState": "observed",
         "sourceId": "FRED_PCEC96",
         "sourceUrl": "https://fred.stlouisfed.org/series/PCEC96",
-        "fetchedAt": "2026-08-29T22:26:36.705Z",
+        "fetchedAt": "2026-08-31T02:48:04.014Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.8220240403256973,
@@ -1236,7 +3185,7 @@
         "dataState": "observed",
         "sourceId": "CENSUS_MARTS_2026_M07",
         "sourceUrl": "https://www.census.gov/retail/sales.html",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change12m": 5.008966192503594,
@@ -1261,7 +3210,7 @@
         "dataState": "observed",
         "sourceId": "CENSUS_MTIS_2026_M06",
         "sourceUrl": "https://www.census.gov/mtis/current/index.html",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change12m": 3.030414689711214,
@@ -1286,7 +3235,7 @@
         "dataState": "observed",
         "sourceId": "CENSUS_MTIS_2026_M06",
         "sourceUrl": "https://www.census.gov/mtis/current/index.html",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "CENSUS_MTIS_2026_M06",
@@ -1310,7 +3259,7 @@
         "dataState": "observed",
         "sourceId": "CENSUS_NRC_2026_M07",
         "sourceUrl": "https://www.census.gov/construction/nrc/current/index.html",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change12m": -13.477653631284914,
@@ -1335,7 +3284,7 @@
         "dataState": "observed",
         "sourceId": "FRED_MORTGAGE30US",
         "sourceUrl": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-        "fetchedAt": "2026-08-29T22:26:36.708Z",
+        "fetchedAt": "2026-08-31T02:48:04.268Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 2.304147465437789,
@@ -1356,7 +3305,7 @@
         "dataState": "observed",
         "sourceId": "FRED_NFCI",
         "sourceUrl": "https://fred.stlouisfed.org/series/NFCI",
-        "fetchedAt": "2026-08-29T22:26:36.799Z",
+        "fetchedAt": "2026-08-31T02:48:04.145Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 11.417322834645649,
@@ -1377,7 +3326,7 @@
         "dataState": "observed",
         "sourceId": "FRED_A191RL1Q225SBEA",
         "sourceUrl": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
-        "fetchedAt": "2026-08-29T22:26:36.715Z",
+        "fetchedAt": "2026-08-31T02:48:04.259Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -28.57142857142857,
@@ -1398,7 +3347,7 @@
         "change": -7730.990234375,
         "cadence": "日次",
         "dataState": "observed_partial",
-        "fetchedAt": "2026-08-29T22:26:36.846Z",
+        "fetchedAt": "2026-08-31T02:48:04.615Z",
         "retrievalMethod": "market_snapshot",
         "note": "市場配信の生成時スナップショット。公式統計ではなく、終値訂正・配信遅延の可能性があります。",
         "change3m": -100,
@@ -1413,19 +3362,19 @@
         "unit": "ドル/トロイオンス",
         "sourceId": "YAHOO_FINANCE_GC=F",
         "sourceUrl": "https://finance.yahoo.com/quote/GC=F/",
-        "value": 4478.10009765625,
-        "observationDate": "2026-08-28",
-        "previousValue": 4609.7001953125,
-        "change": -131.60009765625,
+        "value": 4459.10009765625,
+        "observationDate": "2026-08-31",
+        "previousValue": 4478.10009765625,
+        "change": -19,
         "cadence": "日次",
         "dataState": "observed_partial",
-        "fetchedAt": "2026-08-29T22:26:36.847Z",
+        "fetchedAt": "2026-08-31T02:48:04.616Z",
         "retrievalMethod": "market_snapshot",
         "note": "市場配信の生成時スナップショット。公式統計ではなく、終値訂正・配信遅延の可能性があります。",
-        "change3m": -0.4711779154872864,
-        "change12m": 30.48837443735717,
-        "change3mPoints": -21.19970703125,
-        "change12mPoints": 1046.300048828125
+        "change3m": -2.223438270885869,
+        "change12m": 28.36745143033854,
+        "change3mPoints": -101.39990234375,
+        "change12mPoints": 985.400146484375
       }
     },
     "treasuryDebt": {
@@ -1437,7 +3386,7 @@
       "dataState": "observed",
       "sourceId": "UST_DEBT_TO_PENNY",
       "sourceUrl": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
-      "fetchedAt": "2026-08-29T22:26:38.092Z"
+      "fetchedAt": "2026-08-31T02:48:05.901Z"
     },
     "yieldCurve": [
       {
@@ -1460,7 +3409,7 @@
   "dataCollectionArchitecture": {
     "dataState": "observed_partial",
     "strategy": "multi_source_verification",
-    "generatedAt": "2026-08-29T22:26:36.090Z",
+    "generatedAt": "2026-08-31T02:48:02.138Z",
     "conclusion": "有料市場APIだけに依存せず、公式公開API・中央銀行基準値・市場スナップショット・一次情報を分離し、同じ指標を複数経路で照合する。",
     "lanes": [
       {
@@ -5312,7 +7261,7 @@
   },
   "geopoliticalEvents": {
     "dataState": "observed_partial",
-    "verifiedAt": "2026-08-29T22:26:38.318Z",
+    "verifiedAt": "2026-08-31T02:48:05.909Z",
     "automatedFeeds": {
       "reliefWeb": {
         "dataState": "blocked_or_failed",
@@ -5931,7 +7880,7 @@
         "dataState": "observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-08-29T22:26:36.732Z",
+        "fetchedAt": "2026-08-31T02:48:04.237Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.27548209366392573,
@@ -5952,7 +7901,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-08-29T22:26:36.739Z",
+        "fetchedAt": "2026-08-31T02:48:04.121Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -100,
@@ -5973,7 +7922,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-08-29T22:26:36.769Z",
+        "fetchedAt": "2026-08-31T02:48:04.399Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -72.72727272727273,
@@ -5994,7 +7943,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-08-29T22:26:36.775Z",
+        "fetchedAt": "2026-08-31T02:48:04.227Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -4.511278195488721,
@@ -6355,7 +8304,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "FRED_DTWEXBGS_2026_08_21",
@@ -6379,7 +8328,7 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-08-29T22:26:36.691Z",
+        "fetchedAt": "2026-08-31T02:48:04.372Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 1.2128345523663153,
@@ -6400,7 +8349,7 @@
         "dataState": "observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-08-29T22:26:36.772Z",
+        "fetchedAt": "2026-08-31T02:48:04.066Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.8530208770657577,
@@ -6823,7 +8772,7 @@
       {
         "key": "gold_dollar",
         "label": "金上昇×ドル低下",
-        "score": 78.5,
+        "score": 74.9,
         "state": "red",
         "dataState": "estimated",
         "confirm": "金の上昇と広義ドル低下が同時進行",
@@ -6869,7 +8818,7 @@
       "title": "The U.S. Is Now Buying Yen",
       "channel": "Andrei Jikh",
       "publishedAt": "2026-08-06",
-      "reviewedAt": "2026-08-29T22:26:36.090Z",
+      "reviewedAt": "2026-08-31T02:48:02.138Z",
       "url": "https://youtu.be/dlaVKt9-Tfg",
       "dataState": "observed_partial",
       "role": "二次解説・仮説形成",
@@ -9660,7 +11609,7 @@
         "dataState": "observed",
         "sourceId": "FRED_SAHMREALTIME",
         "sourceUrl": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-        "fetchedAt": "2026-08-29T22:26:36.781Z",
+        "fetchedAt": "2026-08-31T02:48:04.185Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -123.07692307692308,
@@ -9681,7 +11630,7 @@
         "dataState": "observed",
         "sourceId": "FRED_T10Y3M",
         "sourceUrl": "https://fred.stlouisfed.org/series/T10Y3M",
-        "fetchedAt": "2026-08-29T22:26:36.770Z",
+        "fetchedAt": "2026-08-31T02:48:04.262Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 9.210526315789469,
@@ -9702,7 +11651,7 @@
         "dataState": "observed",
         "sourceId": "FRED_ICSA",
         "sourceUrl": "https://www.dol.gov/ui/data.pdf",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "DOL_UI_2026_08_20_INITIAL",
@@ -9727,7 +11676,7 @@
         "dataState": "observed",
         "sourceId": "FRED_CCSA",
         "sourceUrl": "https://www.dol.gov/ui/data.pdf",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "DOL_UI_2026_08_20_CONTINUED",
@@ -9752,7 +11701,7 @@
         "dataState": "observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://www.bls.gov/news.release/empsit.nr0.htm",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "BLS_EMPSIT_2026_M07",
@@ -9776,7 +11725,7 @@
         "dataState": "observed",
         "sourceId": "BLS_JOLTS_2026_M06",
         "sourceUrl": "https://www.bls.gov/news.release/jolts.nr0.htm",
-        "fetchedAt": "2026-08-29T22:26:37.115Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "releaseDate": "2026-08-04",
@@ -9799,7 +11748,7 @@
         "dataState": "observed",
         "sourceId": "FRED_TEMPHELPS",
         "sourceUrl": "https://fred.stlouisfed.org/series/TEMPHELPS",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "observationSourceId": "FRED_TEMPHELPS_2026_M07",
@@ -9823,7 +11772,7 @@
         "dataState": "observed",
         "sourceId": "FRED_PCEC96",
         "sourceUrl": "https://fred.stlouisfed.org/series/PCEC96",
-        "fetchedAt": "2026-08-29T22:26:36.705Z",
+        "fetchedAt": "2026-08-31T02:48:04.014Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.8220240403256973,
@@ -9844,7 +11793,7 @@
         "dataState": "observed",
         "sourceId": "CENSUS_MARTS_2026_M07",
         "sourceUrl": "https://www.census.gov/retail/sales.html",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change12m": 5.008966192503594,
@@ -9869,7 +11818,7 @@
         "dataState": "observed",
         "sourceId": "FRB_G17_2026_M07",
         "sourceUrl": "https://www.federalreserve.gov/releases/g17/current/default.htm",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change12m": 1.0854417335662392,
@@ -9894,7 +11843,7 @@
         "dataState": "observed",
         "sourceId": "CENSUS_NRC_2026_M07",
         "sourceUrl": "https://www.census.gov/construction/nrc/current/index.html",
-        "fetchedAt": "2026-08-29T22:26:37.116Z",
+        "fetchedAt": "2026-08-31T02:48:04.905Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change12m": -13.477653631284914,
@@ -9919,7 +11868,7 @@
         "dataState": "observed",
         "sourceId": "FRED_MORTGAGE30US",
         "sourceUrl": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-        "fetchedAt": "2026-08-29T22:26:36.708Z",
+        "fetchedAt": "2026-08-31T02:48:04.268Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 2.304147465437789,
@@ -9940,7 +11889,7 @@
         "dataState": "observed",
         "sourceId": "FRED_NFCI",
         "sourceUrl": "https://fred.stlouisfed.org/series/NFCI",
-        "fetchedAt": "2026-08-29T22:26:36.799Z",
+        "fetchedAt": "2026-08-31T02:48:04.145Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 11.417322834645649,
@@ -9961,7 +11910,7 @@
         "dataState": "observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-08-29T22:26:36.744Z",
+        "fetchedAt": "2026-08-31T02:48:04.066Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -2.9520295202952074,
@@ -9982,7 +11931,7 @@
         "dataState": "observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-08-29T22:26:36.767Z",
+        "fetchedAt": "2026-08-31T02:48:04.278Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -10.926949048496004,
@@ -10191,7 +12140,7 @@
       {
         "label": "米景気6本柱は低圧力",
         "value": "28.8 / 100",
-        "observationDate": "2026-08-29",
+        "observationDate": "2026-08-31",
         "sourceId": "KOYA-US-GLOBAL-FUNDAMENTALS-1.0",
         "sourceUrl": "https://fred.stlouisfed.org/",
         "dataState": "estimated"
@@ -10228,7 +12177,7 @@
       {
         "key": "dollar_purchasing_power",
         "label": "ドル建て購買力の追い風",
-        "score": 66.7,
+        "score": 66.3,
         "state": "green",
         "dataState": "estimated",
         "orientation": "opportunity",
@@ -10305,19 +12254,18 @@
       {
         "key": "strategic_expansion_window",
         "label": "Family Tree Oki展開余地",
-        "score": 63,
+        "score": 62.8,
         "state": "green",
         "dataState": "estimated",
         "orientation": "opportunity",
         "horizon": "1〜12か月",
         "interpretation": "ドル購買力、米国家計余力、沖縄原価、妊娠・育児という高感情ライフイベントの構造を分離して合成した機会指標。",
-        "confirmation": "予約・紹介・レビュー・LTVが成熟コホートで再現",
-        "counter": "予約や粗利が伴わず、円安メリットが原価上昇で相殺",
+        "confirmation": "外部データによる市場機会の確認",
+        "counter": "予約や粗利は本監視の対象外。円安メリットが原価上昇で相殺される可能性",
         "sourceIds": [
           "YAHOO_FINANCE_JPY=X",
           "FRED_UNRATE",
-          "CENSUS_MARTS_2026_M07",
-          "FAMILYTREEOKI_INTERNAL_KPI"
+          "CENSUS_MARTS_2026_M07"
         ]
       }
     ],
@@ -10352,9 +12300,9 @@
           "key": "echo2d",
           "label": "2Dエコー",
           "yen": 15000,
-          "usd": 93.73,
-          "fx": 160.038,
-          "observationDate": "2026-08-28",
+          "usd": 93.88,
+          "fx": 159.782,
+          "observationDate": "2026-08-31",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -10362,9 +12310,9 @@
           "key": "echo4d",
           "label": "4Dエコー",
           "yen": 20000,
-          "usd": 124.97,
-          "fx": 160.038,
-          "observationDate": "2026-08-28",
+          "usd": 125.17,
+          "fx": 159.782,
+          "observationDate": "2026-08-31",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -10372,9 +12320,9 @@
           "key": "heartbeat_plush",
           "label": "心音ぬいぐるみ",
           "yen": 6000,
-          "usd": 37.49,
-          "fx": 160.038,
-          "observationDate": "2026-08-28",
+          "usd": 37.55,
+          "fx": 159.782,
+          "observationDate": "2026-08-31",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -10382,9 +12330,9 @@
           "key": "postpartum_low",
           "label": "産後ケア・下限",
           "yen": 60000,
-          "usd": 374.91,
-          "fx": 160.038,
-          "observationDate": "2026-08-28",
+          "usd": 375.51,
+          "fx": 159.782,
+          "observationDate": "2026-08-31",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -10392,9 +12340,9 @@
           "key": "postpartum_high",
           "label": "産後ケア・上限",
           "yen": 75000,
-          "usd": 468.64,
-          "fx": 160.038,
-          "observationDate": "2026-08-28",
+          "usd": 469.39,
+          "fx": 159.782,
+          "observationDate": "2026-08-31",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -10402,9 +12350,9 @@
           "key": "babysitter",
           "label": "ベビーシッター・通常1時間",
           "yen": 3500,
-          "usd": 21.87,
-          "fx": 160.038,
-          "observationDate": "2026-08-28",
+          "usd": 21.9,
+          "fx": 159.782,
+          "observationDate": "2026-08-31",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -10412,16 +12360,16 @@
           "key": "babysitter_night",
           "label": "ベビーシッター・夜間1時間",
           "yen": 5000,
-          "usd": 31.24,
-          "fx": 160.038,
-          "observationDate": "2026-08-28",
+          "usd": 31.29,
+          "fx": 159.782,
+          "observationDate": "2026-08-31",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         }
       ],
       "externalDemandStressProxy": 45.7,
       "externalDemandStressState": "yellow",
-      "businessKpiConnection": "unknown",
+      "businessKpiConnection": "not_in_scope",
       "requiredInternalKpis": [
         "予約作成数",
         "サービス実施数",
@@ -10725,7 +12673,7 @@
             "value": 4.7,
             "unit": "%",
             "observationDate": "2026-08-24",
-            "retrievedAt": "2026-08-29T22:26:37.116Z",
+            "retrievedAt": "2026-08-31T02:48:04.906Z",
             "dataState": "observed",
             "sourceId": "UST_DAILY_TREASURY_PAR_YIELD_2026_08_24",
             "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026"
@@ -10863,7 +12811,7 @@
             "value": 206000,
             "unit": "件",
             "observationDate": "2026-08-15",
-            "retrievedAt": "2026-08-29T22:26:37.116Z",
+            "retrievedAt": "2026-08-31T02:48:04.905Z",
             "dataState": "observed",
             "sourceId": "DOL_UI_2026_08_20_INITIAL",
             "sourceUrl": "https://www.dol.gov/ui/data.pdf"
@@ -10874,7 +12822,7 @@
             "value": 1799000,
             "unit": "件",
             "observationDate": "2026-08-08",
-            "retrievedAt": "2026-08-29T22:26:37.116Z",
+            "retrievedAt": "2026-08-31T02:48:04.905Z",
             "dataState": "observed",
             "sourceId": "DOL_UI_2026_08_20_CONTINUED",
             "sourceUrl": "https://www.dol.gov/ui/data.pdf"
@@ -10885,7 +12833,7 @@
             "value": -23,
             "unit": "千人",
             "observationDate": "2026-07-01",
-            "retrievedAt": "2026-08-29T22:26:37.116Z",
+            "retrievedAt": "2026-08-31T02:48:04.905Z",
             "dataState": "observed",
             "sourceId": "BLS_EMPSIT_2026_M07",
             "sourceUrl": "https://www.bls.gov/news.release/empsit.nr0.htm"
@@ -11486,7 +13434,7 @@
   "health": {
     "status": "passed_with_warnings",
     "label": "主要機能は正常・要確認項目あり",
-    "checkedAt": "2026-08-29T22:26:38.319Z",
+    "checkedAt": "2026-08-31T02:48:05.911Z",
     "totals": {
       "failed": 0,
       "unknown": 4,
@@ -11511,10 +13459,10 @@
         "total": 216
       },
       "independentIndicatorCore": {
-        "total": 182,
-        "currentObservedSharePct": 76.9,
-        "observedEvidenceSharePct": 80.8,
-        "staleObservedSharePct": 3.8
+        "total": 162,
+        "currentObservedSharePct": 85.8,
+        "observedEvidenceSharePct": 90.1,
+        "staleObservedSharePct": 4.3
       },
       "allJsonStateNodes": {
         "total": 620,
@@ -11533,18 +13481,18 @@
       "currentObservedSharePct": 89.4,
       "observedEvidenceSharePct": 91.2,
       "staleObservedSharePct": 1.8,
-      "decisionCurrentObservedSharePct": 76.9,
-      "decisionStaleObservedSharePct": 3.8,
-      "decisionScope": "independent_indicator_core_excluding_world_map_rows",
+      "decisionCurrentObservedSharePct": 85.8,
+      "decisionStaleObservedSharePct": 4.3,
+      "decisionScope": "independent_external_indicator_core_excluding_world_map_and_derived_panels",
       "estimatedSharePct": 7.8,
-      "mapExcludedCurrentObservedSharePct": 76.9,
+      "mapExcludedCurrentObservedSharePct": 85.8,
       "definitions": {
         "currentObservedSharePct": "observedとobserved_partialの合計÷監視本体総数",
         "observedEvidenceSharePct": "observed・observed_partial・stale_observedの合計÷監視本体総数",
         "staleObservedSharePct": "stale_observed÷監視本体総数",
-        "decisionCurrentObservedSharePct": "世界地図行を除くobservedとobserved_partial÷独立指標中心の総数。日次停止判定に使用",
-        "decisionStaleObservedSharePct": "世界地図行を除くstale_observed÷独立指標中心の総数。日次停止判定に使用",
-        "mapExcludedCurrentObservedSharePct": "世界地図の国行を除くobservedとobserved_partial÷独立指標中心の総数"
+        "decisionCurrentObservedSharePct": "世界地図行と派生判断パネルを除くobservedとobserved_partial÷独立外部指標総数。日次停止判定に使用",
+        "decisionStaleObservedSharePct": "世界地図行と派生判断パネルを除くstale_observed÷独立外部指標総数。日次停止判定に使用",
+        "mapExcludedCurrentObservedSharePct": "世界地図の国行と派生判断パネルを除くobservedとobserved_partial÷独立外部指標総数"
       }
     },
     "sourceIssues": [],
@@ -11713,8 +13661,8 @@
       },
       {
         "id": "freshnessGate",
-        "result": "warning",
-        "note": "独立指標中心（世界地図行を除外）の現行実測 76.9%（基準80%以上）・旧実測 3.8%（基準10%以下）。世界地図 216行は別表示"
+        "result": "passed",
+        "note": "独立外部指標（地図・派生判断パネルを除外）の現行実測 85.8%（基準85%以上）・旧実測 4.3%（基準10%以下）。地図・派生パネルは別表示"
       },
       {
         "id": "japanUsTreasury",
@@ -11764,7 +13712,7 @@
       {
         "id": "modelValidation",
         "result": "warning",
-        "note": "暫定リプレイ135標本、前向き4件・成熟0件。90日確定検証は継続中"
+        "note": "暫定リプレイ135標本、前向き6件・成熟0件。90日確定検証は継続中"
       },
       {
         "id": "sourceTrace",
@@ -11778,19 +13726,19 @@
       },
       {
         "id": "decisionReliability",
-        "result": "warning",
-        "note": "判断材料信頼度 64/100・C評価"
+        "result": "passed",
+        "note": "判断材料信頼度 79/100・B評価"
       }
     ]
   },
   "decisionReliability": {
     "id": "KOYA_DECISION_RELIABILITY_1_0",
     "dataState": "estimated",
-    "score": 64,
-    "rawScore": 88.5,
-    "cap": 64,
-    "grade": "C",
-    "label": "追加確認後に限定利用",
+    "score": 79,
+    "rawScore": 90.7,
+    "cap": 79,
+    "grade": "B",
+    "label": "条件付きで判断補助に利用可能",
     "scale": [
       {
         "grade": "A",
@@ -11821,10 +13769,10 @@
       {
         "key": "freshness",
         "label": "鮮度",
-        "score": 76.9,
+        "score": 85.8,
         "weight": 0.25,
-        "dataState": "observed_partial",
-        "note": "独立指標中心 76.9% / 旧実測 3.8%（世界地図行を除外）"
+        "dataState": "observed",
+        "note": "独立外部指標 85.8% / 旧実測 4.3%（地図・派生判断パネルを除外）"
       },
       {
         "key": "traceability",
@@ -11848,7 +13796,7 @@
         "score": 100,
         "weight": 0.15,
         "dataState": "observed_partial",
-        "note": "6経路。ECBと市場値の差 0.221%"
+        "note": "6経路。ECBと市場値の差 0.061%"
       },
       {
         "key": "modelValidation",
@@ -11868,7 +13816,6 @@
       }
     ],
     "gates": [
-      "鮮度基準未達のためC上限",
       "バックテスト未完了のためA評価を禁止",
       "前向き90日検証未成熟のためA評価を禁止"
     ],
@@ -11880,8 +13827,8 @@
     "limitations": [
       "危機発生確率ではない",
       "過去リプレイは改定後系列による暫定値",
-      "前向き90日検証は4件収集・0件成熟",
-      "自社KPIとの因果接続は未実施"
+      "前向き90日検証は6件収集・0件成熟",
+      "Family Tree Okiの実績KPIは対象外。外部環境データのみで信頼度を評価"
     ],
     "nextActions": [
       "90日分の予測スナップショットを固定保存",
@@ -11894,7 +13841,7 @@
   "globalSourceNetwork": {
     "modelVersion": "KOYA-GLOBAL-SOURCE-NETWORK-1.0",
     "strategy": "official_api_adapter_registry",
-    "generatedAt": "2026-08-29T22:26:42.573Z",
+    "generatedAt": "2026-08-31T02:48:10.799Z",
     "dataState": "observed_partial",
     "principle": "一次・公式APIを数値取得の主経路、文書・ニュース・動画を発見リードとし、取得成功をURL登録と分離する。",
     "activeProbes": [
@@ -11904,7 +13851,7 @@
         "family": "currency_credit",
         "cadence": "daily",
         "dataState": "observed",
-        "checkedAt": "2026-08-29T22:26:39.253Z",
+        "checkedAt": "2026-08-31T02:48:07.603Z",
         "sourceUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/debt_to_penny?sort=-record_date&page[number]=1&page[size]=1",
         "sample": {
           "observationDate": "2026-08-27",
@@ -11918,7 +13865,7 @@
         "family": "economy",
         "cadence": "annual",
         "dataState": "observed",
-        "checkedAt": "2026-08-29T22:26:39.283Z",
+        "checkedAt": "2026-08-31T02:48:07.633Z",
         "sourceUrl": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=10",
         "sample": {
           "observationDate": "2025",
@@ -11932,7 +13879,7 @@
         "family": "credit_liquidity",
         "cadence": "daily",
         "dataState": "observed_partial",
-        "checkedAt": "2026-08-29T22:26:39.284Z",
+        "checkedAt": "2026-08-31T02:48:07.635Z",
         "sourceUrl": "https://data.financialresearch.gov/v1/series/dataset?dataset=tyld",
         "sample": {
           "observationDate": null,
