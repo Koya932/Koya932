@@ -28,8 +28,8 @@
     "generatedAt": "2026-09-01T23:26:37.100Z",
     "publicHashMethod": "ブラウザで公開JSON本文のSHA-256を算出",
     "releaseManifestVersion": "KOYA-RUN-MANIFEST-1.0",
-    "sheetSyncState": "unknown",
-    "publicationState": "unknown",
+    "sheetSyncState": "observed",
+    "publicationState": "observed",
     "requiredSheetTabs": [
       "10_取得ログ",
       "19_日次監視",
@@ -42,7 +42,11 @@
       "26_世界データ取得網"
     ],
     "publishGate": "ローカル監査、Sheet同一run読戻し、許可ファイル確認の全合格後だけ公開",
-    "sheetSyncNote": "外部書込み前のためunknown。Sheet読み戻し後にfinalize-global-monitor-release.mjsでobservedへ昇格する。"
+    "sheetSyncNote": "Google Sheet主要9タブとrun manifestを同一run_idで読み戻した。",
+    "sheetSyncedAt": "2026-09-01T23:34:46.907Z",
+    "sheetReadbackRunId": "KOYA-20260901T232637100Z",
+    "publishedAt": "2026-09-01T23:34:46.908Z",
+    "publicReadbackRunId": "KOYA-20260901T232637100Z"
   },
   "modelValidation": {
     "modelVersion": "KOYA-DUAL-TRACK-VALIDATION-1.0",
@@ -13709,7 +13713,7 @@
     "id": "KOYA_DECISION_RELIABILITY_1_0",
     "dataState": "estimated",
     "score": 79,
-    "rawScore": 85.7,
+    "rawScore": 90.7,
     "cap": 79,
     "grade": "B",
     "label": "条件付きで判断補助に利用可能",
@@ -13783,10 +13787,10 @@
       {
         "key": "releaseConsistency",
         "label": "JSON・Sheet同一版",
-        "score": 50,
+        "score": 100,
         "weight": 0.1,
-        "dataState": "observed_partial",
-        "note": "JSON内部は一致。Google Sheetは書込み後のreadbackで確定する"
+        "dataState": "observed",
+        "note": "Google Sheet主要9タブを同一run_idで読み戻し確認"
       }
     ],
     "gates": [
