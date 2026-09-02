@@ -234,7 +234,7 @@
 
   <section class="ideas">
     <article class="panel idea"><small>提案 01 / 為替</small><h3>ドル円の二重レーン化</h3><p>公式日次参照と認証済み市場速報を並べ、差分と最終更新秒を表示。接続前はリアルタイムと呼ばない。</p></article>
-    <article class="panel idea"><small>提案 02 / 沖縄</small><h3>沖縄波及スコア</h3><p>ドル、原油、米国債、基地購買力を、観光・物流・FamilyTreeOki需要への波及確率へ変換。</p></article>
+    <article class="panel idea"><small>提案 02 / 沖縄</small><h3>沖縄波及スコア</h3><p>ドル、原油、米国債、基地購買力を、観光・物流・Family Tree Oki需要への伝播仮説を検証。</p></article>
     <article class="panel idea"><small>提案 03 / 反証</small><h3>シナリオ反証アラート</h3><p>予測を当てるより、前提が崩れた瞬間を通知。緑・黄・赤の変更理由を時系列で保存。</p></article>
   </section>
   <p class="foot">判定方法：経済はGDP成長率、政治は世界銀行WGI「政治的安定と暴力・テロ不在」のパーセンタイル順位を使用。統合は「どちらか赤なら赤、赤なしでどちらか黄なら黄、両方緑なら緑」。ミアシャイマー理論は構造仮説の一つとして用い、唯一の答えとは扱いません。未取得値は推測で補完しません。</p>
@@ -283,7 +283,7 @@ function renderFxShock(){
  el("fx-shock-factors").innerHTML=a.factors.map(v=>`<a class="fx-factor" href="${v.sourceUrl}" target="_blank" rel="noreferrer"><div><small>${v.role}<br>証拠強度｜${S[v.dataState]||v.dataState}</small><b style="color:${v.evidenceScore>=70?C.red:C.yellow}">${v.evidenceScore}</b></div><strong>${v.label}</strong><p>${v.read}</p></a>`).join("");
  el("fx-shock-bottom").innerHTML=[
   `<article class="fx-impact"><small>沖縄・米軍家族のドル購買力</small><strong>$200換算 ${fmt(o.usd200YenBefore,0)}円 → ${fmt(o.usd200YenNow,0)}円（${signed(o.usd200YenChange,0)}円）</strong><p>20,000円サービスのドル換算は $${fmt(o.jpy20000UsdBefore,2)} → $${fmt(o.jpy20000UsdNow,2)}。${o.read}</p></article>`,
-  `<article class="fx-impact"><small>正式確認ゲート｜<span class="fx-state-${a.officialConfirmationState}">${S[a.officialConfirmationState]}</span></small><strong>介入額はまだ確定していません</strong><p>${a.officialConfirmation} <a href="${a.officialSourceUrl}" target="_blank" rel="noreferrer">財務省の公表予定 →</a></p></article>`
+  `<article class="fx-impact"><small>正式確認ゲート｜<span class="fx-state-${a.officialConfirmationState}">${S[a.officialConfirmationState]}</span></small><strong>月次総額と個別日の原因を分離</strong><p>${a.officialConfirmation} <a href="${a.officialSourceUrl}" target="_blank" rel="noreferrer">財務省の月次公表 →</a></p></article>`
  ].join("");
 }
 function renderOverallJudgment(){
