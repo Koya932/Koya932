@@ -29,7 +29,7 @@
     "publicHashMethod": "ブラウザで公開JSON本文のSHA-256を算出",
     "releaseManifestVersion": "KOYA-RUN-MANIFEST-1.0",
     "sheetSyncState": "observed",
-    "publicationState": "unknown",
+    "publicationState": "observed",
     "requiredSheetTabs": [
       "10_取得ログ",
       "19_日次監視",
@@ -44,7 +44,9 @@
     "publishGate": "ローカル監査、Sheet同一run読戻し、許可ファイル確認の全合格後だけ公開",
     "sheetSyncNote": "Google_Sheet主要9タブ20範囲の807セルを同一run_idで読戻し確認",
     "sheetSyncedAt": "2026-09-04T00:16:06.216Z",
-    "sheetReadbackRunId": "KOYA-20260904T001104863Z"
+    "sheetReadbackRunId": "KOYA-20260904T001104863Z",
+    "publishedAt": "2026-09-04T00:19:06.084Z",
+    "publicReadbackRunId": "KOYA-20260904T001104863Z"
   },
   "modelValidation": {
     "modelVersion": "KOYA-DUAL-TRACK-VALIDATION-1.0",
