@@ -28,7 +28,7 @@
     "generatedAt": "2026-09-05T06:31:40.287Z",
     "publicHashMethod": "ブラウザで公開JSON本文のSHA-256を算出",
     "releaseManifestVersion": "KOYA-RUN-MANIFEST-1.0",
-    "sheetSyncState": "unknown",
+    "sheetSyncState": "observed",
     "publicationState": "unknown",
     "requiredSheetTabs": [
       "10_取得ログ",
@@ -42,7 +42,9 @@
       "26_世界データ取得網"
     ],
     "publishGate": "ローカル監査、Sheet同一run読戻し、許可ファイル確認の全合格後だけ公開",
-    "sheetSyncNote": "外部書込み前のためunknown。Sheet読み戻し後にfinalize-global-monitor-release.mjsでobservedへ昇格する。"
+    "sheetSyncNote": "24_run_manifest row21 and 9 tabs read back with matching run_id",
+    "sheetSyncedAt": "2026-09-05T06:32:00.000Z",
+    "sheetReadbackRunId": "KOYA-20260905T063140287Z"
   },
   "modelValidation": {
     "modelVersion": "KOYA-DUAL-TRACK-VALIDATION-1.0",
@@ -13713,7 +13715,7 @@
     "id": "KOYA_DECISION_RELIABILITY_1_0",
     "dataState": "estimated",
     "score": 64,
-    "rawScore": 85.1,
+    "rawScore": 90.1,
     "cap": 64,
     "grade": "C",
     "label": "追加確認後に限定利用",
@@ -13787,10 +13789,10 @@
       {
         "key": "releaseConsistency",
         "label": "JSON・Sheet同一版",
-        "score": 50,
+        "score": 100,
         "weight": 0.1,
-        "dataState": "observed_partial",
-        "note": "JSON内部は一致。Google Sheetは書込み後のreadbackで確定する"
+        "dataState": "observed",
+        "note": "Google Sheet主要9タブを同一run_idで読み戻し確認"
       }
     ],
     "gates": [
@@ -13969,3 +13971,4 @@
     "warning": "登録済みURLは取得成功を意味しない。dataState、観測日、取得日時、利用条件を系列ごとに確認する。"
   }
 }
+
