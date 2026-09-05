@@ -1,5 +1,5 @@
-Warning: truncated output (original token count: 121764)
-Total output lines: 13974
+Warning: truncated output (original token count: 121790)
+Total output lines: 13976
 
 {
   "schemaVersion": 18,
@@ -32,7 +32,7 @@ Total output lines: 13974
     "publicHashMethod": "ブラウザで公開JSON本文のSHA-256を算出",
     "releaseManifestVersion": "KOYA-RUN-MANIFEST-1.0",
     "sheetSyncState": "observed",
-    "publicationState": "unknown",
+    "publicationState": "observed",
     "requiredSheetTabs": [
       "10_取得ログ",
       "19_日次監視",
@@ -47,7 +47,9 @@ Total output lines: 13974
     "publishGate": "ローカル監査、Sheet同一run読戻し、許可ファイル確認の全合格後だけ公開",
     "sheetSyncNote": "主要9タブを同一run_idで同期・読戻し。高速回復キュー13件、次回8件、最大6レーン。独立指標83.3%のため回復継続。",
     "sheetSyncedAt": "2026-09-05T06:05:04.657Z",
-    "sheetReadbackRunId": "KOYA-20260905T060221481Z"
+    "sheetReadbackRunId": "KOYA-20260905T060221481Z",
+    "publishedAt": "2026-09-05T06:05:00.000Z",
+    "publicReadbackRunId": "KOYA-20260905T060221481Z"
   },
   "modelValidation": {
     "modelVersion": "KOYA-DUAL-TRACK-VALIDATION-1.0",
@@ -2289,11 +2291,7 @@ Total output lines: 13974
       "snapshotCount": 11,
       "maturedPredictionCount": 0,
       "minimumMaturedPredictions": 20,
-      "minimumCalendarDays": 90,
-      "counts": {
-        "true_positive": 0,
-        "false_positive": 0,
-  …91764 tokens truncated…制・制裁回避を巡る制度競争を同時に追う。"
+      "…91790 tokens truncated…制・制裁回避を巡る制度競争を同時に追う。"
           },
           {
             "key": "microeconomics",
