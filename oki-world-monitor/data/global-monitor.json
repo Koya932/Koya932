@@ -42,8 +42,8 @@
       "26_世界データ取得網"
     ],
     "publishGate": "ローカル監査、Sheet同一run読戻し、許可ファイル確認の全合格後だけ公開",
-    "sheetSyncNote": "主要9タブを同一run_idで同期・読戻し。高速回復キュー13件、次回8件、最大6レーン。独立指標83.3%のため回復継続。",
-    "sheetSyncedAt": "2026-09-05T06:05:04.657Z",
+    "sheetSyncNote": "Google",
+    "sheetSyncedAt": "2026-09-05T15:30:00+09:00",
     "sheetReadbackRunId": "KOYA-20260905T060221481Z",
     "publishedAt": "2026-09-05T06:05:00.000Z",
     "publicReadbackRunId": "KOYA-20260905T060221481Z"
