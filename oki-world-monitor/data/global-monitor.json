@@ -1,9 +1,9 @@
-Warning: truncated output (original token count: 121796)
-Total output lines: 13976
+Warning: truncated output (original token count: 121764)
+Total output lines: 13974
 
 {
   "schemaVersion": 18,
-  "generatedAt": "2026-09-05T00:14:10.002Z",
+  "generatedAt": "2026-09-05T06:02:21.481Z",
   "dashboardTimeZone": "Asia/Tokyo",
   "freshnessPolicy": {
     "basis": "as_of_now_latest_available",
@@ -27,12 +27,12 @@ Total output lines: 13976
     ]
   },
   "releaseControl": {
-    "runId": "KOYA-20260905T001410002Z",
-    "generatedAt": "2026-09-05T00:14:10.002Z",
+    "runId": "KOYA-20260905T060221481Z",
+    "generatedAt": "2026-09-05T06:02:21.481Z",
     "publicHashMethod": "ブラウザで公開JSON本文のSHA-256を算出",
     "releaseManifestVersion": "KOYA-RUN-MANIFEST-1.0",
     "sheetSyncState": "observed",
-    "publicationState": "observed",
+    "publicationState": "unknown",
     "requiredSheetTabs": [
       "10_取得ログ",
       "19_日次監視",
@@ -45,11 +45,9 @@ Total output lines: 13976
       "26_世界データ取得網"
     ],
     "publishGate": "ローカル監査、Sheet同一run読戻し、許可ファイル確認の全合格後だけ公開",
-    "sheetSyncNote": "主要9タブを同一run_idで同期・読戻し。最新データ・回復診断を反映。独立指標実測率83.3%のため回復対象25件を継続。Family Tree Oki実績KPIは対象外",
-    "sheetSyncedAt": "2026-09-05T00:15:45.289Z",
-    "sheetReadbackRunId": "KOYA-20260905T001410002Z",
-    "publishedAt": "2026-09-05T00:18:00.000Z",
-    "publicReadbackRunId": "KOYA-20260905T001410002Z"
+    "sheetSyncNote": "主要9タブを同一run_idで同期・読戻し。高速回復キュー13件、次回8件、最大6レーン。独立指標83.3%のため回復継続。",
+    "sheetSyncedAt": "2026-09-05T06:05:04.657Z",
+    "sheetReadbackRunId": "KOYA-20260905T060221481Z"
   },
   "modelValidation": {
     "modelVersion": "KOYA-DUAL-TRACK-VALIDATION-1.0",
@@ -67,7 +65,7 @@ Total output lines: 13976
     "averageLeadDays": null,
     "historicalReplay": {
       "modelVersion": "KOYA-HISTORICAL-REPLAY-1.0",
-      "generatedAt": "2026-09-05T00:14:13.623Z",
+      "generatedAt": "2026-09-05T06:02:31.852Z",
       "dataState": "observed_partial",
       "status": "provisional_current_vintage_replay",
       "window": {
@@ -2010,10 +2008,10 @@ Total output lines: 13976
     },
     "eventReplay": {
       "modelVersion": "KOYA-EVENT-REPLAY-1.0",
-      "generatedAt": "2026-09-05T00:14:13.688Z",
+      "generatedAt": "2026-09-05T06:02:31.912Z",
       "dataState": "observed_partial",
       "status": "provisional_event_level_diagnostic",
-      "sourceReplayGeneratedAt": "2026-09-05T00:14:13.623Z",
+      "sourceReplayGeneratedAt": "2026-09-05T06:02:31.852Z",
       "definition": "同一90日窓で同じ日付・同じストレス種別に紐づく週次重複を1イベントへ集約。警戒の有無は元の閾値を保持し、閾値掃引は採用候補の比較にのみ使用。",
       "sampleCount": 138,
       "uniqueEventCount": 13,
@@ -2290,7 +2288,12 @@ Total output lines: 13976
       "horizonDays": 90,
       "snapshotCount": 11,
       "maturedPredictionCount": 0,
-      …91796 tokens truncated…制・制裁回避を巡る制度競争を同時に追う。"
+      "minimumMaturedPredictions": 20,
+      "minimumCalendarDays": 90,
+      "counts": {
+        "true_positive": 0,
+        "false_positive": 0,
+  …91764 tokens truncated…制・制裁回避を巡る制度競争を同時に追う。"
           },
           {
             "key": "microeconomics",
@@ -2392,7 +2395,7 @@ Total output lines: 13976
             "value": 206000,
             "unit": "件",
             "observationDate": "2026-08-29",
-            "retrievedAt": "2026-09-05T00:14:10.908Z",
+            "retrievedAt": "2026-09-05T06:02:23.138Z",
             "dataState": "observed",
             "sourceId": "FRED_ICSA",
             "sourceUrl": "https://fred.stlouisfed.org/series/ICSA"
@@ -2403,7 +2406,7 @@ Total output lines: 13976
             "value": 1779000,
             "unit": "件",
             "observationDate": "2026-08-22",
-            "retrievedAt": "2026-09-05T00:14:10.761Z",
+            "retrievedAt": "2026-09-05T06:02:27.572Z",
             "dataState": "observed",
             "sourceId": "FRED_CCSA",
             "sourceUrl": "https://fred.stlouisfed.org/series/CCSA"
@@ -2414,7 +2417,7 @@ Total output lines: 13976
             "value": 162,
             "unit": "千人",
             "observationDate": "2026-08-01",
-            "retrievedAt": "2026-09-05T00:14:10.727Z",
+            "retrievedAt": "2026-09-05T06:02:27.500Z",
             "dataState": "observed",
             "sourceId": "FRED_PAYEMS",
             "sourceUrl": "https://fred.stlouisfed.org/series/PAYEMS"
@@ -3064,7 +3067,7 @@ Total output lines: 13976
   "health": {
     "status": "passed_with_warnings",
     "label": "主要機能は正常・要確認項目あり",
-    "checkedAt": "2026-09-05T00:14:12.504Z",
+    "checkedAt": "2026-09-05T06:02:28.834Z",
     "totals": {
       "failed": 0,
       "unknown": 4,
@@ -3473,7 +3476,7 @@ Total output lines: 13976
   "globalSourceNetwork": {
     "modelVersion": "KOYA-GLOBAL-SOURCE-NETWORK-1.0",
     "strategy": "official_api_adapter_registry",
-    "generatedAt": "2026-09-05T00:14:17.090Z",
+    "generatedAt": "2026-09-05T06:02:35.354Z",
     "dataState": "observed_partial",
     "principle": "一次・公式APIを数値取得の主経路、文書・ニュース・動画を発見リードとし、取得成功をURL登録と分離する。",
     "activeProbes": [
@@ -3483,7 +3486,7 @@ Total output lines: 13976
         "family": "currency_credit",
         "cadence": "daily",
         "dataState": "observed",
-        "checkedAt": "2026-09-05T00:14:13.748Z",
+        "checkedAt": "2026-09-05T06:02:31.982Z",
         "sourceUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/debt_to_penny?sort=-record_date&page[number]=1&page[size]=1",
         "sample": {
           "observationDate": "2026-09-03",
@@ -3497,7 +3500,7 @@ Total output lines: 13976
         "family": "economy",
         "cadence": "annual",
         "dataState": "observed",
-        "checkedAt": "2026-09-05T00:14:13.779Z",
+        "checkedAt": "2026-09-05T06:02:32.013Z",
         "sourceUrl": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=10",
         "sample": {
           "observationDate": "2025",
@@ -3511,7 +3514,7 @@ Total output lines: 13976
         "family": "credit_liquidity",
         "cadence": "daily",
         "dataState": "observed_partial",
-        "checkedAt": "2026-09-05T00:14:13.780Z",
+        "checkedAt": "2026-09-05T06:02:32.014Z",
         "sourceUrl": "https://data.financialresearch.gov/v1/series/dataset?dataset=tyld",
         "sample": {
           "observationDate": null,
