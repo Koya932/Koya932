@@ -29,7 +29,7 @@
     "publicHashMethod": "ブラウザで公開JSON本文のSHA-256を算出",
     "releaseManifestVersion": "KOYA-RUN-MANIFEST-1.0",
     "sheetSyncState": "observed",
-    "publicationState": "unknown",
+    "publicationState": "observed",
     "requiredSheetTabs": [
       "10_取得ログ",
       "19_日次監視",
@@ -44,7 +44,9 @@
     "publishGate": "ローカル監査、Sheet同一run読戻し、許可ファイル確認の全合格後だけ公開",
     "sheetSyncNote": "24_run_manifest row22 and 9 tabs read back with matching run_id",
     "sheetSyncedAt": "2026-09-06T23:30:00.000Z",
-    "sheetReadbackRunId": "KOYA-20260906T232229795Z"
+    "sheetReadbackRunId": "KOYA-20260906T232229795Z",
+    "publishedAt": "2026-09-06T23:40:00.000Z",
+    "publicReadbackRunId": "KOYA-20260906T232229795Z"
   },
   "modelValidation": {
     "modelVersion": "KOYA-DUAL-TRACK-VALIDATION-1.0",
