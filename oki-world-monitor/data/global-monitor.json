@@ -1,6 +1,6 @@
 {
   "schemaVersion": 18,
-  "generatedAt": "2026-09-06T23:22:29.795Z",
+  "generatedAt": "2026-09-08T23:03:02.629Z",
   "dashboardTimeZone": "Asia/Tokyo",
   "freshnessPolicy": {
     "basis": "as_of_now_latest_available",
@@ -24,12 +24,12 @@
     ]
   },
   "releaseControl": {
-    "runId": "KOYA-20260906T232229795Z",
-    "generatedAt": "2026-09-06T23:22:29.795Z",
+    "runId": "KOYA-20260908T230302629Z",
+    "generatedAt": "2026-09-08T23:03:02.629Z",
     "publicHashMethod": "ブラウザで公開JSON本文のSHA-256を算出",
     "releaseManifestVersion": "KOYA-RUN-MANIFEST-1.0",
     "sheetSyncState": "observed",
-    "publicationState": "observed",
+    "publicationState": "unknown",
     "requiredSheetTabs": [
       "10_取得ログ",
       "19_日次監視",
@@ -42,11 +42,9 @@
       "26_世界データ取得網"
     ],
     "publishGate": "ローカル監査、Sheet同一run読戻し、許可ファイル確認の全合格後だけ公開",
-    "sheetSyncNote": "24_run_manifest row22 and 9 tabs read back with matching run_id",
-    "sheetSyncedAt": "2026-09-06T23:30:00.000Z",
-    "sheetReadbackRunId": "KOYA-20260906T232229795Z",
-    "publishedAt": "2026-09-06T23:40:00.000Z",
-    "publicReadbackRunId": "KOYA-20260906T232229795Z"
+    "sheetSyncNote": "主要9タブ20範囲・807セルを専用Sheets経路で読戻し一致確認",
+    "sheetSyncedAt": "2026-09-08T23:10:31.526Z",
+    "sheetReadbackRunId": "KOYA-20260908T230302629Z"
   },
   "modelValidation": {
     "modelVersion": "KOYA-DUAL-TRACK-VALIDATION-1.0",
@@ -54,7 +52,7 @@
     "status": "一部検証",
     "metricScope": "historical_replay_current_vintage_provisional",
     "backtestWindow": {
-      "start": "2023-09-11",
+      "start": "2023-09-18",
       "end": "2026-04-27",
       "horizonDays": 90,
       "sampleFrequency": "weekly"
@@ -64,11 +62,11 @@
     "averageLeadDays": null,
     "historicalReplay": {
       "modelVersion": "KOYA-HISTORICAL-REPLAY-1.0",
-      "generatedAt": "2026-09-06T23:22:33.783Z",
+      "generatedAt": "2026-09-08T23:03:10.794Z",
       "dataState": "observed_partial",
       "status": "provisional_current_vintage_replay",
       "window": {
-        "start": "2023-09-11",
+        "start": "2023-09-18",
         "end": "2026-04-27",
         "horizonDays": 90,
         "sampleFrequency": "weekly"
@@ -81,10 +79,10 @@
       "counts": {
         "true_positive": 0,
         "false_positive": 0,
-        "false_negative": 59,
+        "false_negative": 58,
         "true_negative": 79
       },
-      "sampleCount": 138,
+      "sampleCount": 137,
       "falsePositiveRate": null,
       "falseNegativeRate": 100,
       "precision": null,
@@ -308,20 +306,6 @@
         }
       ],
       "eventSamples": [
-        {
-          "date": "2023-09-11",
-          "score": 30.3,
-          "alert": false,
-          "outcome": {
-            "occurred": true,
-            "first": {
-              "date": "2023-10-20",
-              "type": "credit_stress"
-            },
-            "leadDays": 39
-          },
-          "classification": "false_negative"
-        },
         {
           "date": "2023-09-18",
           "score": 29.8,
@@ -2007,12 +1991,12 @@
     },
     "eventReplay": {
       "modelVersion": "KOYA-EVENT-REPLAY-1.0",
-      "generatedAt": "2026-09-06T23:22:33.829Z",
+      "generatedAt": "2026-09-08T23:03:10.854Z",
       "dataState": "observed_partial",
       "status": "provisional_event_level_diagnostic",
-      "sourceReplayGeneratedAt": "2026-09-06T23:22:33.783Z",
+      "sourceReplayGeneratedAt": "2026-09-08T23:03:10.794Z",
       "definition": "同一90日窓で同じ日付・同じストレス種別に紐づく週次重複を1イベントへ集約。警戒の有無は元の閾値を保持し、閾値掃引は採用候補の比較にのみ使用。",
-      "sampleCount": 138,
+      "sampleCount": 137,
       "uniqueEventCount": 13,
       "detectedEventCount": 0,
       "eventRecall": 0,
@@ -2022,7 +2006,6 @@
           "date": "2023-10-20",
           "type": "credit_stress",
           "sampleDates": [
-            "2023-09-11",
             "2023-09-18",
             "2023-09-25",
             "2023-10-02",
@@ -2197,21 +2180,21 @@
       "thresholdSweep": [
         {
           "threshold": 20,
-          "alertSampleCount": 95,
+          "alertSampleCount": 94,
           "uniqueEventCount": 13,
           "detectedEventCount": 13,
           "eventRecall": 100
         },
         {
           "threshold": 25,
-          "alertSampleCount": 67,
+          "alertSampleCount": 66,
           "uniqueEventCount": 13,
           "detectedEventCount": 8,
           "eventRecall": 61.5
         },
         {
           "threshold": 30,
-          "alertSampleCount": 25,
+          "alertSampleCount": 24,
           "uniqueEventCount": 13,
           "detectedEventCount": 6,
           "eventRecall": 46.2
@@ -2285,7 +2268,7 @@
       "dataState": "unknown",
       "startedAt": "2026-08-26T07:29:01.963Z",
       "horizonDays": 90,
-      "snapshotCount": 12,
+      "snapshotCount": 14,
       "maturedPredictionCount": 0,
       "minimumMaturedPredictions": 20,
       "minimumCalendarDays": 90,
@@ -2322,51 +2305,39 @@
       "label": "ドル円・米国連邦準備制度公表値",
       "unit": "円/ドル",
       "cadence": "日次",
-      "value": 159.97,
-      "observationDate": "2026-08-28",
-      "previousValue": 159.26,
-      "change": 0.710000000000008,
-      "dataState": "stale_observed",
+      "value": 156.11,
+      "observationDate": "2026-09-04",
+      "previousValue": 155.39,
+      "change": 0.7200000000000273,
+      "dataState": "observed",
       "sourceId": "FRED_DEXJPUS",
       "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-      "fetchedAt": "2026-09-06T23:22:31.199Z",
+      "fetchedAt": "2026-09-08T23:03:04.412Z",
       "authenticationState": "authenticated",
       "retrievalTransport": "FRED_API_v2",
-      "change3m": 0.4268943436499528,
-      "change12m": 8.837937134303985,
-      "change3mPoints": 0.6800000000000068,
-      "change12mPoints": 12.990000000000009
+      "change3m": -2.4129524285803505,
+      "change12m": 5.032631366480533,
+      "change3mPoints": -3.859999999999985,
+      "change12mPoints": 7.480000000000018
     },
     "officialCrossCheck": {
       "key": "ecbUsdJpyCross",
       "label": "ECBユーロ基準・ドル円交差レート",
-      "value": 156.246773,
+      "value": 154.296539,
       "unit": "円/ドル",
-      "observationDate": "2026-09-04",
+      "observationDate": "2026-09-08",
       "dataState": "observed",
       "sourceId": "ECB_EXR_D_USD_JPY_EUR_SP00_A",
       "sourceUrl": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+JPY.EUR.SP00.A?lastNObservations=5&format=csvdata",
-      "fetchedAt": "2026-09-06T23:22:31.616Z",
+      "fetchedAt": "2026-09-08T23:03:05.719Z",
       "authenticationState": "unauthenticated_official_public_api",
       "retrievalTransport": "ECB_SDMX_2_1_CSV",
       "formula": "EUR/JPY ÷ EUR/USD = USD/JPY",
       "referenceOnly": true,
       "executionPrice": false,
-      "eurUsd": 1.1622,
-      "eurJpy": 181.59,
+      "eurUsd": 1.1614,
+      "eurJpy": 179.2,
       "history": [
-        {
-          "date": "2026-08-31",
-          "eurUsd": 1.1596,
-          "eurJpy": 185.22,
-          "usdJpy": 159.727492
-        },
-        {
-          "date": "2026-09-01",
-          "eurUsd": 1.159,
-          "eurJpy": 185.63,
-          "usdJpy": 160.163934
-        },
         {
           "date": "2026-09-02",
           "eurUsd": 1.1578,
@@ -2384,19 +2355,31 @@
           "eurUsd": 1.1622,
           "eurJpy": 181.59,
           "usdJpy": 156.246773
+        },
+        {
+          "date": "2026-09-07",
+          "eurUsd": 1.1622,
+          "eurJpy": 179.85,
+          "usdJpy": 154.749613
+        },
+        {
+          "date": "2026-09-08",
+          "eurUsd": 1.1614,
+          "eurJpy": 179.2,
+          "usdJpy": 154.296539
         }
       ],
       "comparison": {
         "market": {
-          "value": 156.1,
-          "observationDate": "2026-09-06",
-          "differencePct": 0.094,
-          "sameObservationDate": false
+          "value": 153.688,
+          "observationDate": "2026-09-08",
+          "differencePct": 0.396,
+          "sameObservationDate": true
         },
         "fred": {
-          "value": 159.97,
-          "observationDate": "2026-08-28",
-          "differencePct": -2.327,
+          "value": 156.11,
+          "observationDate": "2026-09-04",
+          "differencePct": -1.162,
           "sameObservationDate": false
         },
         "verdict": "市場スナップショットとの差は0.5%以内",
@@ -2409,21 +2392,21 @@
       "dataState": "observed_partial",
       "sourceId": "YAHOO_FINANCE_JPY=X",
       "sourceUrl": "https://finance.yahoo.com/quote/JPY=X/",
-      "fetchedAt": "2026-09-06T23:22:31.615Z",
-      "marketObservedAt": "2026-09-06T23:22:28.000Z",
+      "fetchedAt": "2026-09-08T23:03:05.716Z",
+      "marketObservedAt": "2026-09-08T23:03:03.000Z",
       "marketStatus": "open",
       "latestAvailable": true,
       "isRealtime": false,
       "note": "生成時点の市場スナップショット。TradingViewライブ表示とは更新間隔が異なり、売買・送金の執行価格ではありません。",
       "current": {
-        "value": 156.1,
-        "previousClose": 156.221,
-        "change": -0.121,
-        "changePct": -0.08,
-        "dayHigh": 156.282,
-        "dayLow": 155.891,
+        "value": 153.688,
+        "previousClose": 154.345,
+        "change": -0.657,
+        "changePct": -0.43,
+        "dayHigh": 153.974,
+        "dayLow": 153.613,
         "direction": "円高・ドル安",
-        "observationDate": "2026-09-06",
+        "observationDate": "2026-09-08",
         "dataState": "observed_partial",
         "sourceId": "YAHOO_FINANCE_JPY=X"
       },
@@ -2437,8 +2420,8 @@
         "closeChangePct": -1.67,
         "peakToTrough": -3.674,
         "peakToTroughPct": -2.31,
-        "currentVsShockHigh": -2.868,
-        "currentVsShockHighPct": -1.8,
+        "currentVsShockHigh": -5.28,
+        "currentVsShockHighPct": -3.32,
         "dataState": "observed_partial",
         "sourceId": "YAHOO_FINANCE_JPY=X"
       },
@@ -2513,11 +2496,11 @@
       },
       "okinawaImpact": {
         "usd200YenBefore": 31794,
-        "usd200YenNow": 31220,
-        "usd200YenChange": -574,
+        "usd200YenNow": 30738,
+        "usd200YenChange": -1056,
         "jpy20000UsdBefore": 125.81,
-        "jpy20000UsdNow": 128.12,
-        "jpy20000UsdChangePct": 1.84,
+        "jpy20000UsdNow": 130.13,
+        "jpy20000UsdChangePct": 3.44,
         "dataState": "estimated",
         "formula": "急変セッション高値と現在スナップショットを使った単純換算",
         "read": "円高方向は米軍家族のドル購買力を低下させ、同じ円価格のドル換算額を押し上げます。価格変更ではなく、まず見積表示と転換率を監視します。"
@@ -2545,20 +2528,20 @@
         "label": "ドル円・米国連邦準備制度公表値",
         "unit": "円/ドル",
         "cadence": "日次",
-        "value": 159.97,
-        "observationDate": "2026-08-28",
-        "previousValue": 159.26,
-        "change": 0.710000000000008,
-        "dataState": "stale_observed",
+        "value": 156.11,
+        "observationDate": "2026-09-04",
+        "previousValue": 155.39,
+        "change": 0.7200000000000273,
+        "dataState": "observed",
         "sourceId": "FRED_DEXJPUS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DEXJPUS",
-        "fetchedAt": "2026-09-06T23:22:31.199Z",
+        "fetchedAt": "2026-09-08T23:03:04.412Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": 0.4268943436499528,
-        "change12m": 8.837937134303985,
-        "change3mPoints": 0.6800000000000068,
-        "change12mPoints": 12.990000000000009
+        "change3m": -2.4129524285803505,
+        "change12m": 5.032631366480533,
+        "change3mPoints": -3.859999999999985,
+        "change12mPoints": 7.480000000000018
       },
       "fedFunds": {
         "key": "fedFunds",
@@ -2567,13 +2550,13 @@
         "unit": "%",
         "cadence": "日次",
         "value": 3.63,
-        "observationDate": "2026-09-03",
+        "observationDate": "2026-09-07",
         "previousValue": 3.63,
         "change": 0,
         "dataState": "observed",
         "sourceId": "FRED_DFF",
         "sourceUrl": "https://fred.stlouisfed.org/series/DFF",
-        "fetchedAt": "2026-09-06T23:22:30.517Z",
+        "fetchedAt": "2026-09-08T23:03:04.372Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.2762430939226457,
@@ -2587,20 +2570,20 @@
         "label": "米国債2年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 4.34,
-        "observationDate": "2026-09-03",
-        "previousValue": 4.39,
-        "change": -0.04999999999999982,
+        "value": 4.37,
+        "observationDate": "2026-09-04",
+        "previousValue": 4.34,
+        "change": 0.03000000000000025,
         "dataState": "observed",
         "sourceId": "FRED_DGS2",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS2",
-        "fetchedAt": "2026-09-06T23:22:30.470Z",
+        "fetchedAt": "2026-09-08T23:03:04.309Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": 6.372549019607843,
-        "change12m": 20.221606648199455,
-        "change3mPoints": 0.2599999999999998,
-        "change12mPoints": 0.73
+        "change3m": 7.901234567901239,
+        "change12m": 21.72701949860725,
+        "change3mPoints": 0.3200000000000003,
+        "change12mPoints": 0.7800000000000002
       },
       "treasury10y": {
         "key": "treasury10y",
@@ -2608,20 +2591,20 @@
         "label": "米国債10年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 4.77,
-        "observationDate": "2026-09-03",
-        "previousValue": 4.79,
-        "change": -0.020000000000000462,
+        "value": 4.78,
+        "observationDate": "2026-09-04",
+        "previousValue": 4.77,
+        "change": 0.010000000000000675,
         "dataState": "observed",
         "sourceId": "FRED_DGS10",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS10",
-        "fetchedAt": "2026-09-06T23:22:30.525Z",
+        "fetchedAt": "2026-09-08T23:03:04.340Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": 6.236080178173697,
-        "change12m": 13.033175355450233,
-        "change3mPoints": 0.27999999999999936,
-        "change12mPoints": 0.5499999999999998
+        "change3m": 6.935123042505609,
+        "change12m": 14.62829736211031,
+        "change3mPoints": 0.3100000000000005,
+        "change12mPoints": 0.6100000000000003
       },
       "treasury30y": {
         "key": "treasury30y",
@@ -2629,20 +2612,20 @@
         "label": "米国債30年利回り",
         "unit": "%",
         "cadence": "日次",
-        "value": 5.25,
-        "observationDate": "2026-09-03",
-        "previousValue": 5.27,
-        "change": -0.019999999999999574,
+        "value": 5.24,
+        "observationDate": "2026-09-04",
+        "previousValue": 5.25,
+        "change": -0.009999999999999787,
         "dataState": "observed",
         "sourceId": "FRED_DGS30",
         "sourceUrl": "https://fred.stlouisfed.org/series/DGS30",
-        "fetchedAt": "2026-09-06T23:22:30.475Z",
+        "fetchedAt": "2026-09-08T23:03:04.872Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": 5.210420841683372,
-        "change12m": 7.14285714285714,
-        "change3mPoints": 0.2599999999999998,
-        "change12mPoints": 0.34999999999999964
+        "change3m": 5.432595573440646,
+        "change12m": 7.818930041152261,
+        "change3mPoints": 0.27000000000000046,
+        "change12mPoints": 0.3799999999999999
       },
       "dollarBroad": {
         "key": "dollarBroad",
@@ -2650,20 +2633,20 @@
         "label": "名目実効ドル指数・広義",
         "unit": "指数",
         "cadence": "日次",
-        "value": 118.7479,
-        "observationDate": "2026-08-28",
-        "previousValue": 118.3583,
-        "change": 0.3896000000000015,
-        "dataState": "stale_observed",
+        "value": 118.0732,
+        "observationDate": "2026-09-04",
+        "previousValue": 118.127,
+        "change": -0.05379999999999541,
+        "dataState": "observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-09-06T23:22:30.467Z",
+        "fetchedAt": "2026-09-08T23:03:03.933Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": -0.2385076929022345,
-        "change12m": -1.256948515501899,
-        "change3mPoints": -0.2839000000000027,
-        "change12mPoints": -1.5116000000000014
+        "change3m": -1.079326248413437,
+        "change12m": -2.227256881045425,
+        "change3mPoints": -1.2883000000000067,
+        "change12mPoints": -2.689700000000002
       },
       "moneyMarketAssets": {
         "key": "moneyMarketAssets",
@@ -2678,7 +2661,7 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-09-06T23:22:30.513Z",
+        "fetchedAt": "2026-09-08T23:03:04.019Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 1.2128345523663153,
@@ -2699,7 +2682,7 @@
         "dataState": "observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-09-06T23:22:30.667Z",
+        "fetchedAt": "2026-09-08T23:03:04.509Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.8530208770657577,
@@ -2720,7 +2703,7 @@
         "dataState": "observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-09-06T23:22:30.469Z",
+        "fetchedAt": "2026-09-08T23:03:04.302Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -4.651162790697683,
@@ -2741,7 +2724,7 @@
         "dataState": "observed",
         "sourceId": "FRED_CPIAUCSL",
         "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCSL",
-        "fetchedAt": "2026-09-06T23:22:30.568Z",
+        "fetchedAt": "2026-09-08T23:03:04.528Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.12213942546337453,
@@ -2763,7 +2746,7 @@
         "dataState": "observed",
         "sourceId": "FRED_GDPC1",
         "sourceUrl": "https://fred.stlouisfed.org/series/GDPC1",
-        "fetchedAt": "2026-09-06T23:22:30.512Z",
+        "fetchedAt": "2026-09-08T23:03:04.394Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.36886871149750533,
@@ -2778,20 +2761,20 @@
         "label": "米国ハイイールド債スプレッド",
         "unit": "%",
         "cadence": "日次",
-        "value": 2.65,
-        "observationDate": "2026-09-03",
-        "previousValue": 2.66,
-        "change": -0.010000000000000231,
+        "value": 2.68,
+        "observationDate": "2026-09-07",
+        "previousValue": 2.68,
+        "change": 0,
         "dataState": "observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-09-06T23:22:30.574Z",
+        "fetchedAt": "2026-09-08T23:03:04.370Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": -3.6363636363636376,
-        "change12m": -7.986111111111116,
-        "change3mPoints": -0.10000000000000009,
-        "change12mPoints": -0.22999999999999998
+        "change3m": -2.898550724637672,
+        "change12m": -5.300353356890453,
+        "change3mPoints": -0.07999999999999963,
+        "change12mPoints": -0.1499999999999999
       },
       "sofr": {
         "key": "sofr",
@@ -2799,20 +2782,20 @@
         "label": "担保付翌日物調達金利",
         "unit": "%",
         "cadence": "日次",
-        "value": 3.66,
-        "observationDate": "2026-09-03",
-        "previousValue": 3.65,
-        "change": 0.010000000000000231,
+        "value": 3.65,
+        "observationDate": "2026-09-04",
+        "previousValue": 3.66,
+        "change": -0.010000000000000231,
         "dataState": "observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-09-06T23:22:30.519Z",
+        "fetchedAt": "2026-09-08T23:03:04.295Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": 1.3850415512465464,
-        "change12m": -16.628701594533023,
-        "change3mPoints": 0.050000000000000266,
-        "change12mPoints": -0.7299999999999995
+        "change3m": 0.8287292817679592,
+        "change12m": -17.233560090702948,
+        "change3mPoints": 0.029999999999999805,
+        "change12mPoints": -0.7600000000000002
       },
       "ciTighteningLarge": {
         "key": "ciTighteningLarge",
@@ -2827,7 +2810,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-09-06T23:22:30.498Z",
+        "fetchedAt": "2026-09-08T23:03:04.396Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -100,
@@ -2848,7 +2831,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-09-06T23:22:30.678Z",
+        "fetchedAt": "2026-09-08T23:03:04.718Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -72.72727272727273,
@@ -2869,7 +2852,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-09-06T23:22:30.674Z",
+        "fetchedAt": "2026-09-08T23:03:04.555Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -4.511278195488721,
@@ -2890,7 +2873,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DCOILWTICO",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
-        "fetchedAt": "2026-09-06T23:22:30.466Z",
+        "fetchedAt": "2026-09-08T23:03:04.444Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -4.668611921634003,
@@ -2911,7 +2894,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DCOILBRENTEU",
         "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
-        "fetchedAt": "2026-09-06T23:22:31.292Z",
+        "fetchedAt": "2026-09-08T23:03:04.286Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -2.309492318648909,
@@ -2925,20 +2908,20 @@
         "label": "VIX市場不安指数",
         "unit": "指数",
         "cadence": "日次",
-        "value": 14.32,
-        "observationDate": "2026-09-03",
-        "previousValue": 15.2,
-        "change": -0.879999999999999,
+        "value": 15.3,
+        "observationDate": "2026-09-07",
+        "previousValue": 14.53,
+        "change": 0.7700000000000014,
         "dataState": "observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-09-06T23:22:30.506Z",
+        "fetchedAt": "2026-09-08T23:03:04.370Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": -10.8343711083437,
-        "change12m": -12.415902140672785,
-        "change3mPoints": -1.7399999999999984,
-        "change12mPoints": -2.030000000000001
+        "change3m": -28.870292887029294,
+        "change12m": 0.7905138339921125,
+        "change3mPoints": -6.210000000000001,
+        "change12mPoints": 0.120000000000001
       },
       "yieldCurve10y3m": {
         "key": "yieldCurve10y3m",
@@ -2946,20 +2929,20 @@
         "label": "米10年国債－3か月国債スプレッド",
         "unit": "%ポイント",
         "cadence": "日次",
-        "value": 0.87,
-        "observationDate": "2026-09-04",
-        "previousValue": 0.88,
+        "value": 0.86,
+        "observationDate": "2026-09-08",
+        "previousValue": 0.87,
         "change": -0.010000000000000009,
         "dataState": "observed",
         "sourceId": "FRED_T10Y3M",
         "sourceUrl": "https://fred.stlouisfed.org/series/T10Y3M",
-        "fetchedAt": "2026-09-06T23:22:30.501Z",
+        "fetchedAt": "2026-09-08T23:03:04.217Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": 26.086956521739136,
-        "change12m": 8600,
-        "change3mPoints": 0.18000000000000005,
-        "change12mPoints": 0.86
+        "change3m": 13.157894736842103,
+        "change12m": -1820,
+        "change3mPoints": 0.09999999999999998,
+        "change12mPoints": 0.91
       },
       "sahmRule": {
         "key": "sahmRule",
@@ -2974,7 +2957,7 @@
         "dataState": "observed",
         "sourceId": "FRED_SAHMREALTIME",
         "sourceUrl": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-        "fetchedAt": "2026-09-06T23:22:30.559Z",
+        "fetchedAt": "2026-09-08T23:03:04.246Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -170.00000000000003,
@@ -2995,7 +2978,7 @@
         "dataState": "observed",
         "sourceId": "FRED_ICSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/ICSA",
-        "fetchedAt": "2026-09-06T23:22:30.696Z",
+        "fetchedAt": "2026-09-08T23:03:04.386Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -2.8301886792452824,
@@ -3016,7 +2999,7 @@
         "dataState": "observed",
         "sourceId": "FRED_CCSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/CCSA",
-        "fetchedAt": "2026-09-06T23:22:30.489Z",
+        "fetchedAt": "2026-09-08T23:03:05.048Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -0.3361344537815114,
@@ -3037,7 +3020,7 @@
         "dataState": "observed",
         "sourceId": "FRED_PAYEMS",
         "sourceUrl": "https://fred.stlouisfed.org/series/PAYEMS",
-        "fetchedAt": "2026-09-06T23:22:30.515Z",
+        "fetchedAt": "2026-09-08T23:03:03.869Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.13470895940477234,
@@ -3058,7 +3041,7 @@
         "dataState": "observed",
         "sourceId": "FRED_JTSJOL",
         "sourceUrl": "https://fred.stlouisfed.org/series/JTSJOL",
-        "fetchedAt": "2026-09-06T23:22:30.492Z",
+        "fetchedAt": "2026-09-08T23:03:03.635Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -4.139749505603163,
@@ -3079,7 +3062,7 @@
         "dataState": "observed",
         "sourceId": "FRED_TEMPHELPS",
         "sourceUrl": "https://fred.stlouisfed.org/series/TEMPHELPS",
-        "fetchedAt": "2026-09-06T23:22:30.589Z",
+        "fetchedAt": "2026-09-08T23:03:05.157Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 1.1603629647474634,
@@ -3100,7 +3083,7 @@
         "dataState": "observed",
         "sourceId": "FRED_INDPRO",
         "sourceUrl": "https://fred.stlouisfed.org/series/INDPRO",
-        "fetchedAt": "2026-09-06T23:22:31.180Z",
+        "fetchedAt": "2026-09-08T23:03:04.386Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.46244725409139154,
@@ -3121,7 +3104,7 @@
         "dataState": "observed",
         "sourceId": "FRED_PCEC96",
         "sourceUrl": "https://fred.stlouisfed.org/series/PCEC96",
-        "fetchedAt": "2026-09-06T23:22:30.516Z",
+        "fetchedAt": "2026-09-08T23:03:04.515Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.8220240403256973,
@@ -3142,7 +3125,7 @@
         "dataState": "observed",
         "sourceId": "FRED_RSAFS",
         "sourceUrl": "https://fred.stlouisfed.org/series/RSAFS",
-        "fetchedAt": "2026-09-06T23:22:31.189Z",
+        "fetchedAt": "2026-09-08T23:03:04.490Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.5934682919310763,
@@ -3171,7 +3154,7 @@
         "dataState": "observed",
         "sourceId": "FRED_BUSINV",
         "sourceUrl": "https://fred.stlouisfed.org/series/BUSINV",
-        "fetchedAt": "2026-09-06T23:22:30.506Z",
+        "fetchedAt": "2026-09-08T23:03:05.046Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 1.0076663292665877,
@@ -3200,7 +3183,7 @@
         "dataState": "observed",
         "sourceId": "FRED_ISRATIO",
         "sourceUrl": "https://fred.stlouisfed.org/series/ISRATIO",
-        "fetchedAt": "2026-09-06T23:22:30.507Z",
+        "fetchedAt": "2026-09-08T23:03:04.856Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -1.5151515151515138,
@@ -3221,7 +3204,7 @@
         "dataState": "observed",
         "sourceId": "FRED_HOUST",
         "sourceUrl": "https://fred.stlouisfed.org/series/HOUST",
-        "fetchedAt": "2026-09-06T23:22:30.730Z",
+        "fetchedAt": "2026-09-08T23:03:04.425Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -12.376237623762377,
@@ -3242,7 +3225,7 @@
         "dataState": "observed",
         "sourceId": "FRED_MORTGAGE30US",
         "sourceUrl": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-        "fetchedAt": "2026-09-06T23:22:30.699Z",
+        "fetchedAt": "2026-09-08T23:03:05.453Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 2.7565084226646164,
@@ -3263,7 +3246,7 @@
         "dataState": "observed",
         "sourceId": "FRED_NFCI",
         "sourceUrl": "https://fred.stlouisfed.org/series/NFCI",
-        "fetchedAt": "2026-09-06T23:22:30.677Z",
+        "fetchedAt": "2026-09-08T23:03:04.050Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 9.411764705882364,
@@ -3284,7 +3267,7 @@
         "dataState": "observed",
         "sourceId": "FRED_PB0000031Q225SBEA",
         "sourceUrl": "https://fred.stlouisfed.org/series/PB0000031Q225SBEA",
-        "fetchedAt": "2026-09-06T23:22:30.534Z",
+        "fetchedAt": "2026-09-08T23:03:03.601Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 147.05882352941177,
@@ -3299,19 +3282,19 @@
         "unit": "指数",
         "sourceId": "YAHOO_FINANCE_^GSPC",
         "sourceUrl": "https://finance.yahoo.com/quote/%5EGSPC/",
-        "value": 7718.60009765625,
-        "observationDate": "2026-09-04",
-        "previousValue": 7747.7099609375,
-        "change": -29.10986328125,
+        "value": 7673.52001953125,
+        "observationDate": "2026-09-08",
+        "previousValue": 7718.60009765625,
+        "change": -45.080078125,
         "cadence": "日次",
         "dataState": "observed_partial",
-        "fetchedAt": "2026-09-06T23:22:31.292Z",
+        "fetchedAt": "2026-09-08T23:03:05.454Z",
         "retrievalMethod": "market_snapshot",
         "note": "市場配信の生成時スナップショット。公式統計ではなく、終値訂正・配信遅延の可能性があります。",
-        "change3m": 1.7706296027591328,
-        "change12m": 18.70970527760798,
-        "change3mPoints": 134.2900390625,
-        "change12mPoints": 1216.52001953125
+        "change3m": 3.61598437654016,
+        "change12m": 18.14230825931038,
+        "change3mPoints": 267.7900390625,
+        "change12mPoints": 1178.3701171875
       },
       "gold": {
         "key": "gold",
@@ -3320,54 +3303,54 @@
         "unit": "ドル/トロイオンス",
         "sourceId": "YAHOO_FINANCE_GC=F",
         "sourceUrl": "https://finance.yahoo.com/quote/GC=F/",
-        "value": 4476.60009765625,
-        "observationDate": "2026-09-06",
+        "value": 4396.89990234375,
+        "observationDate": "2026-09-08",
         "previousValue": 4429.7998046875,
-        "change": 46.80029296875,
+        "change": -32.89990234375,
         "cadence": "日次",
         "dataState": "observed_partial",
-        "fetchedAt": "2026-09-06T23:22:31.293Z",
+        "fetchedAt": "2026-09-08T23:03:05.455Z",
         "retrievalMethod": "market_snapshot",
         "note": "市場配信の生成時スナップショット。公式統計ではなく、終値訂正・配信遅延の可能性があります。",
-        "change3m": 3.2164348725865377,
-        "change12m": 23.895720086134364,
-        "change3mPoints": 139.5,
-        "change12mPoints": 863.400146484375
+        "change3m": 1.4068590459624497,
+        "change12m": 20.857034834647248,
+        "change3mPoints": 61,
+        "change12mPoints": 758.7998046875
       }
     },
     "treasuryDebt": {
       "key": "federalDebt",
       "label": "米国連邦債務残高",
-      "value": 40102964278586.1,
+      "value": 40094590636301.7,
       "unit": "ドル",
-      "observationDate": "2026-09-03",
+      "observationDate": "2026-09-04",
       "dataState": "observed",
       "sourceId": "UST_DEBT_TO_PENNY",
       "sourceUrl": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
-      "fetchedAt": "2026-09-06T23:22:32.590Z"
+      "fetchedAt": "2026-09-08T23:03:06.676Z"
     },
     "yieldCurve": [
       {
         "tenor": "2年",
-        "value": 4.34,
-        "date": "2026-09-03"
+        "value": 4.37,
+        "date": "2026-09-04"
       },
       {
         "tenor": "10年",
-        "value": 4.77,
-        "date": "2026-09-03"
+        "value": 4.78,
+        "date": "2026-09-04"
       },
       {
         "tenor": "30年",
-        "value": 5.25,
-        "date": "2026-09-03"
+        "value": 5.24,
+        "date": "2026-09-04"
       }
     ]
   },
   "dataCollectionArchitecture": {
     "dataState": "observed_partial",
     "strategy": "multi_source_verification",
-    "generatedAt": "2026-09-06T23:22:29.795Z",
+    "generatedAt": "2026-09-08T23:03:02.629Z",
     "conclusion": "有料市場APIだけに依存せず、公式公開API・中央銀行基準値・市場スナップショット・一次情報を分離し、同じ指標を複数経路で照合する。",
     "lanes": [
       {
@@ -7219,7 +7202,7 @@
   },
   "geopoliticalEvents": {
     "dataState": "observed_partial",
-    "verifiedAt": "2026-09-06T23:22:32.791Z",
+    "verifiedAt": "2026-09-08T23:03:06.687Z",
     "automatedFeeds": {
       "reliefWeb": {
         "dataState": "blocked_or_failed",
@@ -7527,7 +7510,7 @@
   },
   "lifeImpact": {
     "dataState": "estimated",
-    "score": 57.4,
+    "score": 55.8,
     "state": "yellow",
     "label": "注意",
     "formula": "ドル円30% + 原油25% + 米金利・信用・VIX20% + 沖縄近接・紅海・世界紛争25%。各成分を0–100に正規化し、取得できた成分だけで再加重",
@@ -7536,9 +7519,9 @@
       {
         "key": "currency",
         "label": "円安・輸入コスト",
-        "score": 66.6,
+        "score": 60.2,
         "state": "yellow",
-        "dataState": "stale_observed",
+        "dataState": "observed",
         "sourceIds": [
           "FRED_DEXJPUS"
         ],
@@ -7559,7 +7542,7 @@
       {
         "key": "finance",
         "label": "金利・信用不安",
-        "score": 29.5,
+        "score": 30.9,
         "state": "green",
         "dataState": "estimated",
         "sourceIds": [
@@ -7592,7 +7575,7 @@
   },
   "privateCredit": {
     "dataState": "estimated",
-    "score": 49.8,
+    "score": 50,
     "state": "yellow",
     "label": "警戒",
     "conclusion": "即時のシステム危機とは断定しない。一方、デフォルト率の上昇、半流動型ファンドの解約超過、銀行・保険との連結、非公開評価の遅れが同時に進む局面を警戒する。",
@@ -7602,7 +7585,7 @@
       {
         "key": "borrower",
         "label": "借り手返済力",
-        "score": 36.6,
+        "score": 36.5,
         "state": "yellow",
         "dataState": "estimated",
         "sourceIds": [
@@ -7638,7 +7621,7 @@
       {
         "key": "market",
         "label": "公開市場代理",
-        "score": 14.2,
+        "score": 15.6,
         "state": "green",
         "dataState": "estimated",
         "sourceIds": [
@@ -7664,7 +7647,7 @@
     "regionImpacts": [
       {
         "region": "米国経済",
-        "score": 63.8,
+        "score": 64,
         "state": "yellow",
         "dataState": "estimated",
         "channels": [
@@ -7676,7 +7659,7 @@
       },
       {
         "region": "世界経済",
-        "score": 51.8,
+        "score": 52,
         "state": "yellow",
         "dataState": "estimated",
         "channels": [
@@ -7688,7 +7671,7 @@
       },
       {
         "region": "日本経済",
-        "score": 41.8,
+        "score": 42,
         "state": "yellow",
         "dataState": "estimated",
         "channels": [
@@ -7700,7 +7683,7 @@
       },
       {
         "region": "沖縄・koya",
-        "score": 29.4,
+        "score": 29.5,
         "state": "green",
         "dataState": "estimated",
         "channels": [
@@ -7831,20 +7814,20 @@
         "label": "担保付翌日物調達金利",
         "unit": "%",
         "cadence": "日次",
-        "value": 3.66,
-        "observationDate": "2026-09-03",
-        "previousValue": 3.65,
-        "change": 0.010000000000000231,
+        "value": 3.65,
+        "observationDate": "2026-09-04",
+        "previousValue": 3.66,
+        "change": -0.010000000000000231,
         "dataState": "observed",
         "sourceId": "FRED_SOFR",
         "sourceUrl": "https://fred.stlouisfed.org/series/SOFR",
-        "fetchedAt": "2026-09-06T23:22:30.519Z",
+        "fetchedAt": "2026-09-08T23:03:04.295Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": 1.3850415512465464,
-        "change12m": -16.628701594533023,
-        "change3mPoints": 0.050000000000000266,
-        "change12mPoints": -0.7299999999999995
+        "change3m": 0.8287292817679592,
+        "change12m": -17.233560090702948,
+        "change3mPoints": 0.029999999999999805,
+        "change12mPoints": -0.7600000000000002
       },
       {
         "key": "ciTighteningLarge",
@@ -7859,7 +7842,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCILM",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCILM",
-        "fetchedAt": "2026-09-06T23:22:30.498Z",
+        "fetchedAt": "2026-09-08T23:03:04.396Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -100,
@@ -7880,7 +7863,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRTSCIS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRTSCIS",
-        "fetchedAt": "2026-09-06T23:22:30.678Z",
+        "fetchedAt": "2026-09-08T23:03:04.718Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -72.72727272727273,
@@ -7901,7 +7884,7 @@
         "dataState": "observed",
         "sourceId": "FRED_DRBLACBS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DRBLACBS",
-        "fetchedAt": "2026-09-06T23:22:30.674Z",
+        "fetchedAt": "2026-09-08T23:03:04.555Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -4.511278195488721,
@@ -7968,7 +7951,7 @@
   },
   "capitalFlow": {
     "dataState": "estimated",
-    "score": 63.2,
+    "score": 62.4,
     "state": "yellow",
     "label": "資金再配分を警戒",
     "conclusion": "ドル資産への吸引は強い一方、全面的なドル現金逃避ではない。FOMCは3.50〜3.75%を据え置いたが3名が利上げを主張し、金利差の急縮小はまだ確認できない。日本は株式買越しと債券売越しが同時進行しており、資産別に方向を分けて読む必要がある。",
@@ -7976,7 +7959,7 @@
     "warning": "指数は投資助言・為替予測ではありません。COFERの比率変化には為替評価、TICにはカストディ経由、MOF週次には大幅な反転があり、単月・単週を構造変化と断定しません。",
     "derived": {
       "carrySpread": 2.6,
-      "dollarBroadChange12m": -1.3,
+      "dollarBroadChange12m": -2.2,
       "realDisposableIncomePcChange12m": 0.2,
       "moneyMarketAssetsChange12m": 12.1
     },
@@ -7984,7 +7967,7 @@
       {
         "key": "dollar_magnet",
         "label": "ドル資産吸引力",
-        "score": 68.2,
+        "score": 67,
         "state": "yellow",
         "direction": "米長期証券へ流入",
         "read": "外貨準備のドル比率は57.13%。ただし上昇の約半分は評価要因。6月TICは民間・公的部門とも純流入で、調整後の長期証券需要もプラス。",
@@ -7999,7 +7982,7 @@
       {
         "key": "carry",
         "label": "ドル買い・円売りキャリー",
-        "score": 59.6,
+        "score": 56.4,
         "state": "yellow",
         "direction": "短期金利差 2.63ポイント",
         "read": "FOMCは据え置き、3名は25bp利上げを主張。日銀も7月31日に1.0%を維持したため、米実効FF金利との約2.63ポイント差はドル保有を支えるが、米雇用悪化や日銀正常化観測で急反転し得る。",
@@ -8029,7 +8012,7 @@
       {
         "key": "japan_reallocation",
         "label": "日本への資金再配分",
-        "score": 61.3,
+        "score": 61.8,
         "state": "yellow",
         "direction": "株式買越し・債券売越し",
         "read": "直近週は日本株を9,121億円買い越す一方、日本証券全体は3兆4,891億円売り越し。長期債と短期債の売りが大きく、企業価値への投資と金利・流動性判断が分岐している。",
@@ -8255,20 +8238,20 @@
         "label": "名目実効ドル指数・広義",
         "unit": "指数",
         "cadence": "日次",
-        "value": 118.7479,
-        "observationDate": "2026-08-28",
-        "previousValue": 118.3583,
-        "change": 0.3896000000000015,
-        "dataState": "stale_observed",
+        "value": 118.0732,
+        "observationDate": "2026-09-04",
+        "previousValue": 118.127,
+        "change": -0.05379999999999541,
+        "dataState": "observed",
         "sourceId": "FRED_DTWEXBGS",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS",
-        "fetchedAt": "2026-09-06T23:22:30.467Z",
+        "fetchedAt": "2026-09-08T23:03:03.933Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": -0.2385076929022345,
-        "change12m": -1.256948515501899,
-        "change3mPoints": -0.2839000000000027,
-        "change12mPoints": -1.5116000000000014
+        "change3m": -1.079326248413437,
+        "change12m": -2.227256881045425,
+        "change3mPoints": -1.2883000000000067,
+        "change12mPoints": -2.689700000000002
       },
       {
         "key": "moneyMarketAssets",
@@ -8283,7 +8266,7 @@
         "dataState": "stale_observed",
         "sourceId": "FRED_MMMFFAQ027S",
         "sourceUrl": "https://fred.stlouisfed.org/series/MMMFFAQ027S",
-        "fetchedAt": "2026-09-06T23:22:30.513Z",
+        "fetchedAt": "2026-09-08T23:03:04.019Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 1.2128345523663153,
@@ -8304,7 +8287,7 @@
         "dataState": "observed",
         "sourceId": "FRED_A229RX0",
         "sourceUrl": "https://fred.stlouisfed.org/series/A229RX0",
-        "fetchedAt": "2026-09-06T23:22:30.667Z",
+        "fetchedAt": "2026-09-08T23:03:04.509Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.8530208770657577,
@@ -8649,7 +8632,7 @@
   "policyCredibility": {
     "dataState": "estimated",
     "analysisType": "strategic_interpretation",
-    "score": 46.5,
+    "score": 46.2,
     "state": "yellow",
     "label": "制約衝突を警戒",
     "conclusion": "再産業化にはドル競争力と供給能力、物価安定にはエネルギーと通貨、国債安定には長期金利と信用の確認が必要です。3目標の同時達成の難しさを監視しますが、危機の発生確率や政策意図を示す点数ではありません。",
@@ -8658,8 +8641,8 @@
       {
         "key": "reshoring",
         "label": "再産業化の摩擦",
-        "score": 37.4,
-        "state": "yellow",
+        "score": 34.4,
+        "state": "green",
         "dataState": "estimated",
         "tension": "ドル高は輸入物価を抑えやすい一方、米製造業の価格競争力には逆風。生産と原油も同時確認。",
         "sourceIds": [
@@ -8671,7 +8654,7 @@
       {
         "key": "prices",
         "label": "物価安定の圧力",
-        "score": 51.7,
+        "score": 52.9,
         "state": "yellow",
         "dataState": "estimated",
         "tension": "ドル安と原油高が重なると輸入物価へ波及。CPIだけでなくエネルギーとドルを分離。",
@@ -8684,7 +8667,7 @@
       {
         "key": "bonds",
         "label": "国債・金融安定の圧力",
-        "score": 49.5,
+        "score": 50.1,
         "state": "yellow",
         "dataState": "estimated",
         "tension": "30年金利、国債吸収、HY、VIXを統合。債務総額だけでは金融危機を断定しない。",
@@ -8700,7 +8683,7 @@
       {
         "key": "carry_unwind",
         "label": "円キャリー巻き戻し",
-        "score": 52.3,
+        "score": 53.2,
         "state": "yellow",
         "dataState": "estimated",
         "confirm": "円高急変・高い金利差・VIX上昇が同時進行",
@@ -8714,7 +8697,7 @@
       {
         "key": "yield_equity",
         "label": "長期金利×株価ストレス",
-        "score": 56.1,
+        "score": 52.6,
         "state": "yellow",
         "dataState": "estimated",
         "confirm": "30年金利上昇と株価下落の同時進行",
@@ -8727,7 +8710,7 @@
       {
         "key": "gold_dollar",
         "label": "金上昇×ドル低下",
-        "score": 64.1,
+        "score": 61.3,
         "state": "yellow",
         "dataState": "estimated",
         "confirm": "金の上昇と広義ドル低下が同時進行",
@@ -8755,7 +8738,7 @@
       {
         "key": "contained",
         "label": "流動性ショックの封じ込め",
-        "score": 90,
+        "score": 88.6,
         "state": "green",
         "dataState": "estimated",
         "read": "VIX・HY・NFCIが落ち着けば、急変が実体信用へ広がらない反証になります。"
@@ -8763,7 +8746,7 @@
       {
         "key": "systemic",
         "label": "信用・雇用への波及",
-        "score": 24.1,
+        "score": 24.4,
         "state": "green",
         "dataState": "estimated",
         "read": "金融、雇用、世界資金、米景気の複数レーン悪化で、2007年型の波及仮説を強めます。"
@@ -8773,7 +8756,7 @@
       "title": "The U.S. Is Now Buying Yen",
       "channel": "Andrei Jikh",
       "publishedAt": "2026-08-06",
-      "reviewedAt": "2026-09-06T23:22:29.795Z",
+      "reviewedAt": "2026-09-08T23:03:02.629Z",
       "url": "https://youtu.be/dlaVKt9-Tfg",
       "dataState": "observed_partial",
       "role": "二次解説・仮説形成",
@@ -8820,7 +8803,7 @@
   "fundamentalOutlook": {
     "dataState": "estimated",
     "modelVersion": "KOYA-US-GLOBAL-FUNDAMENTALS-1.0",
-    "score": 25.8,
+    "score": 25.9,
     "state": "green",
     "label": "拡大・軟着陸域",
     "conclusion": "現在は急収縮を示す一斉悪化ではない。ただし金利曲線、雇用、信用の先行指標が上向けば3〜12か月の圧力が変化する。",
@@ -8937,7 +8920,7 @@
       {
         "key": "finance",
         "label": "金融・信用",
-        "score": 20.1,
+        "score": 21,
         "weight": 0.15,
         "read": "NFCI、HYスプレッド、VIX、プライベートクレジットを統合。",
         "sourceIds": [
@@ -8977,7 +8960,7 @@
       {
         "horizon": "3か月",
         "months": 3,
-        "score": 25.1,
+        "score": 25.2,
         "formula": "先行55% + 現在45%",
         "state": "green",
         "label": "拡大・軟着陸域",
@@ -8986,7 +8969,7 @@
       {
         "horizon": "6か月",
         "months": 6,
-        "score": 25,
+        "score": 25.2,
         "formula": "先行65% + 現在35%",
         "state": "green",
         "label": "拡大・軟着陸域",
@@ -8995,7 +8978,7 @@
       {
         "horizon": "12か月",
         "months": 12,
-        "score": 14.4,
+        "score": 14.6,
         "formula": "金利曲線40% + 金融25% + 雇用20% + 需要15%",
         "state": "green",
         "label": "拡大・軟着陸域",
@@ -9006,7 +8989,7 @@
       {
         "key": "dollar",
         "label": "ドル資金調達",
-        "score": 30.3,
+        "score": 28.7,
         "direction": "ドル高・高金利・流動性",
         "read": "新興国、輸入企業、ドル建て債務の返済負担へ伝播。",
         "action": "ドル資金・為替ヘッジ・輸入原価を再計算",
@@ -9016,7 +8999,7 @@
       {
         "key": "trade",
         "label": "世界貿易・輸出",
-        "score": 29.3,
+        "score": 27.9,
         "direction": "米需要→世界輸出",
         "read": "米家計需要と企業投資の低下がアジア・欧州の輸出、生産へ波及。",
         "action": "輸出依存国と沖縄物流の需要変化を確認",
@@ -9026,7 +9009,7 @@
       {
         "key": "credit",
         "label": "信用・資産価格",
-        "score": 30.4,
+        "score": 30.9,
         "direction": "信用収縮→投資減",
         "read": "銀行、HY、プライベートクレジット、株式評価を通じ設備投資へ波及。",
         "action": "借換え・延滞・解約・銀行連結を同時監視",
@@ -9036,7 +9019,7 @@
       {
         "key": "commodities",
         "label": "資源・海運",
-        "score": 33.4,
+        "score": 34.2,
         "direction": "需要減と供給ショック",
         "read": "景気低下は需要を弱めるが、軍事・供給制約は原油と運賃を逆方向へ押し上げ得る。",
         "action": "需要要因と地政学供給要因を分離",
@@ -9046,17 +9029,17 @@
       {
         "key": "japan",
         "label": "日本経済",
-        "score": 35.3,
+        "score": 34.9,
         "direction": "輸出・円・金利",
         "read": "米需要、ドル円、米金利、海外投資家の株式・債券配分を通じて伝播。",
         "action": "株式・債券・為替を資産別に確認",
-        "state": "yellow",
+        "state": "green",
         "dataState": "estimated"
       },
       {
         "key": "okinawa",
         "label": "沖縄・koya",
-        "score": 30.8,
+        "score": 30.5,
         "direction": "ドル購買力・物流・心理",
         "read": "米軍家族のドル購買力、予約心理、燃料・物流費、価格転換へ時間差で伝播。",
         "action": "予約、客単価、キャンセル、米軍顧客比率を確認",
@@ -9068,15 +9051,15 @@
       {
         "key": "soft_landing",
         "label": "拡大・軟着陸",
-        "value": 74.195,
+        "value": 74.06,
         "read": "実質需要が維持され、金融環境の急激な引締まりがない。",
-        "weight": 53.4,
+        "weight": 53.2,
         "dataState": "estimated"
       },
       {
         "key": "slowdown",
         "label": "減速",
-        "value": 63.707499999999996,
+        "value": 63.91,
         "read": "雇用・需要は鈍化するが、信用収縮と連鎖的失業は限定。",
         "weight": 45.9,
         "dataState": "estimated"
@@ -9084,9 +9067,9 @@
       {
         "key": "contraction",
         "label": "収縮",
-        "value": 1.0062499999999996,
+        "value": 1.1749999999999972,
         "read": "雇用、需要、信用の複数レーンが同時に悪化。",
-        "weight": 0.7,
+        "weight": 0.8,
         "dataState": "estimated"
       }
     ],
@@ -9101,7 +9084,7 @@
         {
           "key": "regime",
           "label": "通貨制度・信認",
-          "score": 48,
+          "score": 46.7,
           "sourceIds": [
             "FRED_CPIAUCSL",
             "FRED_DTWEXBGS",
@@ -9198,7 +9181,7 @@
         {
           "key": "credit",
           "label": "銀行・信用ストレス",
-          "score": 20.1,
+          "score": 21,
           "sourceIds": [
             "FRED_NFCI",
             "FRED_BAMLH0A0HYM2",
@@ -9211,7 +9194,7 @@
         {
           "key": "market",
           "label": "市場ボラティリティ",
-          "score": 9.7,
+          "score": 11.5,
           "sourceIds": [
             "FRED_VIXCLS",
             "FRED_BAMLH0A0HYM2"
@@ -9223,7 +9206,7 @@
         {
           "key": "dollar",
           "label": "ドル資金圧力",
-          "score": 29.6,
+          "score": 25.4,
           "sourceIds": [
             "FRED_DTWEXBGS",
             "FRED_DFF",
@@ -9260,7 +9243,7 @@
         {
           "key": "trade",
           "label": "貿易・外需低下",
-          "score": 29.3,
+          "score": 27.9,
           "sourceIds": [
             "FRB_G17_2026_M07",
             "FRED_DTWEXBGS"
@@ -9330,7 +9313,7 @@
         {
           "key": "nbfi",
           "label": "非銀行・プライベート信用",
-          "score": 64.1,
+          "score": 64.2,
           "sourceIds": [
             "FSB_PRIVATE_CREDIT_2026_05",
             "FRB_FSR_2026_05_FUNDING",
@@ -9388,11 +9371,11 @@
           }
         ],
         "current": {
-          "score": 25.8,
+          "score": 25.9,
           "state": "green",
           "zoneLabel": "安定・低圧力",
-          "distanceToDanger": 44.2,
-          "positionPercent": 25.8
+          "distanceToDanger": 44.1,
+          "positionPercent": 25.9
         },
         "counts": {
           "green": 9,
@@ -9477,7 +9460,7 @@
           {
             "key": "nbfi",
             "label": "非銀行・プライベート信用",
-            "score": 64.1,
+            "score": 64.2,
             "sourceIds": [
               "FSB_PRIVATE_CREDIT_2026_05",
               "FRB_FSR_2026_05_FUNDING",
@@ -9488,10 +9471,10 @@
             "dataState": "estimated",
             "zone": "yellow",
             "zoneLabel": "中間・注意",
-            "distanceToDanger": 5.9,
-            "distanceToAttention": -29.1,
-            "positionPercent": 64.1,
-            "positionText": "危険線まで 5.9pt"
+            "distanceToDanger": 5.8,
+            "distanceToAttention": -29.2,
+            "positionPercent": 64.2,
+            "positionText": "危険線まで 5.8pt"
           },
           {
             "key": "digitalDollar",
@@ -9534,7 +9517,7 @@
           {
             "key": "regime",
             "label": "通貨制度・信認",
-            "score": 48,
+            "score": 46.7,
             "sourceIds": [
               "FRED_CPIAUCSL",
               "FRED_DTWEXBGS",
@@ -9545,10 +9528,10 @@
             "dataState": "estimated",
             "zone": "yellow",
             "zoneLabel": "中間・注意",
-            "distanceToDanger": 22,
-            "distanceToAttention": -13,
-            "positionPercent": 48,
-            "positionText": "危険線まで 22.0pt"
+            "distanceToDanger": 23.3,
+            "distanceToAttention": -11.7,
+            "positionPercent": 46.7,
+            "positionText": "危険線まで 23.3pt"
           },
           {
             "key": "inflation",
@@ -9643,7 +9626,7 @@
           {
             "key": "nbfi",
             "label": "非銀行・プライベート信用",
-            "score": 64.1,
+            "score": 64.2,
             "sourceIds": [
               "FSB_PRIVATE_CREDIT_2026_05",
               "FRB_FSR_2026_05_FUNDING",
@@ -9654,10 +9637,10 @@
             "dataState": "estimated",
             "zone": "yellow",
             "zoneLabel": "中間・注意",
-            "distanceToDanger": 5.9,
-            "distanceToAttention": -29.1,
-            "positionPercent": 64.1,
-            "positionText": "危険線まで 5.9pt"
+            "distanceToDanger": 5.8,
+            "distanceToAttention": -29.2,
+            "positionPercent": 64.2,
+            "positionText": "危険線まで 5.8pt"
           },
           {
             "key": "digitalDollar",
@@ -9716,7 +9699,7 @@
           {
             "key": "regime",
             "label": "通貨制度・信認",
-            "score": 48,
+            "score": 46.7,
             "sourceIds": [
               "FRED_CPIAUCSL",
               "FRED_DTWEXBGS",
@@ -9727,10 +9710,10 @@
             "dataState": "estimated",
             "zone": "yellow",
             "zoneLabel": "中間・注意",
-            "distanceToDanger": 22,
-            "distanceToAttention": -13,
-            "positionPercent": 48,
-            "positionText": "危険線まで 22.0pt"
+            "distanceToDanger": 23.3,
+            "distanceToAttention": -11.7,
+            "positionPercent": 46.7,
+            "positionText": "危険線まで 23.3pt"
           },
           {
             "key": "inflation",
@@ -9823,9 +9806,27 @@
             "positionText": "注意線まで 2.0pt"
           },
           {
+            "key": "trade",
+            "label": "貿易・外需低下",
+            "score": 27.9,
+            "sourceIds": [
+              "FRB_G17_2026_M07",
+              "FRED_DTWEXBGS"
+            ],
+            "read": "米需要、生産、ドルを通じる世界貿易への波及圧力。",
+            "state": "green",
+            "dataState": "estimated",
+            "zone": "green",
+            "zoneLabel": "安定・低圧力",
+            "distanceToDanger": 42.1,
+            "distanceToAttention": 7.1,
+            "positionPercent": 27.9,
+            "positionText": "注意線まで 7.1pt"
+          },
+          {
             "key": "dollar",
             "label": "ドル資金圧力",
-            "score": 29.6,
+            "score": 25.4,
             "sourceIds": [
               "FRED_DTWEXBGS",
               "FRED_DFF",
@@ -9836,28 +9837,10 @@
             "dataState": "estimated",
             "zone": "green",
             "zoneLabel": "安定・低圧力",
-            "distanceToDanger": 40.4,
-            "distanceToAttention": 5.4,
-            "positionPercent": 29.6,
-            "positionText": "注意線まで 5.4pt"
-          },
-          {
-            "key": "trade",
-            "label": "貿易・外需低下",
-            "score": 29.3,
-            "sourceIds": [
-              "FRB_G17_2026_M07",
-              "FRED_DTWEXBGS"
-            ],
-            "read": "米需要、生産、ドルを通じる世界貿易への波及圧力。",
-            "state": "green",
-            "dataState": "estimated",
-            "zone": "green",
-            "zoneLabel": "安定・低圧力",
-            "distanceToDanger": 40.7,
-            "distanceToAttention": 5.7,
-            "positionPercent": 29.3,
-            "positionText": "注意線まで 5.7pt"
+            "distanceToDanger": 44.6,
+            "distanceToAttention": 9.6,
+            "positionPercent": 25.4,
+            "positionText": "注意線まで 9.6pt"
           },
           {
             "key": "policy",
@@ -9880,7 +9863,7 @@
           {
             "key": "credit",
             "label": "銀行・信用ストレス",
-            "score": 20.1,
+            "score": 21,
             "sourceIds": [
               "FRED_NFCI",
               "FRED_BAMLH0A0HYM2",
@@ -9891,15 +9874,15 @@
             "dataState": "estimated",
             "zone": "green",
             "zoneLabel": "安定・低圧力",
-            "distanceToDanger": 49.9,
-            "distanceToAttention": 14.9,
-            "positionPercent": 20.1,
-            "positionText": "注意線まで 14.9pt"
+            "distanceToDanger": 49,
+            "distanceToAttention": 14,
+            "positionPercent": 21,
+            "positionText": "注意線まで 14.0pt"
           },
           {
             "key": "market",
             "label": "市場ボラティリティ",
-            "score": 9.7,
+            "score": 11.5,
             "sourceIds": [
               "FRED_VIXCLS",
               "FRED_BAMLH0A0HYM2"
@@ -9909,10 +9892,10 @@
             "dataState": "estimated",
             "zone": "green",
             "zoneLabel": "安定・低圧力",
-            "distanceToDanger": 60.3,
-            "distanceToAttention": 25.3,
-            "positionPercent": 9.7,
-            "positionText": "注意線まで 25.3pt"
+            "distanceToDanger": 58.5,
+            "distanceToAttention": 23.5,
+            "positionPercent": 11.5,
+            "positionText": "注意線まで 23.5pt"
           },
           {
             "key": "labor",
@@ -9957,7 +9940,7 @@
         "modelVersion": "KOYA-HEGEMONY-PARADOX-1.0",
         "dataState": "estimated",
         "label": "覇権国パラドクス早期警戒",
-        "score": 53.4,
+        "score": 53.6,
         "state": "yellow",
         "nixonSimilarity": 50.9,
         "nixonState": "yellow",
@@ -10078,7 +10061,7 @@
           {
             "key": "nbfi",
             "label": "現代固有・非銀行信用",
-            "score": 64.1,
+            "score": 64.2,
             "resemblance": "危機前にレバレッジと相互連結が見えにくい点は2008年以前と共通。",
             "current": "FSB推計1.5〜2.0兆ドル。FRBは高いヘッジファンドレバレッジと一部ファンドの解約要求を報告。",
             "counterEvidence": "長期ロックアップ資金は預金取付けと異なり、即時の強制売却を弱める場合がある。",
@@ -10113,7 +10096,7 @@
           {
             "key": "strong_dollar",
             "label": "強いドルの二面性",
-            "score": 43.5,
+            "score": 41.6,
             "support": "安全資産需要と高金利がドル・米国資産への資金集中を支える。",
             "reversal": "輸出競争力、海外ドル債務、米国外の流動性を圧迫し、危機時のドル買いを自己増幅する。",
             "watch": "ドル指数、TIC民間/公的、クロスカレンシー、BISドル信用",
@@ -10158,7 +10141,7 @@
           {
             "key": "tariff_reshoring",
             "label": "関税・国内回帰",
-            "score": 35.9,
+            "score": 35.4,
             "support": "関税収入、国内生産、供給網再配置、安全保障上の冗長性を狙う。",
             "reversal": "輸入価格、部材コスト、報復、投資縮小で成長と家計を圧迫し得る。",
             "watch": "実効関税率、輸入物価、設備投資、国別FDI、実質消費",
@@ -10216,7 +10199,7 @@
           {
             "key": "nbfi_migration",
             "label": "銀行外への信用移転",
-            "score": 64.1,
+            "score": 64.2,
             "support": "長期資金と分散投資により、銀行預金の即時取付けリスクを分散できる。",
             "reversal": "評価遅延、解約制限、NAV融資、銀行コミットメントが同時に動くと損失が遅れて顕在化する。",
             "watch": "PIK、NAV、解約要求、BDC価格、銀行コミットメント",
@@ -10614,7 +10597,7 @@
             "ファンド別NAV・PIK・延滞・コベナンツ",
             "銀行、保険、年金、ファンド間の重複エクスポージャー"
           ],
-          "score": 38.3,
+          "score": 38.6,
           "state": "yellow",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -10622,7 +10605,7 @@
             {
               "key": "nbfi",
               "label": "非銀行・プライベート信用",
-              "score": 64.1
+              "score": 64.2
             },
             {
               "key": "liquidity",
@@ -10639,17 +10622,17 @@
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 20.1
+              "score": 21
+            },
+            {
+              "key": "market",
+              "label": "市場ボラティリティ",
+              "score": 11.5
             },
             {
               "key": "policy",
               "label": "政策引締め",
               "score": 21.8
-            },
-            {
-              "key": "market",
-              "label": "市場ボラティリティ",
-              "score": 9.7
             }
           ]
         },
@@ -10693,7 +10676,7 @@
             "期待インフレの長期歴史整合系列",
             "賃金・価格転嫁の国際比較"
           ],
-          "score": 36.2,
+          "score": 36.1,
           "state": "yellow",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -10711,7 +10694,7 @@
             {
               "key": "regime",
               "label": "通貨制度・信認",
-              "score": 48
+              "score": 46.7
             }
           ],
           "contradictions": [
@@ -10766,7 +10749,7 @@
             "国別の外貨債務返済比率",
             "企業・政府の変動金利ドル債務満期表"
           ],
-          "score": 34.5,
+          "score": 33.9,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -10791,7 +10774,7 @@
             {
               "key": "dollar",
               "label": "ドル資金圧力",
-              "score": 29.6
+              "score": 25.4
             },
             {
               "key": "policy",
@@ -10801,155 +10784,7 @@
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 20.1
-            }
-          ]
-        },
-        {
-          "id": "nixon_1971",
-          "label": "ニクソン・ショック",
-          "period": "1965〜1973",
-          "sourceId": "FRB_HISTORY_GOLD_CONVERTIBILITY_ENDS",
-          "sourceUrl": "https://www.federalreservehistory.org/essays/gold-convertibility-ends",
-          "trigger": "ドルの金交換停止、賃金・物価統制、輸入課徴金",
-          "signature": [
-            {
-              "key": "regime",
-              "weight": 0.35
-            },
-            {
-              "key": "inflation",
-              "weight": 0.25
-            },
-            {
-              "key": "dollar",
-              "weight": 0.2
-            },
-            {
-              "key": "policy",
-              "weight": 0.1
-            },
-            {
-              "key": "trade",
-              "weight": 0.1
-            }
-          ],
-          "flow": [
-            "米国の国際収支赤字と海外ドル残高が累積",
-            "インフレと金交換要求で準備資産への圧力",
-            "ドル信認と固定相場制度の維持が困難化",
-            "1971年に金交換停止・価格統制・輸入課徴金",
-            "ブレトンウッズ体制終結と変動相場へ"
-          ],
-          "missing": [
-            "米公式金準備に対する外国保有ドル比率",
-            "各国の金交換請求・準備通貨構成の高頻度系列"
-          ],
-          "score": 29.8,
-          "state": "green",
-          "dataCoverage": 76,
-          "dataState": "estimated",
-          "matches": [
-            {
-              "key": "regime",
-              "label": "通貨制度・信認",
-              "score": 48
-            },
-            {
-              "key": "inflation",
-              "label": "インフレ",
-              "score": 45.3
-            }
-          ],
-          "contradictions": [
-            {
-              "key": "dollar",
-              "label": "ドル資金圧力",
-              "score": 29.6
-            },
-            {
-              "key": "trade",
-              "label": "貿易・外需低下",
-              "score": 29.3
-            },
-            {
-              "key": "policy",
-              "label": "政策引締め",
-              "score": 21.8
-            }
-          ]
-        },
-        {
-          "id": "wwii_postwar_repression",
-          "label": "第二次大戦・戦後金融抑圧",
-          "period": "1941〜1951",
-          "sourceId": "FED_HISTORY_TREASURY_FED_ACCORD",
-          "sourceUrl": "https://www.federalreservehistory.org/essays/treasury-fed-accord",
-          "trigger": "戦費調達、金利上限、インフレによる政府債務の実質圧縮",
-          "signature": [
-            {
-              "key": "fiscal",
-              "weight": 0.3
-            },
-            {
-              "key": "inflation",
-              "weight": 0.2
-            },
-            {
-              "key": "policy",
-              "weight": 0.2
-            },
-            {
-              "key": "reserve",
-              "weight": 0.15
-            },
-            {
-              "key": "trade",
-              "weight": 0.15
-            }
-          ],
-          "flow": [
-            "戦争支出と政府債務が急拡大",
-            "中央銀行が国債金利を低位に固定",
-            "物価上昇と低い名目金利で実質金利を抑制",
-            "資本規制・金融規制・国内貯蓄で国債需要を支える",
-            "1951年の財務省・FRBアコードで金融政策の独立性を回復"
-          ],
-          "missing": [
-            "家計・機関別の実質国債保有損益",
-            "資本規制と強制的国債需要の現代比較指標"
-          ],
-          "score": 29.8,
-          "state": "green",
-          "dataCoverage": 76,
-          "dataState": "estimated",
-          "matches": [
-            {
-              "key": "fiscal",
-              "label": "財政・国債利払い",
-              "score": 54.9
-            },
-            {
-              "key": "inflation",
-              "label": "インフレ",
-              "score": 45.3
-            }
-          ],
-          "contradictions": [
-            {
-              "key": "reserve",
-              "label": "基軸通貨・準備信認",
-              "score": 33
-            },
-            {
-              "key": "trade",
-              "label": "貿易・外需低下",
-              "score": 29.3
-            },
-            {
-              "key": "policy",
-              "label": "政策引締め",
-              "score": 21.8
+              "score": 21
             }
           ]
         },
@@ -10997,7 +10832,7 @@
             "国別銀行の自国債保有集中",
             "国債CDS・クロスボーダー決済分断の統合"
           ],
-          "score": 29.8,
+          "score": 30.1,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -11022,7 +10857,7 @@
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 20.1
+              "score": 21
             },
             {
               "key": "policy",
@@ -11032,7 +10867,155 @@
             {
               "key": "market",
               "label": "市場ボラティリティ",
-              "score": 9.7
+              "score": 11.5
+            }
+          ]
+        },
+        {
+          "id": "wwii_postwar_repression",
+          "label": "第二次大戦・戦後金融抑圧",
+          "period": "1941〜1951",
+          "sourceId": "FED_HISTORY_TREASURY_FED_ACCORD",
+          "sourceUrl": "https://www.federalreservehistory.org/essays/treasury-fed-accord",
+          "trigger": "戦費調達、金利上限、インフレによる政府債務の実質圧縮",
+          "signature": [
+            {
+              "key": "fiscal",
+              "weight": 0.3
+            },
+            {
+              "key": "inflation",
+              "weight": 0.2
+            },
+            {
+              "key": "policy",
+              "weight": 0.2
+            },
+            {
+              "key": "reserve",
+              "weight": 0.15
+            },
+            {
+              "key": "trade",
+              "weight": 0.15
+            }
+          ],
+          "flow": [
+            "戦争支出と政府債務が急拡大",
+            "中央銀行が国債金利を低位に固定",
+            "物価上昇と低い名目金利で実質金利を抑制",
+            "資本規制・金融規制・国内貯蓄で国債需要を支える",
+            "1951年の財務省・FRBアコードで金融政策の独立性を回復"
+          ],
+          "missing": [
+            "家計・機関別の実質国債保有損益",
+            "資本規制と強制的国債需要の現代比較指標"
+          ],
+          "score": 29.7,
+          "state": "green",
+          "dataCoverage": 76,
+          "dataState": "estimated",
+          "matches": [
+            {
+              "key": "fiscal",
+              "label": "財政・国債利払い",
+              "score": 54.9
+            },
+            {
+              "key": "inflation",
+              "label": "インフレ",
+              "score": 45.3
+            }
+          ],
+          "contradictions": [
+            {
+              "key": "reserve",
+              "label": "基軸通貨・準備信認",
+              "score": 33
+            },
+            {
+              "key": "policy",
+              "label": "政策引締め",
+              "score": 21.8
+            },
+            {
+              "key": "trade",
+              "label": "貿易・外需低下",
+              "score": 27.9
+            }
+          ]
+        },
+        {
+          "id": "nixon_1971",
+          "label": "ニクソン・ショック",
+          "period": "1965〜1973",
+          "sourceId": "FRB_HISTORY_GOLD_CONVERTIBILITY_ENDS",
+          "sourceUrl": "https://www.federalreservehistory.org/essays/gold-convertibility-ends",
+          "trigger": "ドルの金交換停止、賃金・物価統制、輸入課徴金",
+          "signature": [
+            {
+              "key": "regime",
+              "weight": 0.35
+            },
+            {
+              "key": "inflation",
+              "weight": 0.25
+            },
+            {
+              "key": "dollar",
+              "weight": 0.2
+            },
+            {
+              "key": "policy",
+              "weight": 0.1
+            },
+            {
+              "key": "trade",
+              "weight": 0.1
+            }
+          ],
+          "flow": [
+            "米国の国際収支赤字と海外ドル残高が累積",
+            "インフレと金交換要求で準備資産への圧力",
+            "ドル信認と固定相場制度の維持が困難化",
+            "1971年に金交換停止・価格統制・輸入課徴金",
+            "ブレトンウッズ体制終結と変動相場へ"
+          ],
+          "missing": [
+            "米公式金準備に対する外国保有ドル比率",
+            "各国の金交換請求・準備通貨構成の高頻度系列"
+          ],
+          "score": 28.7,
+          "state": "green",
+          "dataCoverage": 76,
+          "dataState": "estimated",
+          "matches": [
+            {
+              "key": "regime",
+              "label": "通貨制度・信認",
+              "score": 46.7
+            },
+            {
+              "key": "inflation",
+              "label": "インフレ",
+              "score": 45.3
+            }
+          ],
+          "contradictions": [
+            {
+              "key": "dollar",
+              "label": "ドル資金圧力",
+              "score": 25.4
+            },
+            {
+              "key": "trade",
+              "label": "貿易・外需低下",
+              "score": 27.9
+            },
+            {
+              "key": "policy",
+              "label": "政策引締め",
+              "score": 21.8
             }
           ]
         },
@@ -11080,7 +11063,7 @@
             "商業用不動産価格所得比",
             "担保価値と銀行・ノンバンク融資のルックスルー"
           ],
-          "score": 27.9,
+          "score": 28.2,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -11100,7 +11083,7 @@
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 20.1
+              "score": 21
             },
             {
               "key": "reserve",
@@ -11153,7 +11136,7 @@
             "銀行保有証券の含み損と預金流出の最新統合",
             "企業別の借換え壁と固定金利満期分布"
           ],
-          "score": 27.4,
+          "score": 27.1,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -11178,7 +11161,7 @@
             {
               "key": "dollar",
               "label": "ドル資金圧力",
-              "score": 29.6
+              "score": 25.4
             },
             {
               "key": "curve",
@@ -11231,7 +11214,7 @@
             "感染、医療逼迫、移動制限のリアルタイム系列",
             "事業停止・供給網寸断の国際高頻度データ"
           ],
-          "score": 25.7,
+          "score": 25.9,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -11254,14 +11237,14 @@
               "score": 34.2
             },
             {
+              "key": "market",
+              "label": "市場ボラティリティ",
+              "score": 11.5
+            },
+            {
               "key": "labor",
               "label": "雇用悪化",
               "score": 6.7
-            },
-            {
-              "key": "market",
-              "label": "市場ボラティリティ",
-              "score": 9.7
             }
           ]
         },
@@ -11310,7 +11293,7 @@
             "銀行・ノンバンクのレバレッジと担保追証",
             "プライベート資産の実勢評価損"
           ],
-          "score": 24.6,
+          "score": 24.9,
           "state": "green",
           "dataCoverage": 64,
           "dataState": "estimated",
@@ -11330,17 +11313,17 @@
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 20.1
+              "score": 21
+            },
+            {
+              "key": "market",
+              "label": "市場ボラティリティ",
+              "score": 11.5
             },
             {
               "key": "labor",
               "label": "雇用悪化",
               "score": 6.7
-            },
-            {
-              "key": "market",
-              "label": "市場ボラティリティ",
-              "score": 9.7
             }
           ]
         },
@@ -11388,7 +11371,7 @@
             "株式の評価倍率・IPO・利益なき企業比率",
             "AI関連設備投資と収益化の企業別ギャップ"
           ],
-          "score": 21.2,
+          "score": 21.7,
           "state": "green",
           "dataCoverage": 76,
           "dataState": "estimated",
@@ -11406,14 +11389,14 @@
               "score": 34.2
             },
             {
-              "key": "credit",
-              "label": "銀行・信用ストレス",
-              "score": 20.1
-            },
-            {
               "key": "market",
               "label": "市場ボラティリティ",
-              "score": 9.7
+              "score": 11.5
+            },
+            {
+              "key": "credit",
+              "label": "銀行・信用ストレス",
+              "score": 21
             }
           ]
         },
@@ -11462,7 +11445,7 @@
             "企業の未ヘッジ外貨債務",
             "固定・管理相場の防衛余力"
           ],
-          "score": 18.2,
+          "score": 17.5,
           "state": "green",
           "dataCoverage": 64,
           "dataState": "estimated",
@@ -11477,17 +11460,17 @@
             {
               "key": "dollar",
               "label": "ドル資金圧力",
-              "score": 29.6
-            },
-            {
-              "key": "trade",
-              "label": "貿易・外需低下",
-              "score": 29.3
+              "score": 25.4
             },
             {
               "key": "credit",
               "label": "銀行・信用ストレス",
-              "score": 20.1
+              "score": 21
+            },
+            {
+              "key": "trade",
+              "label": "貿易・外需低下",
+              "score": 27.9
             }
           ]
         }
@@ -11509,9 +11492,9 @@
           "url": "https://www.federalreservehistory.org/essays/latin-american-debt-crisis"
         },
         {
-          "sourceId": "FRB_HISTORY_GOLD_CONVERTIBILITY_ENDS",
-          "label": "ニクソン・ショック",
-          "url": "https://www.federalreservehistory.org/essays/gold-convertibility-ends"
+          "sourceId": "ECB_EURO_CRISIS_2012",
+          "label": "欧州政府債務危機",
+          "url": "https://www.ecb.europa.eu/press/key/date/2012/html/sp121126_1.en.html"
         },
         {
           "sourceId": "FED_HISTORY_TREASURY_FED_ACCORD",
@@ -11519,9 +11502,9 @@
           "url": "https://www.federalreservehistory.org/essays/treasury-fed-accord"
         },
         {
-          "sourceId": "ECB_EURO_CRISIS_2012",
-          "label": "欧州政府債務危機",
-          "url": "https://www.ecb.europa.eu/press/key/date/2012/html/sp121126_1.en.html"
+          "sourceId": "FRB_HISTORY_GOLD_CONVERTIBILITY_ENDS",
+          "label": "ニクソン・ショック",
+          "url": "https://www.federalreservehistory.org/essays/gold-convertibility-ends"
         },
         {
           "sourceId": "MOF_JAPAN_PLAZA_ACCORD_HISTORY",
@@ -11569,7 +11552,7 @@
         "dataState": "observed",
         "sourceId": "FRED_SAHMREALTIME",
         "sourceUrl": "https://fred.stlouisfed.org/series/SAHMREALTIME",
-        "fetchedAt": "2026-09-06T23:22:30.559Z",
+        "fetchedAt": "2026-09-08T23:03:04.246Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -170.00000000000003,
@@ -11583,20 +11566,20 @@
         "label": "米10年国債－3か月国債スプレッド",
         "unit": "%ポイント",
         "cadence": "日次",
-        "value": 0.87,
-        "observationDate": "2026-09-04",
-        "previousValue": 0.88,
+        "value": 0.86,
+        "observationDate": "2026-09-08",
+        "previousValue": 0.87,
         "change": -0.010000000000000009,
         "dataState": "observed",
         "sourceId": "FRED_T10Y3M",
         "sourceUrl": "https://fred.stlouisfed.org/series/T10Y3M",
-        "fetchedAt": "2026-09-06T23:22:30.501Z",
+        "fetchedAt": "2026-09-08T23:03:04.217Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": 26.086956521739136,
-        "change12m": 8600,
-        "change3mPoints": 0.18000000000000005,
-        "change12mPoints": 0.86
+        "change3m": 13.157894736842103,
+        "change12m": -1820,
+        "change3mPoints": 0.09999999999999998,
+        "change12mPoints": 0.91
       },
       {
         "key": "initialClaims",
@@ -11611,7 +11594,7 @@
         "dataState": "observed",
         "sourceId": "FRED_ICSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/ICSA",
-        "fetchedAt": "2026-09-06T23:22:30.696Z",
+        "fetchedAt": "2026-09-08T23:03:04.386Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -2.8301886792452824,
@@ -11632,7 +11615,7 @@
         "dataState": "observed",
         "sourceId": "FRED_CCSA",
         "sourceUrl": "https://fred.stlouisfed.org/series/CCSA",
-        "fetchedAt": "2026-09-06T23:22:30.489Z",
+        "fetchedAt": "2026-09-08T23:03:05.048Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -0.3361344537815114,
@@ -11653,7 +11636,7 @@
         "dataState": "observed",
         "sourceId": "FRED_UNRATE",
         "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-        "fetchedAt": "2026-09-06T23:22:30.469Z",
+        "fetchedAt": "2026-09-08T23:03:04.302Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -4.651162790697683,
@@ -11674,7 +11657,7 @@
         "dataState": "observed",
         "sourceId": "FRED_JTSJOL",
         "sourceUrl": "https://fred.stlouisfed.org/series/JTSJOL",
-        "fetchedAt": "2026-09-06T23:22:30.492Z",
+        "fetchedAt": "2026-09-08T23:03:03.635Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -4.139749505603163,
@@ -11695,7 +11678,7 @@
         "dataState": "observed",
         "sourceId": "FRED_TEMPHELPS",
         "sourceUrl": "https://fred.stlouisfed.org/series/TEMPHELPS",
-        "fetchedAt": "2026-09-06T23:22:30.589Z",
+        "fetchedAt": "2026-09-08T23:03:05.157Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 1.1603629647474634,
@@ -11716,7 +11699,7 @@
         "dataState": "observed",
         "sourceId": "FRED_PCEC96",
         "sourceUrl": "https://fred.stlouisfed.org/series/PCEC96",
-        "fetchedAt": "2026-09-06T23:22:30.516Z",
+        "fetchedAt": "2026-09-08T23:03:04.515Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.8220240403256973,
@@ -11737,7 +11720,7 @@
         "dataState": "observed",
         "sourceId": "FRED_RSAFS",
         "sourceUrl": "https://fred.stlouisfed.org/series/RSAFS",
-        "fetchedAt": "2026-09-06T23:22:31.189Z",
+        "fetchedAt": "2026-09-08T23:03:04.490Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.5934682919310763,
@@ -11758,7 +11741,7 @@
         "dataState": "observed",
         "sourceId": "FRED_INDPRO",
         "sourceUrl": "https://fred.stlouisfed.org/series/INDPRO",
-        "fetchedAt": "2026-09-06T23:22:31.180Z",
+        "fetchedAt": "2026-09-08T23:03:04.386Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 0.46244725409139154,
@@ -11779,7 +11762,7 @@
         "dataState": "observed",
         "sourceId": "FRED_HOUST",
         "sourceUrl": "https://fred.stlouisfed.org/series/HOUST",
-        "fetchedAt": "2026-09-06T23:22:30.730Z",
+        "fetchedAt": "2026-09-08T23:03:04.425Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": -12.376237623762377,
@@ -11800,7 +11783,7 @@
         "dataState": "observed",
         "sourceId": "FRED_MORTGAGE30US",
         "sourceUrl": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-        "fetchedAt": "2026-09-06T23:22:30.699Z",
+        "fetchedAt": "2026-09-08T23:03:05.453Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 2.7565084226646164,
@@ -11821,7 +11804,7 @@
         "dataState": "observed",
         "sourceId": "FRED_NFCI",
         "sourceUrl": "https://fred.stlouisfed.org/series/NFCI",
-        "fetchedAt": "2026-09-06T23:22:30.677Z",
+        "fetchedAt": "2026-09-08T23:03:04.050Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
         "change3m": 9.411764705882364,
@@ -11835,20 +11818,20 @@
         "label": "米国ハイイールド債スプレッド",
         "unit": "%",
         "cadence": "日次",
-        "value": 2.65,
-        "observationDate": "2026-09-03",
-        "previousValue": 2.66,
-        "change": -0.010000000000000231,
+        "value": 2.68,
+        "observationDate": "2026-09-07",
+        "previousValue": 2.68,
+        "change": 0,
         "dataState": "observed",
         "sourceId": "FRED_BAMLH0A0HYM2",
         "sourceUrl": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
-        "fetchedAt": "2026-09-06T23:22:30.574Z",
+        "fetchedAt": "2026-09-08T23:03:04.370Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": -3.6363636363636376,
-        "change12m": -7.986111111111116,
-        "change3mPoints": -0.10000000000000009,
-        "change12mPoints": -0.22999999999999998
+        "change3m": -2.898550724637672,
+        "change12m": -5.300353356890453,
+        "change3mPoints": -0.07999999999999963,
+        "change12mPoints": -0.1499999999999999
       },
       {
         "key": "vix",
@@ -11856,20 +11839,20 @@
         "label": "VIX市場不安指数",
         "unit": "指数",
         "cadence": "日次",
-        "value": 14.32,
-        "observationDate": "2026-09-03",
-        "previousValue": 15.2,
-        "change": -0.879999999999999,
+        "value": 15.3,
+        "observationDate": "2026-09-07",
+        "previousValue": 14.53,
+        "change": 0.7700000000000014,
         "dataState": "observed",
         "sourceId": "FRED_VIXCLS",
         "sourceUrl": "https://fred.stlouisfed.org/series/VIXCLS",
-        "fetchedAt": "2026-09-06T23:22:30.506Z",
+        "fetchedAt": "2026-09-08T23:03:04.370Z",
         "authenticationState": "authenticated",
         "retrievalTransport": "FRED_API_v2",
-        "change3m": -10.8343711083437,
-        "change12m": -12.415902140672785,
-        "change3mPoints": -1.7399999999999984,
-        "change12mPoints": -2.030000000000001
+        "change3m": -28.870292887029294,
+        "change12m": 0.7905138339921125,
+        "change3mPoints": -6.210000000000001,
+        "change12mPoints": 0.120000000000001
       }
     ],
     "actions": [
@@ -11900,11 +11883,11 @@
     "label": "koya 総合判断・経営監視圧力指数",
     "modelVersion": "KOYA-OVERALL-PRESSURE-1.0",
     "dataState": "estimated",
-    "score": 50,
+    "score": 49.7,
     "state": "yellow",
     "zoneLabel": "注意・重点監視",
     "dataCoverage": 100,
-    "distanceToDanger": 20,
+    "distanceToDanger": 20.3,
     "thresholds": {
       "attention": 35,
       "midpoint": 50,
@@ -11915,7 +11898,7 @@
       {
         "key": "us_macro",
         "label": "米国景気低下圧力",
-        "score": 25.8,
+        "score": 25.9,
         "weight": 0.18,
         "sourceIds": [
           "FRED_SAHMREALTIME",
@@ -11931,7 +11914,7 @@
       {
         "key": "fiscal_hegemony",
         "label": "財政・覇権構造",
-        "score": 53.4,
+        "score": 53.6,
         "weight": 0.13,
         "sourceIds": [
           "CBO_BUDGET_2026_2036",
@@ -11946,7 +11929,7 @@
       {
         "key": "private_credit",
         "label": "プライベートクレジット",
-        "score": 49.8,
+        "score": 50,
         "weight": 0.14,
         "sourceIds": [
           "FSB_PRIVATE_CREDIT_2026",
@@ -11961,7 +11944,7 @@
       {
         "key": "capital_flow",
         "label": "ドル・世界資金フロー",
-        "score": 63.2,
+        "score": 62.4,
         "weight": 0.13,
         "sourceIds": [
           "UST_TIC_JUN_2026",
@@ -11976,7 +11959,7 @@
       {
         "key": "okinawa_life",
         "label": "沖縄生活・事業波及",
-        "score": 57.4,
+        "score": 55.8,
         "weight": 0.13,
         "sourceIds": [
           "FRED_DEXJPUS",
@@ -12042,13 +12025,13 @@
       {
         "key": "capital_flow",
         "label": "ドル・世界資金フロー",
-        "score": 63.2,
+        "score": 62.4,
         "state": "yellow"
       },
       {
         "key": "okinawa_life",
         "label": "沖縄生活・事業波及",
-        "score": 57.4,
+        "score": 55.8,
         "state": "yellow"
       }
     ],
@@ -12071,8 +12054,8 @@
       },
       {
         "label": "米景気6本柱は低圧力",
-        "value": "25.8 / 100",
-        "observationDate": "2026-09-06",
+        "value": "25.9 / 100",
+        "observationDate": "2026-09-08",
         "sourceId": "KOYA-US-GLOBAL-FUNDAMENTALS-1.0",
         "sourceUrl": "https://fred.stlouisfed.org/",
         "dataState": "estimated"
@@ -12109,8 +12092,8 @@
       {
         "key": "dollar_purchasing_power",
         "label": "ドル建て購買力の追い風",
-        "score": 60.2,
-        "state": "green",
+        "score": 56.1,
+        "state": "yellow",
         "dataState": "estimated",
         "orientation": "opportunity",
         "horizon": "0〜30日",
@@ -12146,7 +12129,7 @@
       {
         "key": "treasury_dollar_regime",
         "label": "米国債・ドル制度転換圧力",
-        "score": 53.2,
+        "score": 53.5,
         "state": "yellow",
         "dataState": "estimated",
         "orientation": "risk",
@@ -12164,7 +12147,7 @@
       {
         "key": "okinawa_operating_cost",
         "label": "沖縄の原価・物流圧力",
-        "score": 57.4,
+        "score": 55.8,
         "state": "yellow",
         "dataState": "estimated",
         "orientation": "risk",
@@ -12186,7 +12169,7 @@
       {
         "key": "strategic_expansion_window",
         "label": "Family Tree Oki展開余地",
-        "score": 61.8,
+        "score": 60.2,
         "state": "green",
         "dataState": "estimated",
         "orientation": "opportunity",
@@ -12232,9 +12215,9 @@
           "key": "echo2d",
           "label": "2Dエコー",
           "yen": 15000,
-          "usd": 96.09,
-          "fx": 156.1,
-          "observationDate": "2026-09-06",
+          "usd": 97.6,
+          "fx": 153.688,
+          "observationDate": "2026-09-08",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -12242,9 +12225,9 @@
           "key": "echo4d",
           "label": "4Dエコー",
           "yen": 20000,
-          "usd": 128.12,
-          "fx": 156.1,
-          "observationDate": "2026-09-06",
+          "usd": 130.13,
+          "fx": 153.688,
+          "observationDate": "2026-09-08",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -12252,9 +12235,9 @@
           "key": "heartbeat_plush",
           "label": "心音ぬいぐるみ",
           "yen": 6000,
-          "usd": 38.44,
-          "fx": 156.1,
-          "observationDate": "2026-09-06",
+          "usd": 39.04,
+          "fx": 153.688,
+          "observationDate": "2026-09-08",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -12262,9 +12245,9 @@
           "key": "postpartum_low",
           "label": "産後ケア・下限",
           "yen": 60000,
-          "usd": 384.37,
-          "fx": 156.1,
-          "observationDate": "2026-09-06",
+          "usd": 390.4,
+          "fx": 153.688,
+          "observationDate": "2026-09-08",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -12272,9 +12255,9 @@
           "key": "postpartum_high",
           "label": "産後ケア・上限",
           "yen": 75000,
-          "usd": 480.46,
-          "fx": 156.1,
-          "observationDate": "2026-09-06",
+          "usd": 488,
+          "fx": 153.688,
+          "observationDate": "2026-09-08",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -12282,9 +12265,9 @@
           "key": "babysitter",
           "label": "ベビーシッター・通常1時間",
           "yen": 3500,
-          "usd": 22.42,
-          "fx": 156.1,
-          "observationDate": "2026-09-06",
+          "usd": 22.77,
+          "fx": 153.688,
+          "observationDate": "2026-09-08",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         },
@@ -12292,9 +12275,9 @@
           "key": "babysitter_night",
           "label": "ベビーシッター・夜間1時間",
           "yen": 5000,
-          "usd": 32.03,
-          "fx": 156.1,
-          "observationDate": "2026-09-06",
+          "usd": 32.53,
+          "fx": 153.688,
+          "observationDate": "2026-09-08",
           "dataState": "estimated",
           "sourceId": "YAHOO_FINANCE_JPY=X"
         }
@@ -12602,10 +12585,10 @@
           {
             "seriesId": "FRED_DGS10",
             "label": "米国債10年利回り",
-            "value": 4.77,
+            "value": 4.78,
             "unit": "%",
-            "observationDate": "2026-09-03",
-            "retrievedAt": "2026-09-06T23:22:30.525Z",
+            "observationDate": "2026-09-04",
+            "retrievedAt": "2026-09-08T23:03:04.340Z",
             "dataState": "observed",
             "sourceId": "FRED_DGS10",
             "sourceUrl": "https://fred.stlouisfed.org/series/DGS10"
@@ -12671,7 +12654,7 @@
           "sourceUrl": "https://treasurydirect.gov/auctions/announcements-data-results/"
         },
         "optionalBusinessTranslation": "ドル円への方向予測には使わず、ドル購買力・米国家計信用・円建て原価の三経路を別々に確認する。",
-        "relatedHegemonyScore": 53.4,
+        "relatedHegemonyScore": 53.6,
         "priorityScore": 64,
         "scoreWeights": {
           "evidenceQualityCoverage": 0.35,
@@ -12743,7 +12726,7 @@
             "value": 206000,
             "unit": "件",
             "observationDate": "2026-08-29",
-            "retrievedAt": "2026-09-06T23:22:30.696Z",
+            "retrievedAt": "2026-09-08T23:03:04.386Z",
             "dataState": "observed",
             "sourceId": "FRED_ICSA",
             "sourceUrl": "https://fred.stlouisfed.org/series/ICSA"
@@ -12754,7 +12737,7 @@
             "value": 1779000,
             "unit": "件",
             "observationDate": "2026-08-22",
-            "retrievedAt": "2026-09-06T23:22:30.489Z",
+            "retrievedAt": "2026-09-08T23:03:05.048Z",
             "dataState": "observed",
             "sourceId": "FRED_CCSA",
             "sourceUrl": "https://fred.stlouisfed.org/series/CCSA"
@@ -12765,7 +12748,7 @@
             "value": 162,
             "unit": "千人",
             "observationDate": "2026-08-01",
-            "retrievedAt": "2026-09-06T23:22:30.515Z",
+            "retrievedAt": "2026-09-08T23:03:03.869Z",
             "dataState": "observed",
             "sourceId": "FRED_PAYEMS",
             "sourceUrl": "https://fred.stlouisfed.org/series/PAYEMS"
@@ -13415,13 +13398,13 @@
   "health": {
     "status": "passed_with_warnings",
     "label": "主要機能は正常・要確認項目あり",
-    "checkedAt": "2026-09-06T23:22:32.792Z",
+    "checkedAt": "2026-09-08T23:03:06.690Z",
     "totals": {
       "failed": 0,
       "unknown": 4,
-      "stale": 11,
+      "stale": 7,
       "total": 398,
-      "observed": 109,
+      "observed": 113,
       "observedPartial": 243,
       "estimated": 31
     },
@@ -13431,8 +13414,8 @@
         "stateCounts": {
           "observed_partial": 243,
           "estimated": 31,
-          "observed": 109,
-          "stale_observed": 11,
+          "observed": 113,
+          "stale_observed": 7,
           "unknown": 4
         }
       },
@@ -13441,32 +13424,32 @@
       },
       "independentIndicatorCore": {
         "total": 162,
-        "currentObservedSharePct": 83.3,
+        "currentObservedSharePct": 85.8,
         "observedEvidenceSharePct": 90.1,
-        "staleObservedSharePct": 6.8
+        "staleObservedSharePct": 4.3
       },
       "allJsonStateNodes": {
         "total": 623,
         "stateCounts": {
           "unknown": 11,
-          "stale_observed": 12,
-          "observed": 169,
+          "observed": 174,
           "observed_partial": 252,
           "estimated": 177,
+          "stale_observed": 7,
           "blocked_or_failed": 2
         },
         "note": "監視本体以外の証拠・派生・取得経路も含む。重複派生を含むため監視本体とは直接比較しない。"
       }
     },
     "quality": {
-      "currentObservedSharePct": 88.4,
+      "currentObservedSharePct": 89.4,
       "observedEvidenceSharePct": 91.2,
-      "staleObservedSharePct": 2.8,
-      "decisionCurrentObservedSharePct": 83.3,
-      "decisionStaleObservedSharePct": 6.8,
+      "staleObservedSharePct": 1.8,
+      "decisionCurrentObservedSharePct": 85.8,
+      "decisionStaleObservedSharePct": 4.3,
       "decisionScope": "independent_external_indicator_core_excluding_world_map_and_derived_panels",
       "estimatedSharePct": 7.8,
-      "mapExcludedCurrentObservedSharePct": 83.3,
+      "mapExcludedCurrentObservedSharePct": 85.8,
       "definitions": {
         "currentObservedSharePct": "observedとobserved_partialの合計÷監視本体総数",
         "observedEvidenceSharePct": "observed・observed_partial・stale_observedの合計÷監視本体総数",
@@ -13504,8 +13487,8 @@
         "label": "米国マクロ・為替・国債",
         "total": 38,
         "counts": {
-          "stale_observed": 3,
-          "observed": 33,
+          "observed": 35,
+          "stale_observed": 1,
           "observed_partial": 2
         },
         "failedIds": []
@@ -13534,8 +13517,7 @@
         "label": "沖縄生活波及",
         "total": 4,
         "counts": {
-          "stale_observed": 1,
-          "observed": 1,
+          "observed": 2,
           "estimated": 2
         },
         "failedIds": []
@@ -13556,10 +13538,10 @@
         "label": "ドル・資金フロー",
         "total": 20,
         "counts": {
-          "observed": 15,
+          "observed": 16,
           "estimated": 2,
           "observed_partial": 1,
-          "stale_observed": 2
+          "stale_observed": 1
         },
         "failedIds": []
       },
@@ -13643,8 +13625,8 @@
       },
       {
         "id": "freshnessGate",
-        "result": "warning",
-        "note": "独立外部指標（地図・派生判断パネルを除外）の現行実測 83.3%（基準85%以上）・旧実測 6.8%（基準10%以下）。地図・派生パネルは別表示"
+        "result": "passed",
+        "note": "独立外部指標（地図・派生判断パネルを除外）の現行実測 85.8%（基準85%以上）・旧実測 4.3%（基準10%以下）。地図・派生パネルは別表示"
       },
       {
         "id": "japanUsTreasury",
@@ -13659,7 +13641,7 @@
       {
         "id": "multiSourceVerification",
         "result": true,
-        "note": "6経路・ECBドル円 156.246773"
+        "note": "6経路・ECBドル円 154.296539"
       },
       {
         "id": "worldCoverage",
@@ -13674,7 +13656,7 @@
       {
         "id": "overallJudgment",
         "result": "passed",
-        "note": "8領域・総合 50"
+        "note": "8領域・総合 49.7"
       },
       {
         "id": "businessCompass",
@@ -13694,7 +13676,7 @@
       {
         "id": "modelValidation",
         "result": "warning",
-        "note": "暫定リプレイ138標本、前向き12件・成熟0件。90日確定検証は継続中"
+        "note": "暫定リプレイ137標本、前向き14件・成熟0件。90日確定検証は継続中"
       },
       {
         "id": "sourceTrace",
@@ -13708,19 +13690,19 @@
       },
       {
         "id": "decisionReliability",
-        "result": "warning",
-        "note": "判断材料信頼度 64/100・C評価"
+        "result": "passed",
+        "note": "判断材料信頼度 79/100・B評価"
       }
     ]
   },
   "decisionReliability": {
     "id": "KOYA_DECISION_RELIABILITY_1_0",
     "dataState": "estimated",
-    "score": 64,
-    "rawScore": 90.1,
-    "cap": 64,
-    "grade": "C",
-    "label": "追加確認後に限定利用",
+    "score": 79,
+    "rawScore": 90.7,
+    "cap": 79,
+    "grade": "B",
+    "label": "条件付きで判断補助に利用可能",
     "scale": [
       {
         "grade": "A",
@@ -13751,10 +13733,10 @@
       {
         "key": "freshness",
         "label": "鮮度",
-        "score": 83.3,
+        "score": 85.8,
         "weight": 0.25,
-        "dataState": "observed_partial",
-        "note": "独立外部指標 83.3% / 旧実測 6.8%（地図・派生判断パネルを除外）"
+        "dataState": "observed",
+        "note": "独立外部指標 85.8% / 旧実測 4.3%（地図・派生判断パネルを除外）"
       },
       {
         "key": "traceability",
@@ -13778,7 +13760,7 @@
         "score": 100,
         "weight": 0.15,
         "dataState": "observed_partial",
-        "note": "6経路。ECBと市場値の差 0.094%"
+        "note": "6経路。ECBと市場値の差 0.396%"
       },
       {
         "key": "modelValidation",
@@ -13798,7 +13780,6 @@
       }
     ],
     "gates": [
-      "鮮度基準未達のためC上限",
       "バックテスト未完了のためA評価を禁止",
       "前向き90日検証未成熟のためA評価を禁止"
     ],
@@ -13810,7 +13791,7 @@
     "limitations": [
       "危機発生確率ではない",
       "過去リプレイは改定後系列による暫定値",
-      "前向き90日検証は12件収集・0件成熟",
+      "前向き90日検証は14件収集・0件成熟",
       "Family Tree Okiの実績KPIは対象外。外部環境データのみで信頼度を評価"
     ],
     "nextActions": [
@@ -13824,7 +13805,7 @@
   "globalSourceNetwork": {
     "modelVersion": "KOYA-GLOBAL-SOURCE-NETWORK-1.0",
     "strategy": "official_api_adapter_registry",
-    "generatedAt": "2026-09-06T23:22:36.977Z",
+    "generatedAt": "2026-09-08T23:03:14.215Z",
     "dataState": "observed_partial",
     "principle": "一次・公式APIを数値取得の主経路、文書・ニュース・動画を発見リードとし、取得成功をURL登録と分離する。",
     "activeProbes": [
@@ -13834,11 +13815,11 @@
         "family": "currency_credit",
         "cadence": "daily",
         "dataState": "observed",
-        "checkedAt": "2026-09-06T23:22:33.881Z",
+        "checkedAt": "2026-09-08T23:03:10.914Z",
         "sourceUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/debt_to_penny?sort=-record_date&page[number]=1&page[size]=1",
         "sample": {
-          "observationDate": "2026-09-03",
-          "value": 40102964278586.1,
+          "observationDate": "2026-09-04",
+          "value": 40094590636301.7,
           "unit": "USD"
         }
       },
@@ -13848,7 +13829,7 @@
         "family": "economy",
         "cadence": "annual",
         "dataState": "observed",
-        "checkedAt": "2026-09-06T23:22:33.916Z",
+        "checkedAt": "2026-09-08T23:03:10.946Z",
         "sourceUrl": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=10",
         "sample": {
           "observationDate": "2025",
@@ -13862,7 +13843,7 @@
         "family": "credit_liquidity",
         "cadence": "daily",
         "dataState": "observed_partial",
-        "checkedAt": "2026-09-06T23:22:33.916Z",
+        "checkedAt": "2026-09-08T23:03:10.947Z",
         "sourceUrl": "https://data.financialresearch.gov/v1/series/dataset?dataset=tyld",
         "sample": {
           "observationDate": null,
@@ -13973,4 +13954,3 @@
     "warning": "登録済みURLは取得成功を意味しない。dataState、観測日、取得日時、利用条件を系列ごとに確認する。"
   }
 }
-
